@@ -41,15 +41,27 @@ jobs:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       run: python -m backend.data_updater --force
 
-    - name: Commit and push changes
+    - name: Commit and Push
       run: |
+        # 1. Configure Bot Identity
         git config --global user.name 'GitHub Action Bot'
         git config --global user.email 'action@github.com'
+        
+        # 2. Add files
         git add frontend/public/*.json
-        # Check if there are changes before committing
+        
+        # 3. Check if there are changes (to avoid empty commit error)
         if git diff --staged --quiet; then
-          echo "No changes to commit."
-        else
-          git commit -m "🤖 Auto-update market data [skip ci]"
-          git push
+          echo "No changes to commit. Skipping push."
+          exit 0
         fi
+        
+        # 4. Commit locally
+        git commit -m "🤖 Auto-update market data [skip ci]"
+        
+        # 5. FIX: Pull latest changes from remote to resolve conflicts
+        # Using --rebase to keep history clean
+        git pull --rebase origin main
+        
+        # 6. Push changes
+        git push origin main
