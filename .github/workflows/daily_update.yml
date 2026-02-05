@@ -1,19 +1,22 @@
-name: Daily Data Update
+name: Daily Market Data Update
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Run every 4 hours
-  workflow_dispatch:      # Allow manual trigger
+    # Runs at 09:30 UTC (17:30 Taipei Time) every weekday
+    - cron: '30 09 * * 1-5'
+  workflow_dispatch:
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up Python
+    - name: Set up Python 3.9
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
@@ -24,22 +27,25 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run Global Updater
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       run: python -m backend.global_updater
 
-    - name: Run Data Updater
+    - name: Run Macro Scraper
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: python -m backend.scrapers.macro
+
+    - name: Run Stock Data Updater (with AI)
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       run: python -m backend.data_updater --force
 
-    - name: Run Macro Scraper
-      run: python -m backend.scrapers.macro
-    
-    - name: Commit and Push details
+    - name: Commit and push changes
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add frontend/public/global_data.json frontend/public/stock_data.json frontend/public/macro_data.json
-        
+        git config --global user.name 'GitHub Action Bot'
+        git config --global user.email 'action@github.com'
+        git add frontend/public/*.json
         # Check if there are changes before committing
         if git diff --staged --quiet; then
           echo "No changes to commit."
@@ -47,5 +53,3 @@ jobs:
           git commit -m "🤖 Auto-update market data [skip ci]"
           git push
         fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

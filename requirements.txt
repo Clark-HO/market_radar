@@ -1,11 +1,9 @@
 requests
 pandas
 yfinance
-beautifulsoup4
 lxml
-python-dotenv
+html5lib
+beautifulsoup4
 python-dateutil
 google-generativeai
-openai
-uvicorn
-fastapi
+python-dotenv

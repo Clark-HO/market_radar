@@ -360,9 +360,10 @@ def main():
                     
                     # AI Report
                     try:
+                        item_data['ai_analysis'] = analysis.generate_ai_report(item_data)
+                    except Exception as e:
+                        print(f"❌ AI Gen Error ({code}): {e}")
                         item_data['ai_analysis'] = analysis.generate_rule_based_report(item_data)
-                    except:
-                        item_data['ai_analysis'] = "暫無分析數據。"
 
                     final_db[code] = item_data
                 except Exception: continue
