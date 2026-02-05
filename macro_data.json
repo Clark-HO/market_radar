@@ -1,0 +1,49 @@
+{
+    "last_updated": "2026-02-04 18:03",
+    "market_status": {
+        "taiex_close": 0.0,
+        "change": 0.0,
+        "change_percent": 0.0
+    },
+    "chips": {
+        "futures_net_oi": -25699,
+        "futures_status": "Bearish Alert",
+        "futures_color": "red"
+    },
+    "currency": {
+        "usd_twd": 32.0,
+        "trend": "Stable"
+    },
+    "sector_flow": [
+        {
+            "name": "電子指數          ",
+            "ratio": 46.4,
+            "trend": "Hot"
+        },
+        {
+            "name": "半導體指數        ",
+            "ratio": 21.3,
+            "trend": "Normal"
+        },
+        {
+            "name": "電子零組件指數    ",
+            "ratio": 13.5,
+            "trend": "Normal"
+        },
+        {
+            "name": "電腦及週邊設備指數",
+            "ratio": 3.7,
+            "trend": "Cool"
+        },
+        {
+            "name": "光電指數          ",
+            "ratio": 3.1,
+            "trend": "Cool"
+        },
+        {
+            "name": "其他",
+            "ratio": 11.9,
+            "trend": "Normal"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+requests
+pandas
+yfinance
+beautifulsoup4
+lxml
+python-dotenv
+python-dateutil
+google-generativeai
+openai
+uvicorn
+fastapi

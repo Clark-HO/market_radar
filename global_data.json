@@ -1,0 +1,274 @@
+{
+  "last_updated": "2026-02-05 13:03",
+  "events": [
+    {
+      "event": "MWC 世界行動通訊大會 2026",
+      "date": "2026-02-26",
+      "end_date": "2026-03-01",
+      "theme": "6G / Wi-Fi 7 / 邊緣 AI",
+      "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
+      "status": "Upcoming",
+      "days_to_go": 21,
+      "chains": [
+        {
+          "us_stock": {
+            "symbol": "QCOM",
+            "name": "高通",
+            "price": 148.89,
+            "change": 0.94
+          },
+          "tw_sector": "IC 設計",
+          "tw_stocks": [
+            {
+              "ticker": "2454",
+              "price": 1775.0,
+              "change": -1.66,
+              "signal": "Neutral"
+            },
+            {
+              "ticker": "2379",
+              "price": 466.5,
+              "change": -2.41,
+              "signal": "Neutral"
+            },
+            {
+              "ticker": "3105",
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
+            }
+          ]
+        },
+        {
+          "us_stock": {
+            "symbol": "AVGO",
+            "name": "博通",
+            "price": 308.05,
+            "change": -2.8
+          },
+          "tw_sector": "網通設備",
+          "tw_stocks": [
+            {
+              "ticker": "5388",
+              "price": 84.2,
+              "change": -2.09,
+              "signal": "Risk Alert"
+            },
+            {
+              "ticker": "6285",
+              "price": 187.0,
+              "change": -9.44,
+              "signal": "Risk Alert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": "NVIDIA GTC 大會 2026",
+      "date": "2026-03-18",
+      "end_date": "2026-03-21",
+      "theme": "Blackwell Ultra / Rubin GPU",
+      "description": "AI 界的伍茲塔克。黃仁勳將揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
+      "status": "Upcoming",
+      "days_to_go": 41,
+      "chains": [
+        {
+          "us_stock": {
+            "symbol": "NVDA",
+            "name": "輝達",
+            "price": 174.19,
+            "change": -2.83
+          },
+          "tw_sector": "AI 伺服器",
+          "tw_stocks": [
+            {
+              "ticker": "2330",
+              "price": 1775.0,
+              "change": -0.28,
+              "signal": "Risk Alert"
+            },
+            {
+              "ticker": "2382",
+              "price": 273.5,
+              "change": -1.62,
+              "signal": "Risk Alert"
+            },
+            {
+              "ticker": "3231",
+              "price": 128.0,
+              "change": -1.16,
+              "signal": "Risk Alert"
+            },
+            {
+              "ticker": "6669",
+              "price": 3655.0,
+              "change": -0.41,
+              "signal": "Risk Alert"
+            }
+          ]
+        },
+        {
+          "us_stock": {
+            "symbol": "SMCI",
+            "name": "美超微",
+            "price": 33.76,
+            "change": 6.01
+          },
+          "tw_sector": "伺服器代工",
+          "tw_stocks": [
+            {
+              "ticker": "2376",
+              "price": 226.5,
+              "change": -1.52,
+              "signal": "Lagging (Buy?)"
+            },
+            {
+              "ticker": "2324",
+              "price": 31.5,
+              "change": -2.48,
+              "signal": "Lagging (Buy?)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": "Google I/O 開發者大會",
+      "date": "2026-05-14",
+      "end_date": "2026-05-15",
+      "theme": "Gemini 2.0 / Android 17",
+      "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
+      "status": "Upcoming",
+      "days_to_go": 98,
+      "chains": [
+        {
+          "us_stock": {
+            "symbol": "GOOGL",
+            "name": "Alphabet",
+            "price": 333.04,
+            "change": -2.71
+          },
+          "tw_sector": "安卓生態系",
+          "tw_stocks": [
+            {
+              "ticker": "2357",
+              "price": 505.0,
+              "change": 1.0,
+              "signal": "Risk Alert"
+            },
+            {
+              "ticker": "2498",
+              "price": 45.1,
+              "change": -1.64,
+              "signal": "Risk Alert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": "Computex 台北國際電腦展",
+      "date": "2026-06-02",
+      "end_date": "2026-06-06",
+      "theme": "AI PC / Copilot+",
+      "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
+      "status": "Upcoming",
+      "days_to_go": 117,
+      "chains": [
+        {
+          "us_stock": {
+            "symbol": "MSFT",
+            "name": "微軟",
+            "price": 414.19,
+            "change": 0.46
+          },
+          "tw_sector": "AI PC 供應鏈",
+          "tw_stocks": [
+            {
+              "ticker": "2353",
+              "price": 27.05,
+              "change": 0.56,
+              "signal": "Neutral"
+            },
+            {
+              "ticker": "2357",
+              "price": 505.0,
+              "change": 1.0,
+              "signal": "Neutral"
+            },
+            {
+              "ticker": "2301",
+              "price": 166.0,
+              "change": -4.05,
+              "signal": "Neutral"
+            }
+          ]
+        },
+        {
+          "us_stock": {
+            "symbol": "AMD",
+            "name": "超微",
+            "price": 200.19,
+            "change": -9.99
+          },
+          "tw_sector": "HPC 運算",
+          "tw_stocks": [
+            {
+              "ticker": "2330",
+              "price": 1775.0,
+              "change": -0.28,
+              "signal": "Risk Alert"
+            },
+            {
+              "ticker": "3711",
+              "price": 281.5,
+              "change": -7.1,
+              "signal": "Risk Alert"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": "Apple WWDC 開發者大會",
+      "date": "2026-06-10",
+      "end_date": "2026-06-14",
+      "theme": "iOS 20 / Siri LLM",
+      "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
+      "status": "Upcoming",
+      "days_to_go": 125,
+      "chains": [
+        {
+          "us_stock": {
+            "symbol": "AAPL",
+            "name": "蘋果",
+            "price": 276.49,
+            "change": 2.4
+          },
+          "tw_sector": "蘋果供應鏈",
+          "tw_stocks": [
+            {
+              "ticker": "2317",
+              "price": 216.0,
+              "change": -1.37,
+              "signal": "Lagging (Buy?)"
+            },
+            {
+              "ticker": "3008",
+              "price": 2315.0,
+              "change": -1.91,
+              "signal": "Lagging (Buy?)"
+            },
+            {
+              "ticker": "4938",
+              "price": 69.5,
+              "change": 0.0,
+              "signal": "Lagging (Buy?)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
