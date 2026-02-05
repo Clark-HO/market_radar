@@ -36,12 +36,14 @@ function StockScan({ ticker }) {
 
                 if (!isMounted) return;
 
-                const fullData = response.data;
-                // Local Search Logic
-                // stock_data.json structure is likely { "2330": {...}, "2317": {...} } based on previous interactions
-                // Or list? Let's assume Dict based on "stock_data.json" typical usage in this projected.
-                // Wait, previous file view showed "more stock_data.json" outputting keys like "2330": { ... } ? 
-                // Let's assume it's a Dict.
+                let fullData = response.data;
+                // Safety: Ensure it's an object
+                if (typeof fullData === 'string') {
+                    try { fullData = JSON.parse(fullData); } catch (e) { console.error("JSON Parse Error", e); }
+                }
+
+                // Debug Info
+                console.log(`Loaded ${Object.keys(fullData).length} stocks.`);
 
                 const targetData = fullData[debouncedTicker];
 
@@ -49,12 +51,12 @@ function StockScan({ ticker }) {
                     setData(targetData);
                 } else {
                     // Try partial match if needed? For now exact match on ID.
-                    setError("查無此股資料，請確認代號 (需完全符合，例: 2330)。");
+                    setError(`查無此股資料 (${debouncedTicker})。資料庫筆數: ${Object.keys(fullData).length}`);
                 }
 
             } catch (err) {
                 console.error(err);
-                if (isMounted) setError("無法連線至雲端數據庫。");
+                if (isMounted) setError(`無法連線至雲端數據庫: ${err.message}`);
             } finally {
                 if (isMounted) setLoading(false);
             }
