@@ -213,9 +213,23 @@ function StockScan({ ticker }) {
                             <Bar dataKey="revenue" fill="#3b82f6" radius={[4, 4, 0, 0]} barSize={40} />
                         </BarChart>
                     </ResponsiveContainer>
-                    {(!revenue?.history || revenue.history.length === 0) && <div className="text-center text-muted text-sm mt-[-100px]">暫無歷史數據</div>}
                 </div>
             </div>
+
+            {/* AI Analysis Report */}
+            {data?.ai_analysis && (
+                <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg mt-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                    <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
+                        <Sparkles className="w-5 h-5 text-purple-400" />
+                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
+                            AI 智能診斷報告
+                        </span>
+                    </h3>
+                    <div className="bg-neutral-950/50 p-4 rounded-lg border border-white/5 text-sm md:text-base leading-relaxed text-slate-300 font-mono whitespace-pre-wrap">
+                        {data.ai_analysis.report || data.ai_analysis}
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

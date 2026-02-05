@@ -90,43 +90,45 @@ class MacroScraper:
 
     def fetch_futures_oi(self):
         """
-        抓取期交所外資空單 (保留你原本優秀的邏輯)
+        抓取期交所外資空單 (Robust Version)
         """
         print("   -> Fetching Futures OI (TAIFEX Scraper)...")
         url = "https://www.taifex.com.tw/cht/3/futContractsDate"
         try:
-            response = requests.get(url, headers=self.headers, timeout=10)
+            response = requests.get(url, headers=self.headers, verify=False, timeout=10)
             response.encoding = 'utf-8'
             
             dfs = pd.read_html(StringIO(response.text), match="期貨")
             
-            for i, df in enumerate(dfs):
-                # print(f"      👀 Inspecting Table {i} Shape: {df.shape}")
-                
-                df = df.reset_index()
-                
-                # 處理 MultiIndex 欄位名稱
+            for df in dfs:
+                # Basic cleanup
+                df = df.fillna('')
+                # Flatten columns if MultiIndex to find target Value column
+                flat_cols = []
                 if isinstance(df.columns, pd.MultiIndex):
-                     df.columns = ['_'.join(map(str, col)).strip() for col in df.columns.values]
+                     flat_cols = ['_'.join(map(str, col)).strip() for col in df.columns.values]
+                else:
+                     flat_cols = [str(c).strip() for c in df.columns]
                 
-                # 關鍵字搜尋欄位
-                col_contract = next((c for c in df.columns if "契約" in c or "商品" in c), None)
-                col_identity = next((c for c in df.columns if "身" in c), None)
-                col_net_oi   = next((c for c in df.columns if "多空淨額" in c and "未平倉" in c), None)
+                # Identify "Net OI" column (Quantity)
+                # Looking for: "未平倉" AND "多空淨額" (usually excludes "契約金額" which is money)
+                # Matches: "未平倉餘額_多空淨額_口數"
+                net_oi_col_idx = -1
+                for idx, col_name in enumerate(flat_cols):
+                    if "多空淨額" in col_name and ("口數" in col_name or "未平倉" in col_name):
+                        net_oi_col_idx = idx
+                        break
                 
-                if col_contract and col_identity and col_net_oi:
-                    # 填補空白欄位 (Forward Fill)
-                    df[col_contract] = df[col_contract].ffill()
+                if net_oi_col_idx == -1: continue
+
+                # Iterate rows to find Target
+                # Logic: Row must contain "臺股期貨" AND "外資" (excluding "小型")
+                for index, row in df.iterrows():
+                    row_str = " ".join([str(val) for val in row.values])
                     
-                    # 篩選：臺股期貨 + 外資 (排除小型)
-                    target_row = df[
-                        (df[col_contract].astype(str).str.contains("臺股期貨")) &
-                        (~df[col_contract].astype(str).str.contains("小型")) & 
-                        (df[col_identity].astype(str).str.contains("外資"))
-                    ]
-                    
-                    if not target_row.empty:
-                        raw_val = target_row.iloc[0][col_net_oi]
+                    if "臺股期貨" in row_str and "外資" in row_str and "小型" not in row_str:
+                        # Found target row!
+                        raw_val = row.iloc[net_oi_col_idx]
                         try:
                             net_oi = int(str(raw_val).replace(",", "").strip())
                             print(f"      ✅ Found Foreign Futures Net OI: {net_oi}")
@@ -135,7 +137,7 @@ class MacroScraper:
                             print(f"      ⚠️ Parse Error for value: {raw_val}")
 
             print("      ⚠️ Scraper finished but could not find target row.")
-            return -35000 
+            return -35000 # Fallback
             
         except Exception as e:
             print(f"      ⚠️ Futures fetch failed: {e}")

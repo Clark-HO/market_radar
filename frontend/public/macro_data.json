@@ -1,14 +1,14 @@
 {
-    "last_updated": "2026-02-05 14:35",
+    "last_updated": "2026-02-05 15:12",
     "market_status": {
         "taiex_close": 31801.27,
         "change": -488.54,
         "change_percent": -1.51
     },
     "chips": {
-        "futures_net_oi": -35000,
-        "futures_status": "Bearish Alert",
-        "futures_color": "red"
+        "futures_net_oi": -988,
+        "futures_status": "Neutral",
+        "futures_color": "gray"
     },
     "currency": {
         "usd_twd": 31.67,
