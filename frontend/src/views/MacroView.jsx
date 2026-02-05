@@ -71,17 +71,17 @@ function MacroView() {
             {/* Main Chart Area */}
             <div className="bg-card p-6 rounded-xl shadow-lg border border-border">
                 <h3 className="text-xl font-bold text-text mb-4">Sector Capital Flow (類股資金流向)</h3>
-                <div className="h-[300px] w-full">
+                <div className="h-[500px] w-full">
                     <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={sector_flow} layout="vertical" margin={{ top: 5, right: 30, left: 40, bottom: 5 }}>
+                        <BarChart data={sector_flow} layout="vertical" margin={{ top: 5, right: 30, left: 10, bottom: 5 }}>
                             <XAxis type="number" hide />
-                            <YAxis dataKey="name" type="category" width={100} tick={{ fill: '#e5e7eb' }} />
+                            <YAxis dataKey="name" type="category" width={130} tick={{ fill: '#e5e7eb', fontSize: 12 }} />
                             <Tooltip
                                 contentStyle={{ backgroundColor: '#1f2937', borderColor: '#374151', color: '#f3f4f6' }}
                                 itemStyle={{ color: '#f3f4f6' }}
                                 cursor={{ fill: 'rgba(255,255,255,0.05)' }}
                             />
-                            <Bar dataKey="ratio" radius={[0, 4, 4, 0]}>
+                            <Bar dataKey="ratio" radius={[0, 4, 4, 0]} barSize={32}>
                                 {sector_flow?.map((entry, index) => (
                                     <Cell key={`cell-${index}`} fill={entry.trend === 'Hot' ? '#ef4444' : entry.trend === 'Cool' ? '#3b82f6' : '#6b7280'} />
                                 ))}
