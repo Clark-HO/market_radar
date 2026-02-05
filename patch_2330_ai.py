@@ -69,14 +69,33 @@ def patch_2330():
     }
     
     # 4. Generate AI Report
-    print("🤖 Generating AI Report (Gemini 2.5)...")
-    try:
-        ai_data = generate_ai_report(item_data)
-        item_data['ai_analysis'] = ai_data
-        print(f"✅ AI Success: {ai_data['verdict']} (Score: {ai_data['score']})")
-    except Exception as e:
-        print(f"❌ AI Failed: {e}")
-        item_data['ai_analysis'] = {"report": "AI Error", "score": 0, "verdict": "Error"}
+    # 4. Generate AI Report (With Retry for Quota)
+    import time
+    max_retries = 3
+    for attempt in range(max_retries):
+        print(f"🤖 Generating AI Report (Gemini 2.5) - Attempt {attempt+1}/{max_retries}...")
+        try:
+            ai_data = generate_ai_report(item_data)
+            
+            # Check if fallback occurred (Cheat detection)
+            if "Rule-Based" in ai_data['report']:
+                print("⚠️ Quota Hit (Fallback detected). Waiting 65s to reset quota...")
+                time.sleep(65)
+                continue # Retry
+                
+            item_data['ai_analysis'] = ai_data
+            print(f"✅ AI Success: {ai_data['verdict']} (Score: {ai_data['score']})")
+            print("--- Report Preview ---")
+            print(ai_data['report'][:200])
+            print("----------------------")
+            break
+        except Exception as e:
+            print(f"❌ AI Failed: {e}")
+            if attempt < max_retries - 1:
+                print("Waiting 65s...")
+                time.sleep(65)
+            else:
+                 item_data['ai_analysis'] = {"report": "AI Error", "score": 0, "verdict": "Error"}
 
     # 5. Save to File
     try:
