@@ -7,9 +7,13 @@ import os
 from datetime import datetime
 from io import StringIO
 
-# 確保路徑正確 (存到 E:\antigravity\market_radar\macro_data.json)
+# 確保路徑正確 (存到 E:\antigravity\market_radar\public\macro_data.json)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-MACRO_DATA_FILE = os.path.join(BASE_DIR, "macro_data.json")
+PUBLIC_DIR = os.path.join(BASE_DIR, "public")
+if not os.path.exists(PUBLIC_DIR):
+    os.makedirs(PUBLIC_DIR)
+    
+MACRO_DATA_FILE = os.path.join(PUBLIC_DIR, "macro_data.json")
 
 class MacroScraper:
     def __init__(self):

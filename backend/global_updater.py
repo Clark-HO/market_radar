@@ -7,7 +7,11 @@ import time
 
 # --- Configuration ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-JSON_PATH = os.path.join(BASE_DIR, "global_data.json")
+PUBLIC_DIR = os.path.join(BASE_DIR, "public")
+if not os.path.exists(PUBLIC_DIR):
+    os.makedirs(PUBLIC_DIR)
+
+JSON_PATH = os.path.join(PUBLIC_DIR, "global_data.json")
 
 # --- 1. The Knowledge Graph (2026 Event Calendar) ---
 # This simulates a "Researched Database" of events and supply chains.

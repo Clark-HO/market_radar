@@ -15,7 +15,12 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- 1. 設定路徑 ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-JSON_PATH = os.path.join(BASE_DIR, "stock_data.json")
+# Define Public Directory
+PUBLIC_DIR = os.path.join(BASE_DIR, "public")
+if not os.path.exists(PUBLIC_DIR):
+    os.makedirs(PUBLIC_DIR)
+    
+JSON_PATH = os.path.join(PUBLIC_DIR, "stock_data.json")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",

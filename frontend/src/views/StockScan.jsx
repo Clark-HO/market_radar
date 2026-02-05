@@ -32,7 +32,7 @@ function StockScan({ ticker }) {
                 console.log(`Searching for ${debouncedTicker} in serverless DB...`);
 
                 // Serverless: Fetch full database (2.5MB) via CDN
-                const response = await axios.get('https://cdn.jsdelivr.net/gh/Clark-HO/market_radar@main/stock_data.json');
+                const response = await axios.get('https://cdn.jsdelivr.net/gh/Clark-HO/market_radar@main/public/stock_data.json');
 
                 if (!isMounted) return;
 

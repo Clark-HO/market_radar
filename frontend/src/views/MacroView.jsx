@@ -8,7 +8,7 @@ function MacroView() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("https://cdn.jsdelivr.net/gh/Clark-HO/market_radar@main/macro_data.json");
+                const response = await fetch("https://cdn.jsdelivr.net/gh/Clark-HO/market_radar@main/public/macro_data.json");
                 const jsonData = await response.json();
                 setData(jsonData);
                 setLoading(false);

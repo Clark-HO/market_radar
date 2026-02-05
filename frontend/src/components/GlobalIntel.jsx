@@ -8,7 +8,7 @@ const GlobalIntel = () => {
 
     useEffect(() => {
         // Switch to Serverless: Fetch from jsDelivr CDN (Faster & Better CORS)
-        fetch('https://cdn.jsdelivr.net/gh/Clark-HO/market_radar@main/global_data.json')
+        fetch('https://cdn.jsdelivr.net/gh/Clark-HO/market_radar@main/public/global_data.json')
             .then(res => res.json())
             .then(d => {
                 setData(d);
