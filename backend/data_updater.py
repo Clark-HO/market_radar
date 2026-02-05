@@ -27,10 +27,21 @@ HEADERS = {
     "Connection": "keep-alive"
 }
 
+import math
+
 def get_roc_date_parts(date_obj):
     """回傳：(民國年, 月份數字, 顯示字串)"""
     roc_year = date_obj.year - 1911
     return roc_year, date_obj.month, f"{roc_year}/{date_obj.month}"
+
+def sanitize_float(val):
+    """Convert NaN/Infinity to 0 for valid JSON"""
+    if val is None: return 0
+    try:
+        f = float(val)
+        if math.isnan(f) or math.isinf(f): return 0
+        return f
+    except: return 0
 
 def fetch_twse_chips_global():
     """[Tier 1] 抓取上市(TWSE)三大法人買賣超"""
@@ -327,13 +338,19 @@ def main():
                         "stock_id": code,
                         "stock_name": stock_name,
                         "valuation": {
-                            "stock_id": code, "current_pe": round(pe, 2) if pe else 0,
-                            "sector_pe": sector_pe, "pe_score": round(score, 2),
-                            "status": status, "price": round(price, 1) if price else 0
+                            "stock_id": code, 
+                            "current_pe": round(sanitize_float(pe), 2),
+                            "sector_pe": sanitize_float(sector_pe),
+                            "pe_score": round(sanitize_float(score), 2),
+                            "status": status, 
+                            "price": round(sanitize_float(price), 1)
                         },
                         "revenue": {
                             "date": rev_hist[-1]['date'] if rev_hist else "N/A",
-                            "revenue": last_rev, "mom": stats['mom'], "yoy": stats['yoy'], "history": rev_hist 
+                            "revenue": sanitize_float(last_rev), 
+                            "mom": sanitize_float(stats.get('mom')), 
+                            "yoy": sanitize_float(stats.get('yoy')), 
+                            "history": rev_hist 
                         },
                         "chips": {
                             "foreign_net": chip_info['foreign'], "trust_net": chip_info['trust'],
