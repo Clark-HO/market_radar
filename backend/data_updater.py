@@ -8,6 +8,7 @@ import os
 import urllib3
 from io import StringIO
 from dateutil.relativedelta import relativedelta
+from backend import analysis
 
 # --- 0. 忽略 SSL 警告 ---
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -317,7 +318,7 @@ def main():
                     chip_info = full_chips.get(code, {"foreign": 0, "trust": 0, "name": code})
                     stock_name = chip_info.get('name', code) # Get Name
                     
-                    final_db[code] = {
+                    item_data = {
                         "stock_id": code,
                         "stock_name": stock_name,
                         "valuation": {
@@ -334,6 +335,14 @@ def main():
                             "analysis": "Accumulating" if chip_info['foreign'] > 0 else "Selling"
                         }
                     }
+                    
+                    # AI Report
+                    try:
+                        item_data['ai_analysis'] = analysis.generate_rule_based_report(item_data)
+                    except:
+                        item_data['ai_analysis'] = "暫無分析數據。"
+
+                    final_db[code] = item_data
                 except Exception: continue
             time.sleep(1) 
         except Exception: print("Batch skipped")

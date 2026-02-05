@@ -6,7 +6,7 @@ import { LayoutDashboard, Globe, Menu, Search, BarChart3, Activity } from 'lucid
 
 function App() {
   const [activeTab, setActiveTab] = useState('market');
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [ticker, setTicker] = useState('2330'); // Default TSMC
 
   return (
