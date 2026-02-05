@@ -85,26 +85,7 @@ function StockScan({ ticker }) {
 
     return (
         <div className="space-y-6 animate-in fade-in duration-500">
-            {/* AI Diagnosis Card (Top Placement) */}
-            {data?.ai_analysis && (
-                <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-2xl relative overflow-hidden bg-gradient-to-br from-surface to-accent/5">
-                    <div className="absolute top-0 right-0 p-8 opacity-5">
-                        <Sparkles className="w-48 h-48" />
-                    </div>
 
-                    <div className="relative z-10">
-                        <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-                            <Sparkles className="w-5 h-5 text-purple-400" />
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
-                                AI 智能診斷報告
-                            </span>
-                        </h3>
-                        <div className="bg-neutral-950/50 p-4 rounded-lg border border-white/5 text-sm md:text-base leading-relaxed text-slate-300 font-mono whitespace-pre-wrap">
-                            {data.ai_analysis.report || JSON.stringify(data.ai_analysis)}
-                        </div>
-                    </div>
-                </div>
-            )}
             <div className={`text-6xl font-black ${data.analysis.score >= 80 ? 'text-red-400' : data.analysis.score >= 60 ? 'text-orange-400' : 'text-green-400'}`}>
                 {data.analysis.score}
             </div>
