@@ -53,6 +53,15 @@ def patch_2330():
         "analysis": "Accumulating"
     }
     
+    # Calculate PE Score
+    sector_pe = 20.0
+    pe_score = 0
+    status = "Fair Value"
+    if pe > 0:
+        pe_score = pe / sector_pe
+        if pe_score > 1.2: status = "High Premium"
+        elif pe_score < 0.8: status = "Undervalued"
+    
     # 3. Assemble Data Object
     item_data = {
         "stock_id": stock_id,
@@ -60,8 +69,9 @@ def patch_2330():
         "valuation": {
             "stock_id": stock_id,
             "current_pe": round(float(pe), 2),
-            "sector_pe": 20.0,
-            "status": "High Premium",
+            "sector_pe": sector_pe,
+            "pe_score": round(pe_score, 2),
+            "status": status,
             "price": price
         },
         "revenue": revenue,
