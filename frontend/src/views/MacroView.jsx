@@ -69,25 +69,38 @@ function MacroView() {
             </div>
 
             {/* Main Chart Area */}
+            {/* New Sector Flow Design: Native Progress Bars */}
             <div className="bg-card p-6 rounded-xl shadow-lg border border-border">
                 <h3 className="text-xl font-bold text-text mb-4">Sector Capital Flow (類股資金流向)</h3>
-                <div className="h-[500px] w-full">
-                    <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={sector_flow} layout="vertical" margin={{ top: 5, right: 30, left: 10, bottom: 5 }}>
-                            <XAxis type="number" hide />
-                            <YAxis dataKey="name" type="category" width={130} tick={{ fill: '#e5e7eb', fontSize: 12 }} />
-                            <Tooltip
-                                contentStyle={{ backgroundColor: '#1f2937', borderColor: '#374151', color: '#f3f4f6' }}
-                                itemStyle={{ color: '#f3f4f6' }}
-                                cursor={{ fill: 'rgba(255,255,255,0.05)' }}
-                            />
-                            <Bar dataKey="ratio" radius={[0, 4, 4, 0]} barSize={32}>
-                                {sector_flow?.map((entry, index) => (
-                                    <Cell key={`cell-${index}`} fill={entry.trend === 'Hot' ? '#ef4444' : entry.trend === 'Cool' ? '#3b82f6' : '#6b7280'} />
-                                ))}
-                            </Bar>
-                        </BarChart>
-                    </ResponsiveContainer>
+                <div className="space-y-4">
+                    {sector_flow?.map((sector, idx) => {
+                        let barColor = "bg-gray-500";
+                        if (sector.trend === "Hot") barColor = "bg-red-500";
+                        if (sector.trend === "Cool") barColor = "bg-blue-500"; // Cool is usually Blue/Green
+                        if (sector.trend === "Normal") barColor = "bg-gray-600";
+
+                        return (
+                            <div key={idx} className="flex flex-col gap-1">
+                                {/* Row 1: Labels */}
+                                <div className="flex justify-between items-end">
+                                    <span className="text-sm font-medium text-gray-200">
+                                        {sector.name}
+                                    </span>
+                                    <span className={`text-sm font-bold ${sector.trend === 'Hot' ? 'text-red-400' : 'text-gray-400'}`}>
+                                        {sector.ratio}%
+                                    </span>
+                                </div>
+
+                                {/* Row 2: The Bar */}
+                                <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                                    <div
+                                        className={`h-full rounded-full ${barColor} transition-all duration-1000`}
+                                        style={{ width: `${sector.ratio}%` }}
+                                    />
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </div>
