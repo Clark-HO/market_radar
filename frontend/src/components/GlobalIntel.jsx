@@ -7,8 +7,8 @@ const GlobalIntel = () => {
     const [showLegend, setShowLegend] = useState(false);
 
     useEffect(() => {
-        // Switch to Serverless: Fetch from jsDelivr CDN (Faster & Better CORS)
-        fetch('https://cdn.jsdelivr.net/gh/Clark-HO/market_radar@main/public/global_data.json')
+        // Fetch from local public folder (Vercel Root)
+        fetch('/global_data.json')
             .then(res => res.json())
             .then(d => {
                 setData(d);

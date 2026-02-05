@@ -7,9 +7,9 @@ import os
 from datetime import datetime
 from io import StringIO
 
-# 確保路徑正確 (存到 E:\antigravity\market_radar\public\macro_data.json)
+# 確保路徑正確 (存到 E:\antigravity\market_radar\frontend\public\macro_data.json)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-PUBLIC_DIR = os.path.join(BASE_DIR, "public")
+PUBLIC_DIR = os.path.join(BASE_DIR, "frontend", "public")
 if not os.path.exists(PUBLIC_DIR):
     os.makedirs(PUBLIC_DIR)
     

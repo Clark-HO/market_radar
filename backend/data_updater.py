@@ -15,8 +15,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- 1. 設定路徑 ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Define Public Directory
-PUBLIC_DIR = os.path.join(BASE_DIR, "public")
+# Target: market_radar/frontend/public
+PUBLIC_DIR = os.path.join(BASE_DIR, "frontend", "public")
 if not os.path.exists(PUBLIC_DIR):
     os.makedirs(PUBLIC_DIR)
     
