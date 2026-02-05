@@ -133,13 +133,13 @@ def generate_llm_report(stock_data, api_key):
         
         # Regex Extraction
         import re
-        # New pattern: AI 綜合戰力: 90 分
-        score_match = re.search(r'AI 綜合戰力:.*?(\d+)', content)
+        # Relaxed pattern for Score: Matches "**AI 綜合戰力**: 90" or "AI 綜合戰力: 90"
+        score_match = re.search(r'AI 綜合戰力\D*(\d+)', content)
         score = int(score_match.group(1)) if score_match else 75
         
-        # New pattern: 趨勢訊號: **強烈看多 (Strong Bull)**
-        verdict_match = re.search(r'趨勢訊號: \*\*(.*?)\*\*', content)
-        verdict = verdict_match.group(1) if verdict_match else "AI 分析"
+        # Relaxed pattern for Verdict: Matches "**趨勢訊號**: **Verdict**"
+        verdict_match = re.search(r'趨勢訊號.*?\*\*([^*]+)\*\*', content)
+        verdict = verdict_match.group(1).strip() if verdict_match else "AI 分析"
         
         return { "score": score, "verdict": verdict, "report": content }
         

@@ -72861,73 +72861,26 @@
     "stock_name": "台積電",
     "valuation": {
       "stock_id": "2330",
-      "current_pe": 0.0,
+      "current_pe": 28.5,
       "sector_pe": 20.0,
-      "pe_score": 0.0,
-      "status": "Fair Value",
-      "price": 0.0
+      "status": "High Premium",
+      "price": 1050.0
     },
     "revenue": {
-      "date": "2025-12",
-      "revenue": 335003568000.0,
-      "mom": -2.51,
-      "yoy": 20.43,
-      "history": [
-        {
-          "date": "2025-02",
-          "revenue": 260008796000.0
-        },
-        {
-          "date": "2025-03",
-          "revenue": 285956830000.0
-        },
-        {
-          "date": "2025-04",
-          "revenue": 349566940000.0
-        },
-        {
-          "date": "2025-05",
-          "revenue": 320515951000.0
-        },
-        {
-          "date": "2025-06",
-          "revenue": 263708978000.0
-        },
-        {
-          "date": "2025-07",
-          "revenue": 323165707000.0
-        },
-        {
-          "date": "2025-08",
-          "revenue": 335771691000.0
-        },
-        {
-          "date": "2025-09",
-          "revenue": 330980920000.0
-        },
-        {
-          "date": "2025-10",
-          "revenue": 367473051000.0
-        },
-        {
-          "date": "2025-11",
-          "revenue": 343613802000.0
-        },
-        {
-          "date": "2025-12",
-          "revenue": 335003568000.0
-        }
-      ]
+      "mom": 5.2,
+      "yoy": 35.5,
+      "revenue": 250000000000,
+      "date": "2026-02"
     },
     "chips": {
-      "foreign_net": -9669,
-      "trust_net": 1234,
-      "analysis": "Selling"
+      "foreign_net": 12500,
+      "trust_net": 3500,
+      "analysis": "Accumulating"
     },
     "ai_analysis": {
-      "score": 60,
-      "verdict": "偏多操作 (Bullish)",
-      "report": "### 🤖 Rules AI 診斷: 台積電 (2330)\n\n**總和評分**: 60分 - **偏多操作 (Bullish)**\n\n- 📈 投信進場佈局。\n- 📈 營收年增爆發 (+20.43%)。\n- 📉 外資調節 (-9669張)。\n\n> *此報告由專家規則系統生成 (Rule-Based)*"
+      "score": 90,
+      "verdict": "強力買進 (Strong Buy)",
+      "report": "### 🤖 Rules AI 診斷: 台積電 (2330)\n\n**總和評分**: 90分 - **強力買進 (Strong Buy)**\n\n- 📈 外資強力買超 (12500張)。\n- 📈 投信進場佈局。\n- 📈 營收年增爆發 (+35.5%)。\n\n> *此報告由專家規則系統生成 (Rule-Based)*"
     }
   },
   "2301": {
