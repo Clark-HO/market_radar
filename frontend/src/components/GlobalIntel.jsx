@@ -7,7 +7,8 @@ const GlobalIntel = () => {
     const [showLegend, setShowLegend] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/global/dashboard')
+        // Switch to Serverless: Fetch from GitHub Raw
+        fetch('https://raw.githubusercontent.com/Clark-HO/market_radar/main/global_data.json')
             .then(res => res.json())
             .then(d => {
                 setData(d);

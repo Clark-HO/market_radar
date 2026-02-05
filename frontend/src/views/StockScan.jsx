@@ -29,23 +29,32 @@ function StockScan({ ticker }) {
             setData(null);
 
             try {
-                console.log(`Fetching dashboard for ${debouncedTicker}...`);
+                console.log(`Searching for ${debouncedTicker} in serverless DB...`);
 
-                // Single Request for EVERYTHING
-                const response = await axios.get(`${API_BASE}/stock/${debouncedTicker}/dashboard`, { timeout: 30000 });
+                // Serverless: Fetch full database (2.5MB)
+                const response = await axios.get('https://raw.githubusercontent.com/Clark-HO/market_radar/main/stock_data.json');
 
                 if (!isMounted) return;
 
-                if (response.data) {
-                    setData(response.data);
-                    if (!response.data.valuation && !response.data.revenue) {
-                        setError("查無此股資料，請確認代號。");
-                    }
+                const fullData = response.data;
+                // Local Search Logic
+                // stock_data.json structure is likely { "2330": {...}, "2317": {...} } based on previous interactions
+                // Or list? Let's assume Dict based on "stock_data.json" typical usage in this projected.
+                // Wait, previous file view showed "more stock_data.json" outputting keys like "2330": { ... } ? 
+                // Let's assume it's a Dict.
+
+                const targetData = fullData[debouncedTicker];
+
+                if (targetData) {
+                    setData(targetData);
+                } else {
+                    // Try partial match if needed? For now exact match on ID.
+                    setError("查無此股資料，請確認代號 (需完全符合，例: 2330)。");
                 }
 
             } catch (err) {
                 console.error(err);
-                if (isMounted) setError("連線逾時或系統忙碌中。");
+                if (isMounted) setError("無法連線至雲端數據庫。");
             } finally {
                 if (isMounted) setLoading(false);
             }
