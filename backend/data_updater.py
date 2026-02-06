@@ -6,10 +6,9 @@ import yfinance as yf
 import datetime
 import os
 import urllib3
+import math
 from io import StringIO
 from dateutil.relativedelta import relativedelta
-from dateutil.relativedelta import relativedelta
-# from backend import analysis # Removed for Pure Scraper
 
 # --- 0. 忽略 SSL 警告 ---
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -27,8 +26,6 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Connection": "keep-alive"
 }
-
-import math
 
 def get_roc_date_parts(date_obj):
     """回傳：(民國年, 月份數字, 顯示字串)"""
@@ -84,7 +81,7 @@ def fetch_twse_chips_global():
     return {}
 
 def fetch_tpex_chips_global():
-    """[Tier 1.5] 抓取上櫃(OTC)三大法人買賣超 - 修正 tables 格式與欄位索引"""
+    """[Tier 1.5] 抓取上櫃(OTC)三大法人買賣超"""
     print("🥡 [1.5/3] Downloading OTC Chips...")
     now = datetime.datetime.now()
         
@@ -104,14 +101,10 @@ def fetch_tpex_chips_global():
             try: data = r.json()
             except: continue
             
-            # --- 關鍵修正：相容 tables 格式 ---
             raw_rows = []
-            
-            # 優先檢查 tables (新格式)
             if 'tables' in data and len(data['tables']) > 0:
                 if 'data' in data['tables'][0]:
                     raw_rows = data['tables'][0]['data']
-            # 其次檢查 aaData (舊格式)
             elif 'aaData' in data:
                 raw_rows = data['aaData']
             
@@ -121,20 +114,14 @@ def fetch_tpex_chips_global():
                 for row in raw_rows:
                     try:
                         code = row[0]
-                        name = row[1].strip() # Capture Name
+                        name = row[1].strip()
                         if len(code) != 4: continue 
                         def p(v): return int(v.replace(',', '')) if v else 0
                         
-                        # [修正索引] 根據您的 Sample Row (24欄)
-                        # Index 4: 外資買賣超
-                        # Index 13: 投信買賣超 (原本是 7 錯了)
-                        
-                        # 防呆：確保欄位夠長
                         if len(row) > 13:
                             foreign_net = p(row[4]) // 1000
                             trust_net = p(row[13]) // 1000
                         else:
-                            # 萬一格式不同，Fallback 到舊版索引
                             foreign_net = p(row[4]) // 1000
                             trust_net = p(row[7]) // 1000
 
@@ -184,7 +171,6 @@ def fetch_mops_revenue_history_global():
     for i in range(12):
         target_date = anchor_date - relativedelta(months=i)
         roc_year, roc_month, roc_str = get_roc_date_parts(target_date)
-        is_latest_month = (i == 0)
         
         markets = ['sii', 'otc']
         for mkt in markets:
@@ -204,7 +190,6 @@ def fetch_mops_revenue_history_global():
                                     if len(code) != 4 or not code.isdigit(): continue
                                     rev_raw = row.iloc[2]
                                     if pd.isna(rev_raw) or str(rev_raw).strip() == '-': continue
-                                    # REVERT: Use * 1000 to get Raw Dollars (Frontend divides by 10^8)
                                     rev_val = float(str(rev_raw).replace(',', '')) * 1000 
                                     
                                     if code not in history_map: history_map[code] = []
@@ -213,22 +198,17 @@ def fetch_mops_revenue_history_global():
                                         "revenue": rev_val 
                                     })
                                     
-                                    # Capture YoY from the most recent valid month (MOPS Source)
                                     if code not in latest_stats_map:
                                         try:
-                                            # Index 6: YoY
                                             yoy = float(str(row.iloc[6]).replace(',', ''))
-                                            latest_stats_map[code] = {"mom": 0, "yoy": yoy} # MoM calc later
+                                            latest_stats_map[code] = {"mom": 0, "yoy": yoy} 
                                         except:
                                             latest_stats_map[code] = {"mom": 0, "yoy": 0}
                                 except: continue
             except: continue
 
-    # Reverse history & Manual MoM Calculation
     for code, hist in history_map.items():
-        hist.reverse() # Oldest to Newest
-        
-        # Calculate MoM manually for consistency
+        hist.reverse() 
         if len(hist) >= 2:
             latest = hist[-1]['revenue']
             prev = hist[-2]['revenue']
@@ -240,7 +220,6 @@ def fetch_mops_revenue_history_global():
                     latest_stats_map[code] = {"mom": round(mom, 2), "yoy": 0}
     return history_map, latest_stats_map
 
-
 DATA_FILE = "stock_data.json"
 
 def main():
@@ -248,21 +227,16 @@ def main():
     import time
     import os
     
-    # Check for Freshness (12 Hours)
-    # Allows bypassing via --force flag or if file doesn't exist
+    # Check for Freshness
     has_force_flag = '--force' in sys.argv
-    is_fresh = False
-    
     if os.path.exists(DATA_FILE) and not has_force_flag:
         mtime = os.path.getmtime(DATA_FILE)
         age_hours = (time.time() - mtime) / 3600
         if age_hours < 12:
-            is_fresh = True
             print(f"✅ Data is fresh (Updated {age_hours:.1f} hours ago). Skipping update.")
             print("   (Use '--force' to run anyway)")
             return
 
-    # Start Update Process
     if has_force_flag:
         print("🚀 Force Update Requested...")
     else:
@@ -286,7 +260,6 @@ def main():
              if s not in target_stocks: target_stocks.append(s)
     
     print(f"🚀 [3/3] Processing Batch Data for {len(target_stocks)} stocks...")
-    
     
     # [Safety Layer 1] Data Merging: Load existing data first
     final_db = {}
@@ -324,7 +297,6 @@ def main():
             continue
 
         try:
-            # Process Batch
             for code in batch:
                 try:
                     price = 0; pe = 0
@@ -356,14 +328,9 @@ def main():
                     # [Safety Layer 1] Only overwrite if fetch was successful
                     if price <= 0:
                         if code in final_db:
-                           # Keep existing data
                            continue
                         
-                        # Special Logic for 2330 Fallback if completely missing
                         if code == "2330":
-                            # Force inject 2330 if missing
-                            pass # Will fall through to exception handler logic below? 
-                            # Actually, simpler to raise exception here to trigger fallback
                             raise ValueError("TSMC Fetch Failed")
                         continue
 
@@ -371,7 +338,7 @@ def main():
                     last_rev = rev_hist[-1]['revenue'] if rev_hist else 0
                     stats = revenue_stats.get(code, {"mom": 0, "yoy": 0})
                     chip_info = full_chips.get(code, {"foreign": 0, "trust": 0, "name": code})
-                    stock_name = chip_info.get('name', code) # Get Name
+                    stock_name = chip_info.get('name', code)
                     
                     item_data = {
                         "stock_id": code,
@@ -392,16 +359,12 @@ def main():
                             "history": rev_hist 
                         }
                     }
-                    
-                    # AI Report - REMOVED (Moved to On-Demand API)
-                    # Data Updater now only handles numeric data.
 
                     final_db[code] = item_data
                     
                 except Exception:
-                    # Fallback for 2330 if YFinance fails but we want it in DB
+                    # Fallback for 2330
                     if code == "2330" and "2330" not in final_db:
-                        # Mock/Fallback Data for TSMC (Pure Numeric)
                         print("⚠️ using built-in fallback for 2330...")
                         fb = {
                              "stock_id": "2330", "stock_name": "台積電",
@@ -409,29 +372,24 @@ def main():
                              "revenue": { "date": "2026-02", "revenue": 250000000000, "mom": 5.2, "yoy": 35.5, "history": [] },
                              "chips": { "foreign_net": 12000, "trust_net": 3000, "analysis": "Accumulating" }
                         }
-                        # No AI here.
                         final_db["2330"] = fb
                     continue
             time.sleep(1) 
         except Exception: print("Batch skipped")
 
-    # [Safety Layer 2] The "Canary" Integrity Check (Safe Save)
+    # [Safety Layer 2] The "Canary" Integrity Check
     print("🛡️ Performing Integrity Checks...")
     
-    # Check 1: Total Count
     if len(final_db) < 5:
         print(f"❌ Critical Error: Integrity Check Failed! Only {len(final_db)} stocks found (Minimum 5).")
         print("🛑 Update Aborted. Old data preserved.")
         exit(1)
-        return
 
-    # Check 2: TSMC Canary
     tsmc = final_db.get("2330")
     if not tsmc or tsmc.get("valuation", {}).get("price", 0) <= 0:
         print("❌ Critical Error: Integrity Check Failed! TSMC (2330) is missing or invalid.")
         print("🛑 Update Aborted. Old data preserved.")
         exit(1)
-        return
 
     print("✅ Integrity Check Passed.")
     with open(JSON_PATH, "w", encoding='utf-8') as f:
