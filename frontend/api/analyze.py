@@ -1,3 +1,4 @@
+import google.generativeai as genai
 from http.server import BaseHTTPRequestHandler
 import json
 import os
@@ -5,19 +6,17 @@ from urllib.parse import urlparse, parse_qs
 import re
 
 # [Debug Wrapper] Capture Import Errors
-# This prevents 500 crashes if dependencies differ on Vercel
 import_error = None
-client = None
+model_instance = None
 
 try:
-    from google import genai
-    from google.genai import types
-    
-    # Initialize Client
+    # Initialize Client (Old SDK Style)
     api_key = os.environ.get("GEMINI_API_KEY")
     if api_key:
         try:
-            client = genai.Client(api_key=api_key)
+            genai.configure(api_key=api_key)
+            # Pre-initialize model? Or do it in request. 
+            # Doing it here checks if SDK loads.
         except Exception as e:
             print(f"Client Init Error: {e}")
 except ImportError as e:
@@ -40,10 +39,10 @@ class handler(BaseHTTPRequestHandler):
         # 2. Setup Headers (CORS is crucial)
         self.send_response(200)
         self.send_header('Content-type', 'application/json')
-        self.send_header('Access-Control-Allow-Origin', '*') # Allow frontend access
+        self.send_header('Access-Control-Allow-Origin', '*') 
         self.end_headers()
 
-        # 3. Check Critical Failures (Before AI Logic)
+        # 3. Check Critical Failures
         if import_error:
              self.wfile.write(json.dumps({
                 "score": 0, "verdict": "Deploy Error", 
@@ -51,7 +50,7 @@ class handler(BaseHTTPRequestHandler):
             }).encode('utf-8'))
              return
 
-        if not client:
+        if not os.environ.get("GEMINI_API_KEY"):
             self.wfile.write(json.dumps({
                 "score": 0, "verdict": "Config Error", 
                 "report": "❌ GEMINI_API_KEY is missing in Vercel Environment Variables."
@@ -59,7 +58,6 @@ class handler(BaseHTTPRequestHandler):
             return
             
         # 4. Construct Prompt
-        # Verify valid stock_id
         if not stock_id or stock_id == "N/A":
              self.wfile.write(json.dumps({
                 "score": 0, "verdict": "Ready", 
@@ -81,16 +79,18 @@ class handler(BaseHTTPRequestHandler):
         """
 
         try:
-            # 5. Call Gemini
-            response = client.models.generate_content(
-                # [User Request] Pin to "gemini-1.5-flash" for 1500 RPD free tier (Avoid 2.5/Flash-Latest alias issues)
-                model='gemini-1.5-flash',
-                contents=prompt,
-                config=types.GenerateContentConfig(temperature=0.7)
+            # 5. Call Gemini (Old SDK)
+            # Use the stable 1.5 Flash model
+            model_name = "gemini-1.5-flash"
+            model = genai.GenerativeModel(model_name)
+            
+            response = model.generate_content(
+                prompt,
+                generation_config=genai.types.GenerationConfig(temperature=0.7)
             )
             content = response.text
             
-            # 6. Parse Result (Robust Regex)
+            # 6. Parse Result
             score_match = re.search(r'AI 綜合戰力\D*(\d+)', content)
             score = int(score_match.group(1)) if score_match else 75
             
@@ -106,7 +106,13 @@ class handler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(out_json).encode('utf-8'))
 
         except Exception as e:
+            error_msg = str(e)
+            if "404" in error_msg:
+                error_msg += " (Model Not Found - Check Version/Region)"
+            elif "429" in error_msg:
+                error_msg += " (Quota Exceeded - Rate Limit)"
+                
             self.wfile.write(json.dumps({
                 "score": 0, "verdict": "Runtime Error", 
-                "report": f"⚠️ Runtime Exception: {str(e)}"
+                "report": f"⚠️ AI Error: {error_msg}"
             }).encode('utf-8'))
