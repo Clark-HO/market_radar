@@ -56,27 +56,51 @@ def fetch_twse_chips_global():
             if data.get('stat') == 'OK':
                 print(f"   ✅ Found TWSE Chips for {date_str}")
                 fields = data.get('fields', [])
+                # Locate Indices intelligently
                 try:
-                    idx_foreign = next(i for i, f in enumerate(fields) if '外陸資買賣超' in f)
-                    idx_trust = next(i for i, f in enumerate(fields) if '投信買賣超' in f)
+                     # Default indices for T86
                     idx_code = 0
+                    idx_name = 1
+                    idx_foreign = 4 # Default
+                    idx_trust = 10 # Default
+                    
+                    # Try to find by header name (Robust)
+                    for i, f in enumerate(fields):
+                        if '外陸資買賣超' in f or '外資' in f: idx_foreign = i
+                        elif '投信買賣超' in f: idx_trust = i
+                        elif '證券代號' in f: idx_code = i
+                            
+                    print(f"      Indices: Foreign={idx_foreign}, Trust={idx_trust}")
                 except:
-                    idx_code = 0; idx_foreign = 4; idx_trust = 10
+                     pass
+                     
                 chips_map = {}
+                count = 0
                 for row in data.get('data', []):
                     try:
                         code = row[idx_code]
-                        name = row[1].strip() # Capture Name
+                        name = row[idx_name].strip()
                         if len(code) != 4: continue 
+                        
                         def parse_num(s): return int(s.replace(',', '')) if s else 0
+                        
+                        f_net = parse_num(row[idx_foreign]) // 1000
+                        t_net = parse_num(row[idx_trust]) // 1000
+                        
                         chips_map[code] = {
                             "name": name,
-                            "foreign": parse_num(row[idx_foreign]) // 1000, 
-                            "trust": parse_num(row[idx_trust]) // 1000
+                            "foreign": f_net, 
+                            "trust": t_net
                         }
+                        count += 1
                     except: continue
-                return chips_map
-        except: pass
+                
+                if count > 10:
+                    print(f"   ✅ Successfully parsed {count} stocks.")
+                    return chips_map
+        except Exception as e:
+            print(f"   ⚠️ T86 Error for {date_str}: {e}")
+            pass
     print("   ⚠️ Failed to fetch TWSE Chips data.")
     return {}
 

@@ -321,58 +321,71 @@ class MacroScraper:
     def fetch_futures_oi(self):
         """
         Fetch Futures Net OI (Foreign) from TAIFEX.
-        Resilient Text Search approach.
+        Robust: Headers + Pandas Column Search
         """
         try:
             url = "https://www.taifex.com.tw/cht/3/futContractsDate"
-            r = requests.get(url, headers=self.headers, verify=False, timeout=10)
-            r.encoding = 'utf-8' # Ensure correct decoding
+            # Explicit Headers as requested for Firewall bypass
+            params = {'queryType': 1, 'doQuery': 1, 'queryDate': datetime.now().strftime('%Y/%m/%d')}
+            # Note: The URL usually defaults to latest. We try without params first or with just headers.
             
-            # Logic:
-            # 1. Find "臺股期貨" (TAIEX Futures) block.
-            # 2. Inside that, find "外資" (Foreign Investors).
-            # 3. Get the "Net OI" column (usually the last or specific offset).
+            print(f"   -> Fetching Futures OI from {url}...")
+            r = requests.get(url, headers=self.headers, timeout=15)
+            r.encoding = 'utf-8'
             
-            # Since HTML table parsing is fragile, let's use pandas if possible, but handle "No Tables Found"
             try:
                 dfs = pd.read_html(StringIO(r.text))
-            except: dfs = []
-            
+            except ValueError:
+                print("      ⚠️ No tables found in Futures response.")
+                return None
+
             for df in dfs:
-                # Convert to string to search keywords
+                # 1. Identify valid table: must contain "Identity" or "身分" or "外資"
                 df_str = df.to_string()
-                if "臺股期貨" in df_str and "外資" in df_str:
-                    # Iterate rows to find the exact line
-                    # Usually: [Identity, Long, Short, Net] ...
-                    # We want "外資" row's "未平倉餘額" -> "多空淨額" (Net OI)
-                    # Many columns. Let's find row with "外資"
-                    for _, row in df.iterrows():
-                        row_s = [str(x) for x in row.values]
-                        if any("外資" in x for x in row_s):
-                            # This is the Foreign row.
-                            # Extract all numbers. The Net OI is often the last integer or 2nd to last?
-                            # Table: ... | Net Buy/Sell | ... | Open Interest (Long) | Open Interest (Short) | Open Interest (Net)
-                            # Actually TAIFEX "Daily" table:
-                            # Identity | Trading Lot | ... | Open Interest
-                            #          | Long | Short | Net | Long | Short | Net
-                            # We want Open Interest -> Net. (The last column usually)
-                            
-                            numbers = []
-                            for val in row_s:
-                                try:
-                                    # Remove commas, skip empty
-                                    clean = val.replace(',', '').strip()
-                                    if clean.replace('-', '').isdigit():
-                                        numbers.append(int(clean))
-                                except: pass
-                            
-                            if numbers:
-                                # The last number is usually Net OI on TAIFEX summary
-                                return numbers[-1]
-                                
-            return None # Not found
-        except Exception as e: 
-            print(f"Futures Error: {e}")
+                if "外資" not in df_str: continue
+                
+                # 2. Locate "Foreign" Row
+                # We look for a row where the first column (or any Id column) contains "外資"
+                target_row = None
+                for idx, row in df.iterrows():
+                     # Check first few cells for '外資'
+                     if any("外資" in str(c) for c in row.values[:3]):
+                         target_row = row
+                         break
+                
+                if target_row is None: continue
+
+                # 3. Locate "Net OI" Column
+                # Columns are MultiIndex or plain. We want "未平倉餘額" -> "口數" -> "多空淨額"
+                # Or simply the last column if structure is standard.
+                # However, safe way is to look for column header "未平倉餘額" and "多空淨額" if headers exist.
+                # Since pd.read_html might not parse headers perfectly if they are complex (merged cells),
+                # we often rely on indices for TAIFEX: [Long, Short, Net, Long, Short, Net].
+                # The columns usually are:
+                # Trading (Buy, Sell, Net) | Open Interest (Long, Short, Net)
+                # We want the VERY LAST valid number usually.
+                
+                try:
+                    vals = [str(v).strip().replace(',', '') for v in target_row.values]
+                    valid_nums = []
+                    for v in vals:
+                        try:
+                            if v.replace('-', '').isdigit(): valid_nums.append(int(v))
+                        except: pass
+                    
+                    if valid_nums:
+                        # The generic structure for TAIFEX Daily is:
+                        # BuyVol, SellVol, NetVol, BuyOI, SellOI, NetOI (6 numbers)
+                        # We want NetOI (Last one)
+                        net_oi = valid_nums[-1]
+                        print(f"      ✅ Futures OI (Foreign): {net_oi}")
+                        return net_oi
+                except:
+                    continue
+            
+            return None
+        except Exception as e:
+            print(f"      ❌ Futures Scraper Error: {e}")
             return None
 
     def run(self):
