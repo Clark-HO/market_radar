@@ -1,18 +1,157 @@
 {
-    "last_updated": "2026-02-05 10:11",
+    "last_updated": "2026-02-06 09:58",
     "market_status": {
         "taiex_close": 31801.27,
         "change": -488.54,
-        "change_percent": -1.51
+        "change_percent": -1.51,
+        "high": 0,
+        "low": 0,
+        "volume": 7151.68705076
     },
+    "history": [
+        {
+            "date": "2026-01-09",
+            "close": 30288.96,
+            "volume": 7043.71387415,
+            "change": -71.59
+        },
+        {
+            "date": "2026-01-12",
+            "close": 30567.29,
+            "volume": 6264.08176303,
+            "change": 278.33
+        },
+        {
+            "date": "2026-01-13",
+            "close": 30707.22,
+            "volume": 7491.79436618,
+            "change": 139.93
+        },
+        {
+            "date": "2026-01-14",
+            "close": 30941.78,
+            "volume": 6819.83353722,
+            "change": 234.56
+        },
+        {
+            "date": "2026-01-15",
+            "close": 30810.58,
+            "volume": 6719.53720007,
+            "change": -131.2
+        },
+        {
+            "date": "2026-01-16",
+            "close": 31408.7,
+            "volume": 8514.52408675,
+            "change": 598.12
+        },
+        {
+            "date": "2026-01-19",
+            "close": 31639.29,
+            "volume": 8234.28003269,
+            "change": 230.59
+        },
+        {
+            "date": "2026-01-20",
+            "close": 31759.99,
+            "volume": 7996.39371793,
+            "change": 120.7
+        },
+        {
+            "date": "2026-01-21",
+            "close": 31246.37,
+            "volume": 8993.09076186,
+            "change": -513.62
+        },
+        {
+            "date": "2026-01-22",
+            "close": 31746.08,
+            "volume": 8145.9584136,
+            "change": 499.71
+        },
+        {
+            "date": "2026-01-23",
+            "close": 31961.51,
+            "volume": 8184.28930073,
+            "change": 215.43
+        },
+        {
+            "date": "2026-01-26",
+            "close": 32064.52,
+            "volume": 7473.3930604,
+            "change": 103.01
+        },
+        {
+            "date": "2026-01-27",
+            "close": 32317.92,
+            "volume": 8176.04546187,
+            "change": 253.4
+        },
+        {
+            "date": "2026-01-28",
+            "close": 32803.82,
+            "volume": 8539.22428449,
+            "change": 485.9
+        },
+        {
+            "date": "2026-01-29",
+            "close": 32536.27,
+            "volume": 9596.52045839,
+            "change": -267.55
+        },
+        {
+            "date": "2026-01-30",
+            "close": 32063.75,
+            "volume": 9413.20964545,
+            "change": -472.52
+        },
+        {
+            "date": "2026-02-02",
+            "close": 31624.03,
+            "volume": 7714.19543919,
+            "change": -439.72
+        },
+        {
+            "date": "2026-02-03",
+            "close": 32195.36,
+            "volume": 8215.74120123,
+            "change": 571.33
+        },
+        {
+            "date": "2026-02-04",
+            "close": 32289.81,
+            "volume": 7046.44032693,
+            "change": 94.45
+        },
+        {
+            "date": "2026-02-05",
+            "close": 31801.27,
+            "volume": 7151.68705076,
+            "change": -488.54
+        }
+    ],
+    "institutional": [
+        {
+            "name": "外資",
+            "net": 0.0
+        },
+        {
+            "name": "投信",
+            "net": 31.6
+        },
+        {
+            "name": "自營商",
+            "net": -208.77
+        }
+    ],
     "chips": {
-        "futures_net_oi": -988,
-        "futures_status": "Neutral",
-        "futures_color": "gray"
+        "futures_net_oi": 0,
+        "futures_status": "Bearish",
+        "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 31.69,
-        "trend": "Depreciating"
+        "usd_twd": 32.5,
+        "trend": "Stable"
     },
     "sector_flow": [
         {

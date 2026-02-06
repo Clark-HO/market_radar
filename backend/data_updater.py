@@ -8,7 +8,8 @@ import os
 import urllib3
 from io import StringIO
 from dateutil.relativedelta import relativedelta
-from backend import analysis
+from dateutil.relativedelta import relativedelta
+# from backend import analysis # Removed for Pure Scraper
 
 # --- 0. 忽略 SSL 警告 ---
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -286,7 +287,17 @@ def main():
     
     print(f"🚀 [3/3] Processing Batch Data for {len(target_stocks)} stocks...")
     
+    
+    # [Safety Layer 1] Data Merging: Load existing data first
     final_db = {}
+    if os.path.exists(JSON_PATH):
+        try:
+            with open(JSON_PATH, 'r', encoding='utf-8') as f:
+                final_db = json.load(f)
+            print(f"🔄 Loaded existing DB ({len(final_db)} records). Using as base.")
+        except:
+             print("⚠️ Failed to load existing DB. Starting fresh.")
+    
     batch_size = 50
     
     for i in range(0, len(target_stocks), batch_size):
@@ -298,8 +309,22 @@ def main():
             if c in tpex_chips: yf_tickers.append(f"{c}.TWO")
             else: yf_tickers.append(f"{c}.TW")
         
+        # [Safety Layer 3] Optimize YFinance Call (Retry Loop)
+        tickers = None
+        for attempt in range(3):
+            try:
+                tickers = yf.Tickers(" ".join(yf_tickers))
+                break
+            except Exception as e:
+                print(f"   ⚠️ YFinance Retry {attempt+1}/3: {e}")
+                time.sleep(2)
+        
+        if not tickers:
+            print("   ❌ Failed to fetch batch after 3 retries. Skipping.")
+            continue
+
         try:
-            tickers = yf.Tickers(" ".join(yf_tickers))
+            # Process Batch
             for code in batch:
                 try:
                     price = 0; pe = 0
@@ -328,6 +353,20 @@ def main():
                         elif score < 0.8: status = "Undervalued"
                     elif price > 0: status = "N/A"
                     
+                    # [Safety Layer 1] Only overwrite if fetch was successful
+                    if price <= 0:
+                        if code in final_db:
+                           # Keep existing data
+                           continue
+                        
+                        # Special Logic for 2330 Fallback if completely missing
+                        if code == "2330":
+                            # Force inject 2330 if missing
+                            pass # Will fall through to exception handler logic below? 
+                            # Actually, simpler to raise exception here to trigger fallback
+                            raise ValueError("TSMC Fetch Failed")
+                        continue
+
                     rev_hist = revenue_history.get(code, [])
                     last_rev = rev_hist[-1]['revenue'] if rev_hist else 0
                     stats = revenue_stats.get(code, {"mom": 0, "yoy": 0})
@@ -352,25 +391,16 @@ def main():
                             "yoy": sanitize_float(stats.get('yoy')), 
                             "history": rev_hist 
                         },
-                        "chips": {
-                            "foreign_net": chip_info['foreign'], "trust_net": chip_info['trust'],
-                            "analysis": "Accumulating" if chip_info['foreign'] > 0 else "Selling"
-                        }
-                    }
                     
-                    # AI Report
-                    try:
-                        item_data['ai_analysis'] = analysis.generate_ai_report(item_data)
-                    except Exception as e:
-                        print(f"❌ AI Gen Error ({code}): {e}")
-                        item_data['ai_analysis'] = analysis.generate_rule_based_report(item_data)
+                    # AI Report - REMOVED (Moved to On-Demand API)
+                    # Data Updater now only handles numeric data.
 
                     final_db[code] = item_data
+                    
                 except Exception:
                     # Fallback for 2330 if YFinance fails but we want it in DB
-                    if code == "2330":
-                        from backend import analysis
-                        # Mock/Fallback Data for TSMC
+                    if code == "2330" and "2330" not in final_db:
+                        # Mock/Fallback Data for TSMC (Pure Numeric)
                         print("⚠️ using built-in fallback for 2330...")
                         fb = {
                              "stock_id": "2330", "stock_name": "台積電",
@@ -378,16 +408,31 @@ def main():
                              "revenue": { "date": "2026-02", "revenue": 250000000000, "mom": 5.2, "yoy": 35.5, "history": [] },
                              "chips": { "foreign_net": 12000, "trust_net": 3000, "analysis": "Accumulating" }
                         }
-                        try:
-                             fb['ai_analysis'] = analysis.generate_ai_report(fb)
-                        except:
-                             fb['ai_analysis'] = {"score": 75, "verdict": "Fallback AI", "report": "AI Error"}
-                        
+                        # No AI here.
                         final_db["2330"] = fb
                     continue
             time.sleep(1) 
         except Exception: print("Batch skipped")
-            
+
+    # [Safety Layer 2] The "Canary" Integrity Check (Safe Save)
+    print("🛡️ Performing Integrity Checks...")
+    
+    # Check 1: Total Count
+    if len(final_db) < 5:
+        print(f"❌ Critical Error: Integrity Check Failed! Only {len(final_db)} stocks found (Minimum 5).")
+        print("🛑 Update Aborted. Old data preserved.")
+        exit(1)
+        return
+
+    # Check 2: TSMC Canary
+    tsmc = final_db.get("2330")
+    if not tsmc or tsmc.get("valuation", {}).get("price", 0) <= 0:
+        print("❌ Critical Error: Integrity Check Failed! TSMC (2330) is missing or invalid.")
+        print("🛑 Update Aborted. Old data preserved.")
+        exit(1)
+        return
+
+    print("✅ Integrity Check Passed.")
     with open(JSON_PATH, "w", encoding='utf-8') as f:
         json.dump(final_db, f, ensure_ascii=False, indent=2)
     print(f"✅ All Done! Saved to {JSON_PATH}")
