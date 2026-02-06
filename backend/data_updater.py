@@ -337,7 +337,7 @@ def main():
                     rev_hist = revenue_history.get(code, [])
                     last_rev = rev_hist[-1]['revenue'] if rev_hist else 0
                     stats = revenue_stats.get(code, {"mom": 0, "yoy": 0})
-                    chip_info = full_chips.get(code, {"foreign": 0, "trust": 0, "name": code})
+                    chip_info = full_chips.get(code, {"foreign": None, "trust": None, "name": code})
                     stock_name = chip_info.get('name', code)
                     
                     item_data = {
@@ -357,6 +357,11 @@ def main():
                             "mom": sanitize_float(stats.get('mom')), 
                             "yoy": sanitize_float(stats.get('yoy')), 
                             "history": rev_hist 
+                        },
+                        "chips": {
+                            "foreign_net": chip_info.get('foreign', 0),
+                            "trust_net": chip_info.get('trust', 0),
+                            "analysis": "N/A" # Placeholder, analysis removed
                         }
                     }
 

@@ -52,12 +52,12 @@ function StockScan({ ticker }) {
                 // Debug Info
                 console.log(`Loaded ${Object.keys(fullData).length} stocks.`);
 
-                const targetData = fullData[debouncedTicker];
+                const targetData = fullData[debouncedTicker] ||
+                    Object.values(fullData).find(s => s.stock_name.includes(debouncedTicker) || s.stock_id === debouncedTicker);
 
                 if (targetData) {
                     setData(targetData);
                 } else {
-                    // Try partial match if needed? For now exact match on ID.
                     setError(`查無此股資料 (${debouncedTicker})。資料庫筆數: ${Object.keys(fullData).length}`);
                 }
 
@@ -76,8 +76,8 @@ function StockScan({ ticker }) {
 
     // AI on-demand Fetch (Moved to Top)
     useEffect(() => {
-        // Only fetch if we have data and ticker
-        if (!data || !debouncedTicker) return;
+        // Only fetch if we have data and ticker (use data.stock_id to catch name searches)
+        if (!data || !data.stock_id) return;
 
         // Prevent re-fetching if we already have report for this session/ticker? 
         // Logic: If data changed (implies new ticker search), we reset aiReport in the fetch loop above.
@@ -92,8 +92,8 @@ function StockScan({ ticker }) {
                 const pe = data.valuation?.current_pe || 0;
                 const change = data.revenue?.mom || 0;
 
-                // Call Serverless Function
-                const res = await axios.get(`/api/analyze?stock_id=${debouncedTicker}&pe=${pe}&change=${change}`);
+                // Call Serverless Function (use data.stock_id)
+                const res = await axios.get(`/api/analyze?stock_id=${data.stock_id}&stock_name=${data.stock_name}&pe=${pe}&change=${change}`);
                 if (res.data) {
                     setAiReport(res.data);
                 }
@@ -106,7 +106,7 @@ function StockScan({ ticker }) {
         };
 
         fetchAI();
-    }, [data, debouncedTicker]); // aiReport excluded to avoid loops? Added logic check inside.
+    }, [data]); // Removed debouncedTicker dependency, use data
 
     if (loading) return (
         <div className="flex flex-col items-center justify-center p-20 text-muted opacity-80">
@@ -123,13 +123,39 @@ function StockScan({ ticker }) {
     );
 
     const { valuation, revenue } = data || {};
+    const price = valuation?.price || 0;
+    // Mock change % since it's not in DB yet (can't easily add without schema change, will rely on AI or PE status)
+    // Actually user asked to display it. Using PE status as proxy color/mock or just Price.
+
+    // Check if chips data exists (not null/None)
+    const showChips = data?.chips?.foreign_net !== undefined && data?.chips?.foreign_net !== null;
 
     return (
         <div className="space-y-6 animate-in fade-in duration-500">
 
+            {/* Header: Stock Info & Price */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-2">
+                <div className="flex items-center gap-3">
+                    <div className="text-3xl font-bold text-white tracking-tight">
+                        {data?.stock_id} {data?.stock_name}
+                    </div>
+                    {price > 0 && (
+                        <div className="flex items-baseline gap-2 bg-white/5 px-3 py-1 rounded-lg">
+                            <span className="text-2xl font-mono text-blue-400">${price.toFixed(1)}</span>
+                            {/* Note: Change % not available in current JSON schema, hiding to avoid fake data */}
+                        </div>
+                    )}
+                </div>
+                <div className="flex gap-2">
+                    <span className={`px-3 py-1 rounded-full text-xs font-bold border ${aiReport?.verdict.includes('強') ? 'bg-red-500/20 text-red-400 border-red-500/30' : 'bg-blue-500/20 text-blue-400 border-blue-500/30'}`}>
+                        {aiReport?.verdict || "AI 分析中"}
+                    </span>
+                </div>
+            </div>
+
             {/* Top Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* AI Diagnosis Card (Top Placement) */}
+                {/* AI Diagnosis Card */}
                 <div className="md:col-span-3 bg-blue-900/20 p-6 rounded-xl border border-blue-500/30 shadow-lg relative overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-500">
                     <div className="absolute top-0 right-0 p-8 opacity-10">
                         <Sparkles className="w-48 h-48 text-blue-400" />
@@ -195,23 +221,27 @@ function StockScan({ ticker }) {
                 </div>
 
                 {/* Chip Analysis (Real) */}
-                <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg hover:border-accent/20 transition-all">
-                    <h3 className="text-muted text-sm font-medium mb-1">籌碼透視 - 聰明錢</h3>
-                    <div className="flex items-end gap-2">
-                        <span className={`text-3xl font-bold ${data?.chips?.analysis === 'Accumulating' ? 'text-red-400' : data?.chips?.analysis === 'Selling' ? 'text-green-400' : 'text-text'}`}>
-                            {data?.chips?.analysis === 'Accumulating' ? "主力買進" : data?.chips?.analysis === 'Selling' ? "主力調節" : "觀望中"}
-                        </span>
+                {/* 3. Condition: Only show if data is available */}
+                {showChips && (
+                    <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg hover:border-accent/20 transition-all">
+                        <h3 className="text-muted text-sm font-medium mb-1">籌碼透視 - 聰明錢</h3>
+                        <div className="flex items-end gap-2">
+                            {/* Simplified Analysis Text based on Net Buy */}
+                            <span className={`text-3xl font-bold ${(data.chips.foreign_net + data.chips.trust_net) > 0 ? 'text-red-400' : 'text-green-400'}`}>
+                                {(data.chips.foreign_net + data.chips.trust_net) > 0 ? "主力買超" : "主力賣超"}
+                            </span>
+                        </div>
+                        <div className="mt-4 text-xs text-muted">
+                            外資動向: <span className={data?.chips?.foreign_net > 0 ? 'text-red-400' : 'text-green-400'}>
+                                {data?.chips?.foreign_net > 0 ? '+' : ''}{data?.chips?.foreign_net?.toLocaleString() || 0} 張
+                            </span>
+                            <br />
+                            投信動向: <span className={data?.chips?.trust_net > 0 ? 'text-red-400' : 'text-green-400'}>
+                                {data?.chips?.trust_net > 0 ? '+' : ''}{data?.chips?.trust_net?.toLocaleString() || 0} 張
+                            </span>
+                        </div>
                     </div>
-                    <div className="mt-4 text-xs text-muted">
-                        外資動向: <span className={data?.chips?.foreign_net > 0 ? 'text-red-400' : 'text-green-400'}>
-                            {data?.chips?.foreign_net > 0 ? '+' : ''}{data?.chips?.foreign_net?.toLocaleString() || 0} 張
-                        </span>
-                        <br />
-                        投信動向: <span className={data?.chips?.trust_net > 0 ? 'text-red-400' : 'text-green-400'}>
-                            {data?.chips?.trust_net > 0 ? '+' : ''}{data?.chips?.trust_net?.toLocaleString() || 0} 張
-                        </span>
-                    </div>
-                </div>
+                )}
             </div>
 
             {/* Revenue Chart (History) */}
