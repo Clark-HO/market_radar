@@ -103,104 +103,108 @@ class MacroScraper:
         return last_20
 
     def fetch_daily_stats_and_institutional(self, latest_date_str):
-        """
-        1. 抓取當日三大法人 (BFI82U)
-        2. 抓取當日大盤高低點 (MI_INDEX)
-        """
         print(f"   -> Fetching Institutional & Stats for {latest_date_str}...")
         
-        # Clean date str (YYYY-MM-DD -> YYYYMMDD)
         date_param = latest_date_str.replace("-", "")
-        
         institutional = []
-        stats = {"high": 0, "low": 0}
         
         # A. Institutional (BFI82U)
         url_inst = f"https://www.twse.com.tw/rwd/zh/fund/BFI82U?date={date_param}&response=json"
+        
+        # Init values
+        foreign = 0; trust = 0; dealer = 0
+        found_rows = False
+
         try:
             r = requests.get(url_inst, headers=self.headers, timeout=10)
             data = r.json()
             if data.get('stat') == 'OK':
-                # Fields: [單位名稱, 買進金額, 賣出金額, 買賣差額]
-                # Map: 外資(Foreign), 投信(Trust), 自營商(Dealer)
-                
                 rows = data.get('data', [])
+                found_rows = True
+                
+                # BFI82U Columns: [0]Unit Name, [1]Buy, [2]Sell, [3]Net
                 for row in rows:
                     name = row[0].strip()
-                    net = self.clean_number(row[3]) / 100000000 # 億
+                    try:
+                        net_val = self.clean_number(row[3]) / 100000000 # E
+                    except: net_val = 0
                     
-                    role = None
-                    if "外資" in name: role = "Foreign Inv"
-                    elif "投信" in name: role = "Inv Trust"
-                    elif "自營商" in name and "避險" not in name: role = "Dealer" # Combine or separate? Usually sum Dealer.
+                    # Logic:
+                    # 1. "外資及陸資(不含外資自營商)" -> Main Foreign
+                    # 2. "外資自營商" -> Usually added to Foreign or Separate.
+                    # 3. "投信" -> Trust
+                    # 4. "自營商" -> Dealer (Total or Sum of Self/Hedge)
                     
-                    # Simplify: Just take total Foreign, Trust, Dealer
-                    # Actually BFI82U has "自營商(自行買賣)" and "自營商(避險)".
-                    # We should sum them or just take the Summary row? 
-                    # Usually "三大法人買賣超" table has a Total row for Dealer?
-                    # Let's look for exact matches or summing.
-                    pass
-                
-                # Re-parse carefully
-                # We want: Foreign, Trust, Dealer (Sum).
-                # BFI82U usually lists:
-                # 自營商(自行買賣)
-                # 自營商(避險)
-                # 投信
-                # 外資及陸資
-                # 合計
-                
-                d_self = 0; d_hedge = 0; trust = 0; foreign = 0
-                
-                for row in rows:
-                    n = row[0]
-                    val = self.clean_number(row[3]) / 100000000
-                    if "自行買賣" in n: d_self = val
-                    elif "避險" in n: d_hedge = val
-                    elif "投信" in n: trust = val
-                    elif "外資" in n: foreign = val
-                    
+                    if "外資" in name and "不含" in name: 
+                        foreign += net_val
+                    elif "投信" in name:
+                        trust += net_val
+                    elif "自營商" in name:
+                        # Summing all Dealer rows (Self + Hedge) or finding "合計" if available?
+                        # BFI82U has specific rows. Just sum anything containing "自營商" 
+                        # but be careful not to double count if there is a summary row?
+                        # BFI82U usually: "自營商(自行買賣)", "自營商(避險)", "投信", "外資...", "合計"
+                        # So summing is safe if "合計" is not containing "自營商" in name.
+                        # Total row name is "合計".
+                        dealer += net_val
+                        
+                print(f"      ✅ Inst Found: Foreign={foreign:.2f}, Trust={trust:.2f}, Dealer={dealer:.2f}")
+
                 institutional = [
                     {"name": "外資", "net": round(foreign, 2)},
                     {"name": "投信", "net": round(trust, 2)},
-                    {"name": "自營商", "net": round(d_self + d_hedge, 2)}
+                    {"name": "自營商", "net": round(dealer, 2)}
                 ]
-                print("      ✅ Got Institutional Data.")
+            else:
+                 print(f"      ⚠️ BFI82U Stat: {data.get('stat')}, Msg: {data.get('title')}")
+                 
         except Exception as e:
             print(f"      ⚠️ Inst fetch failed: {e}")
 
-        # B. Daily Stats (MI_INDEX) - for High/Low
-        # url_idx = f"https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX?date={date_param}&type=ALL&response=json"
-        # Using MI_INDEX is heavy. Let's try to infer High/Low from yahoo if possible or skip.
-        # User explicitly asked for "當日最高點 當日最低點".
-        # MI_INDEX General Index Row.
+        # If empty
+        if not found_rows:
+             institutional = [
+                {"name": "外資", "net": 0}, {"name": "投信", "net": 0}, {"name": "自營商", "net": 0}
+            ]
         
-        try:
-           # Using MI_INDEX or simpler API? 
-           # Let's try `MI_5MINS_HIST`? No.
-           # `MI_INDEX` header usually contains index Stats. 
-           # Actually, let's use Yahoo for Realtime High/Low as it is robust for "Today".
-           # We already have fetch_yahoo_safe in old code. 
-           # Wait, user wants "Robust" scraper. Yahoo is prone to blocking if frequent.
-           # But for 1 call it's okay.
-           pass
-        except: pass
-        
-        return institutional, stats
+        return institutional, {} # Stats unused here
 
     def fetch_yahoo_stats(self):
-        """Use Yahoo just for Today's High/Low as TWSE API for Index OHLC is tricky"""
-        try:
-            t = yf.Ticker("^TWII")
-            info = t.fast_info
-            return {
-                "high": info.day_high,
-                "low": info.day_low,
-                "close": info.last_price,
-                "open": info.open
-            }
-        except:
-            return {"high": 0, "low": 0}
+        """Use Yahoo for Realtime High/Low/Close. Robust with Retries."""
+        import yfinance as yf
+        retries = [2, 5]
+        for delay in retries:
+            try:
+                t = yf.Ticker("^TWII")
+                info = t.fast_info
+                
+                # If market not open or error, these might be None. Handle robustly.
+                price = info.last_price or 0
+                op = info.open or 0
+                hi = info.day_high or 0
+                lo = info.day_low or 0
+                prev = info.previous_close or 0
+                
+                # If High/Low are 0 (sometimes happens if just opened?), use price
+                if hi == 0: hi = price
+                if lo == 0: lo = price
+                
+                change = price - prev if prev > 0 else 0
+                change_pct = (change / prev) * 100 if prev > 0 else 0
+                
+                return {
+                    "high": round(hi, 2),
+                    "low": round(lo, 2),
+                    "close": round(price, 2),
+                    "open": round(op, 2),
+                    "change": round(change, 2),
+                    "change_percent": round(change_pct, 2),
+                    "price": round(price, 2)
+                }
+            except:
+                time.sleep(delay)
+        
+        return {"high": 0, "low": 0, "close": 0, "open": 0, "change": 0, "change_percent": 0, "price": 0}
 
     def fetch_sector_flow(self):
         # ... (Keep existing BFIAMU logic, abridged for brevity but will include full) ...

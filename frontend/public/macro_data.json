@@ -1,11 +1,11 @@
 {
-    "last_updated": "2026-02-06 09:58",
+    "last_updated": "2026-02-06 10:24",
     "market_status": {
         "taiex_close": 31801.27,
         "change": -488.54,
         "change_percent": -1.51,
-        "high": 0,
-        "low": 0,
+        "high": 31746.44,
+        "low": 31164.28,
         "volume": 7151.68705076
     },
     "history": [
@@ -133,7 +133,7 @@
     "institutional": [
         {
             "name": "外資",
-            "net": 0.0
+            "net": -726.94
         },
         {
             "name": "投信",

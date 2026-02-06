@@ -390,7 +390,8 @@ def main():
                             "mom": sanitize_float(stats.get('mom')), 
                             "yoy": sanitize_float(stats.get('yoy')), 
                             "history": rev_hist 
-                        },
+                        }
+                    }
                     
                     # AI Report - REMOVED (Moved to On-Demand API)
                     # Data Updater now only handles numeric data.

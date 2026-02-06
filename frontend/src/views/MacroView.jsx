@@ -44,7 +44,7 @@ function MacroView() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="bg-card p-4 rounded-xl shadow-lg border border-border">
                     <h3 className="text-muted text-xs uppercase font-bold">TAIEX Index</h3>
-                    <div className="flex items-end gap-2 mt-1">
+                    <div className="flex flex-col items-start gap-1 mt-1">
                         <span className="text-2xl font-bold text-text">{market_status.taiex_close.toLocaleString()}</span>
                         <span className={`text-sm font-bold ${getChangeColor(market_status.change)}`}>
                             {market_status.change} ({market_status.change_percent}%)
