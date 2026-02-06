@@ -74,15 +74,17 @@ def generate_rule_based_report(stock_data):
     
     return { "score": score, "verdict": verdict, "report": summary_md }
 
+import time
+from google import genai
+from google.genai import types
+
 def generate_llm_report(stock_data, api_key):
     """
-    Generative AI Logic via Google Gemini
+    Generative AI Logic via Google Gemini (v1.0+ SDK)
     """
     try:
-        genai.configure(api_key=api_key)
-        
-        # Use simple model string
-        model = genai.GenerativeModel('gemini-2.5-flash')
+        # Initialize Client
+        client = genai.Client(api_key=api_key)
         
         sid = stock_data.get('stock_id')
         name = stock_data.get('stock_name', sid)
@@ -98,8 +100,8 @@ def generate_llm_report(stock_data, api_key):
 
         [基本面數據]
         本益比 (PE): {stock_data.get('valuation', {}).get('current_pe', 'N/A')}x (同業平均: {stock_data.get('valuation', {}).get('sector_pe', 'N/A')}x) -> *請判斷此溢價是否由成長性支撐*
-        營收月增 (MoM): {stock_data.get('revenue', {}).get('mom', 'N/A')}%
-        營收年增 (YoY): {stock_data.get('revenue', {}).get('yoy', 'N/A')}% -> *這是評估股價動能的核心*
+        營收月增 (MoM): {stock_data.get('valuation', {}).get('revenue', {}).get('mom', stock_data.get('revenue', {}).get('mom', 'N/A'))}% 
+        營收年增 (YoY): {stock_data.get('valuation', {}).get('revenue', {}).get('yoy', stock_data.get('revenue', {}).get('yoy', 'N/A'))}% -> *這是評估股價動能的核心*
 
         [籌碼面數據]
         外資買賣超: {stock_data.get('chips', {}).get('foreign_net', '0')}張 (主導趨勢的關鍵力量)
@@ -128,7 +130,14 @@ def generate_llm_report(stock_data, api_key):
         - **關鍵操作**: <給出具體建議。例如："只要外資買超不縮手，任何拉回皆是買點。切勿預設高點，抱緊處理。/ 留意追高風險，建議等拉回五日線再佈局。">
         """
         
-        response = model.generate_content(prompt)
+        # Generation Call (New SDK)
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt,
+            config=types.GenerateContentConfig(
+                temperature=0.7,
+            )
+        )
         content = response.text
         
         # Regex Extraction
@@ -137,9 +146,11 @@ def generate_llm_report(stock_data, api_key):
         score_match = re.search(r'AI 綜合戰力\D*(\d+)', content)
         score = int(score_match.group(1)) if score_match else 75
         
-        # Relaxed pattern for Verdict: Matches "**趨勢訊號**: **Verdict**"
+        # Relaxed pattern for Verdict
         verdict_match = re.search(r'趨勢訊號.*?\*\*([^*]+)\*\*', content)
         verdict = verdict_match.group(1).strip() if verdict_match else "AI 分析"
+        
+        time.sleep(4) # Rate Limit per user request
         
         return { "score": score, "verdict": verdict, "report": content }
         
