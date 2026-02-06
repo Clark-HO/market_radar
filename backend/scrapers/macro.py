@@ -286,35 +286,94 @@ class MacroScraper:
         except: return []
 
     def fetch_currency(self):
-        # Keep Yahoo for Currency as it's easiest
+        """Fetch USD/TWD from Bank of Taiwan (Realtime & Robust)"""
+        try:
+            url = "https://rate.bot.com.tw/xrt?Lang=en-US"
+            r = requests.get(url, headers=self.headers, timeout=10)
+            # Simple text parsing to find USD and the Spot Selling rate
+            # HTML structure: <td data-table="Currency">...USD...</td>...<td data-table="Spot Selling">32.5</td>
+            if "USD" in r.text:
+                # Find the block with USD, then find the rate
+                # Split by USD to get the section after it
+                parts = r.text.split('USD')
+                if len(parts) > 1:
+                    # Look for data-table="Spot Selling" in the immediate following text
+                    # Regex is cleaner
+                    import re
+                    # Pattern: Spot Selling.*?class="rate-content-sight text-right print_width".*?>([\d.]+)
+                    match = re.search(r'Spot Selling.*?class="rate-content-sight text-right print_width"[^>]*>([\d.]+)', parts[1], re.DOTALL)
+                    if match:
+                        price = float(match.group(1))
+                        return {"usd_twd": price, "trend": "Stable"}
+            
+            # Fallback to Yahoo if BOT fails
+            return self.fetch_yahoo_currency_fallback()
+        except: return self.fetch_yahoo_currency_fallback()
+
+    def fetch_yahoo_currency_fallback(self):
+        import yfinance as yf
         try:
             t = yf.Ticker("USDTWD=X")
             price = t.fast_info.last_price
-            prev = t.fast_info.previous_close
-            trend = "Depreciating" if price > prev else "Appreciating"
-            return {"usd_twd": round(price, 2), "trend": trend}
+            return {"usd_twd": round(price, 2), "trend": "Stable"}
         except: return {"usd_twd": 32.5, "trend": "Stable"}
-        
+
     def fetch_futures_oi(self):
-        # ... Keep existing logic or simplified ...
-        # If failure return None
+        """
+        Fetch Futures Net OI (Foreign) from TAIFEX.
+        Resilient Text Search approach.
+        """
         try:
             url = "https://www.taifex.com.tw/cht/3/futContractsDate"
             r = requests.get(url, headers=self.headers, verify=False, timeout=10)
-            dfs = pd.read_html(StringIO(r.text), match="期貨")
+            r.encoding = 'utf-8' # Ensure correct decoding
+            
+            # Logic:
+            # 1. Find "臺股期貨" (TAIEX Futures) block.
+            # 2. Inside that, find "外資" (Foreign Investors).
+            # 3. Get the "Net OI" column (usually the last or specific offset).
+            
+            # Since HTML table parsing is fragile, let's use pandas if possible, but handle "No Tables Found"
+            try:
+                dfs = pd.read_html(StringIO(r.text))
+            except: dfs = []
+            
             for df in dfs:
-                df = df.fillna('')
-                for i, row in df.iterrows():
-                    s = str(row.values)
-                    if "臺股期貨" in s and "外資" in s and "小型" not in s:
-                         import re
-                         nums = [int(str(val).replace(',','')) for val in row.values if isinstance(val, (str, int)) and str(val).replace(',','').replace('-','').isdigit()]
-                         # Usually Net OI is the last number or specific index. 
-                         # We'll just take the large one that looks like Net OI if possible, or return -1500 mock as last resort if parsing fails differently.
-                         # Actually for brevity/reliability if parsing fails, returning None is requested.
-                         if nums: return nums[-1] # Simplistic
-            return None # Failed to find
-        except: return None
+                # Convert to string to search keywords
+                df_str = df.to_string()
+                if "臺股期貨" in df_str and "外資" in df_str:
+                    # Iterate rows to find the exact line
+                    # Usually: [Identity, Long, Short, Net] ...
+                    # We want "外資" row's "未平倉餘額" -> "多空淨額" (Net OI)
+                    # Many columns. Let's find row with "外資"
+                    for _, row in df.iterrows():
+                        row_s = [str(x) for x in row.values]
+                        if any("外資" in x for x in row_s):
+                            # This is the Foreign row.
+                            # Extract all numbers. The Net OI is often the last integer or 2nd to last?
+                            # Table: ... | Net Buy/Sell | ... | Open Interest (Long) | Open Interest (Short) | Open Interest (Net)
+                            # Actually TAIFEX "Daily" table:
+                            # Identity | Trading Lot | ... | Open Interest
+                            #          | Long | Short | Net | Long | Short | Net
+                            # We want Open Interest -> Net. (The last column usually)
+                            
+                            numbers = []
+                            for val in row_s:
+                                try:
+                                    # Remove commas, skip empty
+                                    clean = val.replace(',', '').strip()
+                                    if clean.replace('-', '').isdigit():
+                                        numbers.append(int(clean))
+                                except: pass
+                            
+                            if numbers:
+                                # The last number is usually Net OI on TAIFEX summary
+                                return numbers[-1]
+                                
+            return None # Not found
+        except Exception as e: 
+            print(f"Futures Error: {e}")
+            return None
 
     def run(self):
         print("🚀 [Macro Worker] Starting Update (TWSE Enhanced)...")
