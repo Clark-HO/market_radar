@@ -82,34 +82,68 @@ function StockScan({ ticker }) {
     );
 
     const { valuation, revenue } = data || {};
+    const [aiReport, setAiReport] = useState(null);
+    const [aiLoading, setAiLoading] = useState(false);
+
+    // AI on-demand Fetch
+    useEffect(() => {
+        if (!data || !debouncedTicker) return;
+        setAiReport(null);
+        setAiLoading(true);
+
+        const fetchAI = async () => {
+            try {
+                // Pass key metrics to help AI (Optional, but good for context if scraper failed recently)
+                const pe = data.valuation?.current_pe || 0;
+                const change = data.revenue?.mom || 0;
+
+                // Call Serverless Function
+                const res = await axios.get(`/api/analyze?stock_id=${debouncedTicker}&pe=${pe}&change=${change}`);
+                if (res.data) {
+                    setAiReport(res.data);
+                }
+            } catch (e) {
+                console.error("AI Fetch Error", e);
+                setAiReport({ report: "⚠️ AI 分析暫時無法使用 (API Error)", verdict: "Error" });
+            } finally {
+                setAiLoading(false);
+            }
+        };
+
+        fetchAI();
+    }, [data, debouncedTicker]);
 
     return (
         <div className="space-y-6 animate-in fade-in duration-500">
 
-
-
             {/* Top Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {/* AI Diagnosis Card (Top Placement) */}
-                {data?.ai_analysis && (
-                    <div className="md:col-span-3 bg-blue-900/20 p-6 rounded-xl border border-blue-500/30 shadow-lg relative overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-500">
-                        <div className="absolute top-0 right-0 p-8 opacity-10">
-                            <Sparkles className="w-48 h-48 text-blue-400" />
-                        </div>
-
-                        <div className="relative z-10">
-                            <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-                                <Sparkles className="w-5 h-5 text-blue-400" />
-                                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
-                                    AI 智能診斷報告
-                                </span>
-                            </h3>
-                            <div className="bg-neutral-950/60 p-4 rounded-lg border border-white/5 text-sm md:text-base leading-relaxed text-slate-200 font-mono whitespace-pre-wrap shadow-inner">
-                                {data.ai_analysis.report || JSON.stringify(data.ai_analysis)}
-                            </div>
-                        </div>
+                <div className="md:col-span-3 bg-blue-900/20 p-6 rounded-xl border border-blue-500/30 shadow-lg relative overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-500">
+                    <div className="absolute top-0 right-0 p-8 opacity-10">
+                        <Sparkles className="w-48 h-48 text-blue-400" />
                     </div>
-                )}
+
+                    <div className="relative z-10 w-full">
+                        <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
+                            <Sparkles className="w-5 h-5 text-blue-400" />
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+                                AI 智能診斷報告
+                            </span>
+                        </h3>
+
+                        {aiLoading ? (
+                            <div className="flex items-center gap-2 text-blue-300 animate-pulse">
+                                <Activity className="w-4 h-4 animate-spin" />
+                                <span>華爾街 AI 正在分析財報與籌碼數據...</span>
+                            </div>
+                        ) : (
+                            <div className="bg-neutral-950/60 p-4 rounded-lg border border-white/5 text-sm md:text-base leading-relaxed text-slate-200 font-mono whitespace-pre-wrap shadow-inner w-full">
+                                {aiReport?.report || "等待分析..."}
+                            </div>
+                        )}
+                    </div>
+                </div>
                 {/* Valuation Card */}
                 <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg relative overflow-hidden group hover:border-primary/20 transition-all">
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
