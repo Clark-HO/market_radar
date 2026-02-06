@@ -1,10 +1,9 @@
-fastapi
-uvicorn
-pandas
 requests
-beautifulsoup4
+pandas
 yfinance
 lxml
-openpyxl
-twstock
 html5lib
+beautifulsoup4
+python-dateutil
+google-genai
+python-dotenv
