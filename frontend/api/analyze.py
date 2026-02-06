@@ -83,7 +83,7 @@ class handler(BaseHTTPRequestHandler):
         try:
             # 5. Call Gemini
             response = client.models.generate_content(
-                model='gemini-2.0-flash',
+                model='gemini-flash-latest',
                 contents=prompt,
                 config=types.GenerateContentConfig(temperature=0.7)
             )
