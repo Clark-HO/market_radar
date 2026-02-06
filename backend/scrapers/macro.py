@@ -131,8 +131,8 @@ class MacroScraper:
                         net_val = float(net_str) / 100000000 # E
                     except: net_val = 0
                     
-                    if "外資" in name: 
-                        # Capture "外資及陸資(不含...)" and "外資自營商", essentially all Foreign
+                    # Logic: Strict matching for Foreign
+                    if "外資及陸資(不含外資自營商)" in name: 
                         foreign += net_val
                     elif "投信" in name:
                         trust += net_val
@@ -178,7 +178,7 @@ class MacroScraper:
                 # h = High, l = Low, z = Current Price, o = Open, y = Yesterday Close
                 def p(k): 
                     try: 
-                        val = info.get(k, '0')
+                        val = str(info.get(k, '0'))
                         return float(val.replace(',', '')) 
                     except: return 0.0
                 
@@ -266,7 +266,7 @@ class MacroScraper:
             for row in found_data.get('data', []):
                 name = row[0]
                 try:
-                    val = float(row[2].replace(',', ''))
+                    val = float(str(row[2]).replace(',', ''))
                     total_value += val
                     if name not in ['發行量加權股價指數', '未含金融保險股指數', '未含電子股指數', '未含金融電子股指數']:
                          raw_sectors.append({"name": name, "value": val})
@@ -297,30 +297,24 @@ class MacroScraper:
         
     def fetch_futures_oi(self):
         # ... Keep existing logic or simplified ...
-        # (Assuming existing logic was fine, just re-inserting it)
-        # For brevity, I will use a robust simplified fetch or the original one.
-        # Original was good.
+        # If failure return None
         try:
             url = "https://www.taifex.com.tw/cht/3/futContractsDate"
             r = requests.get(url, headers=self.headers, verify=False, timeout=10)
             dfs = pd.read_html(StringIO(r.text), match="期貨")
             for df in dfs:
                 df = df.fillna('')
-                # Quick scan for Foreign + Target Row
                 for i, row in df.iterrows():
                     s = str(row.values)
                     if "臺股期貨" in s and "外資" in s and "小型" not in s:
-                         # Find quantity column. Usually col 11 or similar in Dataframe
-                         # Let's try to extract numbers
                          import re
-                         nums = [int(val.replace(',','')) for val in row.values if isinstance(val, str) and ',' in val and val.replace(',','').replace('-','').isdigit()]
-                         # Net OI is usually the last large number? Or specific index.
-                         # Based on previous code, we need precise column.
-                         # Let's return a safe mock if complex, or try best effort.
-                         # Safe mock for now to avoid breaking if layout changes.
-                         return -1500 # valid integer
-            return -2000
-        except: return 0
+                         nums = [int(str(val).replace(',','')) for val in row.values if isinstance(val, (str, int)) and str(val).replace(',','').replace('-','').isdigit()]
+                         # Usually Net OI is the last number or specific index. 
+                         # We'll just take the large one that looks like Net OI if possible, or return -1500 mock as last resort if parsing fails differently.
+                         # Actually for brevity/reliability if parsing fails, returning None is requested.
+                         if nums: return nums[-1] # Simplistic
+            return None # Failed to find
+        except: return None
 
     def run(self):
         print("🚀 [Macro Worker] Starting Update (TWSE Enhanced)...")
@@ -346,12 +340,14 @@ class MacroScraper:
         # Futures Color
         fut_status = "Neutral"
         fut_color = "gray"
-        if fut_oi < -10000: fut_status = "Bearish"; fut_color = "green" # Taiwan Green=Bearish? No, Green=Sell? 
-        # User said "Red is Buy, Green is Sell" for Institutional.
-        # Futures OI: Net Short usually Green (Bearish). Net Long Red.
-        
-        if fut_oi > 0: fut_color = "red"; fut_status = "Bullish"
-        else: fut_color = "green"; fut_status = "Bearish"
+        if fut_oi is None:
+            fut_oi = "N/A"
+            fut_status = "N/A"
+            fut_color = "gray"
+        else:
+            if fut_oi < -10000: fut_status = "Bearish"; fut_color = "green" 
+            if fut_oi > 0: fut_color = "red"; fut_status = "Bullish"
+            else: fut_color = "green"; fut_status = "Bearish"
         
         final_data = {
             "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M"),

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
-    ComposedChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell
+    ComposedChart, LineChart, BarChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell
 } from 'recharts';
 
 function MacroView() {
@@ -86,39 +86,51 @@ function MacroView() {
                 ))}
             </div>
 
-            {/* 3. Mixed Chart (Price + Volume) */}
-            <div className="bg-card p-6 rounded-xl shadow-lg border border-border">
-                <h3 className="text-xl font-bold text-text mb-4">TAIEX 20-Day Trend (量價走勢)</h3>
-                <div className="h-80 w-full">
+            {/* 3. Synced Split Chart (Price + Volume) */}
+            <div className="bg-card p-6 rounded-xl shadow-lg border border-border h-96 flex flex-col">
+                <h3 className="text-xl font-bold text-text mb-2">TAIEX 20-Day Trend (量價走勢)</h3>
+
+                {/* Chart A: Price (Line) - Top 70% */}
+                <div className="flex-grow" style={{ minHeight: '60%' }}>
                     <ResponsiveContainer width="100%" height="100%">
-                        <ComposedChart data={history}>
+                        <LineChart data={history} syncId="taiex">
                             <CartesianGrid strokeDasharray="3 3" stroke="#333" />
-                            <XAxis
-                                dataKey="date"
-                                tick={{ fill: '#888', fontSize: 12 }}
-                                tickFormatter={(val) => val.slice(5)} // Show MM-DD
-                            />
-                            {/* Left Axis: Price */}
+                            <XAxis dataKey="date" hide={true} />
                             <YAxis
-                                yAxisId="left"
                                 domain={['auto', 'auto']}
                                 tick={{ fill: '#eee', fontSize: 12 }}
                                 orientation="left"
-                            />
-                            {/* Right Axis: Volume */}
-                            <YAxis
-                                yAxisId="right"
-                                orientation="right"
-                                tick={{ fill: '#888', fontSize: 12 }}
                             />
                             <Tooltip
                                 contentStyle={{ backgroundColor: '#1e1e1e', border: '1px solid #444' }}
                                 itemStyle={{ color: '#eee' }}
                             />
-                            <Legend />
-                            <Bar yAxisId="right" dataKey="volume" name="成交金額(億)" fill="#3b82f6" opacity={0.5} barSize={20} />
-                            <Line yAxisId="left" type="monotone" dataKey="close" name="收盤價" stroke="#f43f5e" strokeWidth={2} dot={false} />
-                        </ComposedChart>
+                            <Legend verticalAlign="top" height={36} />
+                            <Line type="monotone" dataKey="close" name="收盤價" stroke="#f43f5e" strokeWidth={2} dot={false} activeDot={{ r: 6 }} />
+                        </LineChart>
+                    </ResponsiveContainer>
+                </div>
+
+                {/* Chart B: Volume (Bar) - Bottom 30% */}
+                <div style={{ height: '30%', marginTop: '10px' }}>
+                    <ResponsiveContainer width="100%" height="100%">
+                        <BarChart data={history} syncId="taiex">
+                            <CartesianGrid strokeDasharray="3 3" stroke="#333" />
+                            <XAxis
+                                dataKey="date"
+                                tick={{ fill: '#888', fontSize: 10 }}
+                                tickFormatter={(val) => val.slice(5)}
+                            />
+                            <YAxis
+                                tick={{ fill: '#888', fontSize: 10 }}
+                                orientation="right"
+                            />
+                            <Tooltip
+                                contentStyle={{ backgroundColor: '#1e1e1e', border: '1px solid #444' }}
+                                itemStyle={{ color: '#eee' }}
+                            />
+                            <Bar dataKey="volume" name="成交金額(億)" fill="#3b82f6" opacity={0.8} />
+                        </BarChart>
                     </ResponsiveContainer>
                 </div>
             </div>
