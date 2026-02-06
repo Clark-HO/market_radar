@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-02-05 15:12",
+    "last_updated": "2026-02-05 10:11",
     "market_status": {
         "taiex_close": 31801.27,
         "change": -488.54,
@@ -11,7 +11,7 @@
         "futures_color": "gray"
     },
     "currency": {
-        "usd_twd": 31.67,
+        "usd_twd": 31.69,
         "trend": "Depreciating"
     },
     "sector_flow": [
@@ -22,7 +22,7 @@
         },
         {
             "name": "半導體指數        ",
-            "ratio": 20.8,
+            "ratio": 20.9,
             "trend": "Normal"
         },
         {
