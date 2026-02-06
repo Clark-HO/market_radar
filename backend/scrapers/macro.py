@@ -126,26 +126,17 @@ class MacroScraper:
                 for row in rows:
                     name = row[0].strip()
                     try:
-                        net_val = self.clean_number(row[3]) / 100000000 # E
+                        # Explicit string cleaning as requested
+                        net_str = str(row[3]).replace(',', '').strip()
+                        net_val = float(net_str) / 100000000 # E
                     except: net_val = 0
                     
-                    # Logic:
-                    # 1. "外資及陸資(不含外資自營商)" -> Main Foreign
-                    # 2. "外資自營商" -> Usually added to Foreign or Separate.
-                    # 3. "投信" -> Trust
-                    # 4. "自營商" -> Dealer (Total or Sum of Self/Hedge)
-                    
-                    if "外資" in name and "不含" in name: 
+                    if "外資" in name: 
+                        # Capture "外資及陸資(不含...)" and "外資自營商", essentially all Foreign
                         foreign += net_val
                     elif "投信" in name:
                         trust += net_val
-                    elif "自營商" in name:
-                        # Summing all Dealer rows (Self + Hedge) or finding "合計" if available?
-                        # BFI82U has specific rows. Just sum anything containing "自營商" 
-                        # but be careful not to double count if there is a summary row?
-                        # BFI82U usually: "自營商(自行買賣)", "自營商(避險)", "投信", "外資...", "合計"
-                        # So summing is safe if "合計" is not containing "自營商" in name.
-                        # Total row name is "合計".
+                    elif "自營商" in name and "合計" not in name:
                         dealer += net_val
                         
                 print(f"      ✅ Inst Found: Foreign={foreign:.2f}, Trust={trust:.2f}, Dealer={dealer:.2f}")
@@ -161,50 +152,94 @@ class MacroScraper:
         except Exception as e:
             print(f"      ⚠️ Inst fetch failed: {e}")
 
-        # If empty
         if not found_rows:
              institutional = [
                 {"name": "外資", "net": 0}, {"name": "投信", "net": 0}, {"name": "自營商", "net": 0}
             ]
         
-        return institutional, {} # Stats unused here
+        return institutional, {} 
 
-    def fetch_yahoo_stats(self):
-        """Use Yahoo for Realtime High/Low/Close. Robust with Retries."""
-        import yfinance as yf
-        retries = [2, 5]
-        for delay in retries:
-            try:
-                t = yf.Ticker("^TWII")
-                info = t.fast_info
+    def fetch_twse_mis_stats(self):
+        """
+        [New] Fetch Realtime High/Low directly from TWSE MIS
+        Endpoint: https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_t00.tw
+        """
+        print("   -> Fetching Realtime TAIEX Stats (TWSE MIS)...")
+        timestamp = int(time.time() * 1000)
+        url = f"https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_t00.tw&json=1&delay=0&_={timestamp}"
+        
+        try:
+            r = requests.get(url, headers=self.headers, timeout=10)
+            data = r.json()
+            
+            if 'msgArray' in data and len(data['msgArray']) > 0:
+                info = data['msgArray'][0]
                 
-                # If market not open or error, these might be None. Handle robustly.
-                price = info.last_price or 0
-                op = info.open or 0
-                hi = info.day_high or 0
-                lo = info.day_low or 0
-                prev = info.previous_close or 0
+                # h = High, l = Low, z = Current Price, o = Open, y = Yesterday Close
+                def p(k): 
+                    try: 
+                        val = info.get(k, '0')
+                        return float(val.replace(',', '')) 
+                    except: return 0.0
                 
-                # If High/Low are 0 (sometimes happens if just opened?), use price
-                if hi == 0: hi = price
-                if lo == 0: lo = price
+                high = p('h')
+                low = p('l')
+                curr = p('z')
+                open_p = p('o')
+                prev = p('y')
                 
-                change = price - prev if prev > 0 else 0
+                # Fallbacks if Market Closed/Zero
+                if high == 0 and curr > 0: high = curr
+                if low == 0 and curr > 0: low = curr
+                
+                change = curr - prev
                 change_pct = (change / prev) * 100 if prev > 0 else 0
                 
+                print(f"      ✅ MIS Stats: H={high}, L={low}, Now={curr}")
+                
                 return {
-                    "high": round(hi, 2),
-                    "low": round(lo, 2),
-                    "close": round(price, 2),
-                    "open": round(op, 2),
+                    "high": round(high, 2),
+                    "low": round(low, 2),
+                    "close": round(curr, 2),
+                    "open": round(open_p, 2),
                     "change": round(change, 2),
                     "change_percent": round(change_pct, 2),
-                    "price": round(price, 2)
+                    "price": round(curr, 2)
                 }
-            except:
-                time.sleep(delay)
-        
-        return {"high": 0, "low": 0, "close": 0, "open": 0, "change": 0, "change_percent": 0, "price": 0}
+        except Exception as e:
+            print(f"      ⚠️ MIS fetch failed: {e}. Falling back to Yahoo.")
+            
+        # Fallback to Yahoo Safe
+        return self.fetch_yahoo_stats_fallback()
+
+    def fetch_yahoo_stats_fallback(self):
+        import yfinance as yf
+        try:
+            t = yf.Ticker("^TWII")
+            info = t.fast_info
+            
+            price = info.last_price or 0
+            hi = info.day_high or 0
+            lo = info.day_low or 0
+            prev = info.previous_close or 0
+            
+            if hi == 0: hi = price
+            if lo == 0: lo = price
+            
+            change = price - prev
+            change_pct = (change / prev) * 100 if prev > 0 else 0
+            
+            return {
+                "high": round(hi, 2),
+                "low": round(lo, 2),
+                "close": round(price, 2),
+                "open": round(0, 2),
+                "change": round(change, 2),
+                "change_percent": round(change_pct, 2),
+                "price": round(price, 2)
+            }
+        except:
+             return {"high": 0, "low": 0, "close": 0, "open": 0, "change": 0, "change_percent": 0, "price": 0}
 
     def fetch_sector_flow(self):
         # ... (Keep existing BFIAMU logic, abridged for brevity but will include full) ...
@@ -300,8 +335,8 @@ class MacroScraper:
         # 3. Institutional & Stats
         inst_data, _ = self.fetch_daily_stats_and_institutional(last_date)
         
-        # 4. Yahoo Realtime Stats (High/Low)
-        rt_stats = self.fetch_yahoo_stats()
+        # 4. Realtime Stats (TWSE MIS -> Yahoo Fallback)
+        rt_stats = self.fetch_twse_mis_stats()
         
         # 5. Sector & Currency & Futures
         sector = self.fetch_sector_flow()

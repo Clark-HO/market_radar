@@ -42,18 +42,22 @@ function MacroView() {
 
             {/* 1. Daily Stats Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-card p-4 rounded-xl shadow-lg border border-border">
-                    <h3 className="text-muted text-xs uppercase font-bold">TAIEX Index</h3>
-                    <div className="flex flex-col items-start gap-1 mt-1">
-                        <span className="text-2xl font-bold text-text">{market_status.taiex_close.toLocaleString()}</span>
-                        <span className={`text-sm font-bold ${getChangeColor(market_status.change)}`}>
-                            {market_status.change} ({market_status.change_percent}%)
+                <div className="bg-card p-4 rounded-xl shadow-lg border border-border flex flex-col justify-between h-32">
+                    <h3 className="text-muted text-xs uppercase font-bold tracking-wider">TAIEX Index</h3>
+                    <div className="flex flex-col items-start gap-1 mt-auto mb-1">
+                        <span className="text-2xl font-bold text-text tracking-tight group-hover:text-primary transition-colors">
+                            {market_status.taiex_close.toLocaleString()}
                         </span>
+                        <div className="flex items-center gap-2">
+                            <span className={`text-sm font-bold px-1.5 py-0.5 rounded ${getBgColor(market_status.change)} ${getChangeColor(market_status.change)}`}>
+                                {market_status.change} ({market_status.change_percent}%)
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div className="bg-card p-4 rounded-xl shadow-lg border border-border">
-                    <h3 className="text-muted text-xs uppercase font-bold">Daily Volume (成交金額)</h3>
-                    <p className="text-2xl font-bold text-text mt-1">
+                <div className="bg-card p-4 rounded-xl shadow-lg border border-border flex flex-col justify-between h-32">
+                    <h3 className="text-muted text-xs uppercase font-bold tracking-wider">Volume (成交金額)</h3>
+                    <p className="text-2xl font-bold text-text mt-auto mb-1">
                         {Math.round(market_status.volume).toLocaleString()} <span className="text-sm text-muted">億</span>
                     </p>
                 </div>
