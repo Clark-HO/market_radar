@@ -172,7 +172,7 @@ function StockScan({ ticker }) {
                         {aiLoading ? (
                             <div className="flex items-center gap-2 text-blue-300 animate-pulse">
                                 <Activity className="w-4 h-4 animate-spin" />
-                                <span>🤖 AI 正在分析 (Gemini 2.0)...</span>
+                                <span>🤖 AI 正在分析 (Gemini 1.5)...</span>
                             </div>
                         ) : (
                             <div className="bg-neutral-950/60 p-4 rounded-lg border border-white/5 text-sm md:text-base leading-relaxed text-slate-200 font-mono whitespace-pre-wrap shadow-inner w-full">

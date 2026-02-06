@@ -83,7 +83,8 @@ class handler(BaseHTTPRequestHandler):
         try:
             # 5. Call Gemini
             response = client.models.generate_content(
-                model='gemini-flash-latest',
+                # [User Request] Pin to "gemini-1.5-flash" for 1500 RPD free tier (Avoid 2.5/Flash-Latest alias issues)
+                model='gemini-1.5-flash',
                 contents=prompt,
                 config=types.GenerateContentConfig(temperature=0.7)
             )
