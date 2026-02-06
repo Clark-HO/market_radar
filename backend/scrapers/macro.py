@@ -321,16 +321,15 @@ class MacroScraper:
     def fetch_futures_oi(self):
         """
         Fetch Futures Net OI (Foreign) from TAIFEX.
-        Robust: Headers + Pandas Column Search
+        [User Request] Exact Indexing: Col 1='臺股期貨', Col 2='外資', Value=Col 13
         """
         try:
             url = "https://www.taifex.com.tw/cht/3/futContractsDate"
-            # Explicit Headers as requested for Firewall bypass
-            params = {'queryType': 1, 'doQuery': 1, 'queryDate': datetime.now().strftime('%Y/%m/%d')}
-            # Note: The URL usually defaults to latest. We try without params first or with just headers.
+            # Must use these headers
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
             
             print(f"   -> Fetching Futures OI from {url}...")
-            r = requests.get(url, headers=self.headers, timeout=15)
+            r = requests.get(url, headers=headers, timeout=15)
             r.encoding = 'utf-8'
             
             try:
@@ -339,50 +338,33 @@ class MacroScraper:
                 print("      ⚠️ No tables found in Futures response.")
                 return None
 
-            for df in dfs:
-                # 1. Identify valid table: must contain "Identity" or "身分" or "外資"
-                df_str = df.to_string()
-                if "外資" not in df_str: continue
-                
-                # 2. Locate "Foreign" Row
-                # We look for a row where the first column (or any Id column) contains "外資"
-                target_row = None
-                for idx, row in df.iterrows():
-                     # Check first few cells for '外資'
-                     if any("外資" in str(c) for c in row.values[:3]):
-                         target_row = row
-                         break
-                
-                if target_row is None: continue
-
-                # 3. Locate "Net OI" Column
-                # Columns are MultiIndex or plain. We want "未平倉餘額" -> "口數" -> "多空淨額"
-                # Or simply the last column if structure is standard.
-                # However, safe way is to look for column header "未平倉餘額" and "多空淨額" if headers exist.
-                # Since pd.read_html might not parse headers perfectly if they are complex (merged cells),
-                # we often rely on indices for TAIFEX: [Long, Short, Net, Long, Short, Net].
-                # The columns usually are:
-                # Trading (Buy, Sell, Net) | Open Interest (Long, Short, Net)
-                # We want the VERY LAST valid number usually.
-                
-                try:
-                    vals = [str(v).strip().replace(',', '') for v in target_row.values]
-                    valid_nums = []
-                    for v in vals:
-                        try:
-                            if v.replace('-', '').isdigit(): valid_nums.append(int(v))
-                        except: pass
-                    
-                    if valid_nums:
-                        # The generic structure for TAIFEX Daily is:
-                        # BuyVol, SellVol, NetVol, BuyOI, SellOI, NetOI (6 numbers)
-                        # We want NetOI (Last one)
-                        net_oi = valid_nums[-1]
-                        print(f"      ✅ Futures OI (Foreign): {net_oi}")
-                        return net_oi
-                except:
-                    continue
+            if not dfs: return None
+            df = dfs[0] # User confirmed Table 0
             
+            # User Filter: Col 1='臺股期貨', Col 2='外資' (Indices might be 1 and 2 if 0-indexed?)
+            # Usually TAIFEX HTML table: 
+            # 0=Product Name (商品名稱), 1=Identity (身分別)?
+            # Or 1=Product, 2=Identity?
+            # User Snippet: `df.iloc[:, 1] == '臺股期貨'` (Column Index 1)
+            # `df.iloc[:, 2] == '外資'` (Column Index 2)
+            # This implies Col 0 is something else (or empty/index).
+            # We follow User Exact Snippet.
+            
+            # Clean string logic for safety
+            # Ensure we are looking at strings
+            target = df[ (df.iloc[:, 1].astype(str) == '臺股期貨') & (df.iloc[:, 2].astype(str).str.contains('外資')) ]
+            
+            if not target.empty:
+                # User confirmed Col 13 is "Net OI Volume"
+                raw_val = target.iloc[0, 13]
+                # Clean comma
+                val_str = str(raw_val).replace(',', '').strip()
+                if val_str.replace('-', '').isdigit():
+                    net_oi = int(val_str)
+                    print(f"      ✅ Futures OI (Foreign, Exact): {net_oi}")
+                    return net_oi
+            
+            print("      ⚠️ Futures OI Row Not Found (Exact Match Failed).")
             return None
         except Exception as e:
             print(f"      ❌ Futures Scraper Error: {e}")

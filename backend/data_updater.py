@@ -56,36 +56,31 @@ def fetch_twse_chips_global():
             if data.get('stat') == 'OK':
                 print(f"   ✅ Found TWSE Chips for {date_str}")
                 fields = data.get('fields', [])
-                # Locate Indices intelligently
-                try:
-                     # Default indices for T86
-                    idx_code = 0
-                    idx_name = 1
-                    idx_foreign = 4 # Default
-                    idx_trust = 10 # Default
-                    
-                    # Try to find by header name (Robust)
-                    for i, f in enumerate(fields):
-                        if '外陸資買賣超' in f or '外資' in f: idx_foreign = i
-                        elif '投信買賣超' in f: idx_trust = i
-                        elif '證券代號' in f: idx_code = i
-                            
-                    print(f"      Indices: Foreign={idx_foreign}, Trust={idx_trust}")
-                except:
-                     pass
-                     
+                # [User Request] Partial Exact Indexing based on Logs
+                # Index 4 = Foreign, Index 10 = Trust
+                # We also grab Name (Index 1) for UI
                 chips_map = {}
                 count = 0
                 for row in data.get('data', []):
                     try:
-                        code = row[idx_code]
-                        name = row[idx_name].strip()
+                        code = row[0]
+                        name = row[1].strip()
                         if len(code) != 4: continue 
                         
-                        def parse_num(s): return int(s.replace(',', '')) if s else 0
+                        # CRITICAL: Remove commas!
+                        f_str = row[4].replace(',', '')
+                        t_str = row[10].replace(',', '')
                         
-                        f_net = parse_num(row[idx_foreign]) // 1000
-                        t_net = parse_num(row[idx_trust]) // 1000
+                        f_net = int(f_str) // 1000 # Convert to Shares (张) ? T86 is shares. 
+                        # Wait, T86 unit is shares. User UI expects "张" (Lots = 1000 shares). 
+                        # User snippet: `int(foreign_buy)`. 
+                        # My UI: shows "张". 
+                        # T86 returns shares. 1500 shares = 1.5 Zhang. 
+                        # Usually T86 "3,250,551" is SHARES. 
+                        # My previous data_updater divided by 1000. 
+                        # I will KEEP dividing by 1000 to match UI "Zhang". 
+                        
+                        t_net = int(t_str) // 1000
                         
                         chips_map[code] = {
                             "name": name,
@@ -96,7 +91,7 @@ def fetch_twse_chips_global():
                     except: continue
                 
                 if count > 10:
-                    print(f"   ✅ Successfully parsed {count} stocks.")
+                    print(f"   ✅ Successfully parsed {count} stocks (Exact Index Mode).")
                     return chips_map
         except Exception as e:
             print(f"   ⚠️ T86 Error for {date_str}: {e}")
