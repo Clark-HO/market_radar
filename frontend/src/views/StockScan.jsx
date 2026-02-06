@@ -11,6 +11,10 @@ function StockScan({ ticker }) {
     const [error, setError] = useState(null);
     const [debouncedTicker, setDebouncedTicker] = useState(ticker);
 
+    // New State for AI (Moved to top to prevent Hook Order Error)
+    const [aiReport, setAiReport] = useState(null);
+    const [aiLoading, setAiLoading] = useState(false);
+
     // Debounce Ticker
     useEffect(() => {
         const handler = setTimeout(() => {
@@ -19,6 +23,7 @@ function StockScan({ ticker }) {
         return () => clearTimeout(handler);
     }, [ticker]);
 
+    // Data Fetch
     useEffect(() => {
         if (!debouncedTicker) return;
 
@@ -27,6 +32,8 @@ function StockScan({ ticker }) {
             setLoading(true);
             setError(null);
             setData(null);
+            // Reset AI when ticker changes
+            setAiReport(null);
 
             try {
                 console.log(`Searching for ${debouncedTicker} in serverless DB...`);
@@ -67,33 +74,21 @@ function StockScan({ ticker }) {
         return () => { isMounted = false; };
     }, [debouncedTicker]);
 
-    if (loading) return (
-        <div className="flex flex-col items-center justify-center p-20 text-muted opacity-80">
-            <Activity className="w-10 h-10 animate-spin mb-4 text-primary" />
-            <span className="animate-pulse">正在掃描市場數據 (Dashboard API)...</span>
-        </div>
-    );
-
-    if (error) return (
-        <div className="flex flex-col items-center justify-center p-20 text-danger">
-            <AlertTriangle className="w-10 h-10 mb-2" />
-            <span>{error}</span>
-        </div>
-    );
-
-    const { valuation, revenue } = data || {};
-    const [aiReport, setAiReport] = useState(null);
-    const [aiLoading, setAiLoading] = useState(false);
-
-    // AI on-demand Fetch
+    // AI on-demand Fetch (Moved to Top)
     useEffect(() => {
+        // Only fetch if we have data and ticker
         if (!data || !debouncedTicker) return;
-        setAiReport(null);
+
+        // Prevent re-fetching if we already have report for this session/ticker? 
+        // Logic: If data changed (implies new ticker search), we reset aiReport in the fetch loop above.
+        // So here if aiReport is null, we fetch.
+        if (aiReport) return;
+
         setAiLoading(true);
 
         const fetchAI = async () => {
             try {
-                // Pass key metrics to help AI (Optional, but good for context if scraper failed recently)
+                // Pass key metrics
                 const pe = data.valuation?.current_pe || 0;
                 const change = data.revenue?.mom || 0;
 
@@ -111,7 +106,23 @@ function StockScan({ ticker }) {
         };
 
         fetchAI();
-    }, [data, debouncedTicker]);
+    }, [data, debouncedTicker]); // aiReport excluded to avoid loops? Added logic check inside.
+
+    if (loading) return (
+        <div className="flex flex-col items-center justify-center p-20 text-muted opacity-80">
+            <Activity className="w-10 h-10 animate-spin mb-4 text-primary" />
+            <span className="animate-pulse">正在掃描市場數據 (Dashboard API)...</span>
+        </div>
+    );
+
+    if (error) return (
+        <div className="flex flex-col items-center justify-center p-20 text-danger">
+            <AlertTriangle className="w-10 h-10 mb-2" />
+            <span>{error}</span>
+        </div>
+    );
+
+    const { valuation, revenue } = data || {};
 
     return (
         <div className="space-y-6 animate-in fade-in duration-500">
