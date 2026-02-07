@@ -1,8 +1,19 @@
 {
+    "functions": {
+        "api/**/*.py": {
+            "includeFiles": "stock_data.json",
+            "excludeFiles": "backend/**"
+        }
+    },
     "rewrites": [
         {
             "source": "/api/(.*)",
             "destination": "/api/$1"
         }
-    ]
+    ],
+    "build": {
+        "env": {
+            "ENABLE_VC_BUILD": "1"
+        }
+    }
 }
