@@ -1,28 +1,9 @@
-import google.generativeai as genai
 from http.server import BaseHTTPRequestHandler
+from urllib.parse import parse_qs, urlparse
 import json
 import os
-from urllib.parse import urlparse, parse_qs
+import requests
 import re
-
-# [Debug Wrapper] Capture Import Errors
-import_error = None
-model_instance = None
-
-try:
-    # Initialize Client (Old SDK Style)
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if api_key:
-        try:
-            genai.configure(api_key=api_key)
-            # Pre-initialize model? Or do it in request. 
-            # Doing it here checks if SDK loads.
-        except Exception as e:
-            print(f"Client Init Error: {e}")
-except ImportError as e:
-    import_error = f"Import Error: {e}"
-except Exception as e:
-    import_error = f"Setup Error: {e}"
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -30,34 +11,25 @@ class handler(BaseHTTPRequestHandler):
         parsed_path = urlparse(self.path)
         params = parse_qs(parsed_path.query)
         
-        # Helper string cleaner
         def get_param(key, default="N/A"):
             return params.get(key, [default])[0]
 
         stock_id = get_param("stock_id")
         
-        # 2. Setup Headers (CORS is crucial)
+        # 2. Setup Headers (CORS)
         self.send_response(200)
         self.send_header('Content-type', 'application/json')
         self.send_header('Access-Control-Allow-Origin', '*') 
         self.end_headers()
 
-        # 3. Check Critical Failures
-        if import_error:
-             self.wfile.write(json.dumps({
-                "score": 0, "verdict": "Deploy Error", 
-                "report": f"⚠️ Server Import Failed: {import_error}. Check requirements.txt."
-            }).encode('utf-8'))
-             return
-
+        # 3. Validation
         if not os.environ.get("GEMINI_API_KEY"):
             self.wfile.write(json.dumps({
                 "score": 0, "verdict": "Config Error", 
-                "report": "❌ GEMINI_API_KEY is missing in Vercel Environment Variables."
+                "report": "❌ GEMINI_API_KEY is missing."
             }).encode('utf-8'))
             return
             
-        # 4. Construct Prompt
         if not stock_id or stock_id == "N/A":
              self.wfile.write(json.dumps({
                 "score": 0, "verdict": "Ready", 
@@ -65,12 +37,15 @@ class handler(BaseHTTPRequestHandler):
             }).encode('utf-8'))
              return
 
+        # 4. Construct Prompt (Preserving Persona for UI)
         stock_name = get_param("stock_name", stock_id)
+        pe = get_param("pe")
+        change = get_param("change")
         
         prompt = f"""
         你現在是華爾街頂尖避險基金的資深操盤手。
         請對 {stock_name} ({stock_id}) 進行 AI 智能診斷。
-        數據: PE={get_param("pe")}, MoM={get_param("change")}% 
+        數據: PE={pe}, MoM={change}% 
         
         請以避險基金經理語氣輸出 Markdown 報告：
         1. **AI 綜合戰力** (0-100)
@@ -79,18 +54,32 @@ class handler(BaseHTTPRequestHandler):
         """
 
         try:
-            # 5. Call Gemini (Old SDK)
-            # Use the stable 1.5 Flash model
-            model_name = "gemini-1.5-flash"
-            model = genai.GenerativeModel(model_name)
+            # 5. Call Gemini via Raw HTTP (No SDK)
+            api_key = os.environ.get("GEMINI_API_KEY")
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
             
-            response = model.generate_content(
-                prompt,
-                generation_config=genai.types.GenerationConfig(temperature=0.7)
-            )
-            content = response.text
+            headers = {'Content-Type': 'application/json'}
+            data = {
+                "contents": [{
+                    "parts": [{"text": prompt}]
+                }],
+                "generationConfig": {
+                    "temperature": 0.7
+                }
+            }
             
-            # 6. Parse Result
+            # The lightweight request
+            response = requests.post(url, headers=headers, json=data)
+            result = response.json()
+            
+            content = ""
+            try:
+                content = result['candidates'][0]['content']['parts'][0]['text']
+            except (KeyError, IndexError):
+                error_detail = result.get('error', {}).get('message', 'Unknown Error')
+                raise Exception(f"Google API Error: {error_detail}")
+
+            # 6. Parse Result (Robust Regex) for Frontend UI
             score_match = re.search(r'AI 綜合戰力\D*(\d+)', content)
             score = int(score_match.group(1)) if score_match else 75
             
@@ -106,13 +95,7 @@ class handler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(out_json).encode('utf-8'))
 
         except Exception as e:
-            error_msg = str(e)
-            if "404" in error_msg:
-                error_msg += " (Model Not Found - Check Version/Region)"
-            elif "429" in error_msg:
-                error_msg += " (Quota Exceeded - Rate Limit)"
-                
             self.wfile.write(json.dumps({
                 "score": 0, "verdict": "Runtime Error", 
-                "report": f"⚠️ AI Error: {error_msg}"
+                "report": f"⚠️ AI Error: {str(e)}"
             }).encode('utf-8'))
