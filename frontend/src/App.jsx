@@ -83,15 +83,19 @@ function App() {
         {activeTab === 'market' && (
           <div className="h-16 border-b border-white/5 bg-neutral-900/50 backdrop-blur flex items-center justify-between px-6 z-10 shrink-0">
             <div className="flex items-center gap-4 w-full max-w-xl">
-              <div className="relative group w-full">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500 group-focus-within:text-blue-400 transition-colors" />
-                <input
-                  type="text"
-                  placeholder="Search Quote (e.g., 2330, TSMC)..."
-                  className="w-full bg-black/20 border border-white/10 focus:border-blue-500/50 rounded-xl pl-10 pr-4 py-2 text-sm outline-none transition-all text-slate-200 placeholder-slate-600 focus:bg-black/40"
-                  value={ticker}
-                  onChange={(e) => setTicker(e.target.value)}
-                />
+              <div className="flex items-center gap-4 w-full max-w-xl">
+                <form onSubmit={(e) => { e.preventDefault(); setTicker(e.target.elements.search.value); }} className="relative group w-full">
+                  <button type="submit" className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500 group-focus-within:text-blue-400 transition-colors bg-transparent border-none cursor-pointer">
+                    <Search className="w-4 h-4" />
+                  </button>
+                  <input
+                    name="search"
+                    type="text"
+                    placeholder="Search Quote (e.g., 2330, TSMC)..."
+                    className="w-full bg-black/20 border border-white/10 focus:border-blue-500/50 rounded-xl pl-10 pr-4 py-2 text-sm outline-none transition-all text-slate-200 placeholder-slate-600 focus:bg-black/40"
+                    defaultValue={ticker}
+                  />
+                </form>
               </div>
             </div>
             <div className="flex items-center gap-3">
