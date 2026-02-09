@@ -7,7 +7,13 @@ import re
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        # 1. Parse Query Params
+        # 1. Setup Headers (CORS)
+        self.send_response(200)
+        self.send_header('Content-type', 'application/json')
+        self.send_header('Access-Control-Allow-Origin', '*') 
+        self.end_headers()
+
+        # 2. Parse Query Params
         parsed_path = urlparse(self.path)
         params = parse_qs(parsed_path.query)
         
@@ -16,14 +22,11 @@ class handler(BaseHTTPRequestHandler):
 
         stock_id = get_param("stock_id")
         
-        # 2. Setup Headers (CORS)
-        self.send_response(200)
-        self.send_header('Content-type', 'application/json')
-        self.send_header('Access-Control-Allow-Origin', '*') 
-        self.end_headers()
-
-        # 3. Validation
-        if not os.environ.get("GEMINI_API_KEY"):
+        # 3. Validation & Setup API Key
+        # [CRITICAL FIX] Define api_key BEFORE usage
+        api_key = os.environ.get("GEMINI_API_KEY")
+        
+        if not api_key:
             self.wfile.write(json.dumps({
                 "score": 0, "verdict": "Config Error", 
                 "report": "❌ GEMINI_API_KEY is missing."
@@ -55,15 +58,12 @@ class handler(BaseHTTPRequestHandler):
 
         try:
             # 5. Call Gemini via Raw HTTP (No SDK)
-            # [User Request] Use gemini-exp-1206 for higher free quota
-            api_key = os.environ.get("GEMINI_API_KEY")
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-exp-1206:generateContent?key={api_key}"
+            # [User Request] Use gemini-2.0-flash (Stable, Better Quota)
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
             
             headers = {'Content-Type': 'application/json'}
             data = {
-                "contents": [{
-                    "parts": [{"text": prompt}]
-                }],
+                "contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {
                     "temperature": 0.7
                 }
@@ -71,14 +71,22 @@ class handler(BaseHTTPRequestHandler):
             
             # The lightweight request
             response = requests.post(url, headers=headers, json=data)
-            result = response.json()
             
+            # Check non-200 status
+            if response.status_code != 200:
+                self.wfile.write(json.dumps({
+                    "score": 0, "verdict": "API Error", 
+                    "report": f"⚠️ Google Cloud Error: {response.text}"
+                }).encode('utf-8'))
+                return
+
+            result = response.json()
             content = ""
             try:
                 content = result['candidates'][0]['content']['parts'][0]['text']
             except (KeyError, IndexError):
                 error_detail = result.get('error', {}).get('message', 'Unknown Error')
-                raise Exception(f"Google API Error: {error_detail}")
+                raise Exception(f"Google Response Parse Error: {error_detail}")
 
             # 6. Parse Result (Robust Regex) for Frontend UI
             score_match = re.search(r'AI 綜合戰力\D*(\d+)', content)
@@ -91,12 +99,13 @@ class handler(BaseHTTPRequestHandler):
             out_json = {
                 "score": score,
                 "verdict": verdict,
-                "report": content
+                "report": content,
+                "analysis": content # Legacy support
             }
             self.wfile.write(json.dumps(out_json).encode('utf-8'))
 
         except Exception as e:
             self.wfile.write(json.dumps({
                 "score": 0, "verdict": "Runtime Error", 
-                "report": f"⚠️ AI Error: {str(e)}"
+                "report": f"⚠️ Backend Exception: {str(e)}"
             }).encode('utf-8'))
