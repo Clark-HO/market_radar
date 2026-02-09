@@ -10,17 +10,27 @@ import math
 from io import StringIO
 from dateutil.relativedelta import relativedelta
 
+
 # --- 0. 忽略 SSL 警告 ---
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- 1. 設定路徑 ---
+# Dynamic path detection (Works on Local & Cloud)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Target: market_radar/frontend/public
+
+# Target: frontend/public/stock_data.json
 PUBLIC_DIR = os.path.join(BASE_DIR, "frontend", "public")
 if not os.path.exists(PUBLIC_DIR):
     os.makedirs(PUBLIC_DIR)
     
-JSON_PATH = os.path.join(PUBLIC_DIR, "stock_data.json")
+stock_json_path = os.path.join(PUBLIC_DIR, "stock_data.json")
+macro_json_path = os.path.join(PUBLIC_DIR, "macro_data.json")
+
+print(f"📂 Saving data to: {stock_json_path}")
+print(f"📂 Macro data path: {macro_json_path}")
+
+# Map legacy variable to new one to minimize code changes in rest of file
+JSON_PATH = stock_json_path
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
