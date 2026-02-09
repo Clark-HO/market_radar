@@ -55,7 +55,7 @@ class handler(BaseHTTPRequestHandler):
 
         try:
             # 5. Call Gemini via Raw HTTP (No SDK)
-            api_key = os.environ.get("GEMINI_API_KEY")
+            # [User Request] Use gemini-exp-1206 for higher free quota
             url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-exp-1206:generateContent?key={api_key}"
             
             headers = {'Content-Type': 'application/json'}
