@@ -4,6 +4,7 @@ import json
 import os
 import requests
 import re
+from datetime import datetime
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -45,7 +46,10 @@ class handler(BaseHTTPRequestHandler):
         pe = get_param("pe")
         change = get_param("change")
         
+        today = datetime.now().strftime("%Y-%m-%d")
+        
         prompt = f"""
+        今天是 {today}。
         你現在是華爾街頂尖避險基金的資深操盤手。
         請對 {stock_name} ({stock_id}) 進行 AI 智能診斷。
         數據: PE={pe}, MoM={change}% 
