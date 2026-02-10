@@ -159,17 +159,30 @@ const SearchForm = ({ initialValue, onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="relative group w-full">
-      <button type="submit" className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500 group-focus-within:text-blue-400 transition-colors bg-transparent border-none cursor-pointer">
-        <Search className="w-4 h-4" />
-      </button>
+    <form
+      onSubmit={handleSubmit}
+      className="relative flex items-center w-full max-w-lg mx-auto mt-2 mb-2 group"
+    >
+      {/* Input Field with Red Focus Ring */}
       <input
         type="text"
-        placeholder="Search Quote (e.g., 2330, TSMC)..."
-        className="w-full bg-black/20 border border-white/10 focus:border-blue-500/50 rounded-xl pl-10 pr-4 py-2 text-sm outline-none transition-all text-slate-200 placeholder-slate-600 focus:bg-black/40"
+        placeholder="輸入股票代號 (例如 2330)..."
         value={localInput}
         onChange={(e) => setLocalInput(e.target.value)}
+        className="w-full px-6 py-3 text-base text-gray-700 bg-white border-2 border-red-100 rounded-full focus:outline-none focus:border-red-500 focus:ring-4 focus:ring-red-100 transition-all duration-300 shadow-sm placeholder-gray-400 group-hover:shadow-md"
       />
+
+      {/* The "Lucky" Button - Absolute positioned on the right */}
+      <button
+        type="submit"
+        className="absolute right-1 top-1 bottom-1 aspect-square bg-gradient-to-br from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold rounded-full flex items-center justify-center shadow-lg hover:shadow-red-500/40 hover:scale-105 active:scale-95 transition-all duration-300 border-2 border-red-400"
+        title="點擊搜尋 (祝您股票大漲!)"
+      >
+        {/* The Character "漲" with a slight drop shadow */}
+        <span className="text-lg font-extrabold tracking-widest drop-shadow-sm filter">
+          漲
+        </span>
+      </button>
     </form>
   );
 };
