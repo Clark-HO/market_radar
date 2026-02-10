@@ -48,17 +48,12 @@ class handler(BaseHTTPRequestHandler):
         
         today = datetime.now().strftime("%Y-%m-%d")
         
-        prompt = f"""
-        今天是 {today}。
-        你現在是華爾街頂尖避險基金的資深操盤手。
-        請對 {stock_name} ({stock_id}) 進行 AI 智能診斷。
-        數據: PE={pe}, MoM={change}% 
-        
-        請以避險基金經理語氣輸出 Markdown 報告：
-        1. **AI 綜合戰力** (0-100)
-        2. **趨勢訊號** (強烈看多/看空/觀望)
-        3. 分析點評
-        """
+        # ✅ NEW PROMPT: Force JSON Format
+        prompt = (f"今天是 {today}。請分析台股代號 {stock_name} ({stock_id})。"
+                  f"數據: PE={pe}, MoM={change}%。\n"
+                  f"請務必以 JSON 格式回傳，不要使用 Markdown 標記，格式如下："
+                  f'{{"buy_price": "建議買進價位(數字或區間)", "sell_price": "建議賣出價位(數字或區間)", '
+                  f'"score": 0-100(數字), "verdict": "趨勢訊號(強烈看多/看空/觀望)", "content": "你的完整分析文字"}}')
 
         try:
             # 5. Call Gemini via Raw HTTP (No SDK)
@@ -85,28 +80,38 @@ class handler(BaseHTTPRequestHandler):
                 return
 
             result = response.json()
-            content = ""
+            raw_text = ""
             try:
-                content = result['candidates'][0]['content']['parts'][0]['text']
+                raw_text = result['candidates'][0]['content']['parts'][0]['text']
             except (KeyError, IndexError):
                 error_detail = result.get('error', {}).get('message', 'Unknown Error')
-                raise Exception(f"Google Response Parse Error: {error_detail}")
+                self.wfile.write(json.dumps({"error": str(error_detail)}).encode('utf-8'))
+                return
 
-            # 6. Parse Result (Robust Regex) for Frontend UI
-            score_match = re.search(r'AI 綜合戰力\D*(\d+)', content)
-            score = int(score_match.group(1)) if score_match else 75
+            # ✅ Parse JSON from AI Response
+            # Clean up potential Markdown wrappers (```json ... ```)
+            clean_text = raw_text.replace("```json", "").replace("```", "").strip()
             
-            verdict_match = re.search(r'趨勢訊號.*?\*\*([^*]+)\*\*', content)
-            verdict = verdict_match.group(1).strip() if verdict_match else "AI 分析完成"
-
-            # 7. Return Result
-            out_json = {
-                "score": score,
-                "verdict": verdict,
-                "report": content,
-                "analysis": content # Legacy support
-            }
-            self.wfile.write(json.dumps(out_json).encode('utf-8'))
+            try:
+                ai_data = json.loads(clean_text)
+                # Map 'content' to 'report' for frontend compatibility if needed, 
+                # but frontend likely uses 'content' or 'report'. 
+                # StockScan.jsx uses 'report'. Let's ensure 'report' exists.
+                if 'report' not in ai_data and 'content' in ai_data:
+                    ai_data['report'] = ai_data['content']
+                
+                # Send structured data to frontend
+                self.wfile.write(json.dumps(ai_data).encode('utf-8'))
+            except json.JSONDecodeError:
+                # Fallback if AI fails to give JSON
+                fallback = {
+                    "buy_price": "N/A", 
+                    "sell_price": "N/A", 
+                    "score": 75,
+                    "verdict": "AI 分析完成",
+                    "report": raw_text
+                }
+                self.wfile.write(json.dumps(fallback).encode('utf-8'))
 
         except Exception as e:
             self.wfile.write(json.dumps({

@@ -14,6 +14,7 @@ function StockScan({ ticker }) {
     // New State for AI (Moved to top to prevent Hook Order Error)
     const [aiReport, setAiReport] = useState(null);
     const [aiLoading, setAiLoading] = useState(false);
+    const [targets, setTargets] = useState({ buy: "--", sell: "--" });
 
     // Debounce Ticker
     useEffect(() => {
@@ -34,6 +35,7 @@ function StockScan({ ticker }) {
             setData(null);
             // Reset AI when ticker changes
             setAiReport(null);
+            setTargets({ buy: "--", sell: "--" });
 
             try {
                 console.log(`Searching for ${debouncedTicker} in serverless DB...`);
@@ -96,6 +98,13 @@ function StockScan({ ticker }) {
                 const res = await axios.get(`/api/analyze?stock_id=${data.stock_id}&stock_name=${data.stock_name}&pe=${pe}&change=${change}`);
                 if (res.data) {
                     setAiReport(res.data);
+                    // ✅ Update Targets from API
+                    if (res.data.buy_price) {
+                        setTargets({
+                            buy: res.data.buy_price || "--",
+                            sell: res.data.sell_price || "--"
+                        });
+                    }
                 }
             } catch (e) {
                 console.error("AI Fetch Error", e);
@@ -152,6 +161,23 @@ function StockScan({ ticker }) {
                     </span>
                 </div>
             </div>
+
+            {/* AI Price Targets Block */}
+            {targets.buy !== "--" && (
+                <div className="flex justify-center gap-4 mt-4 mb-6">
+                    {/* Buy Target (Green/Safe) */}
+                    <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-3 px-6 shadow-sm text-center">
+                        <p className="text-xs text-green-300 font-medium mb-1">AI 建議買進</p>
+                        <p className="text-xl font-bold text-green-400">{targets.buy}</p>
+                    </div>
+
+                    {/* Sell Target (Red/Profit) */}
+                    <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-3 px-6 shadow-sm text-center">
+                        <p className="text-xs text-red-300 font-medium mb-1">AI 建議賣出</p>
+                        <p className="text-xl font-bold text-red-400">{targets.sell}</p>
+                    </div>
+                </div>
+            )
 
             {/* Top Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
