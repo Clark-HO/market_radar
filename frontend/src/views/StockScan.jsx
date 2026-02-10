@@ -108,7 +108,8 @@ function StockScan({ ticker }) {
                 }
             } catch (e) {
                 console.error("AI Fetch Error", e);
-                setAiReport({ report: "⚠️ AI 分析暫時無法使用 (API Error)", verdict: "Error" });
+                setAiReport({ report: "⚠️ AI 分析暫時無法使用，請稍後再試。", verdict: "Error" });
+                setTargets({ buy: "--", sell: "--" });
             } finally {
                 setAiLoading(false);
             }
@@ -156,7 +157,7 @@ function StockScan({ ticker }) {
                     )}
                 </div>
                 <div className="flex gap-2">
-                    <span className={`px-3 py-1 rounded-full text-xs font-bold border ${aiReport?.verdict.includes('強') ? 'bg-red-500/20 text-red-400 border-red-500/30' : 'bg-blue-500/20 text-blue-400 border-blue-500/30'}`}>
+                    <span className={`px-3 py-1 rounded-full text-xs font-bold border ${aiReport?.verdict?.includes('強') ? 'bg-red-500/20 text-red-400 border-red-500/30' : 'bg-blue-500/20 text-blue-400 border-blue-500/30'}`}>
                         {aiReport?.verdict || "AI 分析中"}
                     </span>
                 </div>
