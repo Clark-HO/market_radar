@@ -48,12 +48,18 @@ class handler(BaseHTTPRequestHandler):
         
         today = datetime.now().strftime("%Y-%m-%d")
         
-        # ✅ NEW PROMPT: Force JSON Format
-        prompt = (f"今天是 {today}。請分析台股代號 {stock_name} ({stock_id})。"
-                  f"數據: PE={pe}, MoM={change}%。\n"
-                  f"請務必以 JSON 格式回傳，不要使用 Markdown 標記，格式如下："
-                  f'{{"buy_price": "建議買進價位(數字或區間)", "sell_price": "建議賣出價位(數字或區間)", '
-                  f'"score": 0-100(數字), "verdict": "趨勢訊號(強烈看多/看空/觀望)", "content": "你的完整分析文字"}}')
+        # ✅ NEW PROMPT: Force Numerical Buy/Sell Targets
+        prompt = (
+            f"今天是 {today}。請擔任一位嚴格的技術分析師，分析台股代號 {stock_name} ({stock_id})。"
+            f"數據: PE={pe}, MoM={change}%。\n"
+            f"請務必回傳 JSON 格式，包含以下四個欄位："
+            f'1. "buy_price": 即使目前不建議買進，也請根據『支撐位』給出一個具體的『數字區間』(例如: "23.5 - 24.0")，絕對不要寫『觀望』或文字。'
+            f'2. "sell_price": 請根據『壓力位』給出一個具體的『數字區間』(例如: "28.0 - 28.5")。'
+            f'3. "score": 0-100(數字)。'
+            f'4. "verdict": "趨勢訊號(強烈看多/看空/觀望)"。'
+            f'5. "content": 這裡才寫你的完整文字分析，包含趨勢判斷與建議。'
+            f"注意：buy_price 和 sell_price 欄位只能包含數字和連字號，不要有其他文字。"
+        )
 
         try:
             # 5. Call Gemini via Raw HTTP (No SDK)
