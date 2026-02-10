@@ -177,133 +177,135 @@ function StockScan({ ticker }) {
                         <p className="text-xl font-bold text-red-400">{targets.sell}</p>
                     </div>
                 </div>
-            )
-
-            {/* Top Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* AI Diagnosis Card */}
-                <div className="md:col-span-3 bg-blue-900/20 p-6 rounded-xl border border-blue-500/30 shadow-lg relative overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-500">
-                    <div className="absolute top-0 right-0 p-8 opacity-10">
-                        <Sparkles className="w-48 h-48 text-blue-400" />
-                    </div>
-
-                    <div className="relative z-10 w-full">
-                        <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-                            <Sparkles className="w-5 h-5 text-blue-400" />
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
-                                AI 智能診斷報告
-                            </span>
-                        </h3>
-
-                        {aiLoading ? (
-                            <div className="flex items-center gap-2 text-blue-300 animate-pulse">
-                                <Activity className="w-4 h-4 animate-spin" />
-                                <span>🤖 AI 正在分析 (Gemini 1.5)...</span>
-                            </div>
-                        ) : (
-                            <div className="bg-neutral-950/60 p-4 rounded-lg border border-white/5 text-sm md:text-base leading-relaxed text-slate-200 font-mono whitespace-pre-wrap shadow-inner w-full">
-                                {aiReport?.report || "等待分析..."}
-                            </div>
-                        )}
-                    </div>
                 </div>
-                {/* Valuation Card */}
-                <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg relative overflow-hidden group hover:border-primary/20 transition-all">
-                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <DollarSign className="w-24 h-24" />
-                    </div>
-                    <h3 className="text-muted text-sm font-medium mb-1">基本面 - 估值雷達</h3>
-                    <div className="flex items-end gap-2">
-                        <span className="text-3xl font-bold text-text">{valuation?.current_pe ? valuation.current_pe.toFixed(2) : "N/A"}</span>
-                        <span className="text-sm text-muted mb-1">倍 (本益比)</span>
-                    </div>
-                    <div className={`mt-4 inline-flex items-center px-2 py-1 rounded-full text-xs font-medium border ${valuation?.status === 'Undervalued' ? 'bg-green-500/10 text-green-500 border-green-500/20' :
-                        valuation?.status === 'High Premium' ? 'bg-red-500/10 text-red-500 border-red-500/20' :
-                            'bg-gray-500/10 text-gray-400 border-gray-500/20'
-                        }`}>
-                        {valuation?.status === 'Undervalued' ? "💎 價值低估" :
-                            valuation?.status === 'High Premium' ? "🔥 溢價過高" :
-                                valuation?.status === 'Fair Value' ? "⚖️ 合理評價" : "分析中..."}
-                    </div>
-                    <p className="mt-2 text-xs text-muted">同業平均: {valuation?.sector_pe?.toFixed(2) || "-"}倍</p>
-                </div>
+    )
+}
 
-                {/* Revenue Momentum */}
-                <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg hover:border-secondary/20 transition-all">
-                    <h3 className="text-muted text-sm font-medium mb-1">營收動能 (月)</h3>
-                    <div className="flex items-end gap-2">
-                        <span className="text-3xl font-bold text-text">{revenue?.revenue ? (revenue.revenue / 100000000).toFixed(1) : "-"}</span>
-                        <span className="text-sm text-muted mb-1">億 TWD</span>
-                    </div>
-                    <div className="mt-4 flex gap-4">
-                        <div className={`flex items-center gap-1 text-sm ${revenue?.mom > 0 ? 'text-red-400' : 'text-green-400'}`}>
-                            {revenue?.mom > 0 ? <TrendingUp className="w-4 h-4" /> : <TrendingDown className="w-4 h-4" />}
-                            <span>月增 {revenue?.mom}%</span>
-                        </div>
-                        <div className={`flex items-center gap-1 text-sm ${revenue?.yoy > 0 ? 'text-red-400' : 'text-green-400'}`}>
-                            <span>年增 {revenue?.yoy}%</span>
-                        </div>
-                    </div>
-                </div>
+{/* Top Stats */ }
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    {/* AI Diagnosis Card */}
+    <div className="md:col-span-3 bg-blue-900/20 p-6 rounded-xl border border-blue-500/30 shadow-lg relative overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-500">
+        <div className="absolute top-0 right-0 p-8 opacity-10">
+            <Sparkles className="w-48 h-48 text-blue-400" />
+        </div>
 
-                {/* Chip Analysis (Real) */}
-                {/* 3. Condition: Only show if data is available */}
-                {showChips && (
-                    <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg hover:border-accent/20 transition-all">
-                        <h3 className="text-muted text-sm font-medium mb-1">籌碼透視 - 聰明錢</h3>
-                        <div className="flex items-end gap-2">
-                            {/* Simplified Analysis Text based on Net Buy */}
-                            <span className={`text-3xl font-bold ${(data.chips.foreign_net + data.chips.trust_net) > 0 ? 'text-red-400' : 'text-green-400'}`}>
-                                {(data.chips.foreign_net + data.chips.trust_net) > 0 ? "主力買超" : "主力賣超"}
-                            </span>
-                        </div>
-                        <div className="mt-4 text-xs text-muted">
-                            外資動向: <span className={data?.chips?.foreign_net > 0 ? 'text-red-400' : 'text-green-400'}>
-                                {data?.chips?.foreign_net > 0 ? '+' : ''}{data?.chips?.foreign_net?.toLocaleString() || 0} 張
-                            </span>
-                            <br />
-                            投信動向: <span className={data?.chips?.trust_net > 0 ? 'text-red-400' : 'text-green-400'}>
-                                {data?.chips?.trust_net > 0 ? '+' : ''}{data?.chips?.trust_net?.toLocaleString() || 0} 張
-                            </span>
-                        </div>
-                    </div>
-                )}
+        <div className="relative z-10 w-full">
+            <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
+                <Sparkles className="w-5 h-5 text-blue-400" />
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+                    AI 智能診斷報告
+                </span>
+            </h3>
+
+            {aiLoading ? (
+                <div className="flex items-center gap-2 text-blue-300 animate-pulse">
+                    <Activity className="w-4 h-4 animate-spin" />
+                    <span>🤖 AI 正在分析 (Gemini 1.5)...</span>
+                </div>
+            ) : (
+                <div className="bg-neutral-950/60 p-4 rounded-lg border border-white/5 text-sm md:text-base leading-relaxed text-slate-200 font-mono whitespace-pre-wrap shadow-inner w-full">
+                    {aiReport?.report || "等待分析..."}
+                </div>
+            )}
+        </div>
+    </div>
+    {/* Valuation Card */}
+    <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg relative overflow-hidden group hover:border-primary/20 transition-all">
+        <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+            <DollarSign className="w-24 h-24" />
+        </div>
+        <h3 className="text-muted text-sm font-medium mb-1">基本面 - 估值雷達</h3>
+        <div className="flex items-end gap-2">
+            <span className="text-3xl font-bold text-text">{valuation?.current_pe ? valuation.current_pe.toFixed(2) : "N/A"}</span>
+            <span className="text-sm text-muted mb-1">倍 (本益比)</span>
+        </div>
+        <div className={`mt-4 inline-flex items-center px-2 py-1 rounded-full text-xs font-medium border ${valuation?.status === 'Undervalued' ? 'bg-green-500/10 text-green-500 border-green-500/20' :
+            valuation?.status === 'High Premium' ? 'bg-red-500/10 text-red-500 border-red-500/20' :
+                'bg-gray-500/10 text-gray-400 border-gray-500/20'
+            }`}>
+            {valuation?.status === 'Undervalued' ? "💎 價值低估" :
+                valuation?.status === 'High Premium' ? "🔥 溢價過高" :
+                    valuation?.status === 'Fair Value' ? "⚖️ 合理評價" : "分析中..."}
+        </div>
+        <p className="mt-2 text-xs text-muted">同業平均: {valuation?.sector_pe?.toFixed(2) || "-"}倍</p>
+    </div>
+
+    {/* Revenue Momentum */}
+    <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg hover:border-secondary/20 transition-all">
+        <h3 className="text-muted text-sm font-medium mb-1">營收動能 (月)</h3>
+        <div className="flex items-end gap-2">
+            <span className="text-3xl font-bold text-text">{revenue?.revenue ? (revenue.revenue / 100000000).toFixed(1) : "-"}</span>
+            <span className="text-sm text-muted mb-1">億 TWD</span>
+        </div>
+        <div className="mt-4 flex gap-4">
+            <div className={`flex items-center gap-1 text-sm ${revenue?.mom > 0 ? 'text-red-400' : 'text-green-400'}`}>
+                {revenue?.mom > 0 ? <TrendingUp className="w-4 h-4" /> : <TrendingDown className="w-4 h-4" />}
+                <span>月增 {revenue?.mom}%</span>
             </div>
-
-            {/* Revenue Chart (History) */}
-            <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg">
-                <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
-                    <Activity className="w-5 h-5 text-secondary" />
-                    近 12 個月營收趨勢
-                </h3>
-                <div style={{ width: '100%', height: 300 }}>
-                    <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={revenue?.history?.length > 0 ? revenue.history : (revenue ? [{ name: revenue.date, value: revenue.revenue }] : [])}>
-                            <XAxis
-                                dataKey="date"
-                                tickFormatter={(val) => val.slice(-2)}
-                                stroke="#71717a"
-                                fontSize={12}
-                                tickLine={false}
-                                axisLine={false}
-                            />
-                            <YAxis
-                                stroke="#71717a"
-                                fontSize={12}
-                                tickLine={false}
-                                axisLine={false}
-                                tickFormatter={(value) => `${(value / 100000000).toFixed(0)}億`}
-                            />
-                            <Tooltip
-                                contentStyle={{ backgroundColor: '#18181b', borderColor: '#27272a', color: '#f4f4f5' }}
-                                cursor={{ fill: '#27272a' }}
-                                formatter={(val) => [`${(val / 100000000).toFixed(2)}億`, "營收"]}
-                            />
-                            <Bar dataKey="revenue" fill="#3b82f6" radius={[4, 4, 0, 0]} barSize={40} />
-                        </BarChart>
-                    </ResponsiveContainer>
-                </div>
+            <div className={`flex items-center gap-1 text-sm ${revenue?.yoy > 0 ? 'text-red-400' : 'text-green-400'}`}>
+                <span>年增 {revenue?.yoy}%</span>
             </div>
+        </div>
+    </div>
+
+    {/* Chip Analysis (Real) */}
+    {/* 3. Condition: Only show if data is available */}
+    {showChips && (
+        <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg hover:border-accent/20 transition-all">
+            <h3 className="text-muted text-sm font-medium mb-1">籌碼透視 - 聰明錢</h3>
+            <div className="flex items-end gap-2">
+                {/* Simplified Analysis Text based on Net Buy */}
+                <span className={`text-3xl font-bold ${(data.chips.foreign_net + data.chips.trust_net) > 0 ? 'text-red-400' : 'text-green-400'}`}>
+                    {(data.chips.foreign_net + data.chips.trust_net) > 0 ? "主力買超" : "主力賣超"}
+                </span>
+            </div>
+            <div className="mt-4 text-xs text-muted">
+                外資動向: <span className={data?.chips?.foreign_net > 0 ? 'text-red-400' : 'text-green-400'}>
+                    {data?.chips?.foreign_net > 0 ? '+' : ''}{data?.chips?.foreign_net?.toLocaleString() || 0} 張
+                </span>
+                <br />
+                投信動向: <span className={data?.chips?.trust_net > 0 ? 'text-red-400' : 'text-green-400'}>
+                    {data?.chips?.trust_net > 0 ? '+' : ''}{data?.chips?.trust_net?.toLocaleString() || 0} 張
+                </span>
+            </div>
+        </div>
+    )}
+</div>
+
+{/* Revenue Chart (History) */ }
+<div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg">
+    <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
+        <Activity className="w-5 h-5 text-secondary" />
+        近 12 個月營收趨勢
+    </h3>
+    <div style={{ width: '100%', height: 300 }}>
+        <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={revenue?.history?.length > 0 ? revenue.history : (revenue ? [{ name: revenue.date, value: revenue.revenue }] : [])}>
+                <XAxis
+                    dataKey="date"
+                    tickFormatter={(val) => val.slice(-2)}
+                    stroke="#71717a"
+                    fontSize={12}
+                    tickLine={false}
+                    axisLine={false}
+                />
+                <YAxis
+                    stroke="#71717a"
+                    fontSize={12}
+                    tickLine={false}
+                    axisLine={false}
+                    tickFormatter={(value) => `${(value / 100000000).toFixed(0)}億`}
+                />
+                <Tooltip
+                    contentStyle={{ backgroundColor: '#18181b', borderColor: '#27272a', color: '#f4f4f5' }}
+                    cursor={{ fill: '#27272a' }}
+                    formatter={(val) => [`${(val / 100000000).toFixed(2)}億`, "營收"]}
+                />
+                <Bar dataKey="revenue" fill="#3b82f6" radius={[4, 4, 0, 0]} barSize={40} />
+            </BarChart>
+        </ResponsiveContainer>
+    </div>
+</div>
 
         </div >
     );
