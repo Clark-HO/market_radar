@@ -7,7 +7,7 @@ import { LayoutDashboard, Globe, Menu, Search, BarChart3, Activity } from 'lucid
 function App() {
   const [activeTab, setActiveTab] = useState('market');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [ticker, setTicker] = useState('2330'); // Default TSMC
+  const [ticker, setTicker] = useState(''); // Default Empty
 
   return (
     <div className="flex h-screen bg-neutral-900 text-white font-sans overflow-hidden">
@@ -169,6 +169,7 @@ const SearchForm = ({ initialValue, onSearch }) => {
         placeholder="輸入股票代號 (例如 2330)..."
         value={localInput}
         onChange={(e) => setLocalInput(e.target.value)}
+        onFocus={() => setLocalInput("")}
         className="w-full px-6 py-3 text-base text-gray-700 bg-white border-2 border-red-100 rounded-full focus:outline-none focus:border-red-500 focus:ring-4 focus:ring-red-100 transition-all duration-300 shadow-sm placeholder-gray-400 group-hover:shadow-md"
       />
 
