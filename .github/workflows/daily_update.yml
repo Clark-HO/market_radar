@@ -36,11 +36,17 @@ jobs:
       - name: Commit and Push Changes
         run: |
           git config --global user.name "Stock Bot"
-          git config --global user.email "bot@github.com"
+          git config --global user.email "actions@github.com"
+          git add frontend/public/stock_data.json frontend/public/macro_data.json
 
-          # Force add the JSON files
-          git add -f frontend/public/stock_data.json
-          git add -f frontend/public/macro_data.json
-
-          # Commit only if changes exist
-          git diff --staged --quiet || (git commit -m "📈 Auto-update stock data [$(date +'%Y-%m-%d')]" && git push)
+          # Check for changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "📈 Auto-update stock data [$(date +'%Y-%m-%d')]"
+            
+            # ✅ CRITICAL FIX: Pull latest changes before pushing
+            git pull --rebase origin main
+            
+            git push
+          fi
