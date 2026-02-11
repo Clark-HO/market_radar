@@ -4,7 +4,7 @@ import json
 
 # 設定你的 API Key (如果環境變數沒抓到，請暫時直接貼在這裡測試)
 API_KEY = os.environ.get("GEMINI_API_KEY") 
-API_KEY = "AIzaSyCMbyVS1myWQHlSTSFbmNJI8jVb67BIxjw"
+API_KEY = ""
 
 def list_available_models():
     if not API_KEY:
