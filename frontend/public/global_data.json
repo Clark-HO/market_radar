@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-06 10:08",
+  "last_updated": "2026-02-11 02:34",
   "events": [
     {
       "event": "MWC 世界行動通訊大會 2026",
@@ -8,27 +8,27 @@
       "theme": "6G / Wi-Fi 7 / 邊緣 AI",
       "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
       "status": "Upcoming",
-      "days_to_go": 20,
+      "days_to_go": 15,
       "chains": [
         {
           "us_stock": {
             "symbol": "QCOM",
             "name": "高通",
-            "price": 136.3,
-            "change": 0.22
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "IC 設計",
           "tw_stocks": [
             {
               "ticker": "2454",
-              "price": 1710.0,
-              "change": -3.12,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "2379",
-              "price": 472.5,
-              "change": 2.05,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
@@ -43,21 +43,21 @@
           "us_stock": {
             "symbol": "AVGO",
             "name": "博通",
-            "price": 310.51,
-            "change": 0.73
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "網通設備",
           "tw_stocks": [
             {
               "ticker": "5388",
-              "price": 82.3,
-              "change": -1.79,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "6285",
-              "price": 175.0,
-              "change": -6.42,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             }
           ]
@@ -71,39 +71,39 @@
       "theme": "Blackwell Ultra / Rubin GPU",
       "description": "AI 界的伍茲塔克。黃仁勳將揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
       "status": "Upcoming",
-      "days_to_go": 40,
+      "days_to_go": 35,
       "chains": [
         {
           "us_stock": {
             "symbol": "NVDA",
             "name": "輝達",
-            "price": 171.88,
-            "change": 0.72
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "AI 伺服器",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 1780.0,
-              "change": 0.56,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "2382",
-              "price": 279.5,
-              "change": 2.19,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "3231",
-              "price": 129.0,
-              "change": 0.78,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "6669",
-              "price": 3645.0,
-              "change": 0.55,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             }
           ]
@@ -112,22 +112,22 @@
           "us_stock": {
             "symbol": "SMCI",
             "name": "美超微",
-            "price": 30.85,
-            "change": 3.14
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "伺服器代工",
           "tw_stocks": [
             {
               "ticker": "2376",
-              "price": 227.5,
-              "change": 0.22,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2324",
-              "price": 30.7,
-              "change": -2.07,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         }
@@ -140,28 +140,28 @@
       "theme": "Gemini 2.0 / Android 17",
       "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
       "status": "Upcoming",
-      "days_to_go": 97,
+      "days_to_go": 92,
       "chains": [
         {
           "us_stock": {
             "symbol": "GOOGL",
             "name": "Alphabet",
-            "price": 331.25,
-            "change": 2.87
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "安卓生態系",
           "tw_stocks": [
             {
               "ticker": "2357",
-              "price": 508.0,
-              "change": 0.4,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2498",
-              "price": 44.9,
-              "change": 0.0,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         }
@@ -174,33 +174,33 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Upcoming",
-      "days_to_go": 116,
+      "days_to_go": 111,
       "chains": [
         {
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 393.67,
-            "change": -0.13
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2353",
-              "price": 26.55,
-              "change": -0.93,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "2357",
-              "price": 508.0,
-              "change": 0.4,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "2301",
-              "price": 164.5,
-              "change": -0.9,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             }
           ]
@@ -209,22 +209,22 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 192.5,
-            "change": 2.61
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 1780.0,
-              "change": 0.56,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "3711",
-              "price": 304.5,
-              "change": 7.79,
-              "signal": "Sympathy Rally"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         }
@@ -237,33 +237,33 @@
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
       "status": "Upcoming",
-      "days_to_go": 124,
+      "days_to_go": 119,
       "chains": [
         {
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 275.91,
-            "change": -0.31
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
             {
               "ticker": "2317",
-              "price": 215.0,
-              "change": -0.23,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "3008",
-              "price": 2330.0,
-              "change": 0.87,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "4938",
-              "price": 70.3,
-              "change": 1.01,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             }
           ]
