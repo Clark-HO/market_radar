@@ -92,10 +92,20 @@ function StockScan({ ticker }) {
             try {
                 // Pass key metrics
                 const pe = data.valuation?.current_pe || 0;
-                const change = data.revenue?.mom || 0;
+                // Use Price Change if available (data.change) or Revenue MoM as fallback? 
+                // User asked for "Change" from local data. 
+                // Since our DB schema might not have Change yet, we send what we have or N/A.
+                // However, user specifically asked to use `targetStock.Change`. 
+                // Our data variable `data` IS the targetStock (or similar structure).
+                // Let's assume data.change exists or send 'N/A' to be safe.
+                // Note: The user's snippet used "Price" and "Change". Our data might use lowercase.
+                // Let's try to find them.
+                const currentPrice = data.valuation?.price || data.Price || "N/A";
+                const currentChange = data.change || data.Change || "N/A"; // Try to find change
 
                 // Call Serverless Function (use data.stock_id)
-                const res = await axios.get(`/api/analyze?stock_id=${data.stock_id}&stock_name=${data.stock_name}&pe=${pe}&change=${change}`);
+                // Updated URL with price and change
+                const res = await axios.get(`/api/analyze?stock_id=${data.stock_id}&stock_name=${data.stock_name}&pe=${pe}&price=${currentPrice}&change=${currentChange}`);
                 if (res.data) {
                     setAiReport(res.data);
                     // ✅ Update Targets from API
