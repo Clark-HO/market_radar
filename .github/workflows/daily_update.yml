@@ -29,7 +29,8 @@ jobs:
       - name: Run ETL Script
         run: |
           echo "Starting Stock ETL..."
-          python backend/data_updater.py
+          # Add --force to ignore timestamp checks
+          python backend/data_updater.py --force
           echo "Starting Macro ETL..."
           python backend/scrapers/macro.py
 
