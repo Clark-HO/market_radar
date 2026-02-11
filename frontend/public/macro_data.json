@@ -1,12 +1,12 @@
 {
-    "last_updated": "2026-02-10 09:01",
+    "last_updated": "2026-02-11 01:42",
     "market_status": {
         "taiex_close": 33072.97,
         "change": 668.35,
         "change_percent": 2.06,
-        "high": 33072.97,
-        "low": 32439.71,
-        "volume": 6745.43761318
+        "high": 33354.6,
+        "low": 33071.67,
+        "volume": 6784.90714672
     },
     "history": [
         {
@@ -126,7 +126,7 @@
         {
             "date": "2026-02-10",
             "close": 33072.97,
-            "volume": 6745.43761318,
+            "volume": 6784.90714672,
             "change": 668.35
         }
     ],
@@ -137,7 +137,7 @@
         },
         {
             "name": "投信",
-            "net": 44.76
+            "net": 46.66
         },
         {
             "name": "自營商",
@@ -150,7 +150,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 31.55,
+        "usd_twd": 31.52,
         "trend": "Stable"
     },
     "sector_flow": [
@@ -161,12 +161,12 @@
         },
         {
             "name": "半導體指數        ",
-            "ratio": 24.2,
+            "ratio": 24.3,
             "trend": "Normal"
         },
         {
             "name": "電子零組件指數    ",
-            "ratio": 10.4,
+            "ratio": 10.3,
             "trend": "Normal"
         },
         {
@@ -176,12 +176,12 @@
         },
         {
             "name": "通信網路指數      ",
-            "ratio": 3.2,
+            "ratio": 3.1,
             "trend": "Cool"
         },
         {
             "name": "其他",
-            "ratio": 12.5,
+            "ratio": 12.4,
             "trend": "Normal"
         }
     ]
