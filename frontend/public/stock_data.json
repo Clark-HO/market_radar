@@ -39415,7 +39415,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.45,
       "status": "High Premium",
-      "price": 169.6
+      "price": 169.1
     },
     "revenue": {
       "date": "N/A",
@@ -65679,10 +65679,10 @@
       "price": 155.5
     },
     "revenue": {
-      "date": "2025-12",
-      "revenue": 198953000.0,
-      "mom": 27.44,
-      "yoy": 30.53,
+      "date": "2026-01",
+      "revenue": 115699000.0,
+      "mom": -41.85,
+      "yoy": 10.87,
       "history": [
         {
           "date": "2025-02",
@@ -65727,6 +65727,10 @@
         {
           "date": "2025-12",
           "revenue": 198953000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 115699000.0
         }
       ]
     },
@@ -69999,9 +70003,9 @@
     "stock_name": "台化",
     "valuation": {
       "stock_id": "1326",
-      "current_pe": 44.28,
+      "current_pe": 44.51,
       "sector_pe": 20.0,
-      "pe_score": 2.21,
+      "pe_score": 2.23,
       "status": "High Premium",
       "price": 42.2
     },
@@ -70660,7 +70664,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.77,
       "status": "Undervalued",
-      "price": 38.9
+      "price": 38.7
     },
     "revenue": {
       "date": "N/A",
