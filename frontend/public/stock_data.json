@@ -798,10 +798,10 @@
       "price": 40.0
     },
     "revenue": {
-      "date": "2025-12",
-      "revenue": 7014202000.0,
-      "mom": 17.94,
-      "yoy": 5.55,
+      "date": "2026-01",
+      "revenue": 8155833000.0,
+      "mom": 16.28,
+      "yoy": 20.05,
       "history": [
         {
           "date": "2025-02",
@@ -846,6 +846,10 @@
         {
           "date": "2025-12",
           "revenue": 7014202000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 8155833000.0
         }
       ]
     },
@@ -32271,10 +32275,10 @@
     "stock_name": "邦睿生技-創",
     "valuation": {
       "stock_id": "6955",
-      "current_pe": 43.64,
+      "current_pe": 0.0,
       "sector_pe": 20.0,
-      "pe_score": 2.18,
-      "status": "High Premium",
+      "pe_score": 0.0,
+      "status": "N/A",
       "price": 171.5
     },
     "revenue": {
@@ -32879,9 +32883,9 @@
     "stock_name": "六方科-KY",
     "valuation": {
       "stock_id": "4569",
-      "current_pe": 32.48,
+      "current_pe": 32.56,
       "sector_pe": 20.0,
-      "pe_score": 1.62,
+      "pe_score": 1.63,
       "status": "High Premium",
       "price": 146.5
     },
