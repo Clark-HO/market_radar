@@ -1159,10 +1159,10 @@
       "price": 52.2
     },
     "revenue": {
-      "date": "2025-12",
-      "revenue": 22845536000.0,
-      "mom": -4.34,
-      "yoy": 44.1,
+      "date": "2026-01",
+      "revenue": 25856645000.0,
+      "mom": 13.18,
+      "yoy": 48.23,
       "history": [
         {
           "date": "2025-02",
@@ -1207,6 +1207,10 @@
         {
           "date": "2025-12",
           "revenue": 22845536000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 25856645000.0
         }
       ]
     },
@@ -14727,7 +14731,7 @@
     "stock_name": "望隼",
     "valuation": {
       "stock_id": "4771",
-      "current_pe": 14.87,
+      "current_pe": 14.88,
       "sector_pe": 20.0,
       "pe_score": 0.74,
       "status": "Undervalued",
@@ -32275,10 +32279,10 @@
     "stock_name": "邦睿生技-創",
     "valuation": {
       "stock_id": "6955",
-      "current_pe": 0.0,
+      "current_pe": 43.64,
       "sector_pe": 20.0,
-      "pe_score": 0.0,
-      "status": "N/A",
+      "pe_score": 2.18,
+      "status": "High Premium",
       "price": 171.5
     },
     "revenue": {
@@ -43550,7 +43554,7 @@
     "stock_name": "卜蜂",
     "valuation": {
       "stock_id": "1215",
-      "current_pe": 14.54,
+      "current_pe": 14.56,
       "sector_pe": 20.0,
       "pe_score": 0.73,
       "status": "Undervalued",
@@ -45447,9 +45451,9 @@
     "stock_name": "熙特爾-創",
     "valuation": {
       "stock_id": "7740",
-      "current_pe": 48.93,
+      "current_pe": 48.78,
       "sector_pe": 20.0,
-      "pe_score": 2.45,
+      "pe_score": 2.44,
       "status": "High Premium",
       "price": 160.0
     },
@@ -50235,7 +50239,7 @@
     "stock_name": "聯德控股-KY",
     "valuation": {
       "stock_id": "4912",
-      "current_pe": 21.31,
+      "current_pe": 21.36,
       "sector_pe": 20.0,
       "pe_score": 1.07,
       "status": "Fair Value",
@@ -126159,9 +126163,9 @@
     "stock_name": "台南-KY",
     "valuation": {
       "stock_id": "5906",
-      "current_pe": 45.61,
+      "current_pe": 45.22,
       "sector_pe": 20.0,
-      "pe_score": 2.28,
+      "pe_score": 2.26,
       "status": "High Premium",
       "price": 52.0
     },
