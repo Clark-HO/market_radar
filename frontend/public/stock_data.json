@@ -1384,7 +1384,7 @@
   },
   "2881": {
     "stock_id": "2881",
-    "stock_name": "富邦金",
+    "stock_name": "2881",
     "valuation": {
       "stock_id": "2881",
       "current_pe": 11.41,
@@ -1450,8 +1450,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 8575,
-      "trust_net": -892,
+      "foreign_net": null,
+      "trust_net": null,
       "analysis": "N/A"
     }
   },
@@ -2965,7 +2965,7 @@
   },
   "2454": {
     "stock_id": "2454",
-    "stock_name": "聯發科",
+    "stock_name": "2454",
     "valuation": {
       "stock_id": "2454",
       "current_pe": 27.86,
@@ -3031,8 +3031,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 368,
-      "trust_net": 6,
+      "foreign_net": null,
+      "trust_net": null,
       "analysis": "N/A"
     }
   },
@@ -3642,7 +3642,7 @@
   },
   "2603": {
     "stock_id": "2603",
-    "stock_name": "長榮",
+    "stock_name": "2603",
     "valuation": {
       "stock_id": "2603",
       "current_pe": 4.44,
@@ -3708,8 +3708,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 2404,
-      "trust_net": -1583,
+      "foreign_net": null,
+      "trust_net": null,
       "analysis": "N/A"
     }
   },
@@ -12664,7 +12664,7 @@
   },
   "2365": {
     "stock_id": "2365",
-    "stock_name": "昆盈",
+    "stock_name": "2365",
     "valuation": {
       "stock_id": "2365",
       "current_pe": 113.71,
@@ -12730,8 +12730,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 242,
-      "trust_net": 0,
+      "foreign_net": null,
+      "trust_net": null,
       "analysis": "N/A"
     }
   },
@@ -70628,7 +70628,7 @@
   },
   "2317": {
     "stock_id": "2317",
-    "stock_name": "鴻海",
+    "stock_name": "2317",
     "valuation": {
       "stock_id": "2317",
       "current_pe": 16.92,
@@ -70694,8 +70694,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 31320,
-      "trust_net": 1784,
+      "foreign_net": null,
+      "trust_net": null,
       "analysis": "N/A"
     }
   },
@@ -70895,10 +70895,10 @@
   },
   "2330": {
     "stock_id": "2330",
-    "stock_name": "台積電",
+    "stock_name": "2330",
     "valuation": {
       "stock_id": "2330",
-      "current_pe": 28.94,
+      "current_pe": 28.9,
       "sector_pe": 20.0,
       "pe_score": 1.45,
       "status": "High Premium",
@@ -70961,8 +70961,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -4942,
-      "trust_net": 1140,
+      "foreign_net": null,
+      "trust_net": null,
       "analysis": "N/A"
     }
   },
