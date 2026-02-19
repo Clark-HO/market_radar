@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-18 17:09",
+  "last_updated": "2026-02-19 02:32",
   "events": [
     {
       "event": "MWC 世界行動通訊大會 2026",
@@ -8,14 +8,14 @@
       "theme": "6G / Wi-Fi 7 / 邊緣 AI",
       "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
       "status": "Imminent",
-      "days_to_go": 8,
+      "days_to_go": 7,
       "chains": [
         {
           "us_stock": {
             "symbol": "QCOM",
             "name": "高通",
-            "price": 144.13,
-            "change": 1.2
+            "price": 143.24,
+            "change": 0.58
           },
           "tw_sector": "IC 設計",
           "tw_stocks": [
@@ -43,8 +43,8 @@
           "us_stock": {
             "symbol": "AVGO",
             "name": "博通",
-            "price": 336.11,
-            "change": 2.42
+            "price": 333.51,
+            "change": 1.62
           },
           "tw_sector": "網通設備",
           "tw_stocks": [
@@ -52,13 +52,13 @@
               "ticker": "5388",
               "price": 82.2,
               "change": -0.36,
-              "signal": "Lagging (Buy?)"
+              "signal": "Neutral"
             },
             {
               "ticker": "6285",
               "price": 172.0,
               "change": -0.58,
-              "signal": "Lagging (Buy?)"
+              "signal": "Neutral"
             }
           ]
         }
@@ -71,14 +71,14 @@
       "theme": "Blackwell Ultra / Rubin GPU",
       "description": "AI 界的伍茲塔克。黃仁勳將揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
       "status": "Upcoming",
-      "days_to_go": 28,
+      "days_to_go": 27,
       "chains": [
         {
           "us_stock": {
             "symbol": "NVDA",
             "name": "輝達",
-            "price": 189.29,
-            "change": 1.99
+            "price": 187.98,
+            "change": 1.28
           },
           "tw_sector": "AI 伺服器",
           "tw_stocks": [
@@ -112,8 +112,8 @@
           "us_stock": {
             "symbol": "SMCI",
             "name": "美超微",
-            "price": 30.39,
-            "change": 0.6
+            "price": 29.71,
+            "change": -1.66
           },
           "tw_sector": "伺服器代工",
           "tw_stocks": [
@@ -140,14 +140,14 @@
       "theme": "Gemini 2.0 / Android 17",
       "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
       "status": "Upcoming",
-      "days_to_go": 85,
+      "days_to_go": 84,
       "chains": [
         {
           "us_stock": {
             "symbol": "GOOGL",
             "name": "Alphabet",
-            "price": 304.13,
-            "change": 1.18
+            "price": 303.33,
+            "change": 0.92
           },
           "tw_sector": "安卓生態系",
           "tw_stocks": [
@@ -174,14 +174,14 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Upcoming",
-      "days_to_go": 104,
+      "days_to_go": 103,
       "chains": [
         {
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 401.61,
-            "change": 1.39
+            "price": 399.6,
+            "change": 0.88
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
@@ -209,8 +209,8 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 202.47,
-            "change": 2.36
+            "price": 200.12,
+            "change": 1.17
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
@@ -218,13 +218,13 @@
               "ticker": "2330",
               "price": 1915.0,
               "change": 2.41,
-              "signal": "Sympathy Rally"
+              "signal": "Neutral"
             },
             {
               "ticker": "3711",
               "price": 354.5,
               "change": 3.5,
-              "signal": "Sympathy Rally"
+              "signal": "Neutral"
             }
           ]
         }
@@ -237,14 +237,14 @@
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
       "status": "Upcoming",
-      "days_to_go": 112,
+      "days_to_go": 111,
       "chains": [
         {
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 265.75,
-            "change": 0.56
+            "price": 264.35,
+            "change": 0.03
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
