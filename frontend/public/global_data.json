@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-19 16:59",
+  "last_updated": "2026-02-20 02:28",
   "events": [
     {
       "event": "MWC 世界行動通訊大會 2026",
@@ -8,14 +8,14 @@
       "theme": "6G / Wi-Fi 7 / 邊緣 AI",
       "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
       "status": "Imminent",
-      "days_to_go": 7,
+      "days_to_go": 6,
       "chains": [
         {
           "us_stock": {
             "symbol": "QCOM",
             "name": "高通",
-            "price": 140.57,
-            "change": -2.49
+            "price": 141.27,
+            "change": -2.0
           },
           "tw_sector": "IC 設計",
           "tw_stocks": [
@@ -23,19 +23,19 @@
               "ticker": "2454",
               "price": 1855.0,
               "change": 0.27,
-              "signal": "Risk Alert"
+              "signal": "Neutral"
             },
             {
               "ticker": "2379",
               "price": 476.0,
               "change": -0.31,
-              "signal": "Risk Alert"
+              "signal": "Neutral"
             },
             {
               "ticker": "3105",
               "price": 0,
               "change": 0,
-              "signal": "Risk Alert"
+              "signal": "Neutral"
             }
           ]
         },
@@ -43,8 +43,8 @@
           "us_stock": {
             "symbol": "AVGO",
             "name": "博通",
-            "price": 335.12,
-            "change": 0.24
+            "price": 333.99,
+            "change": -0.1
           },
           "tw_sector": "網通設備",
           "tw_stocks": [
@@ -71,14 +71,14 @@
       "theme": "Blackwell Ultra / Rubin GPU",
       "description": "AI 界的伍茲塔克。黃仁勳將揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
       "status": "Upcoming",
-      "days_to_go": 27,
+      "days_to_go": 26,
       "chains": [
         {
           "us_stock": {
             "symbol": "NVDA",
             "name": "輝達",
-            "price": 186.72,
-            "change": -0.72
+            "price": 187.9,
+            "change": -0.09
           },
           "tw_sector": "AI 伺服器",
           "tw_stocks": [
@@ -112,8 +112,8 @@
           "us_stock": {
             "symbol": "SMCI",
             "name": "美超微",
-            "price": 31.33,
-            "change": 5.33
+            "price": 32.16,
+            "change": 8.1
           },
           "tw_sector": "伺服器代工",
           "tw_stocks": [
@@ -140,14 +140,14 @@
       "theme": "Gemini 2.0 / Android 17",
       "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
       "status": "Upcoming",
-      "days_to_go": 84,
+      "days_to_go": 83,
       "chains": [
         {
           "us_stock": {
             "symbol": "GOOGL",
             "name": "Alphabet",
-            "price": 303.5,
-            "change": -0.13
+            "price": 302.85,
+            "change": -0.34
           },
           "tw_sector": "安卓生態系",
           "tw_stocks": [
@@ -174,14 +174,14 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Upcoming",
-      "days_to_go": 103,
+      "days_to_go": 102,
       "chains": [
         {
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 398.87,
-            "change": -0.44
+            "price": 398.46,
+            "change": -0.55
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
@@ -209,8 +209,8 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 201.77,
-            "change": 0.83
+            "price": 203.37,
+            "change": 1.63
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
@@ -237,14 +237,14 @@
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
       "status": "Upcoming",
-      "days_to_go": 111,
+      "days_to_go": 110,
       "chains": [
         {
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 263.19,
-            "change": -0.21
+            "price": 260.58,
+            "change": -1.2
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
