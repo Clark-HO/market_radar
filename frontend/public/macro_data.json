@@ -1,20 +1,14 @@
 {
-    "last_updated": "2026-02-24 02:35",
+    "last_updated": "2026-02-24 09:00",
     "market_status": {
-        "taiex_close": 33773.26,
-        "change": 167.55,
-        "change_percent": 0.5,
-        "high": 34671.38,
+        "taiex_close": 34700.82,
+        "change": 927.56,
+        "change_percent": 2.75,
+        "high": 34786.42,
         "low": 33987.51,
-        "volume": 9499.9276717
+        "volume": 8580.99807943
     },
     "history": [
-        {
-            "date": "2026-01-16",
-            "close": 31408.7,
-            "volume": 8514.52408675,
-            "change": 598.12
-        },
         {
             "date": "2026-01-19",
             "close": 31639.29,
@@ -128,24 +122,30 @@
             "close": 33773.26,
             "volume": 9499.9276717,
             "change": 167.55
+        },
+        {
+            "date": "2026-02-24",
+            "close": 34700.82,
+            "volume": 8580.99807943,
+            "change": 927.56
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": 83.52
+            "net": 627.34
         },
         {
             "name": "投信",
-            "net": -19.97
+            "net": 56.04
         },
         {
             "name": "自營商",
-            "net": -114.72
+            "net": 153.49
         }
     ],
     "chips": {
-        "futures_net_oi": -30852,
+        "futures_net_oi": -29372,
         "futures_status": "Bearish",
         "futures_color": "green"
     },
@@ -161,17 +161,17 @@
         },
         {
             "name": "半導體指數        ",
-            "ratio": 24.1,
+            "ratio": 20.9,
             "trend": "Normal"
         },
         {
             "name": "電子零組件指數    ",
-            "ratio": 9.1,
+            "ratio": 12.8,
             "trend": "Normal"
         },
         {
             "name": "電腦及週邊設備指數",
-            "ratio": 4.0,
+            "ratio": 3.2,
             "trend": "Cool"
         },
         {
@@ -181,7 +181,7 @@
         },
         {
             "name": "其他",
-            "ratio": 14.6,
+            "ratio": 14.9,
             "trend": "Normal"
         }
     ]
