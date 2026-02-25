@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-25 09:15",
+  "last_updated": "2026-02-25 17:32",
   "events": [
     {
       "event": "MWC 世界行動通訊大會 2026",
@@ -14,8 +14,8 @@
           "us_stock": {
             "symbol": "QCOM",
             "name": "高通",
-            "price": 144.78,
-            "change": -0.0
+            "price": 145.03,
+            "change": 0.17
           },
           "tw_sector": "IC 設計",
           "tw_stocks": [
@@ -43,8 +43,8 @@
           "us_stock": {
             "symbol": "AVGO",
             "name": "博通",
-            "price": 325.49,
-            "change": -0.03
+            "price": 331.36,
+            "change": 1.81
           },
           "tw_sector": "網通設備",
           "tw_stocks": [
@@ -77,8 +77,8 @@
           "us_stock": {
             "symbol": "NVDA",
             "name": "輝達",
-            "price": 192.85,
-            "change": -0.04
+            "price": 197.43,
+            "change": 2.4
           },
           "tw_sector": "AI 伺服器",
           "tw_stocks": [
@@ -86,25 +86,25 @@
               "ticker": "2330",
               "price": 2015.0,
               "change": 2.28,
-              "signal": "Neutral"
+              "signal": "Sympathy Rally"
             },
             {
               "ticker": "2382",
               "price": 297.5,
               "change": 4.75,
-              "signal": "Neutral"
+              "signal": "Sympathy Rally"
             },
             {
               "ticker": "3231",
               "price": 138.0,
               "change": 5.75,
-              "signal": "Neutral"
+              "signal": "Sympathy Rally"
             },
             {
               "ticker": "6669",
               "price": 4060.0,
               "change": 5.87,
-              "signal": "Neutral"
+              "signal": "Sympathy Rally"
             }
           ]
         },
@@ -112,8 +112,8 @@
           "us_stock": {
             "symbol": "SMCI",
             "name": "美超微",
-            "price": 31.13,
-            "change": 0.16
+            "price": 32.45,
+            "change": 4.39
           },
           "tw_sector": "伺服器代工",
           "tw_stocks": [
@@ -121,7 +121,7 @@
               "ticker": "2376",
               "price": 235.0,
               "change": 2.62,
-              "signal": "Neutral"
+              "signal": "Sympathy Rally"
             },
             {
               "ticker": "2324",
@@ -146,8 +146,8 @@
           "us_stock": {
             "symbol": "GOOGL",
             "name": "Alphabet",
-            "price": 310.9,
-            "change": -0.14
+            "price": 310.36,
+            "change": -0.19
           },
           "tw_sector": "安卓生態系",
           "tw_stocks": [
@@ -180,8 +180,8 @@
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 389.0,
-            "change": -0.08
+            "price": 397.2,
+            "change": 2.18
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
@@ -201,7 +201,7 @@
               "ticker": "2301",
               "price": 192.0,
               "change": -0.52,
-              "signal": "Neutral"
+              "signal": "Lagging (Buy?)"
             }
           ]
         },
@@ -209,8 +209,8 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 213.84,
-            "change": -0.26
+            "price": 212.62,
+            "change": -0.97
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
@@ -243,8 +243,8 @@
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 272.14,
-            "change": -0.06
+            "price": 273.67,
+            "change": 0.84
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
