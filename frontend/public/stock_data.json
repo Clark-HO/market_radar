@@ -13652,7 +13652,7 @@
     "stock_name": "櫻花建",
     "valuation": {
       "stock_id": "2539",
-      "current_pe": 11.04,
+      "current_pe": 11.06,
       "sector_pe": 20.0,
       "pe_score": 0.55,
       "status": "Undervalued",
@@ -18249,7 +18249,7 @@
     "stock_name": "麗豐-KY",
     "valuation": {
       "stock_id": "4137",
-      "current_pe": 19.18,
+      "current_pe": 19.21,
       "sector_pe": 20.0,
       "pe_score": 0.96,
       "status": "Fair Value",
@@ -18589,7 +18589,7 @@
     "stock_name": "東哥遊艇",
     "valuation": {
       "stock_id": "8478",
-      "current_pe": 23.39,
+      "current_pe": 23.42,
       "sector_pe": 20.0,
       "pe_score": 1.17,
       "status": "Fair Value",
@@ -19927,9 +19927,9 @@
     "stock_name": "裕慶-KY",
     "valuation": {
       "stock_id": "6957",
-      "current_pe": 15.7,
+      "current_pe": 15.73,
       "sector_pe": 20.0,
-      "pe_score": 0.78,
+      "pe_score": 0.79,
       "status": "Undervalued",
       "price": 181.0
     },
@@ -20535,7 +20535,7 @@
     "stock_name": "碩天",
     "valuation": {
       "stock_id": "3617",
-      "current_pe": 10.46,
+      "current_pe": 10.45,
       "sector_pe": 20.0,
       "pe_score": 0.52,
       "status": "Undervalued",
@@ -23454,7 +23454,7 @@
     "stock_name": "新代",
     "valuation": {
       "stock_id": "7750",
-      "current_pe": 51.22,
+      "current_pe": 51.28,
       "sector_pe": 20.0,
       "pe_score": 2.56,
       "status": "High Premium",
@@ -27151,10 +27151,10 @@
     "stock_name": "中宇",
     "valuation": {
       "stock_id": "1535",
-      "current_pe": 12.97,
+      "current_pe": 0.0,
       "sector_pe": 20.0,
-      "pe_score": 0.65,
-      "status": "Undervalued",
+      "pe_score": 0.0,
+      "status": "N/A",
       "price": 51.5
     },
     "revenue": {
@@ -27978,7 +27978,7 @@
     "stock_name": "一零四",
     "valuation": {
       "stock_id": "3130",
-      "current_pe": 15.81,
+      "current_pe": 15.8,
       "sector_pe": 20.0,
       "pe_score": 0.79,
       "status": "Undervalued",
@@ -28124,9 +28124,9 @@
     "stock_name": "汎德永業",
     "valuation": {
       "stock_id": "2247",
-      "current_pe": 13.31,
+      "current_pe": 13.3,
       "sector_pe": 20.0,
-      "pe_score": 0.67,
+      "pe_score": 0.66,
       "status": "Undervalued",
       "price": 268.5
     },
@@ -30045,7 +30045,7 @@
     "stock_name": "振大環球",
     "valuation": {
       "stock_id": "4441",
-      "current_pe": 18.81,
+      "current_pe": 18.8,
       "sector_pe": 20.0,
       "pe_score": 0.94,
       "status": "Fair Value",
@@ -34859,7 +34859,7 @@
     "stock_name": "駐龍",
     "valuation": {
       "stock_id": "4572",
-      "current_pe": 41.23,
+      "current_pe": 41.11,
       "sector_pe": 20.0,
       "pe_score": 2.06,
       "status": "High Premium",
@@ -39475,7 +39475,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.54,
       "status": "High Premium",
-      "price": 179.2
+      "price": 179.4
     },
     "revenue": {
       "date": "N/A",
@@ -39860,7 +39860,7 @@
     "stock_name": "聚賢研發-創",
     "valuation": {
       "stock_id": "7631",
-      "current_pe": 24.54,
+      "current_pe": 24.59,
       "sector_pe": 20.0,
       "pe_score": 1.23,
       "status": "High Premium",
@@ -40127,9 +40127,9 @@
     "stock_name": "科定",
     "valuation": {
       "stock_id": "6655",
-      "current_pe": 36.87,
+      "current_pe": 37.08,
       "sector_pe": 20.0,
-      "pe_score": 1.84,
+      "pe_score": 1.85,
       "status": "High Premium",
       "price": 132.0
     },
