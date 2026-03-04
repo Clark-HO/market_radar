@@ -1,12 +1,12 @@
 {
-    "last_updated": "2026-03-04 02:34",
+    "last_updated": "2026-03-04 08:48",
     "market_status": {
-        "taiex_close": 34323.65,
-        "change": -771.44,
-        "change_percent": -2.2,
+        "taiex_close": 32828.88,
+        "change": -1494.77,
+        "change_percent": -4.35,
         "high": 34228.75,
-        "low": 32950.04,
-        "volume": 11132.33319063
+        "low": 32828.88,
+        "volume": 10935.86372473
     },
     "history": [
         {
@@ -92,24 +92,30 @@
             "close": 34323.65,
             "volume": 11132.33319063,
             "change": -771.44
+        },
+        {
+            "date": "2026-03-04",
+            "close": 32828.88,
+            "volume": 10935.86372473,
+            "change": -1494.77
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": -947.08
+            "net": -964.66
         },
         {
             "name": "投信",
-            "net": 39.22
+            "net": 67.32
         },
         {
             "name": "自營商",
-            "net": -247.16
+            "net": -400.03
         }
     ],
     "chips": {
-        "futures_net_oi": -40421,
+        "futures_net_oi": -41633,
         "futures_status": "Bearish",
         "futures_color": "green"
     },
@@ -120,22 +126,22 @@
     "sector_flow": [
         {
             "name": "電子指數          ",
-            "ratio": 44.7,
+            "ratio": 44.5,
             "trend": "Hot"
         },
         {
             "name": "半導體指數        ",
-            "ratio": 19.9,
+            "ratio": 21.7,
             "trend": "Normal"
         },
         {
             "name": "電子零組件指數    ",
-            "ratio": 10.0,
+            "ratio": 9.5,
             "trend": "Normal"
         },
         {
-            "name": "光電指數          ",
-            "ratio": 4.2,
+            "name": "電腦及週邊設備指數",
+            "ratio": 3.9,
             "trend": "Cool"
         },
         {
@@ -145,7 +151,7 @@
         },
         {
             "name": "其他",
-            "ratio": 17.3,
+            "ratio": 16.7,
             "trend": "Normal"
         }
     ]
