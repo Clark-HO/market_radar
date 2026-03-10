@@ -1,12 +1,12 @@
 {
-    "last_updated": "2026-03-10 09:12",
+    "last_updated": "2026-03-10 17:13",
     "market_status": {
         "taiex_close": 32771.87,
         "change": 661.45,
         "change_percent": 2.06,
         "high": 33256.69,
         "low": 32455.2,
-        "volume": 7252.18541129
+        "volume": 7282.25719
     },
     "history": [
         {
@@ -120,18 +120,18 @@
         {
             "date": "2026-03-10",
             "close": 32771.87,
-            "volume": 7252.18541129,
+            "volume": 7282.25719,
             "change": 661.45
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": -251.57
+            "net": -250.86
         },
         {
             "name": "投信",
-            "net": 127.81
+            "net": 130.59
         },
         {
             "name": "自營商",
@@ -144,7 +144,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 31.76,
+        "usd_twd": 32.5,
         "trend": "Stable"
     },
     "sector_flow": [
