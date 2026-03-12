@@ -14581,10 +14581,10 @@
     "stock_name": "味全",
     "valuation": {
       "stock_id": "1201",
-      "current_pe": 25.27,
+      "current_pe": 0.0,
       "sector_pe": 20.0,
-      "pe_score": 1.26,
-      "status": "High Premium",
+      "pe_score": 0.0,
+      "status": "N/A",
       "price": 14.1
     },
     "revenue": {
@@ -17515,7 +17515,7 @@
     },
     "chips": {
       "foreign_net": 54,
-      "trust_net": 9,
+      "trust_net": 13,
       "analysis": "N/A"
     }
   },
@@ -54538,7 +54538,7 @@
     },
     "chips": {
       "foreign_net": 154,
-      "trust_net": -182,
+      "trust_net": -183,
       "analysis": "N/A"
     }
   },
@@ -71299,7 +71299,7 @@
     },
     "chips": {
       "foreign_net": 249,
-      "trust_net": -330,
+      "trust_net": 376,
       "analysis": "N/A"
     }
   },
