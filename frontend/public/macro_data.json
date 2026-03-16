@@ -1,12 +1,12 @@
 {
-    "last_updated": "2026-03-16 09:06",
+    "last_updated": "2026-03-16 17:28",
     "market_status": {
         "taiex_close": 33342.51,
         "change": -57.81,
         "change_percent": -0.17,
         "high": 33765.81,
         "low": 33278.06,
-        "volume": 7537.41376628
+        "volume": 7554.20348265
     },
     "history": [
         {
@@ -126,18 +126,18 @@
         {
             "date": "2026-03-16",
             "close": 33342.51,
-            "volume": 7537.41376628,
+            "volume": 7554.20348265,
             "change": -57.81
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": -439.53
+            "net": -438.25
         },
         {
             "name": "投信",
-            "net": -4.07
+            "net": 3.25
         },
         {
             "name": "自營商",
@@ -150,7 +150,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.5,
+        "usd_twd": 32.02,
         "trend": "Stable"
     },
     "sector_flow": [
@@ -171,7 +171,7 @@
         },
         {
             "name": "光電指數          ",
-            "ratio": 4.5,
+            "ratio": 4.4,
             "trend": "Cool"
         },
         {
