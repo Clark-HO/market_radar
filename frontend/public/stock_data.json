@@ -1172,11 +1172,11 @@
     "stock_name": "中信金",
     "valuation": {
       "stock_id": "2891",
-      "current_pe": 14.17,
+      "current_pe": 14.14,
       "sector_pe": 20.0,
       "pe_score": 0.71,
       "status": "Undervalued",
-      "price": 53.0
+      "price": 52.9
     },
     "revenue": {
       "date": "2026-02",
@@ -1235,8 +1235,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 3342,
-      "trust_net": -1679,
+      "foreign_net": 3961,
+      "trust_net": -4403,
       "analysis": "N/A"
     }
   },
@@ -57570,7 +57570,7 @@
     },
     "chips": {
       "foreign_net": 51,
-      "trust_net": 12,
+      "trust_net": 13,
       "analysis": "N/A"
     }
   },
@@ -63919,7 +63919,7 @@
     },
     "chips": {
       "foreign_net": -518,
-      "trust_net": 517,
+      "trust_net": 516,
       "analysis": "N/A"
     }
   },
@@ -64138,7 +64138,7 @@
     },
     "chips": {
       "foreign_net": 117,
-      "trust_net": 76,
+      "trust_net": 74,
       "analysis": "N/A"
     }
   },
@@ -65086,7 +65086,7 @@
     },
     "chips": {
       "foreign_net": 2664,
-      "trust_net": 0,
+      "trust_net": 2,
       "analysis": "N/A"
     }
   },
@@ -66692,7 +66692,7 @@
     },
     "chips": {
       "foreign_net": 1075,
-      "trust_net": -215,
+      "trust_net": -211,
       "analysis": "N/A"
     }
   },
@@ -70998,7 +70998,7 @@
     },
     "chips": {
       "foreign_net": -231,
-      "trust_net": -492,
+      "trust_net": -493,
       "analysis": "N/A"
     }
   },
