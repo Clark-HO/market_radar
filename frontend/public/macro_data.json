@@ -1,20 +1,14 @@
 {
-    "last_updated": "2026-03-24 02:33",
+    "last_updated": "2026-03-24 09:02",
     "market_status": {
-        "taiex_close": 32722.5,
-        "change": -821.38,
-        "change_percent": -2.45,
+        "taiex_close": 32612.24,
+        "change": -110.26,
+        "change_percent": -0.34,
         "high": 33361.46,
         "low": 32434.54,
-        "volume": 7125.78117331
+        "volume": 6846.95361438
     },
     "history": [
-        {
-            "date": "2026-02-23",
-            "close": 33773.26,
-            "volume": 9499.9276717,
-            "change": 167.55
-        },
         {
             "date": "2026-02-24",
             "close": 34700.82,
@@ -128,24 +122,30 @@
             "close": 32722.5,
             "volume": 7125.78117331,
             "change": -821.38
+        },
+        {
+            "date": "2026-03-24",
+            "close": 32612.24,
+            "volume": 6846.95361438,
+            "change": -110.26
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": -839.23
+            "net": -121.87
         },
         {
             "name": "投信",
-            "net": 105.35
+            "net": 25.95
         },
         {
             "name": "自營商",
-            "net": -311.12
+            "net": -104.85
         }
     ],
     "chips": {
-        "futures_net_oi": -37717,
+        "futures_net_oi": -34108,
         "futures_status": "Bearish",
         "futures_color": "green"
     },
@@ -156,32 +156,32 @@
     "sector_flow": [
         {
             "name": "電子指數          ",
-            "ratio": 44.7,
+            "ratio": 46.1,
             "trend": "Hot"
         },
         {
             "name": "半導體指數        ",
-            "ratio": 20.6,
+            "ratio": 20.2,
             "trend": "Normal"
         },
         {
             "name": "電子零組件指數    ",
-            "ratio": 11.3,
+            "ratio": 12.2,
             "trend": "Normal"
         },
         {
             "name": "其他電子指數      ",
-            "ratio": 3.7,
+            "ratio": 3.8,
             "trend": "Cool"
         },
         {
             "name": "電腦及週邊設備指數",
-            "ratio": 3.6,
+            "ratio": 3.4,
             "trend": "Cool"
         },
         {
             "name": "其他",
-            "ratio": 16.1,
+            "ratio": 14.3,
             "trend": "Normal"
         }
     ]
