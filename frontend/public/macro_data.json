@@ -1,12 +1,12 @@
 {
-    "last_updated": "2026-03-25 09:01",
+    "last_updated": "2026-03-25 17:21",
     "market_status": {
         "taiex_close": 33439.11,
         "change": 826.87,
         "change_percent": 2.54,
         "high": 33705.75,
         "low": 32725.27,
-        "volume": 6426.27581744
+        "volume": 6523.40765184
     },
     "history": [
         {
@@ -126,18 +126,18 @@
         {
             "date": "2026-03-25",
             "close": 33439.11,
-            "volume": 6426.27581744,
+            "volume": 6523.40765184,
             "change": 826.87
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": 363.28
+            "net": 374.75
         },
         {
             "name": "投信",
-            "net": 12.89
+            "net": 11.58
         },
         {
             "name": "自營商",
@@ -150,7 +150,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.5,
+        "usd_twd": 31.92,
         "trend": "Stable"
     },
     "sector_flow": [
@@ -161,17 +161,17 @@
         },
         {
             "name": "半導體指數        ",
-            "ratio": 20.8,
+            "ratio": 21.2,
             "trend": "Normal"
         },
         {
             "name": "電子零組件指數    ",
-            "ratio": 11.7,
+            "ratio": 11.5,
             "trend": "Normal"
         },
         {
             "name": "其他電子指數      ",
-            "ratio": 3.9,
+            "ratio": 3.8,
             "trend": "Cool"
         },
         {
@@ -181,7 +181,7 @@
         },
         {
             "name": "其他",
-            "ratio": 14.0,
+            "ratio": 13.8,
             "trend": "Normal"
         }
     ]
