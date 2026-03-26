@@ -3361,11 +3361,11 @@
     "stock_name": "全新",
     "valuation": {
       "stock_id": "2455",
-      "current_pe": 96.96,
+      "current_pe": 91.89,
       "sector_pe": 20.0,
-      "pe_score": 4.85,
+      "pe_score": 4.59,
       "status": "High Premium",
-      "price": 287.0
+      "price": 272.0
     },
     "revenue": {
       "date": "2026-02",
@@ -3424,8 +3424,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -689,
-      "trust_net": -13,
+      "foreign_net": -1312,
+      "trust_net": 1941,
       "analysis": "N/A"
     }
   },
@@ -4155,7 +4155,7 @@
     },
     "chips": {
       "foreign_net": 158,
-      "trust_net": -3,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -49179,7 +49179,7 @@
     },
     "chips": {
       "foreign_net": 4337,
-      "trust_net": 2581,
+      "trust_net": 2783,
       "analysis": "N/A"
     }
   },
@@ -55283,7 +55283,7 @@
     },
     "chips": {
       "foreign_net": 126,
-      "trust_net": -3,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -56305,7 +56305,7 @@
     },
     "chips": {
       "foreign_net": 90,
-      "trust_net": 67,
+      "trust_net": 64,
       "analysis": "N/A"
     }
   },
@@ -57570,7 +57570,7 @@
     },
     "chips": {
       "foreign_net": 9,
-      "trust_net": 47,
+      "trust_net": 94,
       "analysis": "N/A"
     }
   },
@@ -60781,7 +60781,7 @@
     },
     "chips": {
       "foreign_net": -134,
-      "trust_net": 625,
+      "trust_net": 747,
       "analysis": "N/A"
     }
   },
@@ -63311,7 +63311,7 @@
     },
     "chips": {
       "foreign_net": -198,
-      "trust_net": 305,
+      "trust_net": 304,
       "analysis": "N/A"
     }
   },
