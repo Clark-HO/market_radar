@@ -1,69 +1,6 @@
 {
-  "last_updated": "2026-03-27 17:06",
+  "last_updated": "2026-03-30 02:55",
   "events": [
-    {
-      "event": "MWC 世界行動通訊大會 2026",
-      "date": "2026-02-26",
-      "end_date": "2026-03-01",
-      "theme": "6G / Wi-Fi 7 / 邊緣 AI",
-      "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
-      "status": "Finished",
-      "days_to_go": -29,
-      "chains": [
-        {
-          "us_stock": {
-            "symbol": "QCOM",
-            "name": "高通",
-            "price": 0,
-            "change": 0
-          },
-          "tw_sector": "IC 設計",
-          "tw_stocks": [
-            {
-              "ticker": "2454",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
-            },
-            {
-              "ticker": "2379",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
-            },
-            {
-              "ticker": "3105",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
-            }
-          ]
-        },
-        {
-          "us_stock": {
-            "symbol": "AVGO",
-            "name": "博通",
-            "price": 0,
-            "change": 0
-          },
-          "tw_sector": "網通設備",
-          "tw_stocks": [
-            {
-              "ticker": "5388",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
-            },
-            {
-              "ticker": "6285",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
-            }
-          ]
-        }
-      ]
-    },
     {
       "event": "NVIDIA GTC 大會 2026",
       "date": "2026-03-18",
@@ -71,7 +8,7 @@
       "theme": "Blackwell Ultra / Rubin GPU",
       "description": "AI 界的伍茲塔克。黃仁勳將揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
       "status": "Finished",
-      "days_to_go": -9,
+      "days_to_go": -12,
       "chains": [
         {
           "us_stock": {
@@ -140,7 +77,7 @@
       "theme": "Gemini 2.0 / Android 17",
       "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
       "status": "Upcoming",
-      "days_to_go": 48,
+      "days_to_go": 45,
       "chains": [
         {
           "us_stock": {
@@ -174,7 +111,7 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Upcoming",
-      "days_to_go": 67,
+      "days_to_go": 64,
       "chains": [
         {
           "us_stock": {
@@ -237,7 +174,7 @@
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
       "status": "Upcoming",
-      "days_to_go": 75,
+      "days_to_go": 72,
       "chains": [
         {
           "us_stock": {
