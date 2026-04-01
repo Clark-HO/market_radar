@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-31 17:10",
+  "last_updated": "2026-04-01 03:00",
   "events": [
     {
       "event": "NVIDIA GTC 大會 2026",
@@ -8,7 +8,7 @@
       "theme": "Blackwell Ultra / Rubin GPU",
       "description": "AI 界的伍茲塔克。黃仁勳將揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
       "status": "Finished",
-      "days_to_go": -13,
+      "days_to_go": -14,
       "chains": [
         {
           "us_stock": {
@@ -77,7 +77,7 @@
       "theme": "Gemini 2.0 / Android 17",
       "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
       "status": "Upcoming",
-      "days_to_go": 44,
+      "days_to_go": 43,
       "chains": [
         {
           "us_stock": {
@@ -111,7 +111,7 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Upcoming",
-      "days_to_go": 63,
+      "days_to_go": 62,
       "chains": [
         {
           "us_stock": {
@@ -174,7 +174,7 @@
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
       "status": "Upcoming",
-      "days_to_go": 71,
+      "days_to_go": 70,
       "chains": [
         {
           "us_stock": {
