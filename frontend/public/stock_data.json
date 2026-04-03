@@ -38367,10 +38367,10 @@
     "stock_name": "銘鈺",
     "valuation": {
       "stock_id": "4545",
-      "current_pe": 0.0,
+      "current_pe": 177.65,
       "sector_pe": 20.0,
-      "pe_score": 0.0,
-      "status": "N/A",
+      "pe_score": 8.88,
+      "status": "High Premium",
       "price": 30.2
     },
     "revenue": {
@@ -55300,9 +55300,9 @@
     "stock_name": "尖點",
     "valuation": {
       "stock_id": "8021",
-      "current_pe": 89.81,
+      "current_pe": 89.15,
       "sector_pe": 20.0,
-      "pe_score": 4.49,
+      "pe_score": 4.46,
       "status": "High Premium",
       "price": 242.5
     },
