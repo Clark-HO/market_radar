@@ -2723,7 +2723,7 @@
     "stock_name": "騰輝電子-KY",
     "valuation": {
       "stock_id": "6672",
-      "current_pe": 26.92,
+      "current_pe": 26.98,
       "sector_pe": 20.0,
       "pe_score": 1.35,
       "status": "High Premium",
@@ -38367,10 +38367,10 @@
     "stock_name": "銘鈺",
     "valuation": {
       "stock_id": "4545",
-      "current_pe": 177.65,
+      "current_pe": 0.0,
       "sector_pe": 20.0,
-      "pe_score": 8.88,
-      "status": "High Premium",
+      "pe_score": 0.0,
+      "status": "N/A",
       "price": 30.2
     },
     "revenue": {
@@ -43187,7 +43187,7 @@
     "stock_name": "熙特爾-創",
     "valuation": {
       "stock_id": "7740",
-      "current_pe": 35.63,
+      "current_pe": 35.55,
       "sector_pe": 20.0,
       "pe_score": 1.78,
       "status": "High Premium",
@@ -46618,10 +46618,10 @@
       "price": 568.0
     },
     "revenue": {
-      "date": "2026-02",
-      "revenue": 3166126000.0,
-      "mom": -14.9,
-      "yoy": 12.84,
+      "date": "2026-03",
+      "revenue": 4290690000.0,
+      "mom": 35.52,
+      "yoy": 39.03,
       "history": [
         {
           "date": "2025-04",
@@ -46666,6 +46666,10 @@
         {
           "date": "2026-02",
           "revenue": 3166126000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 4290690000.0
         }
       ]
     },
@@ -50058,7 +50062,7 @@
     "stock_name": "潤弘",
     "valuation": {
       "stock_id": "2597",
-      "current_pe": 14.19,
+      "current_pe": 14.2,
       "sector_pe": 20.0,
       "pe_score": 0.71,
       "status": "Undervalued",
@@ -60068,9 +60072,9 @@
     "stock_name": "貿聯-KY",
     "valuation": {
       "stock_id": "3665",
-      "current_pe": 41.26,
+      "current_pe": 41.32,
       "sector_pe": 20.0,
-      "pe_score": 2.06,
+      "pe_score": 2.07,
       "status": "High Premium",
       "price": 1915.0
     },
