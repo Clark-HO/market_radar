@@ -9750,10 +9750,10 @@
       "price": 443.0
     },
     "revenue": {
-      "date": "2026-02",
-      "revenue": 751193000.0,
-      "mom": -0.23,
-      "yoy": 24.35,
+      "date": "2026-03",
+      "revenue": 789165000.0,
+      "mom": 5.05,
+      "yoy": 31.14,
       "history": [
         {
           "date": "2025-04",
@@ -9798,6 +9798,10 @@
         {
           "date": "2026-02",
           "revenue": 751193000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 789165000.0
         }
       ]
     },
@@ -11040,10 +11044,10 @@
       "price": 34.2
     },
     "revenue": {
-      "date": "2026-02",
-      "revenue": 252057000.0,
-      "mom": 1.9,
-      "yoy": 9.5,
+      "date": "2026-03",
+      "revenue": 393898000.0,
+      "mom": 56.27,
+      "yoy": 32.99,
       "history": [
         {
           "date": "2025-04",
@@ -11088,6 +11092,10 @@
         {
           "date": "2026-02",
           "revenue": 252057000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 393898000.0
         }
       ]
     },
@@ -23216,7 +23224,7 @@
     "stock_name": "旭隼",
     "valuation": {
       "stock_id": "6409",
-      "current_pe": 18.44,
+      "current_pe": 18.45,
       "sector_pe": 20.0,
       "pe_score": 0.92,
       "status": "Fair Value",
@@ -26111,10 +26119,10 @@
       "price": 49.5
     },
     "revenue": {
-      "date": "2026-02",
-      "revenue": 801549000.0,
-      "mom": -34.97,
-      "yoy": -11.62,
+      "date": "2026-03",
+      "revenue": 1010996000.0,
+      "mom": 26.13,
+      "yoy": -10.01,
       "history": [
         {
           "date": "2025-04",
@@ -26159,6 +26167,10 @@
         {
           "date": "2026-02",
           "revenue": 801549000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 1010996000.0
         }
       ]
     },
@@ -46043,7 +46055,7 @@
     "stock_name": "上品",
     "valuation": {
       "stock_id": "4770",
-      "current_pe": 21.31,
+      "current_pe": 21.33,
       "sector_pe": 20.0,
       "pe_score": 1.07,
       "status": "Fair Value",
@@ -47743,7 +47755,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.06,
       "status": "Fair Value",
-      "price": 108.0
+      "price": 108.1
     },
     "revenue": {
       "date": "N/A",
@@ -51797,10 +51809,10 @@
       "price": 2140.0
     },
     "revenue": {
-      "date": "2026-02",
-      "revenue": 4613227000.0,
-      "mom": -16.11,
-      "yoy": -2.6,
+      "date": "2026-03",
+      "revenue": 5419732000.0,
+      "mom": 17.48,
+      "yoy": 10.76,
       "history": [
         {
           "date": "2025-04",
@@ -51845,6 +51857,10 @@
         {
           "date": "2026-02",
           "revenue": 4613227000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 5419732000.0
         }
       ]
     },
@@ -59965,10 +59981,10 @@
       "price": 121.0
     },
     "revenue": {
-      "date": "2026-02",
-      "revenue": 6373159000.0,
-      "mom": -17.18,
-      "yoy": -12.58,
+      "date": "2026-03",
+      "revenue": 8802853000.0,
+      "mom": 38.12,
+      "yoy": 3.89,
       "history": [
         {
           "date": "2025-04",
@@ -60013,6 +60029,10 @@
         {
           "date": "2026-02",
           "revenue": 6373159000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 8802853000.0
         }
       ]
     },
@@ -60700,7 +60720,7 @@
     "stock_name": "華立",
     "valuation": {
       "stock_id": "3010",
-      "current_pe": 13.69,
+      "current_pe": 13.67,
       "sector_pe": 20.0,
       "pe_score": 0.68,
       "status": "Undervalued",
@@ -61822,10 +61842,10 @@
       "price": 51.4
     },
     "revenue": {
-      "date": "2026-02",
-      "revenue": 7202241000.0,
-      "mom": -46.22,
-      "yoy": -23.53,
+      "date": "2026-03",
+      "revenue": 4689247000.0,
+      "mom": -34.89,
+      "yoy": -61.08,
       "history": [
         {
           "date": "2025-04",
@@ -61870,6 +61890,10 @@
         {
           "date": "2026-02",
           "revenue": 7202241000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 4689247000.0
         }
       ]
     },
@@ -66681,10 +66705,10 @@
     "stock_name": "群益證",
     "valuation": {
       "stock_id": "6005",
-      "current_pe": 10.51,
+      "current_pe": 0.0,
       "sector_pe": 20.0,
-      "pe_score": 0.53,
-      "status": "Undervalued",
+      "pe_score": 0.0,
+      "status": "N/A",
       "price": 27.8
     },
     "revenue": {
