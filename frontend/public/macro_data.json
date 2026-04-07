@@ -1,11 +1,11 @@
 {
-    "last_updated": "2026-04-06 17:01",
+    "last_updated": "2026-04-07 02:47",
     "market_status": {
         "taiex_close": 32572.43,
         "change": -602.39,
         "change_percent": -1.82,
-        "high": 33497.58,
-        "low": 32516.94,
+        "high": 33264.22,
+        "low": 32671.52,
         "volume": 7026.087051
     },
     "history": [
@@ -153,36 +153,5 @@
         "usd_twd": 32.5,
         "trend": "Stable"
     },
-    "sector_flow": [
-        {
-            "name": "電子指數          ",
-            "ratio": 46.0,
-            "trend": "Hot"
-        },
-        {
-            "name": "半導體指數        ",
-            "ratio": 16.4,
-            "trend": "Normal"
-        },
-        {
-            "name": "電子零組件指數    ",
-            "ratio": 16.4,
-            "trend": "Normal"
-        },
-        {
-            "name": "通信網路指數      ",
-            "ratio": 3.6,
-            "trend": "Cool"
-        },
-        {
-            "name": "其他電子指數      ",
-            "ratio": 3.5,
-            "trend": "Cool"
-        },
-        {
-            "name": "其他",
-            "ratio": 14.2,
-            "trend": "Normal"
-        }
-    ]
+    "sector_flow": []
 }
