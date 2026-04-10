@@ -1,20 +1,14 @@
 {
-    "last_updated": "2026-04-10 02:56",
+    "last_updated": "2026-04-10 09:31",
     "market_status": {
-        "taiex_close": 34861.16,
-        "change": 99.78,
-        "change_percent": 0.29,
-        "high": 35350.29,
+        "taiex_close": 35417.83,
+        "change": 556.67,
+        "change_percent": 1.6,
+        "high": 35417.83,
         "low": 34950.87,
-        "volume": 8722.75954561
+        "volume": 8718.08149506
     },
     "history": [
-        {
-            "date": "2026-03-11",
-            "close": 34114.19,
-            "volume": 6934.35834178,
-            "change": 1342.32
-        },
         {
             "date": "2026-03-12",
             "close": 33581.86,
@@ -128,29 +122,35 @@
             "close": 34861.16,
             "volume": 8722.75954561,
             "change": 99.78
+        },
+        {
+            "date": "2026-04-10",
+            "close": 35417.83,
+            "volume": 8718.08149506,
+            "change": 556.67
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": 317.8
+            "net": 288.08
         },
         {
             "name": "投信",
-            "net": 13.57
+            "net": -31.7
         },
         {
             "name": "自營商",
-            "net": 61.96
+            "net": 122.58
         }
     ],
     "chips": {
-        "futures_net_oi": -33399,
+        "futures_net_oi": -34403,
         "futures_status": "Bearish",
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.5,
+        "usd_twd": 31.77,
         "trend": "Stable"
     },
     "sector_flow": [
@@ -161,17 +161,17 @@
         },
         {
             "name": "半導體指數        ",
-            "ratio": 17.0,
+            "ratio": 17.6,
             "trend": "Normal"
         },
         {
             "name": "電子零組件指數    ",
-            "ratio": 14.4,
+            "ratio": 12.9,
             "trend": "Normal"
         },
         {
             "name": "光電指數          ",
-            "ratio": 3.6,
+            "ratio": 4.5,
             "trend": "Cool"
         },
         {
