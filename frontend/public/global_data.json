@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-14 03:13",
+  "last_updated": "2026-04-14 09:46",
   "events": [
     {
       "event": "NVIDIA GTC 大會 2026",
@@ -15,32 +15,32 @@
             "symbol": "NVDA",
             "name": "輝達",
             "price": 189.31,
-            "change": 0.47
+            "change": 0.16
           },
           "tw_sector": "AI 伺服器",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 2035.0,
-              "change": 2.78,
+              "price": 2055.0,
+              "change": 3.79,
               "signal": "Neutral"
             },
             {
               "ticker": "2382",
-              "price": 325.5,
-              "change": 2.2,
+              "price": 323.0,
+              "change": 1.41,
               "signal": "Neutral"
             },
             {
               "ticker": "3231",
-              "price": 137.0,
-              "change": 1.86,
+              "price": 136.5,
+              "change": 1.49,
               "signal": "Neutral"
             },
             {
               "ticker": "6669",
-              "price": 3715.0,
-              "change": 1.5,
+              "price": 3755.0,
+              "change": 2.6,
               "signal": "Neutral"
             }
           ]
@@ -50,21 +50,21 @@
             "symbol": "SMCI",
             "name": "美超微",
             "price": 25.97,
-            "change": 2.65
+            "change": -1.07
           },
           "tw_sector": "伺服器代工",
           "tw_stocks": [
             {
               "ticker": "2376",
-              "price": 265.5,
-              "change": 0.38,
-              "signal": "Lagging (Buy?)"
+              "price": 263.5,
+              "change": -0.38,
+              "signal": "Neutral"
             },
             {
               "ticker": "2324",
-              "price": 29.65,
-              "change": 2.6,
-              "signal": "Sympathy Rally"
+              "price": 29.5,
+              "change": 2.08,
+              "signal": "Neutral"
             }
           ]
         }
@@ -84,20 +84,20 @@
             "symbol": "GOOGL",
             "name": "Alphabet",
             "price": 321.31,
-            "change": 1.1
+            "change": -0.01
           },
           "tw_sector": "安卓生態系",
           "tw_stocks": [
             {
               "ticker": "2357",
-              "price": 583.0,
-              "change": 0.87,
+              "price": 580.0,
+              "change": 0.35,
               "signal": "Neutral"
             },
             {
               "ticker": "2498",
-              "price": 40.5,
-              "change": 1.76,
+              "price": 40.4,
+              "change": 1.51,
               "signal": "Neutral"
             }
           ]
@@ -118,27 +118,27 @@
             "symbol": "MSFT",
             "name": "微軟",
             "price": 384.37,
-            "change": 3.41
+            "change": -0.59
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2353",
-              "price": 27.4,
-              "change": 0.74,
-              "signal": "Lagging (Buy?)"
+              "price": 27.25,
+              "change": 0.18,
+              "signal": "Neutral"
             },
             {
               "ticker": "2357",
-              "price": 583.0,
-              "change": 0.87,
-              "signal": "Lagging (Buy?)"
+              "price": 580.0,
+              "change": 0.35,
+              "signal": "Neutral"
             },
             {
               "ticker": "2301",
-              "price": 157.0,
-              "change": 2.28,
-              "signal": "Sympathy Rally"
+              "price": 157.5,
+              "change": 2.61,
+              "signal": "Neutral"
             }
           ]
         },
@@ -147,20 +147,20 @@
             "symbol": "AMD",
             "name": "超微",
             "price": 246.83,
-            "change": 0.52
+            "change": 0.04
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 2035.0,
-              "change": 2.78,
+              "price": 2055.0,
+              "change": 3.79,
               "signal": "Neutral"
             },
             {
               "ticker": "3711",
-              "price": 429.0,
-              "change": 2.88,
+              "price": 424.0,
+              "change": 1.68,
               "signal": "Neutral"
             }
           ]
@@ -181,14 +181,14 @@
             "symbol": "AAPL",
             "name": "蘋果",
             "price": 259.2,
-            "change": -0.69
+            "change": -0.05
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
             {
               "ticker": "2317",
-              "price": 206.0,
-              "change": 2.74,
+              "price": 207.5,
+              "change": 3.49,
               "signal": "Neutral"
             },
             {
