@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-16 09:31",
+    "last_updated": "2026-04-16 17:40",
     "market_status": {
         "taiex_close": 37132.02,
         "change": 409.88,
@@ -137,7 +137,7 @@
         },
         {
             "name": "投信",
-            "net": -43.3
+            "net": -27.42
         },
         {
             "name": "自營商",
@@ -150,7 +150,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.5,
+        "usd_twd": 31.57,
         "trend": "Stable"
     },
     "sector_flow": [
