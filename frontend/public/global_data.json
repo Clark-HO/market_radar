@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20 03:25",
+  "last_updated": "2026-04-20 10:25",
   "events": [
     {
       "event": "Google I/O 開發者大會",
@@ -14,21 +14,21 @@
           "us_stock": {
             "symbol": "GOOGL",
             "name": "Alphabet",
-            "price": 0,
-            "change": 0
+            "price": 341.68,
+            "change": 0.33
           },
           "tw_sector": "安卓生態系",
           "tw_stocks": [
             {
               "ticker": "2357",
-              "price": 0,
-              "change": 0,
+              "price": 605.0,
+              "change": 2.72,
               "signal": "Neutral"
             },
             {
               "ticker": "2498",
-              "price": 0,
-              "change": 0,
+              "price": 40.45,
+              "change": -2.53,
               "signal": "Neutral"
             }
           ]
@@ -48,27 +48,27 @@
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 0,
-            "change": 0
+            "price": 422.79,
+            "change": 0.1
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2353",
-              "price": 0,
-              "change": 0,
+              "price": 28.55,
+              "change": 0.88,
               "signal": "Neutral"
             },
             {
               "ticker": "2357",
-              "price": 0,
-              "change": 0,
+              "price": 605.0,
+              "change": 2.72,
               "signal": "Neutral"
             },
             {
               "ticker": "2301",
-              "price": 0,
-              "change": 0,
+              "price": 165.0,
+              "change": 2.8,
               "signal": "Neutral"
             }
           ]
@@ -77,21 +77,21 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 0,
-            "change": 0
+            "price": 278.39,
+            "change": 0.41
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 0,
-              "change": 0,
+              "price": 2025.0,
+              "change": -2.88,
               "signal": "Neutral"
             },
             {
               "ticker": "3711",
-              "price": 0,
-              "change": 0,
+              "price": 461.5,
+              "change": 2.67,
               "signal": "Neutral"
             }
           ]
@@ -111,27 +111,27 @@
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 0,
-            "change": 0
+            "price": 270.23,
+            "change": -0.14
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
             {
               "ticker": "2317",
-              "price": 0,
-              "change": 0,
+              "price": 207.5,
+              "change": 0.24,
               "signal": "Neutral"
             },
             {
               "ticker": "3008",
-              "price": 0,
-              "change": 0,
+              "price": 2710.0,
+              "change": -4.07,
               "signal": "Neutral"
             },
             {
               "ticker": "4938",
-              "price": 0,
-              "change": 0,
+              "price": 82.7,
+              "change": 3.5,
               "signal": "Neutral"
             }
           ]
