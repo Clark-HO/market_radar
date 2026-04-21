@@ -1,147 +1,26 @@
 {
-    "last_updated": "2026-04-21 09:51",
+    "last_updated": "2026-04-21 17:30",
     "market_status": {
-        "taiex_close": 37605.11,
-        "change": 646.31,
-        "change_percent": 1.75,
+        "taiex_close": 0,
+        "change": 0,
+        "change_percent": 0,
         "high": 37781.83,
         "low": 37051.25,
-        "volume": 10217.04705351
+        "volume": 0
     },
-    "history": [
-        {
-            "date": "2026-03-23",
-            "close": 32722.5,
-            "volume": 7125.78117331,
-            "change": -821.38
-        },
-        {
-            "date": "2026-03-24",
-            "close": 32612.24,
-            "volume": 6900.91065536,
-            "change": -110.26
-        },
-        {
-            "date": "2026-03-25",
-            "close": 33439.11,
-            "volume": 6523.40765184,
-            "change": 826.87
-        },
-        {
-            "date": "2026-03-26",
-            "close": 33337.62,
-            "volume": 7665.99119592,
-            "change": -101.49
-        },
-        {
-            "date": "2026-03-27",
-            "close": 33112.59,
-            "volume": 6582.73529008,
-            "change": -225.03
-        },
-        {
-            "date": "2026-03-30",
-            "close": 32518.16,
-            "volume": 6781.52191949,
-            "change": -594.43
-        },
-        {
-            "date": "2026-03-31",
-            "close": 31722.99,
-            "volume": 8824.53969577,
-            "change": -795.17
-        },
-        {
-            "date": "2026-04-01",
-            "close": 33174.82,
-            "volume": 6526.08970719,
-            "change": 1451.83
-        },
-        {
-            "date": "2026-04-02",
-            "close": 32572.43,
-            "volume": 7026.087051,
-            "change": -602.39
-        },
-        {
-            "date": "2026-04-07",
-            "close": 33229.82,
-            "volume": 5846.92254383,
-            "change": 657.39
-        },
-        {
-            "date": "2026-04-08",
-            "close": 34761.38,
-            "volume": 8941.00450046,
-            "change": 1531.56
-        },
-        {
-            "date": "2026-04-09",
-            "close": 34861.16,
-            "volume": 8722.75954561,
-            "change": 99.78
-        },
-        {
-            "date": "2026-04-10",
-            "close": 35417.83,
-            "volume": 8718.08149506,
-            "change": 556.67
-        },
-        {
-            "date": "2026-04-13",
-            "close": 35457.29,
-            "volume": 8057.0145754,
-            "change": 39.46
-        },
-        {
-            "date": "2026-04-14",
-            "close": 36296.12,
-            "volume": 10172.77556839,
-            "change": 838.83
-        },
-        {
-            "date": "2026-04-15",
-            "close": 36722.14,
-            "volume": 10259.05609552,
-            "change": 426.02
-        },
-        {
-            "date": "2026-04-16",
-            "close": 37132.02,
-            "volume": 9273.1490044,
-            "change": 409.88
-        },
-        {
-            "date": "2026-04-17",
-            "close": 36804.34,
-            "volume": 9855.25733386,
-            "change": -327.68
-        },
-        {
-            "date": "2026-04-20",
-            "close": 36958.8,
-            "volume": 9609.63966853,
-            "change": 154.46
-        },
-        {
-            "date": "2026-04-21",
-            "close": 37605.11,
-            "volume": 10217.04705351,
-            "change": 646.31
-        }
-    ],
+    "history": [],
     "institutional": [
         {
             "name": "外資",
-            "net": 601.54
+            "net": 0
         },
         {
             "name": "投信",
-            "net": 82.17
+            "net": 0
         },
         {
             "name": "自營商",
-            "net": -7.13
+            "net": 0
         }
     ],
     "chips": {
@@ -150,39 +29,8 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.5,
+        "usd_twd": 31.5,
         "trend": "Stable"
     },
-    "sector_flow": [
-        {
-            "name": "電子指數          ",
-            "ratio": 46.2,
-            "trend": "Hot"
-        },
-        {
-            "name": "半導體指數        ",
-            "ratio": 20.1,
-            "trend": "Normal"
-        },
-        {
-            "name": "電子零組件指數    ",
-            "ratio": 12.3,
-            "trend": "Normal"
-        },
-        {
-            "name": "電腦及週邊設備指數",
-            "ratio": 4.6,
-            "trend": "Cool"
-        },
-        {
-            "name": "其他電子指數      ",
-            "ratio": 3.4,
-            "trend": "Cool"
-        },
-        {
-            "name": "其他",
-            "ratio": 13.4,
-            "trend": "Normal"
-        }
-    ]
+    "sector_flow": []
 }
