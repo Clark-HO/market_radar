@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21 17:30",
+  "last_updated": "2026-04-22 02:58",
   "events": [
     {
       "event": "Google I/O 開發者大會",
@@ -8,27 +8,27 @@
       "theme": "Gemini 2.0 / Android 17",
       "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
       "status": "Upcoming",
-      "days_to_go": 23,
+      "days_to_go": 22,
       "chains": [
         {
           "us_stock": {
             "symbol": "GOOGL",
             "name": "Alphabet",
-            "price": 333.01,
-            "change": -1.48
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "安卓生態系",
           "tw_stocks": [
             {
               "ticker": "2357",
-              "price": 599.0,
-              "change": 0.67,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "2498",
-              "price": 41.15,
-              "change": -0.12,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             }
           ]
@@ -42,33 +42,33 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Upcoming",
-      "days_to_go": 42,
+      "days_to_go": 41,
       "chains": [
         {
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 425.03,
-            "change": 1.71
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2353",
-              "price": 28.4,
-              "change": -0.7,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "2357",
-              "price": 599.0,
-              "change": 0.67,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "2301",
-              "price": 171.5,
-              "change": 5.86,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             }
           ]
@@ -77,22 +77,22 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 281.7,
-            "change": 2.5
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 2050.0,
-              "change": 0.49,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "3711",
-              "price": 472.0,
-              "change": 6.19,
-              "signal": "Sympathy Rally"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         }
@@ -105,33 +105,33 @@
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
       "status": "Upcoming",
-      "days_to_go": 50,
+      "days_to_go": 49,
       "chains": [
         {
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 266.27,
-            "change": -1.93
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
             {
               "ticker": "2317",
-              "price": 211.0,
-              "change": 3.43,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "3008",
-              "price": 2645.0,
-              "change": 1.93,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "4938",
-              "price": 84.0,
-              "change": 1.45,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             }
           ]
