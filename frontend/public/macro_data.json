@@ -1,20 +1,14 @@
 {
-    "last_updated": "2026-04-28 03:41",
+    "last_updated": "2026-04-28 10:23",
     "market_status": {
-        "taiex_close": 39616.63,
-        "change": 684.23,
-        "change_percent": 1.76,
+        "taiex_close": 39521.73,
+        "change": -94.9,
+        "change_percent": -0.24,
         "high": 40101.23,
-        "low": 39531.93,
-        "volume": 12480.27623513
+        "low": 39521.73,
+        "volume": 10574.88155712
     },
     "history": [
-        {
-            "date": "2026-03-27",
-            "close": 33112.59,
-            "volume": 6582.73529008,
-            "change": -225.03
-        },
         {
             "date": "2026-03-30",
             "close": 32518.16,
@@ -128,24 +122,30 @@
             "close": 39616.63,
             "volume": 12480.27623513,
             "change": 684.23
+        },
+        {
+            "date": "2026-04-28",
+            "close": 39521.73,
+            "volume": 10574.88155712,
+            "change": -94.9
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": -511.96
+            "net": -392.98
         },
         {
             "name": "投信",
-            "net": 145.02
+            "net": 48.44
         },
         {
             "name": "自營商",
-            "net": -105.43
+            "net": 3.52
         }
     ],
     "chips": {
-        "futures_net_oi": -44223,
+        "futures_net_oi": -45869,
         "futures_status": "Bearish",
         "futures_color": "green"
     },
@@ -161,27 +161,27 @@
         },
         {
             "name": "半導體指數        ",
-            "ratio": 24.7,
+            "ratio": 24.4,
             "trend": "Normal"
         },
         {
             "name": "電子零組件指數    ",
-            "ratio": 11.5,
+            "ratio": 12.5,
             "trend": "Normal"
         },
         {
             "name": "電腦及週邊設備指數",
-            "ratio": 4.3,
+            "ratio": 3.4,
             "trend": "Cool"
         },
         {
             "name": "其他電子指數      ",
-            "ratio": 3.0,
+            "ratio": 3.3,
             "trend": "Cool"
         },
         {
             "name": "其他",
-            "ratio": 9.1,
+            "ratio": 9.0,
             "trend": "Normal"
         }
     ]
