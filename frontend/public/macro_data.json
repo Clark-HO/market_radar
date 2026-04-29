@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-29 10:30",
+    "last_updated": "2026-04-29 17:50",
     "market_status": {
         "taiex_close": 39303.5,
         "change": -218.23,
@@ -10,10 +10,10 @@
     },
     "history": [
         {
-            "date": "2017-12-29",
-            "close": 10642.86,
-            "volume": 1099.38213929,
-            "change": 75.22
+            "date": "2026-03-31",
+            "close": 31722.99,
+            "volume": 8824.53969577,
+            "change": -795.17
         },
         {
             "date": "2026-04-01",
@@ -137,7 +137,7 @@
         },
         {
             "name": "投信",
-            "net": 22.33
+            "net": 21.28
         },
         {
             "name": "自營商",
@@ -150,7 +150,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 31.58,
+        "usd_twd": 32.5,
         "trend": "Stable"
     },
     "sector_flow": [
