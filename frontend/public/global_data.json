@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29 17:50",
+  "last_updated": "2026-04-30 03:38",
   "events": [
     {
       "event": "Google I/O 開發者大會",
@@ -7,8 +7,8 @@
       "end_date": "2026-05-15",
       "theme": "Gemini 2.0 / Android 17",
       "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
-      "status": "Upcoming",
-      "days_to_go": 15,
+      "status": "Imminent",
+      "days_to_go": 14,
       "chains": [
         {
           "us_stock": {
@@ -42,7 +42,7 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Upcoming",
-      "days_to_go": 34,
+      "days_to_go": 33,
       "chains": [
         {
           "us_stock": {
@@ -105,7 +105,7 @@
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
       "status": "Upcoming",
-      "days_to_go": 42,
+      "days_to_go": 41,
       "chains": [
         {
           "us_stock": {
