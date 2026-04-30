@@ -1,20 +1,14 @@
 {
-    "last_updated": "2026-04-30 03:38",
+    "last_updated": "2026-04-30 10:14",
     "market_status": {
-        "taiex_close": 39303.5,
-        "change": -218.23,
-        "change_percent": -0.55,
+        "taiex_close": 38926.63,
+        "change": -376.87,
+        "change_percent": -0.96,
         "high": 39848.22,
-        "low": 39306.22,
-        "volume": 9152.72695535
+        "low": 38926.63,
+        "volume": 10749.01891496
     },
     "history": [
-        {
-            "date": "2026-03-31",
-            "close": 31722.99,
-            "volume": 8824.53969577,
-            "change": -795.17
-        },
         {
             "date": "2026-04-01",
             "close": 33174.82,
@@ -128,24 +122,30 @@
             "close": 39303.5,
             "volume": 9152.72695535,
             "change": -218.23
+        },
+        {
+            "date": "2026-04-30",
+            "close": 38926.63,
+            "volume": 10749.01891496,
+            "change": -376.87
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": -481.47
+            "net": -535.62
         },
         {
             "name": "投信",
-            "net": 21.28
+            "net": 11.84
         },
         {
             "name": "自營商",
-            "net": -15.99
+            "net": -7.89
         }
     ],
     "chips": {
-        "futures_net_oi": -47074,
+        "futures_net_oi": -44044,
         "futures_status": "Bearish",
         "futures_color": "green"
     },
