@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-05-05 10:10",
+    "last_updated": "2026-05-05 17:33",
     "market_status": {
         "taiex_close": 40769.29,
         "change": 64.15,
@@ -133,11 +133,11 @@
     "institutional": [
         {
             "name": "外資",
-            "net": 39.39
+            "net": 39.9
         },
         {
             "name": "投信",
-            "net": 34.11
+            "net": 37.27
         },
         {
             "name": "自營商",
