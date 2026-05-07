@@ -1,14 +1,32 @@
 {
-    "last_updated": "2026-05-07 03:51",
+    "last_updated": "2026-05-07 10:48",
     "market_status": {
-        "taiex_close": 41138.85,
-        "change": 369.56,
-        "change_percent": 0.91,
+        "taiex_close": 38926.63,
+        "change": -376.87,
+        "change_percent": -0.96,
         "high": 42156.06,
         "low": 41259.96,
-        "volume": 15240.12557672
+        "volume": 10749.01891496
     },
     "history": [
+        {
+            "date": "2026-04-01",
+            "close": 33174.82,
+            "volume": 6526.08970719,
+            "change": 1451.83
+        },
+        {
+            "date": "2026-04-02",
+            "close": 32572.43,
+            "volume": 7026.087051,
+            "change": -602.39
+        },
+        {
+            "date": "2026-04-07",
+            "close": 33229.82,
+            "volume": 5846.92254383,
+            "change": 657.39
+        },
         {
             "date": "2026-04-08",
             "close": 34761.38,
@@ -110,78 +128,60 @@
             "close": 38926.63,
             "volume": 10749.01891496,
             "change": -376.87
-        },
-        {
-            "date": "2026-05-04",
-            "close": 40705.14,
-            "volume": 10513.15643566,
-            "change": 1778.51
-        },
-        {
-            "date": "2026-05-05",
-            "close": 40769.29,
-            "volume": 10493.34722789,
-            "change": 64.15
-        },
-        {
-            "date": "2026-05-06",
-            "close": 41138.85,
-            "volume": 15240.12557672,
-            "change": 369.56
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": 751.05
+            "net": 464.12
         },
         {
             "name": "投信",
-            "net": 15.21
+            "net": 160.62
         },
         {
             "name": "自營商",
-            "net": -96.11
+            "net": -41.43
         }
     ],
     "chips": {
-        "futures_net_oi": -50967,
+        "futures_net_oi": -51132,
         "futures_status": "Bearish",
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 31.34,
+        "usd_twd": 31.39,
         "trend": "Stable"
     },
     "sector_flow": [
         {
             "name": "電子指數          ",
-            "ratio": 47.2,
+            "ratio": 46.8,
             "trend": "Hot"
         },
         {
             "name": "半導體指數        ",
-            "ratio": 22.7,
+            "ratio": 22.8,
             "trend": "Normal"
         },
         {
             "name": "電子零組件指數    ",
-            "ratio": 10.4,
+            "ratio": 10.3,
             "trend": "Normal"
         },
         {
             "name": "電腦及週邊設備指數",
-            "ratio": 4.7,
-            "trend": "Cool"
+            "ratio": 5.0,
+            "trend": "Normal"
         },
         {
             "name": "其他電子指數      ",
-            "ratio": 4.6,
+            "ratio": 3.4,
             "trend": "Cool"
         },
         {
             "name": "其他",
-            "ratio": 10.4,
+            "ratio": 11.7,
             "trend": "Normal"
         }
     ]
