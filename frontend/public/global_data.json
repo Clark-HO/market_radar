@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15 10:54",
+  "last_updated": "2026-05-15 18:03",
   "events": [
     {
       "event": "Google I/O 開發者大會",
@@ -14,8 +14,8 @@
           "us_stock": {
             "symbol": "GOOGL",
             "name": "Alphabet",
-            "price": 401.07,
-            "change": 0.2
+            "price": 397.21,
+            "change": -0.76
           },
           "tw_sector": "安卓生態系",
           "tw_stocks": [
@@ -48,8 +48,8 @@
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 409.43,
-            "change": 0.33
+            "price": 427.38,
+            "change": 4.72
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
@@ -57,19 +57,19 @@
               "ticker": "2353",
               "price": 27.7,
               "change": -1.07,
-              "signal": "Neutral"
+              "signal": "Lagging (Buy?)"
             },
             {
               "ticker": "2357",
               "price": 641.0,
               "change": -5.87,
-              "signal": "Neutral"
+              "signal": "Lagging (Buy?)"
             },
             {
               "ticker": "2301",
               "price": 204.5,
               "change": -1.92,
-              "signal": "Neutral"
+              "signal": "Lagging (Buy?)"
             }
           ]
         },
@@ -77,8 +77,8 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 449.7,
-            "change": 0.49
+            "price": 435.18,
+            "change": -2.75
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
@@ -86,13 +86,13 @@
               "ticker": "2330",
               "price": 2265.0,
               "change": 0.89,
-              "signal": "Neutral"
+              "signal": "Risk Alert"
             },
             {
               "ticker": "3711",
               "price": 547.0,
               "change": -0.36,
-              "signal": "Neutral"
+              "signal": "Risk Alert"
             }
           ]
         }
@@ -111,8 +111,8 @@
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 298.21,
-            "change": 0.13
+            "price": 302.36,
+            "change": 1.52
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [

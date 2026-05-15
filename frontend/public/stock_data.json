@@ -227,7 +227,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.75,
       "status": "Undervalued",
-      "price": 32.0
+      "price": 31.9
     },
     "revenue": {
       "date": "2026-04",
@@ -519,7 +519,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.36,
       "status": "Undervalued",
-      "price": 34.7
+      "price": 34.6
     },
     "revenue": {
       "date": "2026-04",
@@ -884,7 +884,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.85,
       "status": "Fair Value",
-      "price": 26.5
+      "price": 26.4
     },
     "revenue": {
       "date": "2026-04",
@@ -3036,7 +3036,7 @@
     },
     "chips": {
       "foreign_net": 334,
-      "trust_net": -383,
+      "trust_net": -348,
       "analysis": "N/A"
     }
   },
@@ -3438,7 +3438,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.45,
       "status": "Undervalued",
-      "price": 32.7
+      "price": 32.6
     },
     "revenue": {
       "date": "2026-04",
@@ -5177,7 +5177,7 @@
     },
     "chips": {
       "foreign_net": 1116,
-      "trust_net": -552,
+      "trust_net": -532,
       "analysis": "N/A"
     }
   },
@@ -6431,7 +6431,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.67,
       "status": "High Premium",
-      "price": 40.3
+      "price": 40.4
     },
     "revenue": {
       "date": "2026-04",
@@ -6953,7 +6953,7 @@
     },
     "chips": {
       "foreign_net": 389,
-      "trust_net": -299,
+      "trust_net": -297,
       "analysis": "N/A"
     }
   },
@@ -7623,7 +7623,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.57,
       "status": "Undervalued",
-      "price": 34.3
+      "price": 34.4
     },
     "revenue": {
       "date": "2026-04",
@@ -7842,7 +7842,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.71,
       "status": "Undervalued",
-      "price": 18.5
+      "price": 18.4
     },
     "revenue": {
       "date": "2026-04",
@@ -9897,7 +9897,7 @@
     },
     "chips": {
       "foreign_net": 101,
-      "trust_net": 24,
+      "trust_net": 89,
       "analysis": "N/A"
     }
   },
@@ -10348,7 +10348,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 15.6
+      "price": 15.7
     },
     "revenue": {
       "date": "2026-04",
@@ -10786,7 +10786,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.98,
       "status": "Fair Value",
-      "price": 37.7
+      "price": 37.6
     },
     "revenue": {
       "date": "2026-04",
@@ -11710,7 +11710,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.48,
       "status": "High Premium",
-      "price": 16.5
+      "price": 16.6
     },
     "revenue": {
       "date": "2026-04",
@@ -12099,7 +12099,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 26.5
+      "price": 26.4
     },
     "revenue": {
       "date": "2026-04",
@@ -12683,7 +12683,7 @@
       "sector_pe": 20.0,
       "pe_score": 5.73,
       "status": "High Premium",
-      "price": 36.7
+      "price": 36.6
     },
     "revenue": {
       "date": "2026-04",
@@ -13369,7 +13369,7 @@
     "revenue": {
       "date": "2026-04",
       "revenue": 1052473000.0,
-      "mom": 3.65,
+      "mom": -63.83,
       "yoy": -23.04,
       "history": [
         {
@@ -13414,7 +13414,7 @@
         },
         {
           "date": "2026-03",
-          "revenue": 1015398000.0
+          "revenue": 2909432000.0
         },
         {
           "date": "2026-04",
@@ -13729,7 +13729,7 @@
       "sector_pe": 20.0,
       "pe_score": 3.32,
       "status": "High Premium",
-      "price": 33.8
+      "price": 33.9
     },
     "revenue": {
       "date": "2026-04",
@@ -14118,7 +14118,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.34,
       "status": "High Premium",
-      "price": 29.0
+      "price": 28.9
     },
     "revenue": {
       "date": "2026-04",
@@ -14342,7 +14342,7 @@
     "revenue": {
       "date": "2026-04",
       "revenue": 1641570000.0,
-      "mom": 10.21,
+      "mom": -51.48,
       "yoy": -8.28,
       "history": [
         {
@@ -14387,7 +14387,7 @@
         },
         {
           "date": "2026-03",
-          "revenue": 1489428000.0
+          "revenue": 3383462000.0
         },
         {
           "date": "2026-04",
@@ -14483,7 +14483,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.94,
       "status": "Fair Value",
-      "price": 21.5
+      "price": 21.4
     },
     "revenue": {
       "date": "2026-04",
@@ -15675,7 +15675,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.0,
       "status": "High Premium",
-      "price": 24.0
+      "price": 24.1
     },
     "revenue": {
       "date": "2026-04",
@@ -16867,7 +16867,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.45,
       "status": "Undervalued",
-      "price": 26.5
+      "price": 26.4
     },
     "revenue": {
       "date": "2026-04",
@@ -17718,7 +17718,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 38.3
+      "price": 38.4
     },
     "revenue": {
       "date": "N/A",
@@ -20247,7 +20247,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.32,
       "status": "Undervalued",
-      "price": 20.0
+      "price": 20.1
     },
     "revenue": {
       "date": "2026-04",
@@ -20977,7 +20977,7 @@
       "sector_pe": 20.0,
       "pe_score": 6.8,
       "status": "High Premium",
-      "price": 32.7
+      "price": 32.6
     },
     "revenue": {
       "date": "2026-04",
@@ -21755,7 +21755,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 24.5
+      "price": 24.4
     },
     "revenue": {
       "date": "2026-04",
@@ -22412,7 +22412,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.52,
       "status": "Undervalued",
-      "price": 34.2
+      "price": 34.1
     },
     "revenue": {
       "date": "2026-04",
@@ -25210,7 +25210,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.71,
       "status": "Undervalued",
-      "price": 20.5
+      "price": 20.4
     },
     "revenue": {
       "date": "2026-04",
@@ -25648,7 +25648,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.07,
       "status": "Fair Value",
-      "price": 29.0
+      "price": 29.1
     },
     "revenue": {
       "date": "2026-04",
@@ -25891,7 +25891,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 19.0
+      "price": 19.1
     },
     "revenue": {
       "date": "2026-04",
@@ -26304,7 +26304,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.06,
       "status": "Undervalued",
-      "price": 14.1
+      "price": 14.2
     },
     "revenue": {
       "date": "2026-04",
@@ -26377,7 +26377,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.72,
       "status": "Undervalued",
-      "price": 14.9
+      "price": 14.8
     },
     "revenue": {
       "date": "2026-04",
@@ -28687,7 +28687,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.32,
       "status": "Undervalued",
-      "price": 13.9
+      "price": 13.8
     },
     "revenue": {
       "date": "2026-04",
@@ -30779,7 +30779,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.42,
       "status": "High Premium",
-      "price": 17.0
+      "price": 17.1
     },
     "revenue": {
       "date": "2026-04",
@@ -31484,7 +31484,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.54,
       "status": "High Premium",
-      "price": 10.1
+      "price": 10.2
     },
     "revenue": {
       "date": "2026-04",
@@ -31703,7 +31703,7 @@
       "sector_pe": 20.0,
       "pe_score": 3.98,
       "status": "High Premium",
-      "price": 35.8
+      "price": 35.9
     },
     "revenue": {
       "date": "2026-04",
@@ -31849,7 +31849,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.63,
       "status": "Undervalued",
-      "price": 48.2
+      "price": 48.1
     },
     "revenue": {
       "date": "2026-04",
@@ -32481,7 +32481,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.12,
       "status": "High Premium",
-      "price": 14.9
+      "price": 14.8
     },
     "revenue": {
       "date": "2026-04",
@@ -32700,7 +32700,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.19,
       "status": "Undervalued",
-      "price": 13.1
+      "price": 13.2
     },
     "revenue": {
       "date": "2026-04",
@@ -33623,7 +33623,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.29,
       "status": "High Premium",
-      "price": 17.0
+      "price": 17.1
     },
     "revenue": {
       "date": "2026-04",
@@ -34425,7 +34425,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 23.0
+      "price": 23.1
     },
     "revenue": {
       "date": "2026-04",
@@ -34571,7 +34571,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.76,
       "status": "Undervalued",
-      "price": 14.9
+      "price": 14.8
     },
     "revenue": {
       "date": "2026-04",
@@ -34936,7 +34936,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.91,
       "status": "Fair Value",
-      "price": 24.5
+      "price": 24.6
     },
     "revenue": {
       "date": "N/A",
@@ -35106,7 +35106,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.25,
       "status": "High Premium",
-      "price": 27.0
+      "price": 26.9
     },
     "revenue": {
       "date": "2026-04",
@@ -35471,7 +35471,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.32,
       "status": "Undervalued",
-      "price": 32.0
+      "price": 31.9
     },
     "revenue": {
       "date": "2026-04",
@@ -35909,7 +35909,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 12.4
+      "price": 12.3
     },
     "revenue": {
       "date": "2026-04",
@@ -36371,7 +36371,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.55,
       "status": "Undervalued",
-      "price": 39.7
+      "price": 39.6
     },
     "revenue": {
       "date": "2026-04",
@@ -37441,7 +37441,7 @@
       "sector_pe": 20.0,
       "pe_score": 8.46,
       "status": "High Premium",
-      "price": 10.1
+      "price": 10.2
     },
     "revenue": {
       "date": "2026-04",
@@ -37806,7 +37806,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.39,
       "status": "Undervalued",
-      "price": 25.0
+      "price": 24.9
     },
     "revenue": {
       "date": "2026-04",
@@ -38244,7 +38244,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 15.6
+      "price": 15.7
     },
     "revenue": {
       "date": "2026-04",
@@ -38924,7 +38924,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.57,
       "status": "Undervalued",
-      "price": 34.2
+      "price": 34.1
     },
     "revenue": {
       "date": "N/A",
@@ -39459,7 +39459,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.55,
       "status": "High Premium",
-      "price": 286.5
+      "price": 286.4
     },
     "revenue": {
       "date": "N/A",
@@ -42272,7 +42272,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.79,
       "status": "Undervalued",
-      "price": 31.5
+      "price": 31.4
     },
     "revenue": {
       "date": "2026-04",
@@ -42491,7 +42491,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 12.4
+      "price": 12.3
     },
     "revenue": {
       "date": "2026-04",
@@ -42564,7 +42564,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.49,
       "status": "Undervalued",
-      "price": 26.5
+      "price": 26.4
     },
     "revenue": {
       "date": "2026-04",
@@ -42710,7 +42710,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.83,
       "status": "High Premium",
-      "price": 27.0
+      "price": 27.1
     },
     "revenue": {
       "date": "2026-04",
@@ -43391,7 +43391,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.43,
       "status": "High Premium",
-      "price": 20.5
+      "price": 20.6
     },
     "revenue": {
       "date": "2026-04",
@@ -44145,7 +44145,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 9.4
+      "price": 9.3
     },
     "revenue": {
       "date": "2026-04",
@@ -45337,7 +45337,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.45,
       "status": "Undervalued",
-      "price": 12.4
+      "price": 12.3
     },
     "revenue": {
       "date": "2026-04",
@@ -46285,7 +46285,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 36.3
+      "price": 36.4
     },
     "revenue": {
       "date": "2026-04",
@@ -46869,7 +46869,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 17.5
+      "price": 17.6
     },
     "revenue": {
       "date": "2026-04",
@@ -47088,7 +47088,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.26,
       "status": "High Premium",
-      "price": 25.5
+      "price": 25.6
     },
     "revenue": {
       "date": "2026-04",
@@ -48061,7 +48061,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.45,
       "status": "Undervalued",
-      "price": 40.3
+      "price": 40.4
     },
     "revenue": {
       "date": "2026-04",
@@ -49179,7 +49179,7 @@
     },
     "chips": {
       "foreign_net": 1591,
-      "trust_net": -1512,
+      "trust_net": -1748,
       "analysis": "N/A"
     }
   },
@@ -49411,7 +49411,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.67,
       "status": "High Premium",
-      "price": 26.0
+      "price": 26.1
     },
     "revenue": {
       "date": "2026-04",
@@ -50675,7 +50675,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 12.6
+      "price": 12.7
     },
     "revenue": {
       "date": "2026-04",
@@ -51453,7 +51453,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.4,
       "status": "High Premium",
-      "price": 28.0
+      "price": 28.1
     },
     "revenue": {
       "date": "2026-04",
@@ -53496,7 +53496,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.38,
       "status": "High Premium",
-      "price": 47.2
+      "price": 47.1
     },
     "revenue": {
       "date": "2026-04",
@@ -57437,7 +57437,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.73,
       "status": "Undervalued",
-      "price": 28.5
+      "price": 28.6
     },
     "revenue": {
       "date": "2026-04",
@@ -57656,7 +57656,7 @@
       "sector_pe": 20.0,
       "pe_score": 14.81,
       "status": "High Premium",
-      "price": 11.9
+      "price": 11.8
     },
     "revenue": {
       "date": "2026-04",
@@ -57729,7 +57729,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.57,
       "status": "High Premium",
-      "price": 35.2
+      "price": 35.1
     },
     "revenue": {
       "date": "2026-04",
@@ -58324,7 +58324,7 @@
     },
     "chips": {
       "foreign_net": -2129,
-      "trust_net": 0,
+      "trust_net": -289,
       "analysis": "N/A"
     }
   },
@@ -58750,7 +58750,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.17,
       "status": "High Premium",
-      "price": 43.3
+      "price": 43.4
     },
     "revenue": {
       "date": "2026-04",
@@ -60940,7 +60940,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.69,
       "status": "Undervalued",
-      "price": 40.2
+      "price": 40.1
     },
     "revenue": {
       "date": "2026-04",
@@ -61535,7 +61535,7 @@
     },
     "chips": {
       "foreign_net": 2722,
-      "trust_net": 0,
+      "trust_net": 985,
       "analysis": "N/A"
     }
   },
@@ -62351,7 +62351,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.61,
       "status": "Undervalued",
-      "price": 39.7
+      "price": 39.6
     },
     "revenue": {
       "date": "2026-04",
@@ -62429,7 +62429,7 @@
     "revenue": {
       "date": "2026-04",
       "revenue": 6222374000.0,
-      "mom": 1.65,
+      "mom": -22.37,
       "yoy": -5.5,
       "history": [
         {
@@ -62474,7 +62474,7 @@
         },
         {
           "date": "2026-03",
-          "revenue": 6121121000.0
+          "revenue": 8015155000.0
         },
         {
           "date": "2026-04",
@@ -62935,7 +62935,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.83,
       "status": "Fair Value",
-      "price": 37.3
+      "price": 37.4
     },
     "revenue": {
       "date": "2026-04",
@@ -64138,7 +64138,7 @@
     },
     "chips": {
       "foreign_net": -107,
-      "trust_net": -72,
+      "trust_net": -179,
       "analysis": "N/A"
     }
   },
@@ -65391,7 +65391,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.21,
       "status": "High Premium",
-      "price": 45.2
+      "price": 45.1
     },
     "revenue": {
       "date": "2026-04",
@@ -65683,7 +65683,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.02,
       "status": "High Premium",
-      "price": 27.5
+      "price": 27.4
     },
     "revenue": {
       "date": "2026-04",
@@ -66254,7 +66254,7 @@
     },
     "chips": {
       "foreign_net": -27152,
-      "trust_net": -891,
+      "trust_net": -898,
       "analysis": "N/A"
     }
   },
@@ -66400,7 +66400,7 @@
     },
     "chips": {
       "foreign_net": -1746,
-      "trust_net": -608,
+      "trust_net": -862,
       "analysis": "N/A"
     }
   },
@@ -67581,7 +67581,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.34,
       "status": "Undervalued",
-      "price": 41.7
+      "price": 41.6
     },
     "revenue": {
       "date": "N/A",
@@ -67897,7 +67897,7 @@
       "sector_pe": 20.0,
       "pe_score": 5.71,
       "status": "High Premium",
-      "price": 38.8
+      "price": 38.9
     },
     "revenue": {
       "date": "2026-04",
@@ -68408,7 +68408,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.09,
       "status": "Fair Value",
-      "price": 39.2
+      "price": 39.1
     },
     "revenue": {
       "date": "2026-04",
@@ -69430,7 +69430,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.69,
       "status": "Undervalued",
-      "price": 39.8
+      "price": 39.9
     },
     "revenue": {
       "date": "2026-04",
@@ -69576,7 +69576,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.17,
       "status": "Fair Value",
-      "price": 26.0
+      "price": 26.1
     },
     "revenue": {
       "date": "2026-04",
@@ -69649,7 +69649,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.58,
       "status": "Undervalued",
-      "price": 12.4
+      "price": 12.3
     },
     "revenue": {
       "date": "2026-04",
@@ -70001,7 +70001,7 @@
     },
     "chips": {
       "foreign_net": 5182,
-      "trust_net": 4406,
+      "trust_net": 6011,
       "analysis": "N/A"
     }
   },
@@ -70997,7 +70997,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3373,
+      "foreign_net": -3399,
       "trust_net": 3385,
       "analysis": "N/A"
     }
@@ -71387,7 +71387,7 @@
     },
     "chips": {
       "foreign_net": -10037,
-      "trust_net": -3088,
+      "trust_net": -3126,
       "analysis": "N/A"
     }
   },
@@ -72008,7 +72008,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.06,
       "status": "Fair Value",
-      "price": 19.0
+      "price": 19.1
     },
     "revenue": {
       "date": "2026-04",
@@ -72174,11 +72174,11 @@
     "stock_name": "安心",
     "valuation": {
       "stock_id": "1259",
-      "current_pe": 23.27,
+      "current_pe": 24.08,
       "sector_pe": 20.0,
-      "pe_score": 1.16,
-      "status": "Fair Value",
-      "price": 57.0
+      "pe_score": 1.2,
+      "status": "High Premium",
+      "price": 59.0
     },
     "revenue": {
       "date": "2026-04",
@@ -72310,7 +72310,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -72383,7 +72383,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -72456,7 +72456,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -72529,7 +72529,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -6,
+      "foreign_net": 6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -72602,7 +72602,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -72675,7 +72675,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -99,
+      "foreign_net": 14,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -72748,7 +72748,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -165,
+      "foreign_net": -139,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -72821,7 +72821,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 4,
+      "foreign_net": 36,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -72894,7 +72894,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": 22,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -72967,7 +72967,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 11,
+      "foreign_net": -211,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73040,7 +73040,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -16,
+      "foreign_net": 11,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73064,7 +73064,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 19,
+      "foreign_net": 50,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73137,7 +73137,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73210,7 +73210,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 6,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73220,11 +73220,11 @@
     "stock_name": "生泰",
     "valuation": {
       "stock_id": "1777",
-      "current_pe": 12.05,
+      "current_pe": 12.09,
       "sector_pe": 20.0,
       "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 70.5
+      "price": 70.7
     },
     "revenue": {
       "date": "2026-04",
@@ -73356,7 +73356,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": -6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73429,7 +73429,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -150,
+      "foreign_net": -99,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73502,8 +73502,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 2016,
-      "trust_net": 235,
+      "foreign_net": -407,
+      "trust_net": 92,
       "analysis": "N/A"
     }
   },
@@ -73575,7 +73575,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73589,7 +73589,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 36.2
+      "price": 36.1
     },
     "revenue": {
       "date": "2026-04",
@@ -73648,7 +73648,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -27,
+      "foreign_net": -35,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73794,8 +73794,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -2903,
-      "trust_net": 0,
+      "foreign_net": -1254,
+      "trust_net": -5,
       "analysis": "N/A"
     }
   },
@@ -73867,7 +73867,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -105,
+      "foreign_net": -216,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -73940,7 +73940,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74013,7 +74013,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 8,
+      "foreign_net": 9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74086,7 +74086,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -118,
+      "foreign_net": 7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74232,7 +74232,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 28,
+      "foreign_net": 105,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74305,7 +74305,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -263,
+      "foreign_net": -22,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74319,7 +74319,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 29.0
+      "price": 29.1
     },
     "revenue": {
       "date": "2026-04",
@@ -74378,7 +74378,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -45,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74392,7 +74392,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.77,
       "status": "Undervalued",
-      "price": 28.5
+      "price": 28.6
     },
     "revenue": {
       "date": "2026-04",
@@ -74451,7 +74451,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -32,
+      "foreign_net": -29,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74524,7 +74524,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -7,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74597,7 +74597,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -739,
+      "foreign_net": 722,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74670,7 +74670,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74743,7 +74743,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -22,
+      "foreign_net": -6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74757,7 +74757,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 25.5
+      "price": 25.6
     },
     "revenue": {
       "date": "2026-04",
@@ -74816,7 +74816,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74840,7 +74840,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -21,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74913,7 +74913,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -5,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -74986,7 +74986,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -75059,7 +75059,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -11,
+      "foreign_net": 20,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -75132,7 +75132,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -10,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -75278,7 +75278,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -51,
+      "foreign_net": -53,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -75351,7 +75351,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -42,
+      "foreign_net": -53,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -75361,11 +75361,11 @@
     "stock_name": "王座",
     "valuation": {
       "stock_id": "2751",
-      "current_pe": 11.8,
+      "current_pe": 11.89,
       "sector_pe": 20.0,
       "pe_score": 0.59,
       "status": "Undervalued",
-      "price": 53.1
+      "price": 53.5
     },
     "revenue": {
       "date": "2026-04",
@@ -75497,7 +75497,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -75570,7 +75570,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -12,
+      "foreign_net": -5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -75643,7 +75643,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -8,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -75677,11 +75677,11 @@
     "stock_name": "誠品生活",
     "valuation": {
       "stock_id": "2926",
-      "current_pe": 65.56,
+      "current_pe": 66.57,
       "sector_pe": 20.0,
-      "pe_score": 3.28,
+      "pe_score": 3.33,
       "status": "High Premium",
-      "price": 35.4
+      "price": 36.0
     },
     "revenue": {
       "date": "2026-04",
@@ -75886,7 +75886,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 165,
+      "foreign_net": -20,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -75900,7 +75900,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.55,
       "status": "High Premium",
-      "price": 29.0
+      "price": 29.1
     },
     "revenue": {
       "date": "2026-04",
@@ -75959,7 +75959,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 83,
+      "foreign_net": 86,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -76105,8 +76105,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -780,
-      "trust_net": -1,
+      "foreign_net": -205,
+      "trust_net": -7,
       "analysis": "N/A"
     }
   },
@@ -76178,8 +76178,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -283,
-      "trust_net": -99,
+      "foreign_net": -144,
+      "trust_net": 316,
       "analysis": "N/A"
     }
   },
@@ -76251,7 +76251,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 111,
+      "foreign_net": -10,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -76265,7 +76265,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 37.8
+      "price": 37.9
     },
     "revenue": {
       "date": "2026-04",
@@ -76324,7 +76324,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -118,
+      "foreign_net": -147,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -76397,7 +76397,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 287,
+      "foreign_net": 345,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -76470,7 +76470,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -87,
+      "foreign_net": 319,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -76543,8 +76543,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 3804,
-      "trust_net": 94,
+      "foreign_net": -2342,
+      "trust_net": -324,
       "analysis": "N/A"
     }
   },
@@ -76616,7 +76616,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -22,
+      "foreign_net": 14,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -76689,7 +76689,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -76762,7 +76762,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -115,
+      "foreign_net": 83,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -76835,7 +76835,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -16,
+      "foreign_net": 18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -76908,8 +76908,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -68,
-      "trust_net": -47,
+      "foreign_net": -82,
+      "trust_net": -62,
       "analysis": "N/A"
     }
   },
@@ -76981,7 +76981,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 448,
+      "foreign_net": -179,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77054,7 +77054,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 77,
+      "foreign_net": 39,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77127,7 +77127,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 517,
+      "foreign_net": 134,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77273,7 +77273,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 81,
+      "foreign_net": -507,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77346,8 +77346,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -105,
-      "trust_net": -11,
+      "foreign_net": -99,
+      "trust_net": -14,
       "analysis": "N/A"
     }
   },
@@ -77419,7 +77419,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -81,
+      "foreign_net": 311,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77492,7 +77492,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -13,
+      "foreign_net": -5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77565,7 +77565,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 122,
+      "foreign_net": 46,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77638,7 +77638,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -6,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77711,7 +77711,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -232,
+      "foreign_net": 12,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77784,7 +77784,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -21,
+      "foreign_net": 18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77857,7 +77857,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -20,
+      "foreign_net": -50,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -77930,7 +77930,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -53,
+      "foreign_net": 9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78003,8 +78003,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -512,
-      "trust_net": 44,
+      "foreign_net": -760,
+      "trust_net": -759,
       "analysis": "N/A"
     }
   },
@@ -78076,7 +78076,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -77,
+      "foreign_net": 22,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78149,8 +78149,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 178,
-      "trust_net": -1,
+      "foreign_net": 1213,
+      "trust_net": -3,
       "analysis": "N/A"
     }
   },
@@ -78222,8 +78222,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -92,
-      "trust_net": 0,
+      "foreign_net": -102,
+      "trust_net": -7,
       "analysis": "N/A"
     }
   },
@@ -78295,7 +78295,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 167,
+      "foreign_net": -38,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78368,7 +78368,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 334,
+      "foreign_net": -403,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78441,7 +78441,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78514,8 +78514,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -45,
-      "trust_net": 0,
+      "foreign_net": 274,
+      "trust_net": 459,
       "analysis": "N/A"
     }
   },
@@ -78587,7 +78587,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 332,
+      "foreign_net": -47,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78660,7 +78660,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 114,
+      "foreign_net": 88,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78733,7 +78733,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -10,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78806,7 +78806,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": -159,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78879,7 +78879,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 216,
+      "foreign_net": -410,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -78952,7 +78952,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79025,8 +79025,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -1236,
-      "trust_net": -42,
+      "foreign_net": 398,
+      "trust_net": -1002,
       "analysis": "N/A"
     }
   },
@@ -79098,8 +79098,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 2623,
-      "trust_net": -4225,
+      "foreign_net": -1303,
+      "trust_net": 181,
       "analysis": "N/A"
     }
   },
@@ -79171,7 +79171,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -10,
+      "foreign_net": 84,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79244,7 +79244,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -32,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79317,7 +79317,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 3,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79390,7 +79390,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 15,
+      "foreign_net": -46,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79404,7 +79404,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.34,
       "status": "Undervalued",
-      "price": 15.6
+      "price": 15.7
     },
     "revenue": {
       "date": "2026-04",
@@ -79463,7 +79463,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -16,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79536,7 +79536,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79609,7 +79609,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 13,
+      "foreign_net": -34,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79682,7 +79682,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 713,
+      "foreign_net": -143,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79755,7 +79755,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1159,
+      "foreign_net": 535,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79828,8 +79828,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -183,
-      "trust_net": 12,
+      "foreign_net": -9,
+      "trust_net": -3,
       "analysis": "N/A"
     }
   },
@@ -79901,7 +79901,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 40,
+      "foreign_net": 377,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79974,7 +79974,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": -20,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -79988,7 +79988,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.58,
       "status": "Undervalued",
-      "price": 49.2
+      "price": 49.1
     },
     "revenue": {
       "date": "2026-04",
@@ -80047,7 +80047,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -59,
+      "foreign_net": 83,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80120,7 +80120,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -17,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80193,7 +80193,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80266,7 +80266,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -56,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80339,7 +80339,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 730,
+      "foreign_net": 1745,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80412,7 +80412,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -586,
+      "foreign_net": -209,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80485,7 +80485,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 90,
+      "foreign_net": 51,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80558,8 +80558,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -40,
-      "trust_net": 0,
+      "foreign_net": -1702,
+      "trust_net": -19,
       "analysis": "N/A"
     }
   },
@@ -80631,7 +80631,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 181,
+      "foreign_net": -65,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80777,7 +80777,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -303,
+      "foreign_net": 278,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80850,7 +80850,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 81,
+      "foreign_net": -11,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80923,7 +80923,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 256,
+      "foreign_net": -181,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -80996,7 +80996,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 115,
+      "foreign_net": -263,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81069,7 +81069,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -22,
+      "foreign_net": -66,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81142,7 +81142,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -593,
+      "foreign_net": 238,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81215,8 +81215,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -485,
-      "trust_net": -57,
+      "foreign_net": -172,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -81229,7 +81229,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 19.5
+      "price": 19.6
     },
     "revenue": {
       "date": "2026-04",
@@ -81288,7 +81288,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 136,
+      "foreign_net": 312,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81361,7 +81361,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81434,8 +81434,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 7463,
-      "trust_net": 0,
+      "foreign_net": -2342,
+      "trust_net": 1,
       "analysis": "N/A"
     }
   },
@@ -81507,7 +81507,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 132,
+      "foreign_net": -60,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81580,7 +81580,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 787,
+      "foreign_net": -411,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81653,7 +81653,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -73,
+      "foreign_net": -256,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81726,7 +81726,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -120,
+      "foreign_net": 65,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81799,7 +81799,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 701,
+      "foreign_net": -786,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81872,7 +81872,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 14,
+      "foreign_net": -6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -81945,7 +81945,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 130,
+      "foreign_net": 43,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82018,7 +82018,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -540,
+      "foreign_net": 358,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82091,7 +82091,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -137,
+      "foreign_net": 10,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82164,7 +82164,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 105,
+      "foreign_net": 72,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82237,7 +82237,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -207,
+      "foreign_net": 22,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82310,7 +82310,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 21,
+      "foreign_net": 9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82383,7 +82383,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 62,
+      "foreign_net": 762,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82456,7 +82456,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 88,
+      "foreign_net": 64,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82470,7 +82470,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.53,
       "status": "Undervalued",
-      "price": 42.3
+      "price": 42.4
     },
     "revenue": {
       "date": "2026-04",
@@ -82529,7 +82529,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -105,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82543,7 +82543,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 21.5
+      "price": 21.6
     },
     "revenue": {
       "date": "2026-04",
@@ -82602,7 +82602,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": -25,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82675,7 +82675,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -128,
+      "foreign_net": -46,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82748,8 +82748,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 402,
-      "trust_net": 27,
+      "foreign_net": -540,
+      "trust_net": -52,
       "analysis": "N/A"
     }
   },
@@ -82821,7 +82821,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -7,
+      "foreign_net": 9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82894,7 +82894,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 717,
+      "foreign_net": 243,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82967,7 +82967,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 11,
+      "foreign_net": 28,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -82981,7 +82981,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 19.5
+      "price": 19.6
     },
     "revenue": {
       "date": "2026-04",
@@ -83040,7 +83040,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 90,
+      "foreign_net": 55,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83113,7 +83113,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": -40,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83186,7 +83186,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -16,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83259,7 +83259,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -21,
+      "foreign_net": -40,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83332,7 +83332,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": 20,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83405,7 +83405,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -10,
+      "foreign_net": -11,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83419,7 +83419,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 12.6
+      "price": 12.7
     },
     "revenue": {
       "date": "2026-04",
@@ -83478,7 +83478,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 19,
+      "foreign_net": -13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83551,8 +83551,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 84,
-      "trust_net": 46,
+      "foreign_net": 334,
+      "trust_net": -3,
       "analysis": "N/A"
     }
   },
@@ -83624,7 +83624,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -55,
+      "foreign_net": 37,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83697,8 +83697,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 132,
-      "trust_net": 7,
+      "foreign_net": 35,
+      "trust_net": 18,
       "analysis": "N/A"
     }
   },
@@ -83770,7 +83770,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -318,
+      "foreign_net": 399,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83843,7 +83843,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -52,
+      "foreign_net": 30,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83916,7 +83916,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 4,
+      "foreign_net": 6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -83989,7 +83989,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -31,
+      "foreign_net": 156,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84062,7 +84062,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 58,
+      "foreign_net": 176,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84135,8 +84135,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -72,
-      "trust_net": 101,
+      "foreign_net": -173,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -84208,7 +84208,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -56,
+      "foreign_net": 10,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84281,7 +84281,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -31,
+      "foreign_net": -38,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84354,7 +84354,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -78,
+      "foreign_net": 87,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84427,7 +84427,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 96,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84500,7 +84500,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 15,
+      "foreign_net": -27,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84573,7 +84573,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -16,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84646,7 +84646,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84719,7 +84719,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 131,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84792,7 +84792,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 823,
+      "foreign_net": -252,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84865,7 +84865,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": 9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -84938,7 +84938,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 22,
+      "foreign_net": -1475,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85011,7 +85011,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -634,
+      "foreign_net": 257,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85084,7 +85084,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 9,
+      "foreign_net": -37,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85157,7 +85157,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -276,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85230,7 +85230,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85303,7 +85303,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 996,
+      "foreign_net": -244,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85376,7 +85376,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85449,8 +85449,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 6073,
-      "trust_net": 3012,
+      "foreign_net": -84,
+      "trust_net": 97,
       "analysis": "N/A"
     }
   },
@@ -85522,7 +85522,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -299,
+      "foreign_net": 41,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85595,7 +85595,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -46,
+      "foreign_net": 11,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85668,7 +85668,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -372,
+      "foreign_net": 317,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85741,7 +85741,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -7,
+      "foreign_net": -19,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85814,7 +85814,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 40,
+      "foreign_net": -32,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85838,7 +85838,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": 9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85911,7 +85911,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -17,
+      "foreign_net": -51,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -85984,7 +85984,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -143,
+      "foreign_net": -333,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86057,7 +86057,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 669,
+      "foreign_net": -123,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86130,7 +86130,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 17,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86203,7 +86203,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 9,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86276,7 +86276,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -20,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86349,7 +86349,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -129,
+      "foreign_net": 153,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86422,7 +86422,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 418,
+      "foreign_net": -750,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86495,8 +86495,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 104,
-      "trust_net": 0,
+      "foreign_net": 200,
+      "trust_net": -67,
       "analysis": "N/A"
     }
   },
@@ -86568,7 +86568,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2731,
+      "foreign_net": 16295,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86641,7 +86641,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -143,
+      "foreign_net": -351,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86714,7 +86714,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -86,
+      "foreign_net": -27,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86787,7 +86787,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -23,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86860,7 +86860,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": -24,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -86933,8 +86933,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -149,
-      "trust_net": 0,
+      "foreign_net": 96,
+      "trust_net": 172,
       "analysis": "N/A"
     }
   },
@@ -87006,7 +87006,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 8,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87079,7 +87079,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -30,
+      "foreign_net": 36,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87152,7 +87152,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87225,7 +87225,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -27,
+      "foreign_net": -37,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87298,7 +87298,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 127,
+      "foreign_net": 9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87371,7 +87371,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -5,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87517,7 +87517,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -31,
+      "foreign_net": 14,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87590,7 +87590,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1536,
+      "foreign_net": -257,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87736,7 +87736,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 31,
+      "foreign_net": -54,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87809,7 +87809,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -923,
+      "foreign_net": 507,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87882,7 +87882,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -36,
+      "foreign_net": -68,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -87955,7 +87955,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88028,7 +88028,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 11,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88101,7 +88101,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88198,7 +88198,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -562,
+      "foreign_net": 877,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88271,7 +88271,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 4,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88295,7 +88295,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -117,
+      "foreign_net": 706,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88309,7 +88309,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.62,
       "status": "High Premium",
-      "price": 41.8
+      "price": 41.9
     },
     "revenue": {
       "date": "2026-04",
@@ -88368,7 +88368,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 6,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88441,7 +88441,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -8,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88514,7 +88514,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -41,
+      "foreign_net": 268,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88587,7 +88587,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -37,
+      "foreign_net": 18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88660,7 +88660,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -34,
+      "foreign_net": -96,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88733,7 +88733,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -43,
+      "foreign_net": 166,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88806,7 +88806,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -46,
+      "foreign_net": 37,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88879,7 +88879,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -37,
+      "foreign_net": 59,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -88952,7 +88952,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -29,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89025,7 +89025,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -24,
+      "foreign_net": 16,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89039,7 +89039,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 11.5
+      "price": 11.6
     },
     "revenue": {
       "date": "2026-04",
@@ -89171,7 +89171,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89244,7 +89244,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 28,
+      "foreign_net": 86,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89317,7 +89317,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 205,
+      "foreign_net": -123,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89390,7 +89390,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": 7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89463,7 +89463,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 21,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89536,7 +89536,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 4,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89609,7 +89609,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -110,
+      "foreign_net": -49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89682,7 +89682,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -90,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89755,7 +89755,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -18,
+      "foreign_net": -28,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89769,7 +89769,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.03,
       "status": "Fair Value",
-      "price": 21.5
+      "price": 21.6
     },
     "revenue": {
       "date": "2026-04",
@@ -89828,7 +89828,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 23,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89852,7 +89852,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -48,
+      "foreign_net": -25,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89925,7 +89925,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 29,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -89998,7 +89998,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 15,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90071,7 +90071,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 10,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90144,7 +90144,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1258,
+      "foreign_net": -136,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90217,7 +90217,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 135,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90290,7 +90290,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -66,
+      "foreign_net": -35,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90363,7 +90363,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90509,7 +90509,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 3,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90582,7 +90582,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 794,
+      "foreign_net": 47,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90655,7 +90655,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -17,
+      "foreign_net": -4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90669,7 +90669,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.06,
       "status": "Fair Value",
-      "price": 27.5
+      "price": 27.6
     },
     "revenue": {
       "date": "2026-04",
@@ -90801,7 +90801,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90874,7 +90874,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -133,
+      "foreign_net": -63,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -90947,7 +90947,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 18,
+      "foreign_net": 21,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91020,7 +91020,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -19,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91093,7 +91093,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -129,
+      "foreign_net": -4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91166,7 +91166,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91239,7 +91239,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -15,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91312,7 +91312,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 135,
+      "foreign_net": -66,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91385,7 +91385,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 7,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91458,7 +91458,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 19,
+      "foreign_net": -4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91531,7 +91531,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 6,
+      "foreign_net": 12,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91677,7 +91677,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 170,
+      "foreign_net": 217,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91750,7 +91750,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 8,
+      "foreign_net": 12,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91823,7 +91823,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -20,
+      "foreign_net": -22,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91896,7 +91896,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -246,
+      "foreign_net": -326,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -91969,7 +91969,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 17,
+      "foreign_net": -5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92042,7 +92042,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -556,
+      "foreign_net": -271,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92056,7 +92056,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 15.1
+      "price": 15.2
     },
     "revenue": {
       "date": "2026-04",
@@ -92115,7 +92115,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 139,
+      "foreign_net": -251,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92188,7 +92188,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 330,
+      "foreign_net": 276,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92261,7 +92261,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -121,
+      "foreign_net": 129,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92407,7 +92407,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 40,
+      "foreign_net": 18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92553,7 +92553,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 20,
+      "foreign_net": 30,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92626,7 +92626,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1174,
+      "foreign_net": 1034,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92699,7 +92699,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -67,
+      "foreign_net": -42,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92723,7 +92723,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -36,
+      "foreign_net": -31,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92796,7 +92796,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -92869,8 +92869,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -1081,
-      "trust_net": 0,
+      "foreign_net": -273,
+      "trust_net": 149,
       "analysis": "N/A"
     }
   },
@@ -92942,7 +92942,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 297,
+      "foreign_net": -437,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93015,7 +93015,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 13,
+      "foreign_net": -192,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93088,7 +93088,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -90,
+      "foreign_net": -372,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93234,7 +93234,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -633,
+      "foreign_net": -201,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93380,7 +93380,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 260,
+      "foreign_net": 35,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93453,7 +93453,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 66,
+      "foreign_net": 125,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93526,7 +93526,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93540,7 +93540,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 36.7
+      "price": 36.6
     },
     "revenue": {
       "date": "2026-04",
@@ -93599,7 +93599,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 35,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93672,7 +93672,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 400,
+      "foreign_net": -1764,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93745,7 +93745,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -91,
+      "foreign_net": 49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93818,7 +93818,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -54,
+      "foreign_net": 79,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93891,7 +93891,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -7,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -93964,7 +93964,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 29,
+      "foreign_net": 27,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94037,7 +94037,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -58,
+      "foreign_net": 31,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94061,8 +94061,8 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 761,
-      "trust_net": 0,
+      "foreign_net": 205,
+      "trust_net": 266,
       "analysis": "N/A"
     }
   },
@@ -94085,7 +94085,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -365,
+      "foreign_net": -114,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94231,7 +94231,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 574,
+      "foreign_net": -2220,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94304,7 +94304,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 164,
+      "foreign_net": 112,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94377,8 +94377,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 123,
-      "trust_net": -54,
+      "foreign_net": 89,
+      "trust_net": -3,
       "analysis": "N/A"
     }
   },
@@ -94474,8 +94474,8 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 109,
-      "trust_net": 17,
+      "foreign_net": 245,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -94547,7 +94547,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -16,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94620,7 +94620,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 800,
+      "foreign_net": -743,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94693,7 +94693,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -234,
+      "foreign_net": 366,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94707,7 +94707,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 10.1
+      "price": 10.2
     },
     "revenue": {
       "date": "2026-04",
@@ -94766,7 +94766,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 9,
+      "foreign_net": -70,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94839,7 +94839,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 13,
+      "foreign_net": 16,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94912,7 +94912,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -6,
+      "foreign_net": -40,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -94985,7 +94985,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -56,
+      "foreign_net": -16,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95058,7 +95058,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -8,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95131,7 +95131,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95204,7 +95204,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95277,7 +95277,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95350,7 +95350,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 6,
+      "foreign_net": 21,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95423,7 +95423,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95471,7 +95471,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -79,
+      "foreign_net": 77,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95485,7 +95485,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 49.2
+      "price": 49.1
     },
     "revenue": {
       "date": "2026-04",
@@ -95544,7 +95544,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 238,
+      "foreign_net": -296,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95617,7 +95617,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -52,
+      "foreign_net": 72,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95690,7 +95690,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 119,
+      "foreign_net": 137,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95763,7 +95763,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -11,
+      "foreign_net": -15,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95836,7 +95836,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 21,
+      "foreign_net": -11,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95909,7 +95909,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 66,
+      "foreign_net": 52,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -95982,7 +95982,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -95,
+      "foreign_net": 53,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96055,8 +96055,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -13,
-      "trust_net": 3,
+      "foreign_net": 22,
+      "trust_net": 10,
       "analysis": "N/A"
     }
   },
@@ -96069,7 +96069,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.12,
       "status": "Fair Value",
-      "price": 23.5
+      "price": 23.4
     },
     "revenue": {
       "date": "2026-04",
@@ -96128,7 +96128,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -189,
+      "foreign_net": -296,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96201,7 +96201,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 14,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96274,8 +96274,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 256,
-      "trust_net": -93,
+      "foreign_net": -918,
+      "trust_net": 325,
       "analysis": "N/A"
     }
   },
@@ -96347,7 +96347,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 191,
+      "foreign_net": 59,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96420,7 +96420,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -270,
+      "foreign_net": 121,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96493,7 +96493,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -218,
+      "foreign_net": -18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96566,7 +96566,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 63,
+      "foreign_net": 407,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96639,7 +96639,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -69,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96712,7 +96712,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 289,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96785,7 +96785,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -252,
+      "foreign_net": 18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96858,7 +96858,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 54,
+      "foreign_net": 36,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -96931,7 +96931,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": 40,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97004,7 +97004,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1175,
+      "foreign_net": -372,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97077,7 +97077,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -99,
+      "foreign_net": -267,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97150,8 +97150,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 3201,
-      "trust_net": 2966,
+      "foreign_net": 1979,
+      "trust_net": 1167,
       "analysis": "N/A"
     }
   },
@@ -97223,7 +97223,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1404,
+      "foreign_net": -3361,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97296,7 +97296,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -17,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97369,7 +97369,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97442,7 +97442,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -21,
+      "foreign_net": -35,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97515,7 +97515,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97588,8 +97588,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 565,
-      "trust_net": -87,
+      "foreign_net": 34,
+      "trust_net": -283,
       "analysis": "N/A"
     }
   },
@@ -97661,7 +97661,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -5,
+      "foreign_net": -1139,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97734,7 +97734,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -17,
+      "foreign_net": 42,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97807,7 +97807,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 928,
+      "foreign_net": 659,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97880,7 +97880,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -25,
+      "foreign_net": -18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -97953,7 +97953,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 34,
+      "foreign_net": -30,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98026,7 +98026,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -135,
+      "foreign_net": 302,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98099,7 +98099,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 596,
+      "foreign_net": -4582,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98172,7 +98172,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -24,
+      "foreign_net": -45,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98245,7 +98245,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98259,7 +98259,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.82,
       "status": "High Premium",
-      "price": 18.5
+      "price": 18.6
     },
     "revenue": {
       "date": "2026-04",
@@ -98318,7 +98318,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": 29,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98391,8 +98391,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -1666,
-      "trust_net": 254,
+      "foreign_net": 3953,
+      "trust_net": 498,
       "analysis": "N/A"
     }
   },
@@ -98464,7 +98464,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1216,
+      "foreign_net": 59,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98610,7 +98610,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -479,
+      "foreign_net": 59,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98683,8 +98683,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -199,
-      "trust_net": 0,
+      "foreign_net": 188,
+      "trust_net": -150,
       "analysis": "N/A"
     }
   },
@@ -98756,7 +98756,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98829,7 +98829,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 38,
+      "foreign_net": 97,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98902,7 +98902,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -27,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -98975,7 +98975,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99048,7 +99048,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -113,
+      "foreign_net": 116,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99121,7 +99121,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 416,
+      "foreign_net": -282,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99194,7 +99194,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -63,
+      "foreign_net": 44,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99208,7 +99208,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 20.0
+      "price": 19.9
     },
     "revenue": {
       "date": "2026-04",
@@ -99267,7 +99267,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -6,
+      "foreign_net": -30,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99340,8 +99340,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -2122,
-      "trust_net": -6,
+      "foreign_net": -121,
+      "trust_net": -52,
       "analysis": "N/A"
     }
   },
@@ -99413,7 +99413,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -11,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99486,7 +99486,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 8,
+      "foreign_net": -76,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99559,7 +99559,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99632,7 +99632,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 312,
+      "foreign_net": 136,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99705,7 +99705,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 96,
+      "foreign_net": 90,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99851,7 +99851,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -209,
+      "foreign_net": -62,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99924,7 +99924,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -74,
+      "foreign_net": -63,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -99997,7 +99997,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -442,
+      "foreign_net": -31,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100139,7 +100139,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100212,7 +100212,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100285,7 +100285,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": 9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100358,7 +100358,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 12,
+      "foreign_net": -15,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100431,7 +100431,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -280,
+      "foreign_net": 408,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100504,8 +100504,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 510,
-      "trust_net": 100,
+      "foreign_net": 1222,
+      "trust_net": 329,
       "analysis": "N/A"
     }
   },
@@ -100542,7 +100542,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.58,
       "status": "Undervalued",
-      "price": 23.5
+      "price": 23.4
     },
     "revenue": {
       "date": "2026-04",
@@ -100601,7 +100601,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -4,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100674,7 +100674,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -14,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100747,7 +100747,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100820,7 +100820,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -108,
+      "foreign_net": 199,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100893,7 +100893,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -4,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -100966,7 +100966,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2080,
+      "foreign_net": -2362,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101112,7 +101112,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101185,8 +101185,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -5,
-      "trust_net": 8,
+      "foreign_net": -94,
+      "trust_net": 5,
       "analysis": "N/A"
     }
   },
@@ -101258,7 +101258,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -85,
+      "foreign_net": -227,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101331,7 +101331,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 180,
+      "foreign_net": -221,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101404,7 +101404,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 886,
+      "foreign_net": -5535,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101477,7 +101477,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -4,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101491,7 +101491,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.43,
       "status": "Undervalued",
-      "price": 31.5
+      "price": 31.6
     },
     "revenue": {
       "date": "2026-04",
@@ -101550,7 +101550,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -25,
+      "foreign_net": -84,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101623,7 +101623,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -104,
+      "foreign_net": -16,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101696,7 +101696,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1740,
+      "foreign_net": -1982,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101769,7 +101769,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": -6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101842,7 +101842,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 207,
+      "foreign_net": -147,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101915,7 +101915,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -134,
+      "foreign_net": 120,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -101988,7 +101988,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 357,
+      "foreign_net": -73,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102061,7 +102061,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 47,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102134,7 +102134,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -5,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102207,7 +102207,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 372,
+      "foreign_net": -428,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102280,8 +102280,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -58,
-      "trust_net": -88,
+      "foreign_net": -137,
+      "trust_net": -208,
       "analysis": "N/A"
     }
   },
@@ -102353,7 +102353,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -133,
+      "foreign_net": -104,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102426,7 +102426,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 24,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102499,7 +102499,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -19,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102572,7 +102572,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 482,
+      "foreign_net": 26,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102645,7 +102645,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 121,
+      "foreign_net": 188,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102718,7 +102718,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 228,
+      "foreign_net": -502,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102791,7 +102791,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -198,
+      "foreign_net": -42,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102864,7 +102864,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -24,
+      "foreign_net": -53,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -102937,7 +102937,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -320,
+      "foreign_net": -88,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103010,8 +103010,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -20,
-      "trust_net": -100,
+      "foreign_net": 663,
+      "trust_net": -1,
       "analysis": "N/A"
     }
   },
@@ -103083,7 +103083,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 8,
+      "foreign_net": -13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103156,8 +103156,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -208,
-      "trust_net": -13,
+      "foreign_net": -699,
+      "trust_net": -125,
       "analysis": "N/A"
     }
   },
@@ -103302,8 +103302,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -185,
-      "trust_net": 144,
+      "foreign_net": -35,
+      "trust_net": 143,
       "analysis": "N/A"
     }
   },
@@ -103375,8 +103375,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 2040,
-      "trust_net": -1185,
+      "foreign_net": -1382,
+      "trust_net": -238,
       "analysis": "N/A"
     }
   },
@@ -103448,7 +103448,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -32,
+      "foreign_net": -85,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103521,7 +103521,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -211,
+      "foreign_net": -48,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103594,7 +103594,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 32,
+      "foreign_net": 220,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103608,7 +103608,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.11,
       "status": "High Premium",
-      "price": 18.5
+      "price": 18.6
     },
     "revenue": {
       "date": "2026-04",
@@ -103667,7 +103667,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -109,
+      "foreign_net": -15,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103740,7 +103740,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -10,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103813,7 +103813,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -45,
+      "foreign_net": -48,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103886,7 +103886,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -138,
+      "foreign_net": 77,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103959,7 +103959,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1565,
+      "foreign_net": -308,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -103973,7 +103973,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 11.4
+      "price": 11.3
     },
     "revenue": {
       "date": "2026-04",
@@ -104032,7 +104032,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -315,
+      "foreign_net": 217,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104105,7 +104105,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104178,7 +104178,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 18,
+      "foreign_net": 6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104251,7 +104251,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104324,7 +104324,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -77,
+      "foreign_net": 290,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104397,7 +104397,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 61,
+      "foreign_net": -184,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104470,7 +104470,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5338,
+      "foreign_net": -1629,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104484,7 +104484,7 @@
       "sector_pe": 20.0,
       "pe_score": 24.95,
       "status": "High Premium",
-      "price": 25.0
+      "price": 24.9
     },
     "revenue": {
       "date": "2026-04",
@@ -104543,7 +104543,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 938,
+      "foreign_net": -238,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104616,8 +104616,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -46,
-      "trust_net": 0,
+      "foreign_net": 36,
+      "trust_net": -7,
       "analysis": "N/A"
     }
   },
@@ -104689,7 +104689,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1796,
+      "foreign_net": 1061,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104762,7 +104762,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -8,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104835,7 +104835,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -380,
+      "foreign_net": 400,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -104908,8 +104908,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 725,
-      "trust_net": -436,
+      "foreign_net": -476,
+      "trust_net": -415,
       "analysis": "N/A"
     }
   },
@@ -104981,7 +104981,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 746,
+      "foreign_net": 437,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105054,7 +105054,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 174,
+      "foreign_net": -61,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105127,7 +105127,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -21,
+      "foreign_net": 5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105200,7 +105200,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -13,
+      "foreign_net": -75,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105273,7 +105273,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -36,
+      "foreign_net": -81,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105346,7 +105346,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -54,
+      "foreign_net": 10,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105419,7 +105419,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -187,
+      "foreign_net": 60,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105492,7 +105492,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 141,
+      "foreign_net": -168,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105565,7 +105565,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 219,
+      "foreign_net": 76,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105575,11 +105575,11 @@
     "stock_name": "理銘",
     "valuation": {
       "stock_id": "6212",
-      "current_pe": 7.08,
+      "current_pe": 7.13,
       "sector_pe": 20.0,
-      "pe_score": 0.35,
+      "pe_score": 0.36,
       "status": "Undervalued",
-      "price": 28.1
+      "price": 28.2
     },
     "revenue": {
       "date": "2026-04",
@@ -105711,7 +105711,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -250,
+      "foreign_net": -981,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105784,7 +105784,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 103,
+      "foreign_net": -437,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105857,7 +105857,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -10,
+      "foreign_net": 113,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105930,7 +105930,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 8,
+      "foreign_net": 37,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -105944,7 +105944,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.48,
       "status": "Undervalued",
-      "price": 22.5
+      "price": 22.6
     },
     "revenue": {
       "date": "2026-04",
@@ -106003,7 +106003,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -90,
+      "foreign_net": -28,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106017,7 +106017,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 21.0
+      "price": 21.1
     },
     "revenue": {
       "date": "2026-04",
@@ -106149,8 +106149,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 257,
-      "trust_net": 156,
+      "foreign_net": -56,
+      "trust_net": -31,
       "analysis": "N/A"
     }
   },
@@ -106222,7 +106222,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 332,
+      "foreign_net": 437,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106295,7 +106295,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 98,
+      "foreign_net": -19,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106368,8 +106368,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 185,
-      "trust_net": -73,
+      "foreign_net": -131,
+      "trust_net": -50,
       "analysis": "N/A"
     }
   },
@@ -106441,7 +106441,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 49,
+      "foreign_net": 92,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106514,7 +106514,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -89,
+      "foreign_net": -103,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106587,7 +106587,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -562,
+      "foreign_net": 163,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106674,7 +106674,7 @@
       "sector_pe": 20.0,
       "pe_score": 9.84,
       "status": "High Premium",
-      "price": 27.5
+      "price": 27.6
     },
     "revenue": {
       "date": "2026-04",
@@ -106733,7 +106733,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 520,
+      "foreign_net": 559,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106806,7 +106806,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 581,
+      "foreign_net": -124,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106879,7 +106879,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106893,7 +106893,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.61,
       "status": "Undervalued",
-      "price": 18.5
+      "price": 18.6
     },
     "revenue": {
       "date": "2026-04",
@@ -106952,7 +106952,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 6,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -106966,7 +106966,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.7,
       "status": "High Premium",
-      "price": 23.5
+      "price": 23.4
     },
     "revenue": {
       "date": "2026-04",
@@ -107025,7 +107025,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -179,
+      "foreign_net": 67,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -107098,7 +107098,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 198,
+      "foreign_net": -1335,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -107171,7 +107171,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 24,
+      "foreign_net": -74,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -107317,7 +107317,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1895,
+      "foreign_net": 4812,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -107390,7 +107390,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -95,
+      "foreign_net": 29,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -107463,7 +107463,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 173,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -107536,8 +107536,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 76,
-      "trust_net": 4,
+      "foreign_net": 680,
+      "trust_net": -894,
       "analysis": "N/A"
     }
   },
@@ -107550,7 +107550,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.85,
       "status": "Fair Value",
-      "price": 46.8
+      "price": 46.9
     },
     "revenue": {
       "date": "2026-04",
@@ -107609,7 +107609,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -77,
+      "foreign_net": -199,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -107682,7 +107682,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -11,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -107755,8 +107755,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -55,
-      "trust_net": 0,
+      "foreign_net": -52,
+      "trust_net": -10,
       "analysis": "N/A"
     }
   },
@@ -107828,7 +107828,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1181,
+      "foreign_net": 956,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -107901,8 +107901,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -1084,
-      "trust_net": -60,
+      "foreign_net": -1624,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -107974,7 +107974,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -400,
+      "foreign_net": -110,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108047,7 +108047,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 30,
+      "foreign_net": 35,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108120,7 +108120,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 3,
+      "foreign_net": 6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108193,7 +108193,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 9,
+      "foreign_net": 293,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108266,7 +108266,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 92,
+      "foreign_net": 24,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108339,7 +108339,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -7,
+      "foreign_net": -105,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108412,7 +108412,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 19,
+      "foreign_net": 13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108485,7 +108485,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -15,
+      "foreign_net": 81,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108558,7 +108558,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -146,
+      "foreign_net": -36,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108631,7 +108631,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 810,
+      "foreign_net": 12,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108704,7 +108704,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 10,
+      "foreign_net": -455,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108777,7 +108777,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 49,
+      "foreign_net": -67,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108850,7 +108850,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -105,
+      "foreign_net": -68,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -108923,7 +108923,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1196,
+      "foreign_net": 307,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109069,7 +109069,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -369,
+      "foreign_net": 93,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109142,7 +109142,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109215,7 +109215,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109288,7 +109288,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109361,7 +109361,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": -28,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109434,7 +109434,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -101,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109507,8 +109507,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -450,
-      "trust_net": 53,
+      "foreign_net": 860,
+      "trust_net": 16,
       "analysis": "N/A"
     }
   },
@@ -109521,7 +109521,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 47.8
+      "price": 47.9
     },
     "revenue": {
       "date": "2026-04",
@@ -109580,7 +109580,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 53,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109653,7 +109653,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 108,
+      "foreign_net": 66,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109726,7 +109726,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109799,7 +109799,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -14,
+      "foreign_net": -39,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109872,7 +109872,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -123,
+      "foreign_net": 86,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -109945,7 +109945,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -25,
+      "foreign_net": -30,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110018,7 +110018,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -8,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110032,7 +110032,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.84,
       "status": "Fair Value",
-      "price": 45.8
+      "price": 45.9
     },
     "revenue": {
       "date": "2026-04",
@@ -110091,7 +110091,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 2128,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110164,8 +110164,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -182,
-      "trust_net": 53,
+      "foreign_net": 212,
+      "trust_net": 103,
       "analysis": "N/A"
     }
   },
@@ -110237,7 +110237,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": 19,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110310,7 +110310,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 66,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110383,7 +110383,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110456,7 +110456,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 331,
+      "foreign_net": -299,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110529,7 +110529,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -46,
+      "foreign_net": -23,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110602,7 +110602,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -11,
+      "foreign_net": 21,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110675,8 +110675,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 98,
-      "trust_net": 0,
+      "foreign_net": 103,
+      "trust_net": -2,
       "analysis": "N/A"
     }
   },
@@ -110821,7 +110821,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": 100,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110894,7 +110894,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -716,
+      "foreign_net": 410,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -110967,7 +110967,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 36,
+      "foreign_net": -112,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111040,7 +111040,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111113,7 +111113,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 57,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111186,8 +111186,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 59,
-      "trust_net": -46,
+      "foreign_net": -4,
+      "trust_net": -79,
       "analysis": "N/A"
     }
   },
@@ -111259,7 +111259,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 19,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111332,7 +111332,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 7,
+      "foreign_net": 5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111405,7 +111405,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 12,
+      "foreign_net": 55,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111478,7 +111478,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -5,
+      "foreign_net": 7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111551,7 +111551,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 4,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111624,7 +111624,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -23,
+      "foreign_net": -66,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111697,8 +111697,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -155,
-      "trust_net": 23,
+      "foreign_net": -706,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -111770,7 +111770,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 173,
+      "foreign_net": 115,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111843,7 +111843,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 20,
+      "foreign_net": -13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111916,7 +111916,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -18,
+      "foreign_net": -86,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -111989,7 +111989,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112062,7 +112062,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -47,
+      "foreign_net": 91,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112135,7 +112135,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 85,
+      "foreign_net": 44,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112208,7 +112208,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112281,8 +112281,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 78,
-      "trust_net": 0,
+      "foreign_net": 319,
+      "trust_net": -2,
       "analysis": "N/A"
     }
   },
@@ -112295,7 +112295,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 9.6
+      "price": 9.7
     },
     "revenue": {
       "date": "N/A",
@@ -112305,7 +112305,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112329,7 +112329,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -36,
+      "foreign_net": -37,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112402,7 +112402,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -125,
+      "foreign_net": -4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112416,7 +112416,7 @@
       "sector_pe": 20.0,
       "pe_score": 6.48,
       "status": "High Premium",
-      "price": 46.7
+      "price": 46.6
     },
     "revenue": {
       "date": "2026-04",
@@ -112475,7 +112475,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112499,7 +112499,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112572,7 +112572,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -5,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112645,8 +112645,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -168,
-      "trust_net": 7,
+      "foreign_net": 66,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -112718,7 +112718,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 25,
+      "foreign_net": 91,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112791,7 +112791,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 71,
+      "foreign_net": -155,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112864,7 +112864,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -112937,7 +112937,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 121,
+      "foreign_net": -37,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113010,7 +113010,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 12,
+      "foreign_net": -12,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113083,7 +113083,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -703,
+      "foreign_net": -731,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113156,7 +113156,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -42,
+      "foreign_net": -47,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113229,8 +113229,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -55,
-      "trust_net": 0,
+      "foreign_net": 17,
+      "trust_net": 2,
       "analysis": "N/A"
     }
   },
@@ -113243,7 +113243,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 54.4
+      "price": 53.2
     },
     "revenue": {
       "date": "2026-04",
@@ -113375,8 +113375,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -120,
-      "trust_net": -9,
+      "foreign_net": 0,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -113389,7 +113389,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.44,
       "status": "High Premium",
-      "price": 45.2
+      "price": 45.1
     },
     "revenue": {
       "date": "2026-04",
@@ -113448,7 +113448,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -46,
+      "foreign_net": -12,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113521,7 +113521,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 9,
+      "foreign_net": 19,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113535,7 +113535,7 @@
       "sector_pe": 20.0,
       "pe_score": 6.21,
       "status": "High Premium",
-      "price": 28.5
+      "price": 28.6
     },
     "revenue": {
       "date": "2026-04",
@@ -113594,7 +113594,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113667,7 +113667,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 40,
+      "foreign_net": -86,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113740,7 +113740,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 21,
+      "foreign_net": -59,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113813,7 +113813,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -82,
+      "foreign_net": -160,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113886,7 +113886,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -53,
+      "foreign_net": -60,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -113959,7 +113959,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -39,
+      "foreign_net": -18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114032,7 +114032,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 103,
+      "foreign_net": 11,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114105,7 +114105,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 920,
+      "foreign_net": -218,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114178,7 +114178,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114324,7 +114324,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -45,
+      "foreign_net": 100,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114397,7 +114397,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 20,
+      "foreign_net": 97,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114470,7 +114470,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 225,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114543,8 +114543,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
-      "trust_net": 0,
+      "foreign_net": 0,
+      "trust_net": -85,
       "analysis": "N/A"
     }
   },
@@ -114567,7 +114567,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -748,
+      "foreign_net": -93,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114713,7 +114713,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": -25,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114786,7 +114786,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 192,
+      "foreign_net": -98,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114859,7 +114859,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 9,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114932,7 +114932,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -52,
+      "foreign_net": -79,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115005,7 +115005,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -43,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115078,7 +115078,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 229,
+      "foreign_net": 32,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115151,7 +115151,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115224,7 +115224,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115297,7 +115297,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": -4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115370,7 +115370,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 27,
+      "foreign_net": 34,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115443,7 +115443,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -42,
+      "foreign_net": 28,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115516,7 +115516,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 13,
+      "foreign_net": 66,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115589,7 +115589,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 63,
+      "foreign_net": 398,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115662,7 +115662,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 13,
+      "foreign_net": 27,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115735,7 +115735,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 77,
+      "foreign_net": 25,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -115954,7 +115954,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -7,
+      "foreign_net": 35,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116027,7 +116027,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -15,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116100,7 +116100,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -43,
+      "foreign_net": 33,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116173,7 +116173,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -71,
+      "foreign_net": -335,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116246,7 +116246,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 110,
+      "foreign_net": -53,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116392,7 +116392,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 3,
+      "foreign_net": 15,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116465,7 +116465,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 6,
+      "foreign_net": -32,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116538,7 +116538,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116611,7 +116611,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -52,
+      "foreign_net": -885,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116635,7 +116635,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 16,
+      "foreign_net": -17,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116708,7 +116708,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116781,7 +116781,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 173,
+      "foreign_net": -49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116854,7 +116854,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 67,
+      "foreign_net": 18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -116927,7 +116927,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -13,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117073,7 +117073,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -16,
+      "foreign_net": 13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117146,7 +117146,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117219,7 +117219,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -17,
+      "foreign_net": -7,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117292,7 +117292,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117365,7 +117365,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 3,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117438,7 +117438,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -11,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117511,7 +117511,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -72,
+      "foreign_net": 130,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117584,8 +117584,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -71,
-      "trust_net": 0,
+      "foreign_net": 170,
+      "trust_net": -200,
       "analysis": "N/A"
     }
   },
@@ -117657,7 +117657,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117730,7 +117730,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": 13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117803,7 +117803,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": -15,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117876,7 +117876,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 6,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -117949,7 +117949,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -17,
+      "foreign_net": 24,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118022,7 +118022,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 17,
+      "foreign_net": 55,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118095,7 +118095,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -20,
+      "foreign_net": -38,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118168,7 +118168,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 16,
+      "foreign_net": -299,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118241,7 +118241,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118314,7 +118314,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 16,
+      "foreign_net": -18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118387,7 +118387,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": -9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118411,8 +118411,8 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 98,
-      "trust_net": 35,
+      "foreign_net": -46,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -118484,7 +118484,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -7,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118557,7 +118557,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -8,
+      "foreign_net": -6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118630,8 +118630,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -6,
-      "trust_net": -40,
+      "foreign_net": -84,
+      "trust_net": 125,
       "analysis": "N/A"
     }
   },
@@ -118703,7 +118703,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -6,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118776,7 +118776,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -53,
+      "foreign_net": -15,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -118922,8 +118922,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -7,
-      "trust_net": -6,
+      "foreign_net": 31,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -119068,7 +119068,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119141,7 +119141,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -420,
+      "foreign_net": 108,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119214,7 +119214,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -4,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119287,7 +119287,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 14,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119360,7 +119360,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -5,
+      "foreign_net": 30,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119433,7 +119433,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 44,
+      "foreign_net": -17,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119579,7 +119579,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 22,
+      "foreign_net": -48,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119652,7 +119652,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119725,7 +119725,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -82,
+      "foreign_net": -153,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119739,7 +119739,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.21,
       "status": "High Premium",
-      "price": 40.7
+      "price": 40.6
     },
     "revenue": {
       "date": "2026-04",
@@ -119798,7 +119798,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 64,
+      "foreign_net": 13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119871,7 +119871,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 19,
+      "foreign_net": 1073,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -119944,7 +119944,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -101,
+      "foreign_net": 326,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120017,7 +120017,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1022,
+      "foreign_net": 918,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120031,7 +120031,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 25.5
+      "price": 25.6
     },
     "revenue": {
       "date": "2026-04",
@@ -120090,7 +120090,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -12,
+      "foreign_net": -14,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120163,7 +120163,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -54,
+      "foreign_net": -23,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120236,7 +120236,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 24,
+      "foreign_net": -8,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120309,7 +120309,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -64,
+      "foreign_net": 13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120382,7 +120382,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -540,
+      "foreign_net": 100,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120455,7 +120455,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -204,
+      "foreign_net": 240,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120528,7 +120528,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 61,
+      "foreign_net": -21,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120601,7 +120601,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -306,
+      "foreign_net": -305,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120615,7 +120615,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 16.0
+      "price": 16.1
     },
     "revenue": {
       "date": "2026-04",
@@ -120820,7 +120820,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 112,
+      "foreign_net": -232,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -120893,8 +120893,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 1304,
-      "trust_net": -135,
+      "foreign_net": 8374,
+      "trust_net": 8128,
       "analysis": "N/A"
     }
   },
@@ -120966,7 +120966,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 29,
+      "foreign_net": -15,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121039,7 +121039,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 260,
+      "foreign_net": -258,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121112,7 +121112,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -335,
+      "foreign_net": -467,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121258,7 +121258,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -15,
+      "foreign_net": -32,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121331,7 +121331,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": -25,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121404,7 +121404,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 250,
+      "foreign_net": -69,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121477,7 +121477,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1392,
+      "foreign_net": -921,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121550,7 +121550,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 7,
+      "foreign_net": -32,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121623,7 +121623,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 9,
+      "foreign_net": -2359,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121696,7 +121696,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 8,
+      "foreign_net": -19,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121769,7 +121769,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -185,
+      "foreign_net": -49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121915,7 +121915,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2867,
+      "foreign_net": 4420,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -121988,7 +121988,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 99,
+      "foreign_net": 17,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122061,7 +122061,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -35,
+      "foreign_net": 13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122134,7 +122134,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -13,
+      "foreign_net": 31,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122207,7 +122207,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -11,
+      "foreign_net": -126,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122280,7 +122280,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -239,
+      "foreign_net": -144,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122353,7 +122353,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -202,
+      "foreign_net": 609,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122426,7 +122426,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 665,
+      "foreign_net": 806,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122499,8 +122499,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 193,
-      "trust_net": 0,
+      "foreign_net": -102,
+      "trust_net": 20,
       "analysis": "N/A"
     }
   },
@@ -122572,7 +122572,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -42,
+      "foreign_net": -19,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122586,7 +122586,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.27,
       "status": "High Premium",
-      "price": 10.1
+      "price": 10.2
     },
     "revenue": {
       "date": "2026-04",
@@ -122645,7 +122645,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -35,
+      "foreign_net": -30,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122718,7 +122718,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 146,
+      "foreign_net": -17,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122791,7 +122791,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -138,
+      "foreign_net": -18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122864,7 +122864,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -54,
+      "foreign_net": -14,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122937,7 +122937,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 602,
+      "foreign_net": 77,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123010,7 +123010,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 160,
+      "foreign_net": -24,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123083,7 +123083,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 34,
+      "foreign_net": 50,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123156,7 +123156,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 29,
+      "foreign_net": 46,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123229,7 +123229,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -6,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123302,7 +123302,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -8,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123375,7 +123375,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 195,
+      "foreign_net": -258,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123448,8 +123448,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -2409,
-      "trust_net": 11,
+      "foreign_net": 346,
+      "trust_net": -236,
       "analysis": "N/A"
     }
   },
@@ -123521,7 +123521,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123594,7 +123594,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -46,
+      "foreign_net": -23,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123667,8 +123667,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 822,
-      "trust_net": -92,
+      "foreign_net": -488,
+      "trust_net": -1921,
       "analysis": "N/A"
     }
   },
@@ -123740,7 +123740,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 182,
+      "foreign_net": -172,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123813,7 +123813,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 808,
+      "foreign_net": 294,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123827,7 +123827,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.46,
       "status": "Undervalued",
-      "price": 24.0
+      "price": 23.9
     },
     "revenue": {
       "date": "2026-04",
@@ -123886,7 +123886,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 11,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -123959,7 +123959,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -103,
+      "foreign_net": -171,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124032,7 +124032,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124046,7 +124046,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.58,
       "status": "Undervalued",
-      "price": 35.3
+      "price": 35.4
     },
     "revenue": {
       "date": "2026-04",
@@ -124105,7 +124105,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 923,
+      "foreign_net": 699,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124178,7 +124178,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -5,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124202,7 +124202,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -4,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124275,7 +124275,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -76,
+      "foreign_net": -15,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124348,7 +124348,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124421,7 +124421,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": -11,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124567,8 +124567,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -67,
-      "trust_net": 0,
+      "foreign_net": 80,
+      "trust_net": -16,
       "analysis": "N/A"
     }
   },
@@ -124591,7 +124591,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -19,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124605,7 +124605,7 @@
       "sector_pe": 20.0,
       "pe_score": 3.72,
       "status": "High Premium",
-      "price": 23.0
+      "price": 23.1
     },
     "revenue": {
       "date": "2026-04",
@@ -124664,7 +124664,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -156,
+      "foreign_net": -121,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124737,7 +124737,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 77,
+      "foreign_net": 25,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124883,7 +124883,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 4,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -124956,7 +124956,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": -6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125029,7 +125029,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 4,
+      "foreign_net": 5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125043,7 +125043,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 24.0
+      "price": 23.9
     },
     "revenue": {
       "date": "2026-04",
@@ -125102,7 +125102,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -10,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125175,7 +125175,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 24,
+      "foreign_net": 18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125248,7 +125248,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -31,
+      "foreign_net": -41,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125321,7 +125321,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -10,
+      "foreign_net": -18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125394,7 +125394,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 7,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125467,7 +125467,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125540,7 +125540,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125613,7 +125613,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -18,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125686,7 +125686,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -641,
+      "foreign_net": 906,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125759,7 +125759,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 338,
+      "foreign_net": 109,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125832,8 +125832,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -856,
-      "trust_net": 0,
+      "foreign_net": -362,
+      "trust_net": -16,
       "analysis": "N/A"
     }
   },
@@ -125846,7 +125846,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 31.5
+      "price": 31.4
     },
     "revenue": {
       "date": "2026-04",
@@ -125905,7 +125905,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 17,
+      "foreign_net": -4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -125978,7 +125978,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -105,
+      "foreign_net": 25,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126051,7 +126051,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 117,
+      "foreign_net": 76,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126197,7 +126197,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -10,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126270,7 +126270,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 19,
+      "foreign_net": 6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126343,7 +126343,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126416,7 +126416,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126489,7 +126489,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 3,
+      "foreign_net": 6,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126631,7 +126631,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126704,7 +126704,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -12,
+      "foreign_net": 10,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126777,7 +126777,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 11,
+      "foreign_net": -5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126850,7 +126850,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -4,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126923,7 +126923,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 8,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -126996,7 +126996,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -127069,7 +127069,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -8,
+      "foreign_net": 12,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -127142,7 +127142,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -60,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -128738,7 +128738,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -128762,7 +128762,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -128776,7 +128776,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 17.4
+      "price": 16.8
     },
     "revenue": {
       "date": "2026-04",
@@ -128908,7 +128908,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -128922,7 +128922,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 7.6
+      "price": 7.5
     },
     "revenue": {
       "date": "2026-04",
@@ -129054,7 +129054,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -129068,7 +129068,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 28.0
+      "price": 27.6
     },
     "revenue": {
       "date": "2026-04",
@@ -129200,7 +129200,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -129273,7 +129273,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -129360,7 +129360,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 16.0
+      "price": 16.1
     },
     "revenue": {
       "date": "N/A",
@@ -129384,7 +129384,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 12.9
+      "price": 12.8
     },
     "revenue": {
       "date": "2026-04",
@@ -129662,7 +129662,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -129676,7 +129676,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 14.9
+      "price": 15.2
     },
     "revenue": {
       "date": "2026-04",
@@ -129808,7 +129808,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 4,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -130096,7 +130096,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -130169,7 +130169,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -130242,7 +130242,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -130388,7 +130388,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -130402,7 +130402,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 22.5
+      "price": 22.4
     },
     "revenue": {
       "date": "2026-04",
@@ -130461,7 +130461,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -54,
+      "foreign_net": 54,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -130534,7 +130534,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 10,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -130680,7 +130680,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 7,
+      "foreign_net": 5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -130753,7 +130753,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 4,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -130846,7 +130846,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -29,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -131006,7 +131006,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.36,
       "status": "Undervalued",
-      "price": 25.0
+      "price": 24.9
     },
     "revenue": {
       "date": "2026-04",
@@ -131065,7 +131065,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -4,
+      "foreign_net": -5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -131211,7 +131211,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 29,
+      "foreign_net": -58,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -131284,7 +131284,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 1,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -131294,11 +131294,11 @@
     "stock_name": "諾貝兒",
     "valuation": {
       "stock_id": "6844",
-      "current_pe": 27.28,
+      "current_pe": 27.66,
       "sector_pe": 20.0,
-      "pe_score": 1.36,
+      "pe_score": 1.38,
       "status": "High Premium",
-      "price": 64.1
+      "price": 65.0
     },
     "revenue": {
       "date": "2026-04",
@@ -131503,7 +131503,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -131576,7 +131576,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 3,
+      "foreign_net": -9,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -131586,11 +131586,11 @@
     "stock_name": "全家餐飲",
     "valuation": {
       "stock_id": "7708",
-      "current_pe": 14.62,
+      "current_pe": 14.6,
       "sector_pe": 20.0,
       "pe_score": 0.73,
       "status": "Undervalued",
-      "price": 94.0
+      "price": 93.9
     },
     "revenue": {
       "date": "2026-04",
@@ -131722,7 +131722,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": -3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -131941,7 +131941,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -10,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -132087,7 +132087,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -4,
+      "foreign_net": -26,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -132160,7 +132160,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 14,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -132306,7 +132306,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -132427,7 +132427,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 6,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -132573,7 +132573,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 85,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -132646,7 +132646,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -15,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -132930,7 +132930,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -133072,7 +133072,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -133291,7 +133291,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": 3,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -133437,7 +133437,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -133583,7 +133583,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -133870,7 +133870,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -4,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -134381,7 +134381,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 10,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -134766,7 +134766,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": 0,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -135058,7 +135058,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -1,
+      "foreign_net": 4,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -135145,7 +135145,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 30.0
+      "price": 28.9
     },
     "revenue": {
       "date": "2026-04",
@@ -135433,9 +135433,9 @@
     "stock_name": "倍利科",
     "valuation": {
       "stock_id": "7822",
-      "current_pe": 87.37,
+      "current_pe": 82.38,
       "sector_pe": 20.0,
-      "pe_score": 4.37,
+      "pe_score": 4.12,
       "status": "High Premium",
       "price": 1155.0
     },
@@ -135642,7 +135642,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": -16,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -135656,7 +135656,7 @@
       "sector_pe": 20.0,
       "pe_score": 8.47,
       "status": "High Premium",
-      "price": 42.3
+      "price": 42.4
     },
     "revenue": {
       "date": "2026-04",
@@ -135715,7 +135715,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 2,
+      "foreign_net": -1,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -135788,7 +135788,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": -13,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -135861,7 +135861,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -69,
+      "foreign_net": -75,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -136055,7 +136055,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -2,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -136134,11 +136134,11 @@
     "stock_name": "公勝保經",
     "valuation": {
       "stock_id": "6028",
-      "current_pe": 10.36,
+      "current_pe": 10.33,
       "sector_pe": 20.0,
       "pe_score": 0.52,
       "status": "Undervalued",
-      "price": 81.0
+      "price": 80.8
     },
     "revenue": {
       "date": "2026-04",
@@ -136631,7 +136631,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 0,
+      "foreign_net": 5,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -136728,7 +136728,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 79,
+      "foreign_net": 10,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -137012,7 +137012,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -25,
+      "foreign_net": -24,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -137091,11 +137091,11 @@
     "stock_name": "台名",
     "valuation": {
       "stock_id": "5878",
-      "current_pe": 14.18,
+      "current_pe": 14.2,
       "sector_pe": 20.0,
       "pe_score": 0.71,
       "status": "Undervalued",
-      "price": 40.5
+      "price": 40.6
     },
     "revenue": {
       "date": "2026-04",
@@ -137227,7 +137227,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 19,
+      "foreign_net": 2,
       "trust_net": 0,
       "analysis": "N/A"
     }
