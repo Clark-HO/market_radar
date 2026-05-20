@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20 11:14",
+  "last_updated": "2026-05-20 18:42",
   "events": [
     {
       "event": "Google I/O 開發者大會",
@@ -14,8 +14,8 @@
           "us_stock": {
             "symbol": "GOOGL",
             "name": "Alphabet",
-            "price": 387.66,
-            "change": -0.13
+            "price": 387.35,
+            "change": -0.21
           },
           "tw_sector": "安卓生態系",
           "tw_stocks": [
@@ -48,8 +48,8 @@
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 417.42,
-            "change": 0.15
+            "price": 420.22,
+            "change": 0.83
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
@@ -77,8 +77,8 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 414.05,
-            "change": -0.77
+            "price": 444.45,
+            "change": 6.51
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
@@ -86,13 +86,13 @@
               "ticker": "2330",
               "price": 2185.0,
               "change": -1.13,
-              "signal": "Neutral"
+              "signal": "Lagging (Buy?)"
             },
             {
               "ticker": "3711",
               "price": 476.0,
               "change": 0.11,
-              "signal": "Neutral"
+              "signal": "Lagging (Buy?)"
             }
           ]
         }
@@ -111,8 +111,8 @@
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 298.97,
-            "change": 0.0
+            "price": 302.14,
+            "change": 1.06
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
