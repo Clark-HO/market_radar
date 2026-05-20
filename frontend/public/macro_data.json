@@ -1,11 +1,11 @@
 {
-    "last_updated": "2026-05-19 18:14",
+    "last_updated": "2026-05-20 04:16",
     "market_status": {
         "taiex_close": 40175.56,
         "change": -716.26,
         "change_percent": -1.75,
-        "high": 40951.56,
-        "low": 40168.51,
+        "high": 40439.04,
+        "low": 40004.05,
         "volume": 11512.19413754
     },
     "history": [
@@ -150,7 +150,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.5,
+        "usd_twd": 31.63,
         "trend": "Stable"
     },
     "sector_flow": [
