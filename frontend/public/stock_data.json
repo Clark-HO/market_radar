@@ -10335,7 +10335,7 @@
     },
     "chips": {
       "foreign_net": 261,
-      "trust_net": 5,
+      "trust_net": -2,
       "analysis": "N/A"
     }
   },
@@ -30045,10 +30045,10 @@
     "stock_name": "振大環球",
     "valuation": {
       "stock_id": "4441",
-      "current_pe": 14.05,
+      "current_pe": 0.0,
       "sector_pe": 20.0,
-      "pe_score": 0.7,
-      "status": "Undervalued",
+      "pe_score": 0.0,
+      "status": "N/A",
       "price": 204.0
     },
     "revenue": {
@@ -33862,11 +33862,11 @@
     "stock_name": "禾伸堂",
     "valuation": {
       "stock_id": "3026",
-      "current_pe": 97.54,
+      "current_pe": 92.93,
       "sector_pe": 20.0,
-      "pe_score": 4.88,
+      "pe_score": 4.65,
       "status": "High Premium",
-      "price": 635.0
+      "price": 605.0
     },
     "revenue": {
       "date": "2026-04",
@@ -33925,8 +33925,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 199,
-      "trust_net": 0,
+      "foreign_net": -59,
+      "trust_net": 551,
       "analysis": "N/A"
     }
   },
@@ -39483,7 +39483,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.97,
       "status": "High Premium",
-      "price": 233.9
+      "price": 233.8
     },
     "revenue": {
       "date": "N/A",
@@ -49397,7 +49397,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -57,
+      "foreign_net": 3093,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -53848,7 +53848,7 @@
     },
     "chips": {
       "foreign_net": -22,
-      "trust_net": 0,
+      "trust_net": 71,
       "analysis": "N/A"
     }
   },
@@ -62192,7 +62192,7 @@
     },
     "chips": {
       "foreign_net": 347,
-      "trust_net": 550,
+      "trust_net": 896,
       "analysis": "N/A"
     }
   },
@@ -67349,7 +67349,7 @@
     },
     "chips": {
       "foreign_net": 2334,
-      "trust_net": 4,
+      "trust_net": 195,
       "analysis": "N/A"
     }
   },
@@ -71752,7 +71752,7 @@
     },
     "chips": {
       "foreign_net": 62166,
-      "trust_net": 47,
+      "trust_net": 809,
       "analysis": "N/A"
     }
   },
