@@ -2876,7 +2876,7 @@
     },
     "chips": {
       "foreign_net": 317,
-      "trust_net": -352,
+      "trust_net": -331,
       "analysis": "N/A"
     }
   },
@@ -9397,7 +9397,7 @@
     },
     "chips": {
       "foreign_net": -103,
-      "trust_net": 0,
+      "trust_net": 90,
       "analysis": "N/A"
     }
   },
@@ -46803,7 +46803,7 @@
     },
     "chips": {
       "foreign_net": 24,
-      "trust_net": 401,
+      "trust_net": 133,
       "analysis": "N/A"
     }
   },
@@ -52173,7 +52173,7 @@
     },
     "chips": {
       "foreign_net": 24,
-      "trust_net": -2,
+      "trust_net": 23,
       "analysis": "N/A"
     }
   },
@@ -54648,7 +54648,7 @@
     },
     "chips": {
       "foreign_net": 365,
-      "trust_net": 0,
+      "trust_net": 28,
       "analysis": "N/A"
     }
   },
@@ -58498,10 +58498,10 @@
       "price": 221.0
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 1843306000.0,
-      "mom": 18.11,
-      "yoy": 28.14,
+      "date": "2026-05",
+      "revenue": 1629431000.0,
+      "mom": -11.6,
+      "yoy": 19.99,
       "history": [
         {
           "date": "2025-06",
@@ -58546,6 +58546,10 @@
         {
           "date": "2026-04",
           "revenue": 1843306000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 1629431000.0
         }
       ]
     },
@@ -60823,7 +60827,7 @@
     },
     "chips": {
       "foreign_net": 223,
-      "trust_net": -57,
+      "trust_net": 15,
       "analysis": "N/A"
     }
   },
@@ -61034,7 +61038,7 @@
     },
     "chips": {
       "foreign_net": 52,
-      "trust_net": 16,
+      "trust_net": -1,
       "analysis": "N/A"
     }
   },
@@ -64089,7 +64093,7 @@
     },
     "chips": {
       "foreign_net": 1034,
-      "trust_net": 18,
+      "trust_net": 591,
       "analysis": "N/A"
     }
   },
@@ -128947,10 +128951,10 @@
       "price": 40.5
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 450368000.0,
-      "mom": 8.22,
-      "yoy": 9.01,
+      "date": "2026-05",
+      "revenue": 389956000.0,
+      "mom": -13.41,
+      "yoy": -27.98,
       "history": [
         {
           "date": "2025-06",
@@ -128995,6 +128999,10 @@
         {
           "date": "2026-04",
           "revenue": 450368000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 389956000.0
         }
       ]
     },
