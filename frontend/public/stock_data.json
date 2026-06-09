@@ -8,7 +8,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.83,
       "status": "Fair Value",
-      "price": 29.0
+      "price": 29.1
     },
     "revenue": {
       "date": "2026-04",
@@ -77,7 +77,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.77,
       "status": "Undervalued",
-      "price": 29.5
+      "price": 29.6
     },
     "revenue": {
       "date": "2026-04",
@@ -1698,7 +1698,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 42.7
+      "price": 42.6
     },
     "revenue": {
       "date": "2026-05",
@@ -1767,7 +1767,7 @@
     "stock_name": "潤泰新",
     "valuation": {
       "stock_id": "9945",
-      "current_pe": 6.41,
+      "current_pe": 6.42,
       "sector_pe": 20.0,
       "pe_score": 0.32,
       "status": "Undervalued",
@@ -1826,8 +1826,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -1733,
-      "trust_net": -11,
+      "foreign_net": 129,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -2200,7 +2200,7 @@
     },
     "chips": {
       "foreign_net": 3168,
-      "trust_net": 0,
+      "trust_net": 500,
       "analysis": "N/A"
     }
   },
@@ -3542,7 +3542,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.26,
       "status": "Undervalued",
-      "price": 48.7
+      "price": 48.6
     },
     "revenue": {
       "date": "2026-04",
@@ -5854,7 +5854,7 @@
     },
     "chips": {
       "foreign_net": -22,
-      "trust_net": 0,
+      "trust_net": 1,
       "analysis": "N/A"
     }
   },
@@ -6264,11 +6264,11 @@
     "stock_name": "興能高",
     "valuation": {
       "stock_id": "6558",
-      "current_pe": 33.8,
+      "current_pe": 34.27,
       "sector_pe": 20.0,
-      "pe_score": 1.69,
+      "pe_score": 1.71,
       "status": "High Premium",
-      "price": 32.5
+      "price": 32.9
     },
     "revenue": {
       "date": "2026-04",
@@ -6323,7 +6323,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 343,
+      "foreign_net": -50,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -6880,7 +6880,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.14,
       "status": "Undervalued",
-      "price": 18.0
+      "price": 18.1
     },
     "revenue": {
       "date": "2026-05",
@@ -7022,7 +7022,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.92,
       "status": "Fair Value",
-      "price": 12.4
+      "price": 12.3
     },
     "revenue": {
       "date": "2026-05",
@@ -7179,7 +7179,7 @@
     },
     "chips": {
       "foreign_net": -43,
-      "trust_net": 43,
+      "trust_net": 20,
       "analysis": "N/A"
     }
   },
@@ -8305,7 +8305,7 @@
     },
     "chips": {
       "foreign_net": 483,
-      "trust_net": 172,
+      "trust_net": 203,
       "analysis": "N/A"
     }
   },
@@ -8464,7 +8464,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.07,
       "status": "Fair Value",
-      "price": 25.5
+      "price": 25.6
     },
     "revenue": {
       "date": "2026-04",
@@ -9018,7 +9018,7 @@
     },
     "chips": {
       "foreign_net": 919,
-      "trust_net": -826,
+      "trust_net": -831,
       "analysis": "N/A"
     }
   },
@@ -9339,7 +9339,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 21.5
+      "price": 21.4
     },
     "revenue": {
       "date": "2026-04",
@@ -10485,21 +10485,70 @@
     "stock_name": "東和",
     "valuation": {
       "stock_id": "1414",
-      "current_pe": 93.68,
+      "current_pe": 92.11,
       "sector_pe": 20.0,
-      "pe_score": 4.68,
+      "pe_score": 4.61,
       "status": "High Premium",
-      "price": 17.8
+      "price": 17.5
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 45981000.0,
+      "mom": -0.51,
+      "yoy": 11.12,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 37627000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 35243000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 33531000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 30309000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 33330000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 35182000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 40662000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 41048000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 32662000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 39742000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 46218000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 45981000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 96,
+      "foreign_net": -51,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -11178,7 +11227,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 17.0
+      "price": 16.9
     },
     "revenue": {
       "date": "2026-04",
@@ -12146,7 +12195,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.96,
       "status": "Fair Value",
-      "price": 22.0
+      "price": 21.9
     },
     "revenue": {
       "date": "2026-04",
@@ -12308,7 +12357,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.9,
       "status": "Fair Value",
-      "price": 15.6
+      "price": 15.7
     },
     "revenue": {
       "date": "2026-05",
@@ -13532,11 +13581,11 @@
     "stock_name": "迅杰",
     "valuation": {
       "stock_id": "6243",
-      "current_pe": -19.0,
+      "current_pe": -19.09,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 30.4
+      "price": 30.5
     },
     "revenue": {
       "date": "2026-05",
@@ -13595,7 +13644,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -26,
+      "foreign_net": -58,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -13609,7 +13658,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.07,
       "status": "Fair Value",
-      "price": 23.5
+      "price": 23.4
     },
     "revenue": {
       "date": "2026-04",
@@ -14043,11 +14092,11 @@
     "stock_name": "興勤",
     "valuation": {
       "stock_id": "2428",
-      "current_pe": 23.25,
+      "current_pe": 24.66,
       "sector_pe": 20.0,
-      "pe_score": 1.16,
-      "status": "Fair Value",
-      "price": 272.5
+      "pe_score": 1.23,
+      "status": "High Premium",
+      "price": 289.0
     },
     "revenue": {
       "date": "2026-05",
@@ -14106,7 +14155,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 188,
+      "foreign_net": -116,
       "trust_net": -1,
       "analysis": "N/A"
     }
@@ -14727,22 +14776,71 @@
     "stock_name": "中碳",
     "valuation": {
       "stock_id": "1723",
-      "current_pe": 31.7,
+      "current_pe": 31.62,
       "sector_pe": 20.0,
       "pe_score": 1.58,
       "status": "High Premium",
-      "price": 84.0
+      "price": 83.8
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 636660000.0,
+      "mom": -12.94,
+      "yoy": 58.44,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 510415000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 467445000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 421666000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 501491000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 464776000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 380804000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 498829000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 335219000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 414132000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 528456000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 731327000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 636660000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 67,
-      "trust_net": 17,
+      "foreign_net": -59,
+      "trust_net": 4,
       "analysis": "N/A"
     }
   },
@@ -15492,21 +15590,66 @@
     "stock_name": "第一店",
     "valuation": {
       "stock_id": "2706",
-      "current_pe": 18.69,
+      "current_pe": 18.77,
       "sector_pe": 20.0,
-      "pe_score": 0.93,
+      "pe_score": 0.94,
       "status": "Fair Value",
-      "price": 12.1
+      "price": 12.2
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 30017000.0,
+      "mom": -5.02,
+      "yoy": 4.29,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 28280000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 28264000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 50124000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 29160000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 29644000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 31711000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 32451000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 29596000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 28669000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 31604000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 30017000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 19,
+      "foreign_net": -65,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -16046,7 +16189,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 29.5
+      "price": 29.4
     },
     "revenue": {
       "date": "2026-05",
@@ -16569,11 +16712,11 @@
     "stock_name": "華豐",
     "valuation": {
       "stock_id": "2109",
-      "current_pe": 12.54,
+      "current_pe": 12.33,
       "sector_pe": 20.0,
-      "pe_score": 0.63,
+      "pe_score": 0.62,
       "status": "Undervalued",
-      "price": 14.6
+      "price": 14.3
     },
     "revenue": {
       "date": "2026-04",
@@ -16628,7 +16771,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -43,
+      "foreign_net": -49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -17469,11 +17612,11 @@
     "stock_name": "揚智",
     "valuation": {
       "stock_id": "3041",
-      "current_pe": 26.08,
+      "current_pe": 24.38,
       "sector_pe": 20.0,
-      "pe_score": 1.3,
+      "pe_score": 1.22,
       "status": "High Premium",
-      "price": 25.3
+      "price": 23.6
     },
     "revenue": {
       "date": "2026-04",
@@ -17528,7 +17671,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -748,
+      "foreign_net": -62,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -17777,7 +17920,7 @@
       "sector_pe": 20.0,
       "pe_score": 6.34,
       "status": "High Premium",
-      "price": 30.5
+      "price": 30.4
     },
     "revenue": {
       "date": "2026-05",
@@ -17915,11 +18058,11 @@
     "stock_name": "錼創科技-KY創",
     "valuation": {
       "stock_id": "6854",
-      "current_pe": 88.04,
+      "current_pe": 83.74,
       "sector_pe": 20.0,
-      "pe_score": 4.4,
+      "pe_score": 4.19,
       "status": "High Premium",
-      "price": 143.5
+      "price": 136.5
     },
     "revenue": {
       "date": "N/A",
@@ -17929,7 +18072,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -149,
+      "foreign_net": -53,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -17939,11 +18082,11 @@
     "stock_name": "為升",
     "valuation": {
       "stock_id": "2231",
-      "current_pe": 14.86,
+      "current_pe": 14.91,
       "sector_pe": 20.0,
-      "pe_score": 0.74,
+      "pe_score": 0.75,
       "status": "Undervalued",
-      "price": 95.1
+      "price": 95.4
     },
     "revenue": {
       "date": "2026-05",
@@ -18002,7 +18145,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 222,
+      "foreign_net": -44,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -18778,7 +18921,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.39,
       "status": "High Premium",
-      "price": 20.5
+      "price": 20.6
     },
     "revenue": {
       "date": "2026-04",
@@ -19135,7 +19278,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.54,
       "status": "Undervalued",
-      "price": 35.8
+      "price": 35.9
     },
     "revenue": {
       "date": "2026-05",
@@ -19876,17 +20019,66 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 69.7
+      "price": 70.2
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 22000.0,
+      "mom": -99.51,
+      "yoy": -98.81,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 28000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 3083000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 49000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 3767000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 381000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 70823000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 11277000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 41000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 18000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 3626000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 4507000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 22000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": -48,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -20207,10 +20399,10 @@
       "price": 20.8
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 254998000.0,
-      "mom": -21.6,
-      "yoy": 12.51,
+      "date": "2026-05",
+      "revenue": 175224000.0,
+      "mom": -31.28,
+      "yoy": -33.24,
       "history": [
         {
           "date": "2025-06",
@@ -20255,6 +20447,10 @@
         {
           "date": "2026-04",
           "revenue": 254998000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 175224000.0
         }
       ]
     },
@@ -21907,7 +22103,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.14,
       "status": "Fair Value",
-      "price": 31.0
+      "price": 30.9
     },
     "revenue": {
       "date": "2026-04",
@@ -22045,11 +22241,11 @@
     "stock_name": "東泥",
     "valuation": {
       "stock_id": "1110",
-      "current_pe": 44.44,
+      "current_pe": 42.78,
       "sector_pe": 20.0,
-      "pe_score": 2.22,
+      "pe_score": 2.14,
       "status": "High Premium",
-      "price": 16.0
+      "price": 15.4
     },
     "revenue": {
       "date": "2026-04",
@@ -22104,7 +22300,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -242,
+      "foreign_net": -57,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -22623,14 +22819,59 @@
       "price": 14.6
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 340192000.0,
+      "mom": 8.34,
+      "yoy": -21.61,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 390871000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 367999000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 365337000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 379708000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 325978000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 354802000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 415638000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 373777000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 167550000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 314014000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 340192000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": -5,
+      "foreign_net": -42,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -22713,11 +22954,11 @@
     "stock_name": "ABC-KY",
     "valuation": {
       "stock_id": "6598",
-      "current_pe": -15.31,
+      "current_pe": -15.62,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 24.5
+      "price": 25.0
     },
     "revenue": {
       "date": "N/A",
@@ -22727,7 +22968,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 43,
+      "foreign_net": -44,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -22907,7 +23148,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 8.5
+      "price": 8.1
     },
     "revenue": {
       "date": "2026-04",
@@ -22962,7 +23203,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 390,
+      "foreign_net": -53,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -23024,7 +23265,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 42.3
+      "price": 42.4
     },
     "revenue": {
       "date": "2026-04",
@@ -23308,7 +23549,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 14.1
+      "price": 14.2
     },
     "revenue": {
       "date": "2026-04",
@@ -23377,7 +23618,7 @@
       "sector_pe": 20.0,
       "pe_score": 13.94,
       "status": "High Premium",
-      "price": 11.1
+      "price": 11.2
     },
     "revenue": {
       "date": "2026-05",
@@ -24864,10 +25105,10 @@
       "price": 60.0
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 107307000.0,
-      "mom": -3.88,
-      "yoy": 20.67,
+      "date": "2026-05",
+      "revenue": 77320000.0,
+      "mom": -27.95,
+      "yoy": -4.06,
       "history": [
         {
           "date": "2025-06",
@@ -24912,6 +25153,10 @@
         {
           "date": "2026-04",
           "revenue": 107307000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 77320000.0
         }
       ]
     },
@@ -25643,7 +25888,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.63,
       "status": "Undervalued",
-      "price": 40.8
+      "price": 40.9
     },
     "revenue": {
       "date": "2026-04",
@@ -25708,17 +25953,17 @@
     "stock_name": "麗清",
     "valuation": {
       "stock_id": "3346",
-      "current_pe": 227.27,
+      "current_pe": 225.45,
       "sector_pe": 20.0,
-      "pe_score": 11.36,
+      "pe_score": 11.27,
       "status": "High Premium",
-      "price": 25.0
+      "price": 24.8
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 686762000.0,
-      "mom": 9.53,
-      "yoy": -15.07,
+      "date": "2026-05",
+      "revenue": 732327000.0,
+      "mom": 6.63,
+      "yoy": -2.51,
       "history": [
         {
           "date": "2025-06",
@@ -25763,11 +26008,15 @@
         {
           "date": "2026-04",
           "revenue": 686762000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 732327000.0
         }
       ]
     },
     "chips": {
-      "foreign_net": -9,
+      "foreign_net": -71,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -26738,21 +26987,66 @@
     "stock_name": "高林",
     "valuation": {
       "stock_id": "2906",
-      "current_pe": 27.02,
+      "current_pe": 26.91,
       "sector_pe": 20.0,
       "pe_score": 1.35,
       "status": "High Premium",
-      "price": 12.7
+      "price": 12.6
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 654567000.0,
+      "mom": -8.61,
+      "yoy": 4.93,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 697920000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 725683000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 697337000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 723686000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 740462000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 768338000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 929323000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 896494000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 667312000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 716270000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 654567000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 37,
+      "foreign_net": -29,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -27309,11 +27603,11 @@
     "stock_name": "寶徠",
     "valuation": {
       "stock_id": "1805",
-      "current_pe": 51.0,
+      "current_pe": 52.25,
       "sector_pe": 20.0,
-      "pe_score": 2.55,
+      "pe_score": 2.61,
       "status": "High Premium",
-      "price": 10.2
+      "price": 10.4
     },
     "revenue": {
       "date": "2026-05",
@@ -27372,7 +27666,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -12,
+      "foreign_net": -45,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -28200,11 +28494,11 @@
     "stock_name": "佳大",
     "valuation": {
       "stock_id": "2033",
-      "current_pe": 45.57,
+      "current_pe": 44.71,
       "sector_pe": 20.0,
-      "pe_score": 2.28,
+      "pe_score": 2.24,
       "status": "High Premium",
-      "price": 15.9
+      "price": 15.6
     },
     "revenue": {
       "date": "2026-05",
@@ -28263,7 +28557,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -10,
+      "foreign_net": -49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -28775,7 +29069,7 @@
       "sector_pe": 20.0,
       "pe_score": 55.75,
       "status": "High Premium",
-      "price": 11.1
+      "price": 11.2
     },
     "revenue": {
       "date": "2026-05",
@@ -29070,14 +29364,63 @@
       "price": 25.9
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 87747000.0,
+      "mom": -17.82,
+      "yoy": 37.22,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 75655000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 64789000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 61303000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 73652000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 77427000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 65701000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 72211000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 69095000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 32821000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 89892000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 106773000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 87747000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": -20,
+      "foreign_net": -60,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -29208,7 +29551,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.1,
       "status": "Fair Value",
-      "price": 44.3
+      "price": 44.4
     },
     "revenue": {
       "date": "N/A",
@@ -29374,7 +29717,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.69,
       "status": "Undervalued",
-      "price": 22.0
+      "price": 21.9
     },
     "revenue": {
       "date": "N/A",
@@ -29398,7 +29741,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.22,
       "status": "High Premium",
-      "price": 16.5
+      "price": 16.6
     },
     "revenue": {
       "date": "2026-04",
@@ -31639,21 +31982,70 @@
     "stock_name": "鑫永銓",
     "valuation": {
       "stock_id": "2114",
-      "current_pe": 15.47,
+      "current_pe": 15.45,
       "sector_pe": 20.0,
       "pe_score": 0.77,
       "status": "Undervalued",
-      "price": 89.1
+      "price": 89.0
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 140873000.0,
+      "mom": 0.54,
+      "yoy": 7.23,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 131638000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 132067000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 135320000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 140766000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 141940000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 145854000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 150570000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 142035000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 105904000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 140423000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 140110000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 140873000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 48,
+      "foreign_net": -55,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -31881,10 +32273,10 @@
       "price": 12.9
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 125318000.0,
-      "mom": -1.78,
-      "yoy": -2.87,
+      "date": "2026-05",
+      "revenue": 131713000.0,
+      "mom": 5.1,
+      "yoy": -4.89,
       "history": [
         {
           "date": "2025-06",
@@ -31929,11 +32321,15 @@
         {
           "date": "2026-04",
           "revenue": 125318000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 131713000.0
         }
       ]
     },
     "chips": {
-      "foreign_net": -34,
+      "foreign_net": -49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -32456,10 +32852,10 @@
       "price": 16.9
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 239649000.0,
-      "mom": -12.15,
-      "yoy": 0.89,
+      "date": "2026-05",
+      "revenue": 224002000.0,
+      "mom": -6.53,
+      "yoy": 7.34,
       "history": [
         {
           "date": "2025-06",
@@ -32504,6 +32900,10 @@
         {
           "date": "2026-04",
           "revenue": 239649000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 224002000.0
         }
       ]
     },
@@ -32615,7 +33015,7 @@
       "sector_pe": 20.0,
       "pe_score": 8.46,
       "status": "High Premium",
-      "price": 10.1
+      "price": 10.2
     },
     "revenue": {
       "date": "2026-05",
@@ -33329,7 +33729,7 @@
       "sector_pe": 20.0,
       "pe_score": 3.74,
       "status": "High Premium",
-      "price": 42.7
+      "price": 42.6
     },
     "revenue": {
       "date": "2026-05",
@@ -34025,7 +34425,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.53,
       "status": "Undervalued",
-      "price": 32.0
+      "price": 31.9
     },
     "revenue": {
       "date": "N/A",
@@ -34049,7 +34449,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 16.5
+      "price": 16.4
     },
     "revenue": {
       "date": "2026-04",
@@ -34187,21 +34587,70 @@
     "stock_name": "展宇",
     "valuation": {
       "stock_id": "1776",
-      "current_pe": 68.52,
+      "current_pe": 68.33,
       "sector_pe": 20.0,
-      "pe_score": 3.43,
+      "pe_score": 3.42,
       "status": "High Premium",
       "price": 18.5
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 81134000.0,
+      "mom": -17.87,
+      "yoy": -2.21,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 68919000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 80102000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 76240000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 92547000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 85086000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 80258000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 98570000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 91183000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 55652000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 128484000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 98792000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 81134000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 8,
+      "foreign_net": -49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -34242,10 +34691,10 @@
       "price": 37.2
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 14862000.0,
-      "mom": -22.83,
-      "yoy": 3.01,
+      "date": "2026-05",
+      "revenue": 7962000.0,
+      "mom": -46.43,
+      "yoy": -37.97,
       "history": [
         {
           "date": "2025-06",
@@ -34290,6 +34739,10 @@
         {
           "date": "2026-04",
           "revenue": 14862000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 7962000.0
         }
       ]
     },
@@ -34446,7 +34899,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.66,
       "status": "High Premium",
-      "price": 306.5
+      "price": 306.6
     },
     "revenue": {
       "date": "N/A",
@@ -35759,7 +36212,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.48,
       "status": "High Premium",
-      "price": 41.2
+      "price": 41.1
     },
     "revenue": {
       "date": "2026-05",
@@ -36801,11 +37254,11 @@
     "stock_name": "順天",
     "valuation": {
       "stock_id": "5525",
-      "current_pe": 16.29,
+      "current_pe": 15.39,
       "sector_pe": 20.0,
-      "pe_score": 0.81,
-      "status": "Fair Value",
-      "price": 22.8
+      "pe_score": 0.77,
+      "status": "Undervalued",
+      "price": 21.5
     },
     "revenue": {
       "date": "2026-04",
@@ -36860,7 +37313,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -26,
+      "foreign_net": -63,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -37587,7 +38040,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.85,
       "status": "Fair Value",
-      "price": 40.3
+      "price": 40.4
     },
     "revenue": {
       "date": "2026-05",
@@ -37656,11 +38109,11 @@
     "stock_name": "東方風能",
     "valuation": {
       "stock_id": "7786",
-      "current_pe": 10.96,
+      "current_pe": 10.99,
       "sector_pe": 20.0,
       "pe_score": 0.55,
       "status": "Undervalued",
-      "price": 120.0
+      "price": 120.5
     },
     "revenue": {
       "date": "2026-04",
@@ -37715,7 +38168,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -11,
+      "foreign_net": -59,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -38157,14 +38610,63 @@
       "price": 38.5
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 482812000.0,
+      "mom": 1.25,
+      "yoy": 54.89,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 350211000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 301044000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 382971000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 391477000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 379179000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 486358000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 332837000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 390258000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 431087000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 467055000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 476833000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 482812000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 292,
+      "foreign_net": -41,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -38247,13 +38749,13 @@
       "sector_pe": 20.0,
       "pe_score": 0.66,
       "status": "Undervalued",
-      "price": 44.8
+      "price": 44.9
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 260618000.0,
-      "mom": 4.07,
-      "yoy": -19.57,
+      "date": "2026-05",
+      "revenue": 261679000.0,
+      "mom": 0.41,
+      "yoy": -19.41,
       "history": [
         {
           "date": "2025-06",
@@ -38298,6 +38800,10 @@
         {
           "date": "2026-04",
           "revenue": 260618000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 261679000.0
         }
       ]
     },
@@ -38336,11 +38842,11 @@
     "stock_name": "嘉裕",
     "valuation": {
       "stock_id": "1417",
-      "current_pe": 13.77,
+      "current_pe": 13.58,
       "sector_pe": 20.0,
-      "pe_score": 0.69,
+      "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 8.5
+      "price": 8.4
     },
     "revenue": {
       "date": "2026-05",
@@ -38399,7 +38905,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -30,
+      "foreign_net": -56,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -38579,21 +39085,66 @@
     "stock_name": "創控",
     "valuation": {
       "stock_id": "6909",
-      "current_pe": 46.97,
+      "current_pe": 47.32,
       "sector_pe": 20.0,
-      "pe_score": 2.35,
+      "pe_score": 2.37,
       "status": "High Premium",
-      "price": 46.5
+      "price": 46.8
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 36781000.0,
+      "mom": -25.64,
+      "yoy": 54.77,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 35431000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 34978000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 46834000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 37725000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 53457000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 55420000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 105955000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 33281000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 18760000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 49463000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 36781000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 53,
+      "foreign_net": -61,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -38793,11 +39344,11 @@
     "stock_name": "利奇",
     "valuation": {
       "stock_id": "1517",
-      "current_pe": 1.55,
+      "current_pe": 1.54,
       "sector_pe": 20.0,
       "pe_score": 0.08,
       "status": "Undervalued",
-      "price": 10.2
+      "price": 10.1
     },
     "revenue": {
       "date": "2026-04",
@@ -38852,7 +39403,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -31,
+      "foreign_net": -55,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -38862,22 +39413,67 @@
     "stock_name": "華建",
     "valuation": {
       "stock_id": "2530",
-      "current_pe": 9.67,
+      "current_pe": 9.62,
       "sector_pe": 20.0,
       "pe_score": 0.48,
       "status": "Undervalued",
-      "price": 19.2
+      "price": 19.1
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 834000.0,
+      "mom": -99.45,
+      "yoy": -96.83,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 27586000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 1978557000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 504179000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 77108000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 55359000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 20635000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 64692000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 35222000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 836000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 150655000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 834000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 361,
-      "trust_net": -12,
+      "foreign_net": -66,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -39660,7 +40256,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.36,
       "status": "Undervalued",
-      "price": 46.2
+      "price": 46.1
     },
     "revenue": {
       "date": "N/A",
@@ -39829,10 +40425,10 @@
       "price": 16.6
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 598841000.0,
-      "mom": -39.94,
-      "yoy": -31.98,
+      "date": "2026-05",
+      "revenue": 1015879000.0,
+      "mom": 69.64,
+      "yoy": 25.12,
       "history": [
         {
           "date": "2025-06",
@@ -39877,11 +40473,15 @@
         {
           "date": "2026-04",
           "revenue": 598841000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 1015879000.0
         }
       ]
     },
     "chips": {
-      "foreign_net": -37,
+      "foreign_net": -50,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -40320,11 +40920,11 @@
     "stock_name": "根基",
     "valuation": {
       "stock_id": "2546",
-      "current_pe": 9.4,
+      "current_pe": 9.54,
       "sector_pe": 20.0,
-      "pe_score": 0.47,
+      "pe_score": 0.48,
       "status": "Undervalued",
-      "price": 88.7
+      "price": 90.1
     },
     "revenue": {
       "date": "2026-04",
@@ -40379,7 +40979,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 35,
+      "foreign_net": -42,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -40550,7 +41150,7 @@
     },
     "chips": {
       "foreign_net": -365,
-      "trust_net": 426,
+      "trust_net": 458,
       "analysis": "N/A"
     }
   },
@@ -40709,7 +41309,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.73,
       "status": "High Premium",
-      "price": 21.0
+      "price": 21.1
     },
     "revenue": {
       "date": "2026-04",
@@ -40843,11 +41443,11 @@
     "stock_name": "迅得",
     "valuation": {
       "stock_id": "6438",
-      "current_pe": 28.5,
+      "current_pe": 28.79,
       "sector_pe": 20.0,
-      "pe_score": 1.43,
+      "pe_score": 1.44,
       "status": "High Premium",
-      "price": 148.5
+      "price": 150.0
     },
     "revenue": {
       "date": "2026-05",
@@ -40906,7 +41506,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -3,
+      "foreign_net": -50,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -41285,7 +41885,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.34,
       "status": "High Premium",
-      "price": 42.7
+      "price": 42.6
     },
     "revenue": {
       "date": "2026-05",
@@ -41524,7 +42124,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.74,
       "status": "High Premium",
-      "price": 22.0
+      "price": 21.9
     },
     "revenue": {
       "date": "2026-04",
@@ -41835,7 +42435,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 13.6
+      "price": 13.8
     },
     "revenue": {
       "date": "2026-04",
@@ -41890,7 +42490,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 94,
+      "foreign_net": -61,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -42940,7 +43540,7 @@
     },
     "chips": {
       "foreign_net": 1529,
-      "trust_net": 839,
+      "trust_net": 858,
       "analysis": "N/A"
     }
   },
@@ -43212,7 +43812,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.63,
       "status": "High Premium",
-      "price": 23.5
+      "price": 23.4
     },
     "revenue": {
       "date": "2026-04",
@@ -43503,10 +44103,10 @@
       "price": 637.0
     },
     "revenue": {
-      "date": "2026-04",
-      "revenue": 2858881000.0,
-      "mom": 1.81,
-      "yoy": 66.7,
+      "date": "2026-05",
+      "revenue": 3835624000.0,
+      "mom": 34.17,
+      "yoy": 82.35,
       "history": [
         {
           "date": "2025-06",
@@ -43551,6 +44151,10 @@
         {
           "date": "2026-04",
           "revenue": 2858881000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 3835624000.0
         }
       ]
     },
@@ -43873,7 +44477,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.39,
       "status": "High Premium",
-      "price": 141.9
+      "price": 141.8
     },
     "revenue": {
       "date": "N/A",
@@ -46107,21 +46711,66 @@
     "stock_name": "上曜",
     "valuation": {
       "stock_id": "1316",
-      "current_pe": 47.73,
+      "current_pe": 47.5,
       "sector_pe": 20.0,
-      "pe_score": 2.39,
+      "pe_score": 2.38,
       "status": "High Premium",
-      "price": 10.5
+      "price": 10.4
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 683935000.0,
+      "mom": 4.3,
+      "yoy": 115.49,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 335525000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 344236000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 357553000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 420365000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 412080000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 605369000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 630347000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 718541000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 520392000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 655761000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 683935000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 212,
+      "foreign_net": -51,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -47184,21 +47833,70 @@
     "stock_name": "宏致",
     "valuation": {
       "stock_id": "3605",
-      "current_pe": 18.35,
+      "current_pe": 0.0,
       "sector_pe": 20.0,
-      "pe_score": 0.92,
-      "status": "Fair Value",
-      "price": 73.4
+      "pe_score": 0.0,
+      "status": "N/A",
+      "price": 72.7
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 1108233000.0,
+      "mom": -1.46,
+      "yoy": 15.33,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 860900000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 889148000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 935790000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 963172000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 873679000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 922509000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 910962000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 1058355000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 781391000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 981796000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 1124603000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 1108233000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 203,
+      "foreign_net": -50,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -47516,21 +48214,70 @@
     "stock_name": "聯德",
     "valuation": {
       "stock_id": "3308",
-      "current_pe": 30.96,
+      "current_pe": 30.88,
       "sector_pe": 20.0,
-      "pe_score": 1.55,
+      "pe_score": 1.54,
       "status": "High Premium",
       "price": 21.0
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 517000.0,
+      "mom": 0.58,
+      "yoy": -6.84,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 545000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 554000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 557000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 499000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 549000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 547000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 2027000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 515000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 523000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 530000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 514000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 517000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 30,
+      "foreign_net": -59,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -47609,11 +48356,11 @@
     "stock_name": "東科-KY",
     "valuation": {
       "stock_id": "5225",
-      "current_pe": 7.76,
+      "current_pe": 7.12,
       "sector_pe": 20.0,
-      "pe_score": 0.39,
+      "pe_score": 0.36,
       "status": "Undervalued",
-      "price": 78.9
+      "price": 72.4
     },
     "revenue": {
       "date": "N/A",
@@ -47623,7 +48370,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": -499,
+      "foreign_net": -49,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -47924,14 +48671,63 @@
       "price": 13.0
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 813810000.0,
+      "mom": 58.49,
+      "yoy": -1.73,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 823231000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 763775000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 852838000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 1000303000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 902251000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 804309000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 1223180000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 558398000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 515010000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 550935000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 513491000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 813810000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 50,
+      "foreign_net": -62,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -48180,7 +48976,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.12,
       "status": "Fair Value",
-      "price": 41.3
+      "price": 41.4
     },
     "revenue": {
       "date": "2026-04",
@@ -48766,7 +49562,7 @@
     },
     "chips": {
       "foreign_net": 262,
-      "trust_net": 496,
+      "trust_net": 562,
       "analysis": "N/A"
     }
   },
@@ -49197,11 +49993,11 @@
     "stock_name": "鈺齊-KY",
     "valuation": {
       "stock_id": "9802",
-      "current_pe": 13.94,
+      "current_pe": 13.8,
       "sector_pe": 20.0,
-      "pe_score": 0.7,
+      "pe_score": 0.69,
       "status": "Undervalued",
-      "price": 81.8
+      "price": 81.0
     },
     "revenue": {
       "date": "N/A",
@@ -49211,8 +50007,8 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 65,
-      "trust_net": 0,
+      "foreign_net": 169,
+      "trust_net": -220,
       "analysis": "N/A"
     }
   },
@@ -49866,7 +50662,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.79,
       "status": "Undervalued",
-      "price": 31.0
+      "price": 30.9
     },
     "revenue": {
       "date": "2026-05",
@@ -50036,7 +50832,7 @@
       "sector_pe": 20.0,
       "pe_score": 16.06,
       "status": "High Premium",
-      "price": 12.9
+      "price": 12.8
     },
     "revenue": {
       "date": "2026-05",
@@ -50447,15 +51243,64 @@
       "price": 506.0
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 620455000.0,
+      "mom": 18.19,
+      "yoy": 86.29,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 358011000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 360631000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 389729000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 418316000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 437571000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 437627000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 466079000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 453191000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 413306000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 473067000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 524976000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 620455000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 379,
-      "trust_net": 0,
+      "foreign_net": -397,
+      "trust_net": 60,
       "analysis": "N/A"
     }
   },
@@ -50634,22 +51479,71 @@
     "stock_name": "全友",
     "valuation": {
       "stock_id": "2305",
-      "current_pe": 114.25,
+      "current_pe": 115.0,
       "sector_pe": 20.0,
-      "pe_score": 5.71,
+      "pe_score": 5.75,
       "status": "High Premium",
-      "price": 22.9
+      "price": 23.0
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 115955000.0,
+      "mom": -3.1,
+      "yoy": 97.83,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 61861000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 59960000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 53302000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 62840000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 65506000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 67343000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 85325000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 76045000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 81417000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 89472000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 119663000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 115955000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 662,
-      "trust_net": 0,
+      "foreign_net": -68,
+      "trust_net": -1,
       "analysis": "N/A"
     }
   },
@@ -50820,11 +51714,11 @@
     "stock_name": "亞航",
     "valuation": {
       "stock_id": "2630",
-      "current_pe": 39.75,
+      "current_pe": 40.05,
       "sector_pe": 20.0,
-      "pe_score": 1.99,
+      "pe_score": 2.0,
       "status": "High Premium",
-      "price": 39.8
+      "price": 40.0
     },
     "revenue": {
       "date": "2026-05",
@@ -50883,7 +51777,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 73,
+      "foreign_net": -53,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -51326,7 +52220,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.56,
       "status": "Undervalued",
-      "price": 17.0
+      "price": 16.9
     },
     "revenue": {
       "date": "2026-05",
@@ -51600,7 +52494,7 @@
       ]
     },
     "chips": {
-      "foreign_net": -87,
+      "foreign_net": -51,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -51634,22 +52528,67 @@
     "stock_name": "長虹",
     "valuation": {
       "stock_id": "5534",
-      "current_pe": 13.08,
+      "current_pe": 13.15,
       "sector_pe": 20.0,
-      "pe_score": 0.65,
+      "pe_score": 0.66,
       "status": "Undervalued",
-      "price": 77.3
+      "price": 77.7
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 214893000.0,
+      "mom": -35.55,
+      "yoy": 13.56,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 326175000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 245215000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 330759000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 914924000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 683998000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 2022994000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 2561889000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 450811000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 92667000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 333426000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 214893000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 1209,
-      "trust_net": 315,
+      "foreign_net": -31,
+      "trust_net": 0,
       "analysis": "N/A"
     }
   },
@@ -51974,7 +52913,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 33.8
+      "price": 33.9
     },
     "revenue": {
       "date": "2026-04",
@@ -53023,11 +53962,11 @@
     "stock_name": "日電貿",
     "valuation": {
       "stock_id": "3090",
-      "current_pe": 38.72,
+      "current_pe": 42.51,
       "sector_pe": 20.0,
-      "pe_score": 1.94,
+      "pe_score": 2.13,
       "status": "High Premium",
-      "price": 209.5
+      "price": 230.0
     },
     "revenue": {
       "date": "2026-05",
@@ -53086,7 +54025,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 23,
+      "foreign_net": -27,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -53234,21 +54173,70 @@
     "stock_name": "中航",
     "valuation": {
       "stock_id": "2612",
-      "current_pe": 10.15,
+      "current_pe": 10.28,
       "sector_pe": 20.0,
       "pe_score": 0.51,
       "status": "Undervalued",
-      "price": 55.3
+      "price": 56.0
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 458530000.0,
+      "mom": 5.42,
+      "yoy": 12.01,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 400633000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 406391000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 403375000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 387807000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 390604000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 405194000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 462331000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 420444000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 353018000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 464771000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 434939000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 458530000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 388,
+      "foreign_net": -45,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -53493,21 +54481,66 @@
     "stock_name": "雙鍵",
     "valuation": {
       "stock_id": "4764",
-      "current_pe": 224.18,
+      "current_pe": 222.54,
       "sector_pe": 20.0,
-      "pe_score": 11.21,
+      "pe_score": 11.13,
       "status": "High Premium",
-      "price": 273.5
+      "price": 271.5
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 336385000.0,
+      "mom": 0.53,
+      "yoy": 20.92,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 232438000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 204231000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 218233000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 252066000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 220546000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 290750000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 274436000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 255154000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 233067000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 334625000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 336385000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 463,
+      "foreign_net": -43,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -54432,22 +55465,67 @@
     "stock_name": "采鈺",
     "valuation": {
       "stock_id": "6789",
-      "current_pe": 124.75,
+      "current_pe": 124.0,
       "sector_pe": 20.0,
-      "pe_score": 6.24,
+      "pe_score": 6.2,
       "status": "High Premium",
-      "price": 499.0
+      "price": 496.0
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 774041000.0,
+      "mom": -5.89,
+      "yoy": -0.61,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 738666000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 733903000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 778595000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 743381000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 739453000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 784175000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 765176000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 772684000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 753310000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 822449000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 774041000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 219,
-      "trust_net": -4,
+      "foreign_net": -64,
+      "trust_net": -1,
       "analysis": "N/A"
     }
   },
@@ -54598,11 +55676,11 @@
     "stock_name": "全訊",
     "valuation": {
       "stock_id": "5222",
-      "current_pe": 48.6,
+      "current_pe": 46.61,
       "sector_pe": 20.0,
-      "pe_score": 2.43,
+      "pe_score": 2.33,
       "status": "High Premium",
-      "price": 121.5
+      "price": 117.0
     },
     "revenue": {
       "date": "2026-05",
@@ -54661,8 +55739,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -88,
-      "trust_net": -1,
+      "foreign_net": -48,
+      "trust_net": 2,
       "analysis": "N/A"
     }
   },
@@ -54986,22 +56064,71 @@
     "stock_name": "台光電",
     "valuation": {
       "stock_id": "2383",
-      "current_pe": 109.85,
+      "current_pe": 110.61,
       "sector_pe": 20.0,
-      "pe_score": 5.49,
+      "pe_score": 5.53,
       "status": "High Premium",
-      "price": 5030.0
+      "price": 5065.0
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-05",
+      "revenue": 15618565000.0,
+      "mom": 12.17,
+      "yoy": 114.62,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 8035115000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 8372495000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 8764793000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 8008332000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 8074815000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 8129128000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 8704662000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 10862602000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 10193772000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 12010861000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 13923687000.0
+        },
+        {
+          "date": "2026-05",
+          "revenue": 15618565000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 18,
-      "trust_net": 105,
+      "foreign_net": -282,
+      "trust_net": 297,
       "analysis": "N/A"
     }
   },
@@ -56733,7 +57860,7 @@
     },
     "chips": {
       "foreign_net": -476,
-      "trust_net": 1997,
+      "trust_net": 2095,
       "analysis": "N/A"
     }
   },
@@ -57698,7 +58825,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.37,
       "status": "Undervalued",
-      "price": 45.3
+      "price": 45.4
     },
     "revenue": {
       "date": "N/A",
@@ -60071,7 +61198,7 @@
     },
     "chips": {
       "foreign_net": 438,
-      "trust_net": 787,
+      "trust_net": 853,
       "analysis": "N/A"
     }
   },
@@ -114790,7 +115917,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.87,
       "status": "Fair Value",
-      "price": 21.5
+      "price": 21.4
     },
     "revenue": {
       "date": "2026-04",
@@ -114855,21 +115982,66 @@
     "stock_name": "欣高",
     "valuation": {
       "stock_id": "9931",
-      "current_pe": 14.08,
+      "current_pe": 14.12,
       "sector_pe": 20.0,
-      "pe_score": 0.7,
+      "pe_score": 0.71,
       "status": "Undervalued",
-      "price": 34.3
+      "price": 34.5
     },
     "revenue": {
-      "date": "N/A",
-      "revenue": 0.0,
-      "mom": 0.0,
-      "yoy": 0.0,
-      "history": []
+      "date": "2026-04",
+      "revenue": 141686000.0,
+      "mom": -1.69,
+      "yoy": -4.5,
+      "history": [
+        {
+          "date": "2025-06",
+          "revenue": 114888000.0
+        },
+        {
+          "date": "2025-07",
+          "revenue": 136129000.0
+        },
+        {
+          "date": "2025-08",
+          "revenue": 117818000.0
+        },
+        {
+          "date": "2025-09",
+          "revenue": 115493000.0
+        },
+        {
+          "date": "2025-10",
+          "revenue": 126334000.0
+        },
+        {
+          "date": "2025-11",
+          "revenue": 137006000.0
+        },
+        {
+          "date": "2025-12",
+          "revenue": 137151000.0
+        },
+        {
+          "date": "2026-01",
+          "revenue": 138640000.0
+        },
+        {
+          "date": "2026-02",
+          "revenue": 146718000.0
+        },
+        {
+          "date": "2026-03",
+          "revenue": 144120000.0
+        },
+        {
+          "date": "2026-04",
+          "revenue": 141686000.0
+        }
+      ]
     },
     "chips": {
-      "foreign_net": 5,
+      "foreign_net": -62,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -114980,7 +116152,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.77,
       "status": "Undervalued",
-      "price": 28.5
+      "price": 28.6
     },
     "revenue": {
       "date": "2026-05",
@@ -121477,11 +122649,11 @@
     "stock_name": "世紀風電",
     "valuation": {
       "stock_id": "2072",
-      "current_pe": 15.84,
+      "current_pe": 15.34,
       "sector_pe": 20.0,
-      "pe_score": 0.79,
+      "pe_score": 0.77,
       "status": "Undervalued",
-      "price": 189.0
+      "price": 183.0
     },
     "revenue": {
       "date": "2026-05",
@@ -121540,7 +122712,7 @@
       ]
     },
     "chips": {
-      "foreign_net": 234,
+      "foreign_net": -55,
       "trust_net": 0,
       "analysis": "N/A"
     }
@@ -122669,7 +123841,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.38,
       "status": "High Premium",
-      "price": 32.0
+      "price": 31.9
     },
     "revenue": {
       "date": "2026-04",
@@ -122817,7 +123989,7 @@
       "history": []
     },
     "chips": {
-      "foreign_net": 20,
+      "foreign_net": -49,
       "trust_net": 0,
       "analysis": "N/A"
     }
