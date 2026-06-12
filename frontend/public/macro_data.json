@@ -1,80 +1,14 @@
 {
-    "last_updated": "2026-06-12 04:22",
+    "last_updated": "2026-06-12 12:07",
     "market_status": {
-        "taiex_close": 43149.46,
-        "change": -76.08,
-        "change_percent": -0.18,
+        "taiex_close": 44169.04,
+        "change": 1019.58,
+        "change_percent": 2.36,
         "high": 44798.88,
         "low": 43587.63,
-        "volume": 13385.16691099
+        "volume": 11691.8695835
     },
     "history": [
-        {
-            "date": "2026-05-15",
-            "close": 41172.36,
-            "volume": 13748.65492241,
-            "change": -579.39
-        },
-        {
-            "date": "2026-05-18",
-            "close": 40891.82,
-            "volume": 10420.46645948,
-            "change": -280.54
-        },
-        {
-            "date": "2026-05-19",
-            "close": 40175.56,
-            "volume": 11512.19413754,
-            "change": -716.26
-        },
-        {
-            "date": "2026-05-20",
-            "close": 40020.82,
-            "volume": 10275.52700623,
-            "change": -154.74
-        },
-        {
-            "date": "2026-05-21",
-            "close": 41368.21,
-            "volume": 10476.23792398,
-            "change": 1347.39
-        },
-        {
-            "date": "2026-05-22",
-            "close": 42267.97,
-            "volume": 12368.88820897,
-            "change": 899.76
-        },
-        {
-            "date": "2026-05-25",
-            "close": 43644.4,
-            "volume": 13527.10348031,
-            "change": 1376.43
-        },
-        {
-            "date": "2026-05-26",
-            "close": 43525.37,
-            "volume": 15497.10749032,
-            "change": -119.03
-        },
-        {
-            "date": "2026-05-27",
-            "close": 44256.8,
-            "volume": 16300.77580758,
-            "change": 731.43
-        },
-        {
-            "date": "2026-05-28",
-            "close": 43636.44,
-            "volume": 16707.18874089,
-            "change": -620.36
-        },
-        {
-            "date": "2026-05-29",
-            "close": 44732.94,
-            "volume": 19169.52445914,
-            "change": 1096.5
-        },
         {
             "date": "2026-06-01",
             "close": 45337.91,
@@ -128,60 +62,66 @@
             "close": 43149.46,
             "volume": 13385.16691099,
             "change": -76.08
+        },
+        {
+            "date": "2026-06-12",
+            "close": 44169.04,
+            "volume": 11691.8695835,
+            "change": 1019.58
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": -357.79
+            "net": 286.9
         },
         {
             "name": "投信",
-            "net": 132.45
+            "net": 142.33
         },
         {
             "name": "自營商",
-            "net": -124.0
+            "net": 89.43
         }
     ],
     "chips": {
-        "futures_net_oi": -63168,
+        "futures_net_oi": -65039,
         "futures_status": "Bearish",
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.5,
+        "usd_twd": 31.61,
         "trend": "Stable"
     },
     "sector_flow": [
         {
             "name": "電子指數          ",
-            "ratio": 46.6,
+            "ratio": 46.7,
             "trend": "Hot"
         },
         {
             "name": "半導體指數        ",
-            "ratio": 19.1,
+            "ratio": 19.2,
             "trend": "Normal"
         },
         {
             "name": "電子零組件指數    ",
-            "ratio": 14.9,
+            "ratio": 15.7,
             "trend": "Normal"
         },
         {
-            "name": "電腦及週邊設備指數",
-            "ratio": 4.0,
+            "name": "其他電子指數      ",
+            "ratio": 3.5,
             "trend": "Cool"
         },
         {
-            "name": "其他電子指數      ",
-            "ratio": 3.6,
+            "name": "電腦及週邊設備指數",
+            "ratio": 3.3,
             "trend": "Cool"
         },
         {
             "name": "其他",
-            "ratio": 11.8,
+            "ratio": 11.6,
             "trend": "Normal"
         }
     ]
