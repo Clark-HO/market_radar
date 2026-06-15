@@ -1,40 +1,6 @@
 {
-  "last_updated": "2026-06-12 18:16",
+  "last_updated": "2026-06-15 04:51",
   "events": [
-    {
-      "event": "Google I/O 開發者大會",
-      "date": "2026-05-14",
-      "end_date": "2026-05-15",
-      "theme": "Gemini 2.0 / Android 17",
-      "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
-      "status": "Finished",
-      "days_to_go": -29,
-      "chains": [
-        {
-          "us_stock": {
-            "symbol": "GOOGL",
-            "name": "Alphabet",
-            "price": 0,
-            "change": 0
-          },
-          "tw_sector": "安卓生態系",
-          "tw_stocks": [
-            {
-              "ticker": "2357",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
-            },
-            {
-              "ticker": "2498",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
-            }
-          ]
-        }
-      ]
-    },
     {
       "event": "Computex 台北國際電腦展",
       "date": "2026-06-02",
@@ -42,7 +8,7 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Finished",
-      "days_to_go": -10,
+      "days_to_go": -13,
       "chains": [
         {
           "us_stock": {
@@ -104,8 +70,8 @@
       "end_date": "2026-06-14",
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
-      "status": "Ongoing",
-      "days_to_go": -2,
+      "status": "Finished",
+      "days_to_go": -5,
       "chains": [
         {
           "us_stock": {
