@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17 12:28",
+  "last_updated": "2026-06-17 18:43",
   "events": [
     {
       "event": "Computex 台北國際電腦展",
@@ -14,28 +14,28 @@
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 0,
-            "change": 0
+            "price": 383.37,
+            "change": -2.49
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2353",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 35.0,
+              "change": -7.53,
+              "signal": "Risk Alert"
             },
             {
               "ticker": "2357",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 803.0,
+              "change": 1.26,
+              "signal": "Risk Alert"
             },
             {
               "ticker": "2301",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 210.0,
+              "change": 0.72,
+              "signal": "Risk Alert"
             }
           ]
         },
@@ -43,22 +43,22 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 0,
-            "change": 0
+            "price": 531.09,
+            "change": 3.98
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 2385.0,
+              "change": 0.0,
+              "signal": "Lagging (Buy?)"
             },
             {
               "ticker": "3711",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 595.0,
+              "change": 0.51,
+              "signal": "Lagging (Buy?)"
             }
           ]
         }
@@ -77,27 +77,27 @@
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 0,
-            "change": 0
+            "price": 296.12,
+            "change": -0.93
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
             {
               "ticker": "2317",
-              "price": 0,
-              "change": 0,
+              "price": 272.0,
+              "change": 1.3,
               "signal": "Neutral"
             },
             {
               "ticker": "3008",
-              "price": 0,
-              "change": 0,
+              "price": 5145.0,
+              "change": 5.86,
               "signal": "Neutral"
             },
             {
               "ticker": "4938",
-              "price": 0,
-              "change": 0,
+              "price": 83.0,
+              "change": 0.12,
               "signal": "Neutral"
             }
           ]
