@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19 18:21",
+  "last_updated": "2026-06-22 04:51",
   "events": [
     {
       "event": "Computex 台北國際電腦展",
@@ -8,33 +8,33 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Finished",
-      "days_to_go": -17,
+      "days_to_go": -20,
       "chains": [
         {
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 379.4,
-            "change": -0.75
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2353",
-              "price": 34.4,
-              "change": -1.85,
+              "price": 34.3,
+              "change": -0.29,
               "signal": "Neutral"
             },
             {
               "ticker": "2357",
-              "price": 789.0,
-              "change": -1.25,
+              "price": 790.0,
+              "change": -0.38,
               "signal": "Neutral"
             },
             {
               "ticker": "2301",
-              "price": 210.5,
-              "change": 0.48,
+              "price": 231.5,
+              "change": 9.72,
               "signal": "Neutral"
             }
           ]
@@ -50,14 +50,14 @@
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 2410.0,
-              "change": 1.47,
-              "signal": "Neutral"
+              "price": 2505.0,
+              "change": 4.38,
+              "signal": "Sympathy Rally"
             },
             {
               "ticker": "3711",
-              "price": 613.0,
-              "change": 3.72,
+              "price": 674.0,
+              "change": 9.24,
               "signal": "Sympathy Rally"
             }
           ]
@@ -71,7 +71,7 @@
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
       "status": "Finished",
-      "days_to_go": -9,
+      "days_to_go": -12,
       "chains": [
         {
           "us_stock": {
@@ -84,20 +84,20 @@
           "tw_stocks": [
             {
               "ticker": "2317",
-              "price": 268.5,
-              "change": -0.56,
+              "price": 269.5,
+              "change": -0.37,
               "signal": "Neutral"
             },
             {
               "ticker": "3008",
-              "price": 5195.0,
-              "change": 1.46,
+              "price": 5190.0,
+              "change": -0.38,
               "signal": "Neutral"
             },
             {
               "ticker": "4938",
-              "price": 82.9,
-              "change": -0.12,
+              "price": 82.1,
+              "change": -1.44,
               "signal": "Neutral"
             }
           ]
