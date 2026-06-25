@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24 18:10",
+  "last_updated": "2026-06-25 04:08",
   "events": [
     {
       "event": "Computex 台北國際電腦展",
@@ -8,34 +8,34 @@
       "theme": "AI PC / Copilot+",
       "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
       "status": "Finished",
-      "days_to_go": -22,
+      "days_to_go": -23,
       "chains": [
         {
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 0,
-            "change": 0
+            "price": 365.46,
+            "change": -2.28
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2353",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 33.85,
+              "change": -0.88,
+              "signal": "Risk Alert"
             },
             {
               "ticker": "2357",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 747.0,
+              "change": -3.24,
+              "signal": "Risk Alert"
             },
             {
               "ticker": "2301",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 216.5,
+              "change": -0.69,
+              "signal": "Risk Alert"
             }
           ]
         },
@@ -43,21 +43,21 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 0,
-            "change": 0
+            "price": 519.74,
+            "change": -0.47
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 0,
-              "change": 0,
+              "price": 2405.0,
+              "change": -0.21,
               "signal": "Neutral"
             },
             {
               "ticker": "3711",
-              "price": 0,
-              "change": 0,
+              "price": 640.0,
+              "change": -2.59,
               "signal": "Neutral"
             }
           ]
@@ -71,7 +71,7 @@
       "theme": "iOS 20 / Siri LLM",
       "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
       "status": "Finished",
-      "days_to_go": -14,
+      "days_to_go": -15,
       "chains": [
         {
           "us_stock": {
@@ -84,20 +84,20 @@
           "tw_stocks": [
             {
               "ticker": "2317",
-              "price": 0,
-              "change": 0,
+              "price": 259.0,
+              "change": 0.97,
               "signal": "Neutral"
             },
             {
               "ticker": "3008",
-              "price": 0,
-              "change": 0,
+              "price": 5135.0,
+              "change": 5.66,
               "signal": "Neutral"
             },
             {
               "ticker": "4938",
-              "price": 0,
-              "change": 0,
+              "price": 83.4,
+              "change": -1.07,
               "signal": "Neutral"
             }
           ]
