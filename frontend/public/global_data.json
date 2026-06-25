@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25 04:08",
+  "last_updated": "2026-06-25 10:50",
   "events": [
     {
       "event": "Computex 台北國際電腦展",
@@ -14,28 +14,28 @@
           "us_stock": {
             "symbol": "MSFT",
             "name": "微軟",
-            "price": 365.46,
-            "change": -2.28
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "AI PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2353",
-              "price": 33.85,
-              "change": -0.88,
-              "signal": "Risk Alert"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2357",
-              "price": 747.0,
-              "change": -3.24,
-              "signal": "Risk Alert"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2301",
-              "price": 216.5,
-              "change": -0.69,
-              "signal": "Risk Alert"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         },
@@ -43,21 +43,21 @@
           "us_stock": {
             "symbol": "AMD",
             "name": "超微",
-            "price": 519.74,
-            "change": -0.47
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "HPC 運算",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 2405.0,
-              "change": -0.21,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "3711",
-              "price": 640.0,
-              "change": -2.59,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             }
           ]
@@ -84,20 +84,20 @@
           "tw_stocks": [
             {
               "ticker": "2317",
-              "price": 259.0,
-              "change": 0.97,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "3008",
-              "price": 5135.0,
-              "change": 5.66,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             },
             {
               "ticker": "4938",
-              "price": 83.4,
-              "change": -1.07,
+              "price": 0,
+              "change": 0,
               "signal": "Neutral"
             }
           ]
