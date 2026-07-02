@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02 10:48",
+  "last_updated": "2026-07-02 18:13",
   "events": [
     {
       "event": "Apple WWDC 開發者大會",
@@ -14,28 +14,28 @@
           "us_stock": {
             "symbol": "AAPL",
             "name": "蘋果",
-            "price": 0,
-            "change": 0
+            "price": 307.65,
+            "change": 4.42
           },
           "tw_sector": "蘋果供應鏈",
           "tw_stocks": [
             {
               "ticker": "2317",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 239.0,
+              "change": -3.82,
+              "signal": "Lagging (Buy?)"
             },
             {
               "ticker": "3008",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 4295.0,
+              "change": -0.69,
+              "signal": "Lagging (Buy?)"
             },
             {
               "ticker": "4938",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
+              "price": 83.2,
+              "change": 0.73,
+              "signal": "Lagging (Buy?)"
             }
           ]
         }
