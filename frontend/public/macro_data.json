@@ -1,14 +1,86 @@
 {
-    "last_updated": "2026-07-13 03:27",
+    "last_updated": "2026-07-13 11:37",
     "market_status": {
-        "taiex_close": 45354.61,
-        "change": -379.8,
-        "change_percent": -0.83,
-        "high": 0,
-        "low": 0,
-        "volume": 9967.89429935
+        "taiex_close": 45380.52,
+        "change": 25.91,
+        "change_percent": 0.06,
+        "high": 46330.91,
+        "low": 45272.9,
+        "volume": 10676.6210706
     },
     "history": [
+        {
+            "date": "2026-06-12",
+            "close": 44169.04,
+            "volume": 11691.8695835,
+            "change": 1019.58
+        },
+        {
+            "date": "2026-06-15",
+            "close": 45396.99,
+            "volume": 11157.44351199,
+            "change": 1227.95
+        },
+        {
+            "date": "2026-06-16",
+            "close": 45809.19,
+            "volume": 12621.8551812,
+            "change": 412.2
+        },
+        {
+            "date": "2026-06-17",
+            "close": 45877.39,
+            "volume": 11545.95951473,
+            "change": 68.2
+        },
+        {
+            "date": "2026-06-18",
+            "close": 46465.2,
+            "volume": 16061.95402305,
+            "change": 587.81
+        },
+        {
+            "date": "2026-06-22",
+            "close": 47741.51,
+            "volume": 15158.17959773,
+            "change": 1276.31
+        },
+        {
+            "date": "2026-06-23",
+            "close": 47100.65,
+            "volume": 16723.55337665,
+            "change": -640.86
+        },
+        {
+            "date": "2026-06-24",
+            "close": 46043.6,
+            "volume": 15390.46268153,
+            "change": -1057.05
+        },
+        {
+            "date": "2026-06-25",
+            "close": 46255.26,
+            "volume": 13680.76901597,
+            "change": 211.66
+        },
+        {
+            "date": "2026-06-26",
+            "close": 44571.76,
+            "volume": 16728.32488417,
+            "change": -1683.5
+        },
+        {
+            "date": "2026-06-29",
+            "close": 44999.9,
+            "volume": 10454.39448015,
+            "change": 428.14
+        },
+        {
+            "date": "2026-06-30",
+            "close": 46125.91,
+            "volume": 12660.6222802,
+            "change": 1126.01
+        },
         {
             "date": "2026-07-01",
             "close": 47018.99,
@@ -50,30 +122,67 @@
             "close": 45354.61,
             "volume": 9967.89429935,
             "change": -379.8
+        },
+        {
+            "date": "2026-07-13",
+            "close": 45380.52,
+            "volume": 10676.6210706,
+            "change": 25.91
         }
     ],
     "institutional": [
         {
             "name": "外資",
-            "net": 0
+            "net": -195.77
         },
         {
             "name": "投信",
-            "net": 0
+            "net": 96.09
         },
         {
             "name": "自營商",
-            "net": 0
+            "net": -110.98
         }
     ],
     "chips": {
-        "futures_net_oi": -80730,
+        "futures_net_oi": -81066,
         "futures_status": "Bearish",
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.5,
+        "usd_twd": 32.08,
         "trend": "Stable"
     },
-    "sector_flow": []
+    "sector_flow": [
+        {
+            "name": "電子指數          ",
+            "ratio": 46.0,
+            "trend": "Hot"
+        },
+        {
+            "name": "半導體指數        ",
+            "ratio": 19.1,
+            "trend": "Normal"
+        },
+        {
+            "name": "電子零組件指數    ",
+            "ratio": 16.1,
+            "trend": "Normal"
+        },
+        {
+            "name": "電腦及週邊設備指數",
+            "ratio": 3.5,
+            "trend": "Cool"
+        },
+        {
+            "name": "光電指數          ",
+            "ratio": 3.4,
+            "trend": "Cool"
+        },
+        {
+            "name": "其他",
+            "ratio": 12.0,
+            "trend": "Normal"
+        }
+    ]
 }
