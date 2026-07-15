@@ -4,11 +4,11 @@
     "stock_name": "凱基金",
     "valuation": {
       "stock_id": "2883",
-      "current_pe": 16.95,
+      "current_pe": 17.39,
       "sector_pe": 20.0,
-      "pe_score": 0.85,
+      "pe_score": 0.87,
       "status": "Fair Value",
-      "price": 29.5
+      "price": 30.2
     },
     "revenue": {
       "date": "2026-05",
@@ -73,11 +73,11 @@
     "stock_name": "台新新光金",
     "valuation": {
       "stock_id": "2887",
-      "current_pe": 18.56,
+      "current_pe": 18.72,
       "sector_pe": 20.0,
-      "pe_score": 0.93,
+      "pe_score": 0.94,
       "status": "Fair Value",
-      "price": 35.5
+      "price": 35.8
     },
     "revenue": {
       "date": "2026-06",
@@ -146,11 +146,11 @@
     "stock_name": "聯電",
     "valuation": {
       "stock_id": "2303",
-      "current_pe": 38.32,
+      "current_pe": 41.24,
       "sector_pe": 20.0,
-      "pe_score": 1.92,
+      "pe_score": 2.06,
       "status": "High Premium",
-      "price": 151.0
+      "price": 162.5
     },
     "revenue": {
       "date": "2026-06",
@@ -219,7 +219,7 @@
     "stock_name": "玉山金",
     "valuation": {
       "stock_id": "2884",
-      "current_pe": 16.27,
+      "current_pe": 16.25,
       "sector_pe": 20.0,
       "pe_score": 0.81,
       "status": "Fair Value",
@@ -292,7 +292,7 @@
     "stock_name": "三商壽",
     "valuation": {
       "stock_id": "2867",
-      "current_pe": 44.15,
+      "current_pe": 44.2,
       "sector_pe": 20.0,
       "pe_score": 2.21,
       "status": "High Premium",
@@ -507,11 +507,11 @@
     "stock_name": "長榮航",
     "valuation": {
       "stock_id": "2618",
-      "current_pe": 8.5,
+      "current_pe": 8.71,
       "sector_pe": 20.0,
-      "pe_score": 0.42,
+      "pe_score": 0.44,
       "status": "Undervalued",
-      "price": 40.8
+      "price": 41.8
     },
     "revenue": {
       "date": "2026-06",
@@ -580,11 +580,11 @@
     "stock_name": "強茂",
     "valuation": {
       "stock_id": "2481",
-      "current_pe": 56.59,
+      "current_pe": 56.27,
       "sector_pe": 20.0,
-      "pe_score": 2.83,
+      "pe_score": 2.81,
       "status": "High Premium",
-      "price": 176.0
+      "price": 175.0
     },
     "revenue": {
       "date": "2026-06",
@@ -653,9 +653,9 @@
     "stock_name": "第一金",
     "valuation": {
       "stock_id": "2892",
-      "current_pe": 17.94,
+      "current_pe": 17.89,
       "sector_pe": 20.0,
-      "pe_score": 0.9,
+      "pe_score": 0.89,
       "status": "Fair Value",
       "price": 33.5
     },
@@ -726,11 +726,11 @@
     "stock_name": "華東",
     "valuation": {
       "stock_id": "8110",
-      "current_pe": 19.39,
+      "current_pe": 20.7,
       "sector_pe": 20.0,
-      "pe_score": 0.97,
+      "pe_score": 1.04,
       "status": "Fair Value",
-      "price": 47.9
+      "price": 50.1
     },
     "revenue": {
       "date": "2026-06",
@@ -799,11 +799,11 @@
     "stock_name": "兆豐金",
     "valuation": {
       "stock_id": "2886",
-      "current_pe": 19.92,
+      "current_pe": 19.53,
       "sector_pe": 20.0,
-      "pe_score": 1.0,
+      "pe_score": 0.98,
       "status": "Fair Value",
-      "price": 47.0
+      "price": 46.1
     },
     "revenue": {
       "date": "2026-06",
@@ -872,11 +872,11 @@
     "stock_name": "遠東新",
     "valuation": {
       "stock_id": "1402",
-      "current_pe": 17.0,
+      "current_pe": 17.1,
       "sector_pe": 20.0,
       "pe_score": 0.85,
       "status": "Fair Value",
-      "price": 26.4
+      "price": 26.5
     },
     "revenue": {
       "date": "2026-06",
@@ -945,11 +945,11 @@
     "stock_name": "永豐金",
     "valuation": {
       "stock_id": "2890",
-      "current_pe": 20.13,
+      "current_pe": 20.23,
       "sector_pe": 20.0,
       "pe_score": 1.01,
       "status": "Fair Value",
-      "price": 39.6
+      "price": 39.8
     },
     "revenue": {
       "date": "2026-06",
@@ -1018,11 +1018,11 @@
     "stock_name": "合庫金",
     "valuation": {
       "stock_id": "5880",
-      "current_pe": 18.53,
+      "current_pe": 18.6,
       "sector_pe": 20.0,
       "pe_score": 0.93,
       "status": "Fair Value",
-      "price": 25.2
+      "price": 25.3
     },
     "revenue": {
       "date": "2026-06",
@@ -1164,17 +1164,17 @@
     "stock_name": "中信金",
     "valuation": {
       "stock_id": "2891",
-      "current_pe": 16.01,
+      "current_pe": 15.54,
       "sector_pe": 20.0,
-      "pe_score": 0.8,
-      "status": "Fair Value",
-      "price": 65.0
+      "pe_score": 0.78,
+      "status": "Undervalued",
+      "price": 63.1
     },
     "revenue": {
-      "date": "2026-05",
-      "revenue": 19217919000.0,
-      "mom": -2.41,
-      "yoy": 341.32,
+      "date": "2026-06",
+      "revenue": 19828138000.0,
+      "mom": 3.18,
+      "yoy": -17.9,
       "history": [
         {
           "date": "2025-07",
@@ -1219,6 +1219,10 @@
         {
           "date": "2026-05",
           "revenue": 19217919000.0
+        },
+        {
+          "date": "2026-06",
+          "revenue": 19828138000.0
         }
       ]
     },
@@ -1379,11 +1383,11 @@
     "stock_name": "富邦金",
     "valuation": {
       "stock_id": "2881",
-      "current_pe": 14.93,
+      "current_pe": 15.16,
       "sector_pe": 20.0,
-      "pe_score": 0.75,
+      "pe_score": 0.76,
       "status": "Undervalued",
-      "price": 125.0
+      "price": 127.0
     },
     "revenue": {
       "date": "2026-05",
@@ -1448,11 +1452,11 @@
     "stock_name": "晶彩科",
     "valuation": {
       "stock_id": "3535",
-      "current_pe": 454.09,
+      "current_pe": 451.36,
       "sector_pe": 20.0,
-      "pe_score": 22.7,
+      "pe_score": 22.57,
       "status": "High Premium",
-      "price": 99.9
+      "price": 99.3
     },
     "revenue": {
       "date": "2026-06",
@@ -1521,11 +1525,11 @@
     "stock_name": "台中銀",
     "valuation": {
       "stock_id": "2812",
-      "current_pe": 13.4,
+      "current_pe": 13.27,
       "sector_pe": 20.0,
-      "pe_score": 0.67,
+      "pe_score": 0.66,
       "status": "Undervalued",
-      "price": 20.5
+      "price": 20.3
     },
     "revenue": {
       "date": "2026-06",
@@ -1594,11 +1598,11 @@
     "stock_name": "華南金",
     "valuation": {
       "stock_id": "2880",
-      "current_pe": 20.66,
+      "current_pe": 20.42,
       "sector_pe": 20.0,
-      "pe_score": 1.03,
+      "pe_score": 1.02,
       "status": "Fair Value",
-      "price": 39.2
+      "price": 38.8
     },
     "revenue": {
       "date": "2026-05",
@@ -1663,11 +1667,11 @@
     "stock_name": "聯茂",
     "valuation": {
       "stock_id": "6213",
-      "current_pe": 85.84,
+      "current_pe": 85.66,
       "sector_pe": 20.0,
-      "pe_score": 4.29,
+      "pe_score": 4.28,
       "status": "High Premium",
-      "price": 348.5
+      "price": 349.5
     },
     "revenue": {
       "date": "2026-06",
@@ -1882,11 +1886,11 @@
     "stock_name": "訊芯-KY",
     "valuation": {
       "stock_id": "6451",
-      "current_pe": 1786.0,
+      "current_pe": 1964.0,
       "sector_pe": 20.0,
-      "pe_score": 89.3,
+      "pe_score": 98.2,
       "status": "High Premium",
-      "price": 446.5
+      "price": 491.0
     },
     "revenue": {
       "date": "N/A",
@@ -1906,11 +1910,11 @@
     "stock_name": "台塑",
     "valuation": {
       "stock_id": "1301",
-      "current_pe": 38.82,
+      "current_pe": 38.94,
       "sector_pe": 20.0,
-      "pe_score": 1.94,
+      "pe_score": 1.95,
       "status": "High Premium",
-      "price": 63.6
+      "price": 63.9
     },
     "revenue": {
       "date": "2026-06",
@@ -1979,11 +1983,11 @@
     "stock_name": "上海商銀",
     "valuation": {
       "stock_id": "5876",
-      "current_pe": 14.61,
+      "current_pe": 14.62,
       "sector_pe": 20.0,
       "pe_score": 0.73,
       "status": "Undervalued",
-      "price": 44.7
+      "price": 44.8
     },
     "revenue": {
       "date": "2026-06",
@@ -2198,11 +2202,11 @@
     "stock_name": "國泰金",
     "valuation": {
       "stock_id": "2882",
-      "current_pe": 13.61,
+      "current_pe": 13.67,
       "sector_pe": 20.0,
       "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 96.1
+      "price": 96.5
     },
     "revenue": {
       "date": "2026-06",
@@ -2563,11 +2567,11 @@
     "stock_name": "勤誠",
     "valuation": {
       "stock_id": "8210",
-      "current_pe": 39.11,
+      "current_pe": 40.64,
       "sector_pe": 20.0,
-      "pe_score": 1.96,
+      "pe_score": 2.03,
       "status": "High Premium",
-      "price": 1110.0
+      "price": 1155.0
     },
     "revenue": {
       "date": "2026-06",
@@ -2636,11 +2640,11 @@
     "stock_name": "光鋐",
     "valuation": {
       "stock_id": "4956",
-      "current_pe": 19.53,
+      "current_pe": 19.68,
       "sector_pe": 20.0,
       "pe_score": 0.98,
       "status": "Fair Value",
-      "price": 33.4
+      "price": 33.7
     },
     "revenue": {
       "date": "2026-06",
@@ -2782,11 +2786,11 @@
     "stock_name": "興富發",
     "valuation": {
       "stock_id": "2542",
-      "current_pe": 20.67,
+      "current_pe": 20.45,
       "sector_pe": 20.0,
-      "pe_score": 1.03,
+      "pe_score": 1.02,
       "status": "Fair Value",
-      "price": 43.4
+      "price": 43.0
     },
     "revenue": {
       "date": "2026-06",
@@ -2855,11 +2859,11 @@
     "stock_name": "騰輝電子-KY",
     "valuation": {
       "stock_id": "6672",
-      "current_pe": 54.37,
+      "current_pe": 54.47,
       "sector_pe": 20.0,
       "pe_score": 2.72,
       "status": "High Premium",
-      "price": 261.5
+      "price": 262.0
     },
     "revenue": {
       "date": "N/A",
@@ -3025,11 +3029,11 @@
     "stock_name": "中租-KY",
     "valuation": {
       "stock_id": "5871",
-      "current_pe": 10.5,
+      "current_pe": 10.4,
       "sector_pe": 20.0,
       "pe_score": 0.52,
       "status": "Undervalued",
-      "price": 118.0
+      "price": 117.0
     },
     "revenue": {
       "date": "N/A",
@@ -3122,11 +3126,11 @@
     "stock_name": "富采",
     "valuation": {
       "stock_id": "3714",
-      "current_pe": 5930.0,
+      "current_pe": 5890.0,
       "sector_pe": 20.0,
-      "pe_score": 296.5,
+      "pe_score": 294.5,
       "status": "High Premium",
-      "price": 59.3
+      "price": 58.9
     },
     "revenue": {
       "date": "2026-06",
@@ -3268,11 +3272,11 @@
     "stock_name": "冠德",
     "valuation": {
       "stock_id": "2520",
-      "current_pe": 13.41,
+      "current_pe": 13.62,
       "sector_pe": 20.0,
-      "pe_score": 0.67,
+      "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 35.0
+      "price": 35.5
     },
     "revenue": {
       "date": "2026-06",
@@ -3341,11 +3345,11 @@
     "stock_name": "全新",
     "valuation": {
       "stock_id": "2455",
-      "current_pe": 100.48,
+      "current_pe": 103.02,
       "sector_pe": 20.0,
-      "pe_score": 5.02,
+      "pe_score": 5.15,
       "status": "High Premium",
-      "price": 314.5
+      "price": 324.5
     },
     "revenue": {
       "date": "2026-06",
@@ -3414,11 +3418,11 @@
     "stock_name": "中再保",
     "valuation": {
       "stock_id": "2851",
-      "current_pe": 10.29,
+      "current_pe": 10.42,
       "sector_pe": 20.0,
-      "pe_score": 0.51,
+      "pe_score": 0.52,
       "status": "Undervalued",
-      "price": 37.6
+      "price": 38.2
     },
     "revenue": {
       "date": "2026-05",
@@ -3483,7 +3487,7 @@
     "stock_name": "統一超",
     "valuation": {
       "stock_id": "2912",
-      "current_pe": 22.51,
+      "current_pe": 22.53,
       "sector_pe": 20.0,
       "pe_score": 1.13,
       "status": "Fair Value",
@@ -3629,11 +3633,11 @@
     "stock_name": "長榮",
     "valuation": {
       "stock_id": "2603",
-      "current_pe": 6.15,
+      "current_pe": 6.16,
       "sector_pe": 20.0,
       "pe_score": 0.31,
       "status": "Undervalued",
-      "price": 194.5
+      "price": 195.0
     },
     "revenue": {
       "date": "2026-06",
@@ -3702,11 +3706,11 @@
     "stock_name": "正新",
     "valuation": {
       "stock_id": "2105",
-      "current_pe": 21.77,
+      "current_pe": 21.57,
       "sector_pe": 20.0,
-      "pe_score": 1.09,
+      "pe_score": 1.08,
       "status": "Fair Value",
-      "price": 32.6
+      "price": 32.3
     },
     "revenue": {
       "date": "2026-06",
@@ -3848,11 +3852,11 @@
     "stock_name": "福懋",
     "valuation": {
       "stock_id": "1434",
-      "current_pe": 35.88,
+      "current_pe": 37.06,
       "sector_pe": 20.0,
-      "pe_score": 1.79,
+      "pe_score": 1.85,
       "status": "High Premium",
-      "price": 18.3
+      "price": 18.9
     },
     "revenue": {
       "date": "2026-06",
@@ -3921,11 +3925,11 @@
     "stock_name": "牧德",
     "valuation": {
       "stock_id": "3563",
-      "current_pe": 42.41,
+      "current_pe": 44.29,
       "sector_pe": 20.0,
-      "pe_score": 2.12,
+      "pe_score": 2.21,
       "status": "High Premium",
-      "price": 668.0
+      "price": 698.0
     },
     "revenue": {
       "date": "2026-06",
@@ -4140,11 +4144,11 @@
     "stock_name": "信邦",
     "valuation": {
       "stock_id": "3023",
-      "current_pe": 24.63,
+      "current_pe": 25.1,
       "sector_pe": 20.0,
-      "pe_score": 1.23,
+      "pe_score": 1.25,
       "status": "High Premium",
-      "price": 314.5
+      "price": 320.5
     },
     "revenue": {
       "date": "2026-06",
@@ -4213,11 +4217,11 @@
     "stock_name": "台肥",
     "valuation": {
       "stock_id": "1722",
-      "current_pe": 50.05,
+      "current_pe": 50.26,
       "sector_pe": 20.0,
-      "pe_score": 2.5,
+      "pe_score": 2.51,
       "status": "High Premium",
-      "price": 47.5
+      "price": 47.8
     },
     "revenue": {
       "date": "2026-06",
@@ -4286,11 +4290,11 @@
     "stock_name": "遠傳",
     "valuation": {
       "stock_id": "4904",
-      "current_pe": 25.03,
+      "current_pe": 25.08,
       "sector_pe": 20.0,
       "pe_score": 1.25,
       "status": "High Premium",
-      "price": 95.1
+      "price": 95.3
     },
     "revenue": {
       "date": "2026-06",
@@ -4432,11 +4436,11 @@
     "stock_name": "萬海",
     "valuation": {
       "stock_id": "2615",
-      "current_pe": 7.09,
+      "current_pe": 7.13,
       "sector_pe": 20.0,
-      "pe_score": 0.35,
+      "pe_score": 0.36,
       "status": "Undervalued",
-      "price": 79.4
+      "price": 79.9
     },
     "revenue": {
       "date": "2026-06",
@@ -4505,11 +4509,11 @@
     "stock_name": "南紡",
     "valuation": {
       "stock_id": "1440",
-      "current_pe": 63.1,
+      "current_pe": 63.33,
       "sector_pe": 20.0,
-      "pe_score": 3.15,
+      "pe_score": 3.17,
       "status": "High Premium",
-      "price": 13.2
+      "price": 13.3
     },
     "revenue": {
       "date": "2026-06",
@@ -4651,11 +4655,11 @@
     "stock_name": "正達",
     "valuation": {
       "stock_id": "3149",
-      "current_pe": -84.76,
+      "current_pe": -86.21,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 87.3
+      "price": 88.8
     },
     "revenue": {
       "date": "2026-06",
@@ -4797,11 +4801,11 @@
     "stock_name": "星宇航空",
     "valuation": {
       "stock_id": "2646",
-      "current_pe": 235.0,
+      "current_pe": 236.67,
       "sector_pe": 20.0,
-      "pe_score": 11.75,
+      "pe_score": 11.83,
       "status": "High Premium",
-      "price": 21.1
+      "price": 21.3
     },
     "revenue": {
       "date": "2026-06",
@@ -4943,11 +4947,11 @@
     "stock_name": "遠東銀",
     "valuation": {
       "stock_id": "2845",
-      "current_pe": 14.46,
+      "current_pe": 14.51,
       "sector_pe": 20.0,
-      "pe_score": 0.72,
+      "pe_score": 0.73,
       "status": "Undervalued",
-      "price": 13.3
+      "price": 13.4
     },
     "revenue": {
       "date": "2026-06",
@@ -5162,11 +5166,11 @@
     "stock_name": "中鼎",
     "valuation": {
       "stock_id": "9933",
-      "current_pe": 23.31,
+      "current_pe": 23.4,
       "sector_pe": 20.0,
       "pe_score": 1.17,
       "status": "Fair Value",
-      "price": 40.1
+      "price": 40.2
     },
     "revenue": {
       "date": "2026-06",
@@ -5235,11 +5239,11 @@
     "stock_name": "義隆",
     "valuation": {
       "stock_id": "2458",
-      "current_pe": 21.37,
+      "current_pe": 21.25,
       "sector_pe": 20.0,
-      "pe_score": 1.07,
+      "pe_score": 1.06,
       "status": "Fair Value",
-      "price": 179.5
+      "price": 178.5
     },
     "revenue": {
       "date": "2026-06",
@@ -5381,11 +5385,11 @@
     "stock_name": "台苯",
     "valuation": {
       "stock_id": "1310",
-      "current_pe": 39.62,
+      "current_pe": 39.81,
       "sector_pe": 20.0,
-      "pe_score": 1.98,
+      "pe_score": 1.99,
       "status": "High Premium",
-      "price": 10.3
+      "price": 10.4
     },
     "revenue": {
       "date": "2026-06",
@@ -5454,11 +5458,11 @@
     "stock_name": "雄獅",
     "valuation": {
       "stock_id": "2731",
-      "current_pe": 8.34,
+      "current_pe": 8.37,
       "sector_pe": 20.0,
       "pe_score": 0.42,
       "status": "Undervalued",
-      "price": 144.5
+      "price": 145.0
     },
     "revenue": {
       "date": "2026-06",
@@ -5527,11 +5531,11 @@
     "stock_name": "南港",
     "valuation": {
       "stock_id": "2101",
-      "current_pe": 33.86,
+      "current_pe": 34.0,
       "sector_pe": 20.0,
-      "pe_score": 1.69,
+      "pe_score": 1.7,
       "status": "High Premium",
-      "price": 34.2
+      "price": 34.0
     },
     "revenue": {
       "date": "2026-06",
@@ -5673,11 +5677,11 @@
     "stock_name": "富鼎",
     "valuation": {
       "stock_id": "8261",
-      "current_pe": 52.75,
+      "current_pe": 51.47,
       "sector_pe": 20.0,
-      "pe_score": 2.64,
+      "pe_score": 2.57,
       "status": "High Premium",
-      "price": 307.0
+      "price": 298.5
     },
     "revenue": {
       "date": "2026-06",
@@ -5746,11 +5750,11 @@
     "stock_name": "台灣虎航",
     "valuation": {
       "stock_id": "6757",
-      "current_pe": 10.69,
+      "current_pe": 10.84,
       "sector_pe": 20.0,
-      "pe_score": 0.53,
+      "pe_score": 0.54,
       "status": "Undervalued",
-      "price": 57.3
+      "price": 58.1
     },
     "revenue": {
       "date": "2026-06",
@@ -5819,11 +5823,11 @@
     "stock_name": "聯合再生",
     "valuation": {
       "stock_id": "3576",
-      "current_pe": 13.46,
+      "current_pe": 13.81,
       "sector_pe": 20.0,
-      "pe_score": 0.67,
+      "pe_score": 0.69,
       "status": "Undervalued",
-      "price": 17.5
+      "price": 18.0
     },
     "revenue": {
       "date": "2026-06",
@@ -5892,11 +5896,11 @@
     "stock_name": "新唐",
     "valuation": {
       "stock_id": "4919",
-      "current_pe": 63.67,
+      "current_pe": 64.47,
       "sector_pe": 20.0,
-      "pe_score": 3.18,
+      "pe_score": 3.22,
       "status": "High Premium",
-      "price": 159.5
+      "price": 161.5
     },
     "revenue": {
       "date": "2026-06",
@@ -6038,11 +6042,11 @@
     "stock_name": "儒鴻",
     "valuation": {
       "stock_id": "1476",
-      "current_pe": 17.11,
+      "current_pe": 16.45,
       "sector_pe": 20.0,
-      "pe_score": 0.86,
+      "pe_score": 0.82,
       "status": "Fair Value",
-      "price": 343.5
+      "price": 330.5
     },
     "revenue": {
       "date": "2026-06",
@@ -6330,11 +6334,11 @@
     "stock_name": "正隆",
     "valuation": {
       "stock_id": "1904",
-      "current_pe": 30.14,
+      "current_pe": 30.07,
       "sector_pe": 20.0,
-      "pe_score": 1.51,
+      "pe_score": 1.5,
       "status": "High Premium",
-      "price": 22.3
+      "price": 22.2
     },
     "revenue": {
       "date": "2026-06",
@@ -6403,11 +6407,11 @@
     "stock_name": "瑞軒",
     "valuation": {
       "stock_id": "2489",
-      "current_pe": 29.75,
+      "current_pe": 29.88,
       "sector_pe": 20.0,
       "pe_score": 1.49,
       "status": "High Premium",
-      "price": 36.0
+      "price": 36.2
     },
     "revenue": {
       "date": "2026-06",
@@ -6695,11 +6699,11 @@
     "stock_name": "聯成",
     "valuation": {
       "stock_id": "1313",
-      "current_pe": -12.81,
+      "current_pe": -12.76,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 12.3
+      "price": 12.2
     },
     "revenue": {
       "date": "2026-06",
@@ -6768,11 +6772,11 @@
     "stock_name": "十銓",
     "valuation": {
       "stock_id": "4967",
-      "current_pe": 17.35,
+      "current_pe": 17.79,
       "sector_pe": 20.0,
-      "pe_score": 0.87,
+      "pe_score": 0.89,
       "status": "Fair Value",
-      "price": 224.5
+      "price": 230.0
     },
     "revenue": {
       "date": "2026-06",
@@ -6841,11 +6845,11 @@
     "stock_name": "中纖",
     "valuation": {
       "stock_id": "1718",
-      "current_pe": 154.44,
+      "current_pe": 158.89,
       "sector_pe": 20.0,
-      "pe_score": 7.72,
+      "pe_score": 7.94,
       "status": "High Premium",
-      "price": 13.9
+      "price": 14.3
     },
     "revenue": {
       "date": "2026-06",
@@ -6914,11 +6918,11 @@
     "stock_name": "亞德客-KY",
     "valuation": {
       "stock_id": "1590",
-      "current_pe": 30.73,
+      "current_pe": 31.0,
       "sector_pe": 20.0,
-      "pe_score": 1.54,
+      "pe_score": 1.55,
       "status": "High Premium",
-      "price": 1290.0
+      "price": 1300.0
     },
     "revenue": {
       "date": "N/A",
@@ -6938,11 +6942,11 @@
     "stock_name": "台塑化",
     "valuation": {
       "stock_id": "6505",
-      "current_pe": 63.65,
+      "current_pe": 67.6,
       "sector_pe": 20.0,
-      "pe_score": 3.18,
+      "pe_score": 3.38,
       "status": "High Premium",
-      "price": 66.2
+      "price": 70.3
     },
     "revenue": {
       "date": "2026-06",
@@ -7015,7 +7019,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 41.5
+      "price": 41.6
     },
     "revenue": {
       "date": "2026-06",
@@ -7084,11 +7088,11 @@
     "stock_name": "台勝科",
     "valuation": {
       "stock_id": "3532",
-      "current_pe": 322.78,
+      "current_pe": 302.31,
       "sector_pe": 20.0,
-      "pe_score": 16.14,
+      "pe_score": 15.12,
       "status": "High Premium",
-      "price": 510.0
+      "price": 523.0
     },
     "revenue": {
       "date": "2026-06",
@@ -7445,7 +7449,7 @@
     "stock_name": "興能高",
     "valuation": {
       "stock_id": "6558",
-      "current_pe": 30.47,
+      "current_pe": 30.42,
       "sector_pe": 20.0,
       "pe_score": 1.52,
       "status": "High Premium",
@@ -7518,11 +7522,11 @@
     "stock_name": "和潤企業",
     "valuation": {
       "stock_id": "6592",
-      "current_pe": 13.02,
+      "current_pe": 13.01,
       "sector_pe": 20.0,
       "pe_score": 0.65,
       "status": "Undervalued",
-      "price": 59.5
+      "price": 59.6
     },
     "revenue": {
       "date": "2026-06",
@@ -7664,7 +7668,7 @@
     "stock_name": "榮成",
     "valuation": {
       "stock_id": "1909",
-      "current_pe": -34.0,
+      "current_pe": -34.17,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
@@ -7737,11 +7741,11 @@
     "stock_name": "櫻花",
     "valuation": {
       "stock_id": "9911",
-      "current_pe": 13.41,
+      "current_pe": 13.39,
       "sector_pe": 20.0,
       "pe_score": 0.67,
       "status": "Undervalued",
-      "price": 83.8
+      "price": 83.7
     },
     "revenue": {
       "date": "2026-06",
@@ -7883,11 +7887,11 @@
     "stock_name": "凌航",
     "valuation": {
       "stock_id": "3135",
-      "current_pe": 25.33,
+      "current_pe": 26.31,
       "sector_pe": 20.0,
-      "pe_score": 1.27,
+      "pe_score": 1.32,
       "status": "High Premium",
-      "price": 155.0
+      "price": 161.0
     },
     "revenue": {
       "date": "2026-06",
@@ -8248,11 +8252,11 @@
     "stock_name": "美利達",
     "valuation": {
       "stock_id": "9914",
-      "current_pe": 19.02,
+      "current_pe": 19.12,
       "sector_pe": 20.0,
-      "pe_score": 0.95,
+      "pe_score": 0.96,
       "status": "Fair Value",
-      "price": 76.1
+      "price": 76.5
     },
     "revenue": {
       "date": "2026-06",
@@ -8321,11 +8325,11 @@
     "stock_name": "高雄銀",
     "valuation": {
       "stock_id": "2836",
-      "current_pe": 18.73,
+      "current_pe": 18.66,
       "sector_pe": 20.0,
-      "pe_score": 0.94,
+      "pe_score": 0.93,
       "status": "Fair Value",
-      "price": 12.6
+      "price": 12.5
     },
     "revenue": {
       "date": "2026-06",
@@ -8467,11 +8471,11 @@
     "stock_name": "矽力*-KY",
     "valuation": {
       "stock_id": "6415",
-      "current_pe": 78.46,
+      "current_pe": 79.9,
       "sector_pe": 20.0,
-      "pe_score": 3.92,
+      "pe_score": 4.0,
       "status": "High Premium",
-      "price": 493.5
+      "price": 501.0
     },
     "revenue": {
       "date": "N/A",
@@ -8491,11 +8495,11 @@
     "stock_name": "凌陽",
     "valuation": {
       "stock_id": "2401",
-      "current_pe": 15.52,
+      "current_pe": 15.12,
       "sector_pe": 20.0,
-      "pe_score": 0.78,
+      "pe_score": 0.76,
       "status": "Undervalued",
-      "price": 31.2
+      "price": 30.4
     },
     "revenue": {
       "date": "2026-06",
@@ -8710,11 +8714,11 @@
     "stock_name": "汎銓",
     "valuation": {
       "stock_id": "6830",
-      "current_pe": 25.87,
+      "current_pe": 26.48,
       "sector_pe": 20.0,
-      "pe_score": 1.29,
+      "pe_score": 1.32,
       "status": "High Premium",
-      "price": 379.0
+      "price": 388.0
     },
     "revenue": {
       "date": "2026-06",
@@ -8856,11 +8860,11 @@
     "stock_name": "同欣電",
     "valuation": {
       "stock_id": "6271",
-      "current_pe": 29.67,
+      "current_pe": 34.0,
       "sector_pe": 20.0,
-      "pe_score": 1.48,
+      "pe_score": 1.7,
       "status": "High Premium",
-      "price": 225.5
+      "price": 228.5
     },
     "revenue": {
       "date": "2026-06",
@@ -8933,7 +8937,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.5,
       "status": "Undervalued",
-      "price": 10.8
+      "price": 10.9
     },
     "revenue": {
       "date": "2026-06",
@@ -9002,11 +9006,11 @@
     "stock_name": "三芳",
     "valuation": {
       "stock_id": "1307",
-      "current_pe": 11.44,
+      "current_pe": 11.36,
       "sector_pe": 20.0,
       "pe_score": 0.57,
       "status": "Undervalued",
-      "price": 32.5
+      "price": 32.2
     },
     "revenue": {
       "date": "2026-06",
@@ -9221,11 +9225,11 @@
     "stock_name": "日勝生",
     "valuation": {
       "stock_id": "2547",
-      "current_pe": 3.93,
+      "current_pe": 3.89,
       "sector_pe": 20.0,
-      "pe_score": 0.2,
+      "pe_score": 0.19,
       "status": "Undervalued",
-      "price": 11.2
+      "price": 11.1
     },
     "revenue": {
       "date": "2026-06",
@@ -9367,11 +9371,11 @@
     "stock_name": "睿生光電",
     "valuation": {
       "stock_id": "6861",
-      "current_pe": 62.53,
+      "current_pe": 62.4,
       "sector_pe": 20.0,
-      "pe_score": 3.13,
+      "pe_score": 3.12,
       "status": "High Premium",
-      "price": 237.0
+      "price": 236.5
     },
     "revenue": {
       "date": "2026-06",
@@ -9440,11 +9444,11 @@
     "stock_name": "宏全",
     "valuation": {
       "stock_id": "9939",
-      "current_pe": 13.77,
+      "current_pe": 13.71,
       "sector_pe": 20.0,
       "pe_score": 0.69,
       "status": "Undervalued",
-      "price": 125.0
+      "price": 124.5
     },
     "revenue": {
       "date": "2026-06",
@@ -9586,11 +9590,11 @@
     "stock_name": "富世達",
     "valuation": {
       "stock_id": "6805",
-      "current_pe": 42.55,
+      "current_pe": 44.65,
       "sector_pe": 20.0,
-      "pe_score": 2.13,
+      "pe_score": 2.23,
       "status": "High Premium",
-      "price": 1320.0
+      "price": 1385.0
     },
     "revenue": {
       "date": "2026-06",
@@ -9659,11 +9663,11 @@
     "stock_name": "惠特",
     "valuation": {
       "stock_id": "6706",
-      "current_pe": 20.97,
+      "current_pe": 21.21,
       "sector_pe": 20.0,
-      "pe_score": 1.05,
+      "pe_score": 1.06,
       "status": "Fair Value",
-      "price": 126.0
+      "price": 127.5
     },
     "revenue": {
       "date": "2026-06",
@@ -9732,11 +9736,11 @@
     "stock_name": "益航",
     "valuation": {
       "stock_id": "2601",
-      "current_pe": 14.12,
+      "current_pe": 13.61,
       "sector_pe": 20.0,
-      "pe_score": 0.71,
+      "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 7.2
+      "price": 6.9
     },
     "revenue": {
       "date": "2026-06",
@@ -10024,11 +10028,11 @@
     "stock_name": "永豐餘",
     "valuation": {
       "stock_id": "1907",
-      "current_pe": 23.24,
+      "current_pe": 23.87,
       "sector_pe": 20.0,
-      "pe_score": 1.16,
+      "pe_score": 1.19,
       "status": "Fair Value",
-      "price": 27.6
+      "price": 28.4
     },
     "revenue": {
       "date": "2026-06",
@@ -10101,7 +10105,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 41.9
+      "price": 42.3
     },
     "revenue": {
       "date": "2026-06",
@@ -10170,9 +10174,9 @@
     "stock_name": "建大",
     "valuation": {
       "stock_id": "2106",
-      "current_pe": 134.62,
+      "current_pe": 135.0,
       "sector_pe": 20.0,
-      "pe_score": 6.73,
+      "pe_score": 6.75,
       "status": "High Premium",
       "price": 17.5
     },
@@ -10389,7 +10393,7 @@
     "stock_name": "華紙",
     "valuation": {
       "stock_id": "1905",
-      "current_pe": -245.83,
+      "current_pe": -246.67,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
@@ -10462,11 +10466,11 @@
     "stock_name": "憶聲",
     "valuation": {
       "stock_id": "3024",
-      "current_pe": 46.67,
+      "current_pe": 49.07,
       "sector_pe": 20.0,
-      "pe_score": 2.33,
+      "pe_score": 2.45,
       "status": "High Premium",
-      "price": 12.6
+      "price": 13.2
     },
     "revenue": {
       "date": "2026-06",
@@ -10535,11 +10539,11 @@
     "stock_name": "凌巨",
     "valuation": {
       "stock_id": "8105",
-      "current_pe": 83.64,
+      "current_pe": 81.82,
       "sector_pe": 20.0,
-      "pe_score": 4.18,
+      "pe_score": 4.09,
       "status": "High Premium",
-      "price": 18.4
+      "price": 18.0
     },
     "revenue": {
       "date": "2026-06",
@@ -10608,11 +10612,11 @@
     "stock_name": "佳必琪",
     "valuation": {
       "stock_id": "6197",
-      "current_pe": 38.75,
+      "current_pe": 39.35,
       "sector_pe": 20.0,
-      "pe_score": 1.94,
+      "pe_score": 1.97,
       "status": "High Premium",
-      "price": 322.0
+      "price": 327.0
     },
     "revenue": {
       "date": "2026-06",
@@ -10827,11 +10831,11 @@
     "stock_name": "富華新",
     "valuation": {
       "stock_id": "3056",
-      "current_pe": 13.55,
+      "current_pe": 13.6,
       "sector_pe": 20.0,
       "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 14.5
+      "price": 14.6
     },
     "revenue": {
       "date": "2026-06",
@@ -10900,11 +10904,11 @@
     "stock_name": "中釉",
     "valuation": {
       "stock_id": "1809",
-      "current_pe": 243.16,
+      "current_pe": 240.53,
       "sector_pe": 20.0,
-      "pe_score": 12.16,
+      "pe_score": 12.03,
       "status": "High Premium",
-      "price": 46.2
+      "price": 45.7
     },
     "revenue": {
       "date": "2026-06",
@@ -10973,11 +10977,11 @@
     "stock_name": "裕融",
     "valuation": {
       "stock_id": "9941",
-      "current_pe": 11.07,
+      "current_pe": 11.22,
       "sector_pe": 20.0,
-      "pe_score": 0.55,
+      "pe_score": 0.56,
       "status": "Undervalued",
-      "price": 81.0
+      "price": 82.1
     },
     "revenue": {
       "date": "2026-06",
@@ -11046,11 +11050,11 @@
     "stock_name": "南僑",
     "valuation": {
       "stock_id": "1702",
-      "current_pe": 29.33,
+      "current_pe": 29.82,
       "sector_pe": 20.0,
-      "pe_score": 1.47,
+      "pe_score": 1.49,
       "status": "High Premium",
-      "price": 32.9
+      "price": 33.4
     },
     "revenue": {
       "date": "2026-06",
@@ -11192,11 +11196,11 @@
     "stock_name": "巨大",
     "valuation": {
       "stock_id": "9921",
-      "current_pe": 44.18,
+      "current_pe": 43.75,
       "sector_pe": 20.0,
-      "pe_score": 2.21,
+      "pe_score": 2.19,
       "status": "High Premium",
-      "price": 81.3
+      "price": 80.5
     },
     "revenue": {
       "date": "2026-06",
@@ -11338,11 +11342,11 @@
     "stock_name": "和碩",
     "valuation": {
       "stock_id": "4938",
-      "current_pe": 15.37,
+      "current_pe": 15.41,
       "sector_pe": 20.0,
       "pe_score": 0.77,
       "status": "Undervalued",
-      "price": 82.1
+      "price": 82.3
     },
     "revenue": {
       "date": "2026-06",
@@ -11411,11 +11415,11 @@
     "stock_name": "美食-KY",
     "valuation": {
       "stock_id": "2723",
-      "current_pe": 10.62,
+      "current_pe": 10.54,
       "sector_pe": 20.0,
       "pe_score": 0.53,
       "status": "Undervalued",
-      "price": 65.0
+      "price": 64.5
     },
     "revenue": {
       "date": "N/A",
@@ -11459,11 +11463,11 @@
     "stock_name": "皇普",
     "valuation": {
       "stock_id": "2528",
-      "current_pe": 6.25,
+      "current_pe": 6.28,
       "sector_pe": 20.0,
       "pe_score": 0.31,
       "status": "Undervalued",
-      "price": 21.8
+      "price": 21.9
     },
     "revenue": {
       "date": "2026-06",
@@ -11751,11 +11755,11 @@
     "stock_name": "新美齊",
     "valuation": {
       "stock_id": "2442",
-      "current_pe": 4.46,
+      "current_pe": 4.5,
       "sector_pe": 20.0,
       "pe_score": 0.22,
       "status": "Undervalued",
-      "price": 19.1
+      "price": 19.2
     },
     "revenue": {
       "date": "2026-06",
@@ -11897,11 +11901,11 @@
     "stock_name": "聯友金屬-創",
     "valuation": {
       "stock_id": "7610",
-      "current_pe": 556.06,
+      "current_pe": 564.07,
       "sector_pe": 20.0,
-      "pe_score": 27.8,
+      "pe_score": 28.2,
       "status": "High Premium",
-      "price": 2430.0
+      "price": 2465.0
     },
     "revenue": {
       "date": "2026-06",
@@ -11970,11 +11974,11 @@
     "stock_name": "元大寶滬深",
     "valuation": {
       "stock_id": "0061",
-      "current_pe": 20.47,
+      "current_pe": 20.75,
       "sector_pe": 20.0,
-      "pe_score": 1.02,
+      "pe_score": 1.04,
       "status": "Fair Value",
-      "price": 25.0
+      "price": 25.3
     },
     "revenue": {
       "date": "N/A",
@@ -12071,7 +12075,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 24.4
+      "price": 25.1
     },
     "revenue": {
       "date": "2026-06",
@@ -12140,7 +12144,7 @@
     "stock_name": "愛之味",
     "valuation": {
       "stock_id": "1217",
-      "current_pe": 23.57,
+      "current_pe": 23.69,
       "sector_pe": 20.0,
       "pe_score": 1.18,
       "status": "Fair Value",
@@ -12286,11 +12290,11 @@
     "stock_name": "華碩",
     "valuation": {
       "stock_id": "2357",
-      "current_pe": 11.82,
+      "current_pe": 12.01,
       "sector_pe": 20.0,
-      "pe_score": 0.59,
+      "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 703.0
+      "price": 715.0
     },
     "revenue": {
       "date": "2026-06",
@@ -12505,11 +12509,11 @@
     "stock_name": "東和",
     "valuation": {
       "stock_id": "1414",
-      "current_pe": 98.68,
+      "current_pe": 97.89,
       "sector_pe": 20.0,
-      "pe_score": 4.93,
+      "pe_score": 4.89,
       "status": "High Premium",
-      "price": 18.8
+      "price": 18.6
     },
     "revenue": {
       "date": "2026-06",
@@ -12797,11 +12801,11 @@
     "stock_name": "智伸科",
     "valuation": {
       "stock_id": "4551",
-      "current_pe": 34.49,
+      "current_pe": 33.17,
       "sector_pe": 20.0,
-      "pe_score": 1.72,
+      "pe_score": 1.66,
       "status": "High Premium",
-      "price": 208.0
+      "price": 200.0
     },
     "revenue": {
       "date": "2026-06",
@@ -12870,11 +12874,11 @@
     "stock_name": "榮運",
     "valuation": {
       "stock_id": "2607",
-      "current_pe": 12.99,
+      "current_pe": 13.04,
       "sector_pe": 20.0,
       "pe_score": 0.65,
       "status": "Undervalued",
-      "price": 46.1
+      "price": 46.3
     },
     "revenue": {
       "date": "2026-06",
@@ -13016,7 +13020,7 @@
     "stock_name": "太子",
     "valuation": {
       "stock_id": "2511",
-      "current_pe": 25.52,
+      "current_pe": 25.55,
       "sector_pe": 20.0,
       "pe_score": 1.28,
       "status": "High Premium",
@@ -13113,11 +13117,11 @@
     "stock_name": "雲品",
     "valuation": {
       "stock_id": "2748",
-      "current_pe": 18.16,
+      "current_pe": 18.29,
       "sector_pe": 20.0,
       "pe_score": 0.91,
       "status": "Fair Value",
-      "price": 39.4
+      "price": 39.7
     },
     "revenue": {
       "date": "2026-06",
@@ -13186,11 +13190,11 @@
     "stock_name": "昶昕",
     "valuation": {
       "stock_id": "8438",
-      "current_pe": 43.44,
+      "current_pe": 43.06,
       "sector_pe": 20.0,
-      "pe_score": 2.17,
+      "pe_score": 2.15,
       "status": "High Premium",
-      "price": 90.8
+      "price": 90.0
     },
     "revenue": {
       "date": "2026-06",
@@ -13405,11 +13409,11 @@
     "stock_name": "玉晶光",
     "valuation": {
       "stock_id": "3406",
-      "current_pe": 17.92,
+      "current_pe": 17.16,
       "sector_pe": 20.0,
-      "pe_score": 0.9,
+      "pe_score": 0.86,
       "status": "Fair Value",
-      "price": 587.0
+      "price": 562.0
     },
     "revenue": {
       "date": "2026-06",
@@ -13478,11 +13482,11 @@
     "stock_name": "緯穎",
     "valuation": {
       "stock_id": "6669",
-      "current_pe": 18.48,
+      "current_pe": 18.94,
       "sector_pe": 20.0,
-      "pe_score": 0.92,
+      "pe_score": 0.95,
       "status": "Fair Value",
-      "price": 4905.0
+      "price": 5025.0
     },
     "revenue": {
       "date": "2026-06",
@@ -13551,11 +13555,11 @@
     "stock_name": "和益",
     "valuation": {
       "stock_id": "1709",
-      "current_pe": 22.8,
+      "current_pe": 21.34,
       "sector_pe": 20.0,
-      "pe_score": 1.14,
+      "pe_score": 1.07,
       "status": "Fair Value",
-      "price": 28.1
+      "price": 26.2
     },
     "revenue": {
       "date": "2026-06",
@@ -13624,9 +13628,9 @@
     "stock_name": "櫻花建",
     "valuation": {
       "stock_id": "2539",
-      "current_pe": 11.72,
+      "current_pe": 11.69,
       "sector_pe": 20.0,
-      "pe_score": 0.59,
+      "pe_score": 0.58,
       "status": "Undervalued",
       "price": 40.5
     },
@@ -13774,7 +13778,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 174.5
+      "price": 177.0
     },
     "revenue": {
       "date": "2026-06",
@@ -13843,11 +13847,11 @@
     "stock_name": "迎廣",
     "valuation": {
       "stock_id": "6117",
-      "current_pe": 18.62,
+      "current_pe": 18.79,
       "sector_pe": 20.0,
-      "pe_score": 0.93,
+      "pe_score": 0.94,
       "status": "Fair Value",
-      "price": 67.6
+      "price": 68.2
     },
     "revenue": {
       "date": "2026-06",
@@ -13916,11 +13920,11 @@
     "stock_name": "富邦媒",
     "valuation": {
       "stock_id": "8454",
-      "current_pe": 23.25,
+      "current_pe": 23.6,
       "sector_pe": 20.0,
-      "pe_score": 1.16,
+      "pe_score": 1.18,
       "status": "Fair Value",
-      "price": 262.5
+      "price": 266.5
     },
     "revenue": {
       "date": "2026-06",
@@ -14086,11 +14090,11 @@
     "stock_name": "佰鴻",
     "valuation": {
       "stock_id": "3031",
-      "current_pe": 26.3,
+      "current_pe": 26.2,
       "sector_pe": 20.0,
       "pe_score": 1.31,
       "status": "High Premium",
-      "price": 28.4
+      "price": 28.3
     },
     "revenue": {
       "date": "2026-06",
@@ -14159,11 +14163,11 @@
     "stock_name": "國建",
     "valuation": {
       "stock_id": "2501",
-      "current_pe": 7.63,
+      "current_pe": 7.72,
       "sector_pe": 20.0,
-      "pe_score": 0.38,
+      "pe_score": 0.39,
       "status": "Undervalued",
-      "price": 21.6
+      "price": 21.9
     },
     "revenue": {
       "date": "2026-06",
@@ -14232,9 +14236,9 @@
     "stock_name": "允強",
     "valuation": {
       "stock_id": "2034",
-      "current_pe": 102.5,
+      "current_pe": 102.75,
       "sector_pe": 20.0,
-      "pe_score": 5.12,
+      "pe_score": 5.14,
       "status": "High Premium",
       "price": 20.5
     },
@@ -14378,11 +14382,11 @@
     "stock_name": "東陽",
     "valuation": {
       "stock_id": "1319",
-      "current_pe": 11.73,
+      "current_pe": 11.8,
       "sector_pe": 20.0,
       "pe_score": 0.59,
       "status": "Undervalued",
-      "price": 75.4
+      "price": 75.9
     },
     "revenue": {
       "date": "2026-06",
@@ -14524,11 +14528,11 @@
     "stock_name": "宇隆",
     "valuation": {
       "stock_id": "2233",
-      "current_pe": 33.93,
+      "current_pe": 34.45,
       "sector_pe": 20.0,
-      "pe_score": 1.7,
+      "pe_score": 1.72,
       "status": "High Premium",
-      "price": 227.0
+      "price": 230.5
     },
     "revenue": {
       "date": "2026-06",
@@ -14670,7 +14674,7 @@
     "stock_name": "六福",
     "valuation": {
       "stock_id": "2705",
-      "current_pe": 18.62,
+      "current_pe": 18.68,
       "sector_pe": 20.0,
       "pe_score": 0.93,
       "status": "Fair Value",
@@ -14820,7 +14824,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 50.7
+      "price": 50.3
     },
     "revenue": {
       "date": "2026-06",
@@ -14962,11 +14966,11 @@
     "stock_name": "巧新",
     "valuation": {
       "stock_id": "1563",
-      "current_pe": 45.42,
+      "current_pe": 43.94,
       "sector_pe": 20.0,
-      "pe_score": 2.27,
+      "pe_score": 2.2,
       "status": "High Premium",
-      "price": 64.5
+      "price": 62.4
     },
     "revenue": {
       "date": "2026-06",
@@ -15035,11 +15039,11 @@
     "stock_name": "力麗",
     "valuation": {
       "stock_id": "1444",
-      "current_pe": 28.82,
+      "current_pe": 30.82,
       "sector_pe": 20.0,
-      "pe_score": 1.44,
+      "pe_score": 1.54,
       "status": "High Premium",
-      "price": 8.1
+      "price": 8.6
     },
     "revenue": {
       "date": "2026-06",
@@ -15254,11 +15258,11 @@
     "stock_name": "聯上發",
     "valuation": {
       "stock_id": "2537",
-      "current_pe": 72.67,
+      "current_pe": 73.33,
       "sector_pe": 20.0,
-      "pe_score": 3.63,
+      "pe_score": 3.67,
       "status": "High Premium",
-      "price": 10.9
+      "price": 11.0
     },
     "revenue": {
       "date": "2026-06",
@@ -15327,11 +15331,11 @@
     "stock_name": "元大MSCI金融",
     "valuation": {
       "stock_id": "0055",
-      "current_pe": 16.93,
+      "current_pe": 17.0,
       "sector_pe": 20.0,
       "pe_score": 0.85,
       "status": "Fair Value",
-      "price": 41.9
+      "price": 42.1
     },
     "revenue": {
       "date": "N/A",
@@ -15497,11 +15501,11 @@
     "stock_name": "吉祥全",
     "valuation": {
       "stock_id": "2491",
-      "current_pe": 23.57,
+      "current_pe": 23.5,
       "sector_pe": 20.0,
-      "pe_score": 1.18,
+      "pe_score": 1.17,
       "status": "Fair Value",
-      "price": 33.7
+      "price": 33.6
     },
     "revenue": {
       "date": "2026-06",
@@ -15570,11 +15574,11 @@
     "stock_name": "台灣大",
     "valuation": {
       "stock_id": "3045",
-      "current_pe": 22.52,
+      "current_pe": 22.42,
       "sector_pe": 20.0,
-      "pe_score": 1.13,
+      "pe_score": 1.12,
       "status": "Fair Value",
-      "price": 109.0
+      "price": 108.5
     },
     "revenue": {
       "date": "2026-06",
@@ -15643,11 +15647,11 @@
     "stock_name": "百容",
     "valuation": {
       "stock_id": "2483",
-      "current_pe": 91.83,
+      "current_pe": 86.33,
       "sector_pe": 20.0,
-      "pe_score": 4.59,
+      "pe_score": 4.32,
       "status": "High Premium",
-      "price": 55.1
+      "price": 51.8
     },
     "revenue": {
       "date": "2026-06",
@@ -15959,11 +15963,11 @@
     "stock_name": "迅杰",
     "valuation": {
       "stock_id": "6243",
-      "current_pe": -24.78,
+      "current_pe": -27.25,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 39.6
+      "price": 43.6
     },
     "revenue": {
       "date": "2026-06",
@@ -16105,11 +16109,11 @@
     "stock_name": "宏遠",
     "valuation": {
       "stock_id": "1460",
-      "current_pe": 10.77,
+      "current_pe": 10.92,
       "sector_pe": 20.0,
-      "pe_score": 0.54,
+      "pe_score": 0.55,
       "status": "Undervalued",
-      "price": 7.0
+      "price": 7.1
     },
     "revenue": {
       "date": "2026-06",
@@ -16324,11 +16328,11 @@
     "stock_name": "寒舍",
     "valuation": {
       "stock_id": "2739",
-      "current_pe": 14.57,
+      "current_pe": 14.53,
       "sector_pe": 20.0,
       "pe_score": 0.73,
       "status": "Undervalued",
-      "price": 34.2
+      "price": 34.3
     },
     "revenue": {
       "date": "2026-06",
@@ -16543,11 +16547,11 @@
     "stock_name": "興勤",
     "valuation": {
       "stock_id": "2428",
-      "current_pe": 24.87,
+      "current_pe": 25.17,
       "sector_pe": 20.0,
-      "pe_score": 1.24,
+      "pe_score": 1.26,
       "status": "High Premium",
-      "price": 291.0
+      "price": 294.5
     },
     "revenue": {
       "date": "2026-06",
@@ -16762,11 +16766,11 @@
     "stock_name": "海悅",
     "valuation": {
       "stock_id": "2348",
-      "current_pe": 11.11,
+      "current_pe": 11.18,
       "sector_pe": 20.0,
       "pe_score": 0.56,
       "status": "Undervalued",
-      "price": 76.0
+      "price": 76.5
     },
     "revenue": {
       "date": "2026-06",
@@ -16908,11 +16912,11 @@
     "stock_name": "宏旭-KY",
     "valuation": {
       "stock_id": "2243",
-      "current_pe": 41.97,
+      "current_pe": 42.62,
       "sector_pe": 20.0,
-      "pe_score": 2.1,
+      "pe_score": 2.13,
       "status": "High Premium",
-      "price": 51.2
+      "price": 52.0
     },
     "revenue": {
       "date": "N/A",
@@ -16932,11 +16936,11 @@
     "stock_name": "信義",
     "valuation": {
       "stock_id": "9940",
-      "current_pe": 69.64,
+      "current_pe": 70.18,
       "sector_pe": 20.0,
-      "pe_score": 3.48,
+      "pe_score": 3.51,
       "status": "High Premium",
-      "price": 19.5
+      "price": 19.6
     },
     "revenue": {
       "date": "2026-06",
@@ -17102,11 +17106,11 @@
     "stock_name": "輝創",
     "valuation": {
       "stock_id": "6722",
-      "current_pe": 11.7,
+      "current_pe": 11.57,
       "sector_pe": 20.0,
       "pe_score": 0.58,
       "status": "Undervalued",
-      "price": 33.8
+      "price": 33.5
     },
     "revenue": {
       "date": "2026-06",
@@ -17248,11 +17252,11 @@
     "stock_name": "鴻勁",
     "valuation": {
       "stock_id": "7769",
-      "current_pe": 84.4,
+      "current_pe": 90.78,
       "sector_pe": 20.0,
-      "pe_score": 4.22,
+      "pe_score": 4.54,
       "status": "High Premium",
-      "price": 6395.0
+      "price": 6850.0
     },
     "revenue": {
       "date": "2026-06",
@@ -17394,11 +17398,11 @@
     "stock_name": "中碳",
     "valuation": {
       "stock_id": "1723",
-      "current_pe": 32.23,
+      "current_pe": 32.08,
       "sector_pe": 20.0,
-      "pe_score": 1.61,
+      "pe_score": 1.6,
       "status": "High Premium",
-      "price": 85.4
+      "price": 85.0
     },
     "revenue": {
       "date": "2026-06",
@@ -17467,11 +17471,11 @@
     "stock_name": "研華",
     "valuation": {
       "stock_id": "2395",
-      "current_pe": 41.3,
+      "current_pe": 41.25,
       "sector_pe": 20.0,
       "pe_score": 2.06,
       "status": "High Premium",
-      "price": 529.0
+      "price": 530.0
     },
     "revenue": {
       "date": "2026-06",
@@ -17540,11 +17544,11 @@
     "stock_name": "嘉雨思-創",
     "valuation": {
       "stock_id": "6921",
-      "current_pe": 187.71,
+      "current_pe": 191.43,
       "sector_pe": 20.0,
-      "pe_score": 9.39,
+      "pe_score": 9.57,
       "status": "High Premium",
-      "price": 65.7
+      "price": 67.0
     },
     "revenue": {
       "date": "2026-06",
@@ -17617,7 +17621,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 20.9
+      "price": 21.5
     },
     "revenue": {
       "date": "2026-06",
@@ -17686,11 +17690,11 @@
     "stock_name": "泰福-KY",
     "valuation": {
       "stock_id": "6541",
-      "current_pe": -10.6,
+      "current_pe": -10.75,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 39.6
+      "price": 40.2
     },
     "revenue": {
       "date": "N/A",
@@ -17783,11 +17787,11 @@
     "stock_name": "晶碩",
     "valuation": {
       "stock_id": "6491",
-      "current_pe": 17.35,
+      "current_pe": 17.5,
       "sector_pe": 20.0,
       "pe_score": 0.87,
       "status": "Fair Value",
-      "price": 357.5
+      "price": 361.0
     },
     "revenue": {
       "date": "2026-06",
@@ -18002,11 +18006,11 @@
     "stock_name": "建碁",
     "valuation": {
       "stock_id": "3046",
-      "current_pe": 13.32,
+      "current_pe": 13.5,
       "sector_pe": 20.0,
-      "pe_score": 0.67,
+      "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 53.3
+      "price": 54.0
     },
     "revenue": {
       "date": "2026-06",
@@ -18245,11 +18249,11 @@
     "stock_name": "永信",
     "valuation": {
       "stock_id": "3705",
-      "current_pe": 16.53,
+      "current_pe": 16.56,
       "sector_pe": 20.0,
       "pe_score": 0.83,
       "status": "Fair Value",
-      "price": 54.7
+      "price": 54.8
     },
     "revenue": {
       "date": "2026-06",
@@ -18391,11 +18395,11 @@
     "stock_name": "麗正",
     "valuation": {
       "stock_id": "2302",
-      "current_pe": 87.24,
+      "current_pe": 87.04,
       "sector_pe": 20.0,
-      "pe_score": 4.36,
+      "pe_score": 4.35,
       "status": "High Premium",
-      "price": 42.8
+      "price": 42.7
     },
     "revenue": {
       "date": "2026-06",
@@ -18488,9 +18492,9 @@
     "stock_name": "冠軍",
     "valuation": {
       "stock_id": "1806",
-      "current_pe": 28.48,
+      "current_pe": 28.72,
       "sector_pe": 20.0,
-      "pe_score": 1.42,
+      "pe_score": 1.44,
       "status": "High Premium",
       "price": 8.3
     },
@@ -18561,11 +18565,11 @@
     "stock_name": "東哥遊艇",
     "valuation": {
       "stock_id": "8478",
-      "current_pe": 11.91,
+      "current_pe": 12.04,
       "sector_pe": 20.0,
       "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 154.5
+      "price": 156.0
     },
     "revenue": {
       "date": "2026-06",
@@ -18634,11 +18638,11 @@
     "stock_name": "鳳凰",
     "valuation": {
       "stock_id": "5706",
-      "current_pe": 13.71,
+      "current_pe": 13.76,
       "sector_pe": 20.0,
       "pe_score": 0.69,
       "status": "Undervalued",
-      "price": 46.4
+      "price": 46.5
     },
     "revenue": {
       "date": "2026-06",
@@ -18780,7 +18784,7 @@
     "stock_name": "得力",
     "valuation": {
       "stock_id": "1464",
-      "current_pe": 30.14,
+      "current_pe": 30.29,
       "sector_pe": 20.0,
       "pe_score": 1.51,
       "status": "High Premium",
@@ -18853,11 +18857,11 @@
     "stock_name": "百和興業-KY",
     "valuation": {
       "stock_id": "8404",
-      "current_pe": 11.8,
+      "current_pe": 11.95,
       "sector_pe": 20.0,
-      "pe_score": 0.59,
+      "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 16.8
+      "price": 16.9
     },
     "revenue": {
       "date": "N/A",
@@ -18950,7 +18954,7 @@
     "stock_name": "南帝",
     "valuation": {
       "stock_id": "2108",
-      "current_pe": 33.98,
+      "current_pe": 34.04,
       "sector_pe": 20.0,
       "pe_score": 1.7,
       "status": "High Premium",
@@ -19242,11 +19246,11 @@
     "stock_name": "三商",
     "valuation": {
       "stock_id": "2905",
-      "current_pe": 21.55,
+      "current_pe": 21.83,
       "sector_pe": 20.0,
-      "pe_score": 1.08,
+      "pe_score": 1.09,
       "status": "Fair Value",
-      "price": 15.3
+      "price": 15.5
     },
     "revenue": {
       "date": "2026-05",
@@ -19457,11 +19461,11 @@
     "stock_name": "八貫",
     "valuation": {
       "stock_id": "1342",
-      "current_pe": 21.02,
+      "current_pe": 20.66,
       "sector_pe": 20.0,
-      "pe_score": 1.05,
+      "pe_score": 1.03,
       "status": "Fair Value",
-      "price": 117.5
+      "price": 115.5
     },
     "revenue": {
       "date": "2026-06",
@@ -19749,11 +19753,11 @@
     "stock_name": "晶華",
     "valuation": {
       "stock_id": "2707",
-      "current_pe": 15.83,
+      "current_pe": 15.69,
       "sector_pe": 20.0,
-      "pe_score": 0.79,
+      "pe_score": 0.78,
       "status": "Undervalued",
-      "price": 180.0
+      "price": 178.5
     },
     "revenue": {
       "date": "2026-06",
@@ -19895,11 +19899,11 @@
     "stock_name": "裕慶-KY",
     "valuation": {
       "stock_id": "6957",
-      "current_pe": 22.62,
+      "current_pe": 22.76,
       "sector_pe": 20.0,
-      "pe_score": 1.13,
+      "pe_score": 1.14,
       "status": "Fair Value",
-      "price": 230.0
+      "price": 231.5
     },
     "revenue": {
       "date": "N/A",
@@ -19992,11 +19996,11 @@
     "stock_name": "凌華",
     "valuation": {
       "stock_id": "6166",
-      "current_pe": 56.62,
+      "current_pe": 55.11,
       "sector_pe": 20.0,
-      "pe_score": 2.83,
+      "pe_score": 2.76,
       "status": "High Premium",
-      "price": 132.5
+      "price": 129.5
     },
     "revenue": {
       "date": "2026-06",
@@ -20138,11 +20142,11 @@
     "stock_name": "成霖",
     "valuation": {
       "stock_id": "9934",
-      "current_pe": 6.41,
+      "current_pe": 6.38,
       "sector_pe": 20.0,
       "pe_score": 0.32,
       "status": "Undervalued",
-      "price": 10.7
+      "price": 10.6
     },
     "revenue": {
       "date": "2026-06",
@@ -20284,11 +20288,11 @@
     "stock_name": "嘉泥",
     "valuation": {
       "stock_id": "1103",
-      "current_pe": 15.95,
+      "current_pe": 16.27,
       "sector_pe": 20.0,
-      "pe_score": 0.8,
-      "status": "Undervalued",
-      "price": 13.4
+      "pe_score": 0.81,
+      "status": "Fair Value",
+      "price": 13.5
     },
     "revenue": {
       "date": "2026-06",
@@ -20357,11 +20361,11 @@
     "stock_name": "大台北",
     "valuation": {
       "stock_id": "9908",
-      "current_pe": 17.38,
+      "current_pe": 16.89,
       "sector_pe": 20.0,
-      "pe_score": 0.87,
+      "pe_score": 0.84,
       "status": "Fair Value",
-      "price": 29.9
+      "price": 29.0
     },
     "revenue": {
       "date": "2026-06",
@@ -20503,11 +20507,11 @@
     "stock_name": "碩天",
     "valuation": {
       "stock_id": "3617",
-      "current_pe": 15.72,
+      "current_pe": 15.69,
       "sector_pe": 20.0,
-      "pe_score": 0.79,
+      "pe_score": 0.78,
       "status": "Undervalued",
-      "price": 226.0
+      "price": 225.5
     },
     "revenue": {
       "date": "2026-06",
@@ -20795,11 +20799,11 @@
     "stock_name": "宏和",
     "valuation": {
       "stock_id": "1446",
-      "current_pe": 8.95,
+      "current_pe": 8.83,
       "sector_pe": 20.0,
-      "pe_score": 0.45,
+      "pe_score": 0.44,
       "status": "Undervalued",
-      "price": 14.5
+      "price": 14.3
     },
     "revenue": {
       "date": "2026-06",
@@ -20941,11 +20945,11 @@
     "stock_name": "聯傑",
     "valuation": {
       "stock_id": "3094",
-      "current_pe": 153.33,
+      "current_pe": 162.92,
       "sector_pe": 20.0,
-      "pe_score": 7.67,
+      "pe_score": 8.15,
       "status": "High Premium",
-      "price": 36.8
+      "price": 39.1
     },
     "revenue": {
       "date": "2026-06",
@@ -21087,11 +21091,11 @@
     "stock_name": "錼創科技-KY創",
     "valuation": {
       "stock_id": "6854",
-      "current_pe": 65.34,
+      "current_pe": 64.11,
       "sector_pe": 20.0,
-      "pe_score": 3.27,
+      "pe_score": 3.21,
       "status": "High Premium",
-      "price": 106.5
+      "price": 104.5
     },
     "revenue": {
       "date": "N/A",
@@ -21111,11 +21115,11 @@
     "stock_name": "為升",
     "valuation": {
       "stock_id": "2231",
-      "current_pe": 18.2,
+      "current_pe": 17.97,
       "sector_pe": 20.0,
-      "pe_score": 0.91,
+      "pe_score": 0.9,
       "status": "Fair Value",
-      "price": 116.5
+      "price": 115.0
     },
     "revenue": {
       "date": "2026-06",
@@ -21188,7 +21192,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 39.3
+      "price": 39.8
     },
     "revenue": {
       "date": "2026-06",
@@ -21403,11 +21407,11 @@
     "stock_name": "盛達",
     "valuation": {
       "stock_id": "3027",
-      "current_pe": 8.57,
+      "current_pe": 8.66,
       "sector_pe": 20.0,
       "pe_score": 0.43,
       "status": "Undervalued",
-      "price": 19.2
+      "price": 19.4
     },
     "revenue": {
       "date": "2026-06",
@@ -21476,11 +21480,11 @@
     "stock_name": "億泰",
     "valuation": {
       "stock_id": "1616",
-      "current_pe": 13.29,
+      "current_pe": 13.19,
       "sector_pe": 20.0,
       "pe_score": 0.66,
       "status": "Undervalued",
-      "price": 20.6
+      "price": 20.5
     },
     "revenue": {
       "date": "2026-06",
@@ -21723,7 +21727,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 22.9
+      "price": 23.0
     },
     "revenue": {
       "date": "2026-06",
@@ -21792,11 +21796,11 @@
     "stock_name": "漢平",
     "valuation": {
       "stock_id": "2488",
-      "current_pe": 10.87,
+      "current_pe": 11.0,
       "sector_pe": 20.0,
-      "pe_score": 0.54,
+      "pe_score": 0.55,
       "status": "Undervalued",
-      "price": 48.8
+      "price": 49.0
     },
     "revenue": {
       "date": "2026-06",
@@ -22084,11 +22088,11 @@
     "stock_name": "瑞智",
     "valuation": {
       "stock_id": "4532",
-      "current_pe": 12.45,
+      "current_pe": 12.48,
       "sector_pe": 20.0,
       "pe_score": 0.62,
       "status": "Undervalued",
-      "price": 25.4
+      "price": 25.5
     },
     "revenue": {
       "date": "2026-06",
@@ -22230,11 +22234,11 @@
     "stock_name": "京城",
     "valuation": {
       "stock_id": "2524",
-      "current_pe": 20.94,
+      "current_pe": 21.14,
       "sector_pe": 20.0,
-      "pe_score": 1.05,
+      "pe_score": 1.06,
       "status": "Fair Value",
-      "price": 35.8
+      "price": 36.2
     },
     "revenue": {
       "date": "2026-06",
@@ -22303,11 +22307,11 @@
     "stock_name": "亞弘電",
     "valuation": {
       "stock_id": "6201",
-      "current_pe": 13.28,
+      "current_pe": 13.17,
       "sector_pe": 20.0,
       "pe_score": 0.66,
       "status": "Undervalued",
-      "price": 49.0
+      "price": 48.6
     },
     "revenue": {
       "date": "2026-06",
@@ -22449,11 +22453,11 @@
     "stock_name": "科妍",
     "valuation": {
       "stock_id": "1786",
-      "current_pe": 23.85,
+      "current_pe": 24.31,
       "sector_pe": 20.0,
-      "pe_score": 1.19,
-      "status": "Fair Value",
-      "price": 52.0
+      "pe_score": 1.22,
+      "status": "High Premium",
+      "price": 53.0
     },
     "revenue": {
       "date": "2026-06",
@@ -22522,11 +22526,11 @@
     "stock_name": "瑞祺電通",
     "valuation": {
       "stock_id": "6416",
-      "current_pe": 22.82,
+      "current_pe": 22.75,
       "sector_pe": 20.0,
       "pe_score": 1.14,
       "status": "Fair Value",
-      "price": 97.9
+      "price": 97.6
     },
     "revenue": {
       "date": "2026-06",
@@ -22595,7 +22599,7 @@
     "stock_name": "士紙",
     "valuation": {
       "stock_id": "1903",
-      "current_pe": 37.17,
+      "current_pe": 37.21,
       "sector_pe": 20.0,
       "pe_score": 1.86,
       "status": "High Premium",
@@ -22668,9 +22672,9 @@
     "stock_name": "鼎基",
     "valuation": {
       "stock_id": "6585",
-      "current_pe": 23.07,
+      "current_pe": 23.11,
       "sector_pe": 20.0,
-      "pe_score": 1.15,
+      "pe_score": 1.16,
       "status": "Fair Value",
       "price": 125.5
     },
@@ -22741,11 +22745,11 @@
     "stock_name": "台灣精銳",
     "valuation": {
       "stock_id": "4583",
-      "current_pe": 49.67,
+      "current_pe": 50.25,
       "sector_pe": 20.0,
-      "pe_score": 2.48,
+      "pe_score": 2.51,
       "status": "High Premium",
-      "price": 597.0
+      "price": 603.0
     },
     "revenue": {
       "date": "2026-06",
@@ -22887,11 +22891,11 @@
     "stock_name": "安馳",
     "valuation": {
       "stock_id": "3528",
-      "current_pe": 39.39,
+      "current_pe": 39.47,
       "sector_pe": 20.0,
       "pe_score": 1.97,
       "status": "High Premium",
-      "price": 89.8
+      "price": 90.0
     },
     "revenue": {
       "date": "2026-06",
@@ -23033,11 +23037,11 @@
     "stock_name": "福壽",
     "valuation": {
       "stock_id": "1219",
-      "current_pe": 26.22,
+      "current_pe": 26.67,
       "sector_pe": 20.0,
-      "pe_score": 1.31,
+      "pe_score": 1.33,
       "status": "High Premium",
-      "price": 11.8
+      "price": 12.0
     },
     "revenue": {
       "date": "2026-06",
@@ -23130,11 +23134,11 @@
     "stock_name": "詮欣",
     "valuation": {
       "stock_id": "6205",
-      "current_pe": 35.62,
+      "current_pe": 36.76,
       "sector_pe": 20.0,
-      "pe_score": 1.78,
+      "pe_score": 1.84,
       "status": "High Premium",
-      "price": 65.9
+      "price": 68.0
     },
     "revenue": {
       "date": "2026-06",
@@ -23203,11 +23207,11 @@
     "stock_name": "藥華藥",
     "valuation": {
       "stock_id": "6446",
-      "current_pe": 97.96,
+      "current_pe": 107.84,
       "sector_pe": 20.0,
-      "pe_score": 4.9,
+      "pe_score": 5.39,
       "status": "High Premium",
-      "price": 1200.0
+      "price": 1320.0
     },
     "revenue": {
       "date": "2026-06",
@@ -23349,7 +23353,7 @@
     "stock_name": "大東電",
     "valuation": {
       "stock_id": "1623",
-      "current_pe": 17.26,
+      "current_pe": 17.24,
       "sector_pe": 20.0,
       "pe_score": 0.86,
       "status": "Fair Value",
@@ -23495,11 +23499,11 @@
     "stock_name": "福興",
     "valuation": {
       "stock_id": "9924",
-      "current_pe": 13.28,
+      "current_pe": 13.33,
       "sector_pe": 20.0,
-      "pe_score": 0.66,
+      "pe_score": 0.67,
       "status": "Undervalued",
-      "price": 40.2
+      "price": 40.4
     },
     "revenue": {
       "date": "2026-06",
@@ -23641,11 +23645,11 @@
     "stock_name": "旭富",
     "valuation": {
       "stock_id": "4119",
-      "current_pe": 49.56,
+      "current_pe": 49.67,
       "sector_pe": 20.0,
       "pe_score": 2.48,
       "status": "High Premium",
-      "price": 44.6
+      "price": 44.7
     },
     "revenue": {
       "date": "2026-06",
@@ -23714,11 +23718,11 @@
     "stock_name": "神隆",
     "valuation": {
       "stock_id": "1789",
-      "current_pe": 117.06,
+      "current_pe": 119.41,
       "sector_pe": 20.0,
-      "pe_score": 5.85,
+      "pe_score": 5.97,
       "status": "High Premium",
-      "price": 19.9
+      "price": 20.3
     },
     "revenue": {
       "date": "2026-06",
@@ -23787,11 +23791,11 @@
     "stock_name": "視陽",
     "valuation": {
       "stock_id": "6782",
-      "current_pe": 14.2,
+      "current_pe": 14.35,
       "sector_pe": 20.0,
-      "pe_score": 0.71,
+      "pe_score": 0.72,
       "status": "Undervalued",
-      "price": 198.5
+      "price": 200.5
     },
     "revenue": {
       "date": "2026-06",
@@ -24006,9 +24010,9 @@
     "stock_name": "杏輝",
     "valuation": {
       "stock_id": "1734",
-      "current_pe": 17.06,
+      "current_pe": 17.11,
       "sector_pe": 20.0,
-      "pe_score": 0.85,
+      "pe_score": 0.86,
       "status": "Fair Value",
       "price": 32.8
     },
@@ -24229,7 +24233,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 18.2
+      "price": 18.8
     },
     "revenue": {
       "date": "2026-06",
@@ -24517,11 +24521,11 @@
     "stock_name": "八方雲集",
     "valuation": {
       "stock_id": "2753",
-      "current_pe": 13.85,
+      "current_pe": 13.93,
       "sector_pe": 20.0,
-      "pe_score": 0.69,
+      "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 175.5
+      "price": 176.5
     },
     "revenue": {
       "date": "2026-06",
@@ -24667,7 +24671,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 935.0
+      "price": 1025.0
     },
     "revenue": {
       "date": "2026-06",
@@ -24736,11 +24740,11 @@
     "stock_name": "宜進",
     "valuation": {
       "stock_id": "1457",
-      "current_pe": 11.95,
+      "current_pe": 12.08,
       "sector_pe": 20.0,
       "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 14.1
+      "price": 14.2
     },
     "revenue": {
       "date": "2026-06",
@@ -24882,9 +24886,9 @@
     "stock_name": "龍邦",
     "valuation": {
       "stock_id": "2514",
-      "current_pe": 6.92,
+      "current_pe": 6.89,
       "sector_pe": 20.0,
-      "pe_score": 0.35,
+      "pe_score": 0.34,
       "status": "Undervalued",
       "price": 12.8
     },
@@ -25101,11 +25105,11 @@
     "stock_name": "泰碩",
     "valuation": {
       "stock_id": "3338",
-      "current_pe": 36.65,
+      "current_pe": 37.32,
       "sector_pe": 20.0,
-      "pe_score": 1.83,
+      "pe_score": 1.87,
       "status": "High Premium",
-      "price": 65.6
+      "price": 66.8
     },
     "revenue": {
       "date": "2026-06",
@@ -25612,11 +25616,11 @@
     "stock_name": "潤隆",
     "valuation": {
       "stock_id": "1808",
-      "current_pe": 22.57,
+      "current_pe": 22.65,
       "sector_pe": 20.0,
       "pe_score": 1.13,
       "status": "Fair Value",
-      "price": 30.7
+      "price": 30.8
     },
     "revenue": {
       "date": "2026-06",
@@ -25685,11 +25689,11 @@
     "stock_name": "大統益",
     "valuation": {
       "stock_id": "1232",
-      "current_pe": 18.39,
+      "current_pe": 18.26,
       "sector_pe": 20.0,
-      "pe_score": 0.92,
+      "pe_score": 0.91,
       "status": "Fair Value",
-      "price": 151.5
+      "price": 150.5
     },
     "revenue": {
       "date": "2026-06",
@@ -25758,11 +25762,11 @@
     "stock_name": "東泥",
     "valuation": {
       "stock_id": "1110",
-      "current_pe": 43.75,
+      "current_pe": 44.31,
       "sector_pe": 20.0,
-      "pe_score": 2.19,
+      "pe_score": 2.22,
       "status": "High Premium",
-      "price": 15.8
+      "price": 15.9
     },
     "revenue": {
       "date": "2026-06",
@@ -25928,11 +25932,11 @@
     "stock_name": "波力-KY",
     "valuation": {
       "stock_id": "8467",
-      "current_pe": 10.75,
+      "current_pe": 10.6,
       "sector_pe": 20.0,
-      "pe_score": 0.54,
+      "pe_score": 0.53,
       "status": "Undervalued",
-      "price": 106.0
+      "price": 104.5
     },
     "revenue": {
       "date": "N/A",
@@ -26122,11 +26126,11 @@
     "stock_name": "五鼎",
     "valuation": {
       "stock_id": "1733",
-      "current_pe": 18.89,
+      "current_pe": 19.1,
       "sector_pe": 20.0,
-      "pe_score": 0.94,
+      "pe_score": 0.96,
       "status": "Fair Value",
-      "price": 30.6
+      "price": 31.0
     },
     "revenue": {
       "date": "2026-06",
@@ -26341,11 +26345,11 @@
     "stock_name": "信大",
     "valuation": {
       "stock_id": "1109",
-      "current_pe": 14.13,
+      "current_pe": 14.08,
       "sector_pe": 20.0,
-      "pe_score": 0.71,
+      "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 14.6
+      "price": 14.5
     },
     "revenue": {
       "date": "2026-06",
@@ -26414,11 +26418,11 @@
     "stock_name": "來頡",
     "valuation": {
       "stock_id": "6799",
-      "current_pe": 25.1,
+      "current_pe": 25.29,
       "sector_pe": 20.0,
-      "pe_score": 1.25,
+      "pe_score": 1.26,
       "status": "High Premium",
-      "price": 91.1
+      "price": 91.8
     },
     "revenue": {
       "date": "2026-06",
@@ -26487,11 +26491,11 @@
     "stock_name": "ABC-KY",
     "valuation": {
       "stock_id": "6598",
-      "current_pe": -14.87,
+      "current_pe": -15.72,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 23.8
+      "price": 25.1
     },
     "revenue": {
       "date": "N/A",
@@ -26734,7 +26738,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 8.1
+      "price": 8.2
     },
     "revenue": {
       "date": "2026-06",
@@ -26827,11 +26831,11 @@
     "stock_name": "皇家可口",
     "valuation": {
       "stock_id": "7791",
-      "current_pe": 11.21,
+      "current_pe": 11.2,
       "sector_pe": 20.0,
       "pe_score": 0.56,
       "status": "Undervalued",
-      "price": 62.8
+      "price": 62.7
     },
     "revenue": {
       "date": "2026-06",
@@ -26904,7 +26908,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 47.8
+      "price": 49.5
     },
     "revenue": {
       "date": "2026-06",
@@ -27046,11 +27050,11 @@
     "stock_name": "神腦",
     "valuation": {
       "stock_id": "2450",
-      "current_pe": 16.77,
+      "current_pe": 16.74,
       "sector_pe": 20.0,
       "pe_score": 0.84,
       "status": "Fair Value",
-      "price": 28.9
+      "price": 28.8
     },
     "revenue": {
       "date": "2026-06",
@@ -27196,7 +27200,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 18.5
+      "price": 18.8
     },
     "revenue": {
       "date": "2026-06",
@@ -27411,11 +27415,11 @@
     "stock_name": "中鋼構",
     "valuation": {
       "stock_id": "2013",
-      "current_pe": 12.78,
+      "current_pe": 12.86,
       "sector_pe": 20.0,
       "pe_score": 0.64,
       "status": "Undervalued",
-      "price": 40.6
+      "price": 40.9
     },
     "revenue": {
       "date": "2026-06",
@@ -27484,11 +27488,11 @@
     "stock_name": "全漢",
     "valuation": {
       "stock_id": "3015",
-      "current_pe": 32.81,
+      "current_pe": 33.14,
       "sector_pe": 20.0,
-      "pe_score": 1.64,
+      "pe_score": 1.66,
       "status": "High Premium",
-      "price": 60.7
+      "price": 61.3
     },
     "revenue": {
       "date": "2026-06",
@@ -27557,11 +27561,11 @@
     "stock_name": "國精化",
     "valuation": {
       "stock_id": "4722",
-      "current_pe": 130.25,
+      "current_pe": 135.35,
       "sector_pe": 20.0,
-      "pe_score": 6.51,
+      "pe_score": 6.77,
       "status": "High Premium",
-      "price": 260.5
+      "price": 268.0
     },
     "revenue": {
       "date": "2026-06",
@@ -27630,11 +27634,11 @@
     "stock_name": "花仙子",
     "valuation": {
       "stock_id": "1730",
-      "current_pe": 11.36,
+      "current_pe": 11.33,
       "sector_pe": 20.0,
       "pe_score": 0.57,
       "status": "Undervalued",
-      "price": 51.1
+      "price": 51.0
     },
     "revenue": {
       "date": "2026-06",
@@ -27800,11 +27804,11 @@
     "stock_name": "時碩工業",
     "valuation": {
       "stock_id": "4566",
-      "current_pe": 49.41,
+      "current_pe": 49.19,
       "sector_pe": 20.0,
-      "pe_score": 2.47,
+      "pe_score": 2.46,
       "status": "High Premium",
-      "price": 66.7
+      "price": 66.4
     },
     "revenue": {
       "date": "2026-06",
@@ -27873,11 +27877,11 @@
     "stock_name": "桂盟",
     "valuation": {
       "stock_id": "5306",
-      "current_pe": 12.2,
+      "current_pe": 12.21,
       "sector_pe": 20.0,
       "pe_score": 0.61,
       "status": "Undervalued",
-      "price": 89.3
+      "price": 89.4
     },
     "revenue": {
       "date": "2026-06",
@@ -28019,11 +28023,11 @@
     "stock_name": "昶和",
     "valuation": {
       "stock_id": "1468",
-      "current_pe": 63.57,
+      "current_pe": 59.52,
       "sector_pe": 20.0,
-      "pe_score": 3.18,
+      "pe_score": 2.98,
       "status": "High Premium",
-      "price": 13.3
+      "price": 12.5
     },
     "revenue": {
       "date": "2026-06",
@@ -28092,11 +28096,11 @@
     "stock_name": "汎德永業",
     "valuation": {
       "stock_id": "2247",
-      "current_pe": 13.02,
+      "current_pe": 12.96,
       "sector_pe": 20.0,
       "pe_score": 0.65,
       "status": "Undervalued",
-      "price": 229.5
+      "price": 228.5
     },
     "revenue": {
       "date": "2026-06",
@@ -28311,11 +28315,11 @@
     "stock_name": "柏文",
     "valuation": {
       "stock_id": "8462",
-      "current_pe": 20.12,
+      "current_pe": 19.76,
       "sector_pe": 20.0,
-      "pe_score": 1.01,
+      "pe_score": 0.99,
       "status": "Fair Value",
-      "price": 167.0
+      "price": 164.0
     },
     "revenue": {
       "date": "2026-06",
@@ -28384,7 +28388,7 @@
     "stock_name": "三商餐飲",
     "valuation": {
       "stock_id": "7705",
-      "current_pe": 15.81,
+      "current_pe": 15.83,
       "sector_pe": 20.0,
       "pe_score": 0.79,
       "status": "Undervalued",
@@ -28457,11 +28461,11 @@
     "stock_name": "葡萄王",
     "valuation": {
       "stock_id": "1707",
-      "current_pe": 11.2,
+      "current_pe": 11.22,
       "sector_pe": 20.0,
       "pe_score": 0.56,
       "status": "Undervalued",
-      "price": 91.5
+      "price": 91.7
     },
     "revenue": {
       "date": "2026-06",
@@ -28627,11 +28631,11 @@
     "stock_name": "寶綠特-KY",
     "valuation": {
       "stock_id": "6887",
-      "current_pe": 7.97,
+      "current_pe": 8.28,
       "sector_pe": 20.0,
-      "pe_score": 0.4,
+      "pe_score": 0.41,
       "status": "Undervalued",
-      "price": 36.1
+      "price": 37.5
     },
     "revenue": {
       "date": "N/A",
@@ -28724,11 +28728,11 @@
     "stock_name": "安普新",
     "valuation": {
       "stock_id": "6743",
-      "current_pe": 42.89,
+      "current_pe": 42.68,
       "sector_pe": 20.0,
-      "pe_score": 2.14,
+      "pe_score": 2.13,
       "status": "High Premium",
-      "price": 30.4
+      "price": 30.3
     },
     "revenue": {
       "date": "2026-06",
@@ -28870,11 +28874,11 @@
     "stock_name": "研揚",
     "valuation": {
       "stock_id": "6579",
-      "current_pe": 28.35,
+      "current_pe": 28.58,
       "sector_pe": 20.0,
-      "pe_score": 1.42,
+      "pe_score": 1.43,
       "status": "High Premium",
-      "price": 158.5
+      "price": 159.5
     },
     "revenue": {
       "date": "2026-06",
@@ -29016,11 +29020,11 @@
     "stock_name": "英利-KY",
     "valuation": {
       "stock_id": "2239",
-      "current_pe": 2.7,
+      "current_pe": 2.66,
       "sector_pe": 20.0,
-      "pe_score": 0.14,
+      "pe_score": 0.13,
       "status": "Undervalued",
-      "price": 20.6
+      "price": 20.3
     },
     "revenue": {
       "date": "N/A",
@@ -29044,7 +29048,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 25.8
+      "price": 25.1
     },
     "revenue": {
       "date": "2026-06",
@@ -29113,11 +29117,11 @@
     "stock_name": "建新國際",
     "valuation": {
       "stock_id": "8367",
-      "current_pe": 10.63,
+      "current_pe": 10.61,
       "sector_pe": 20.0,
       "pe_score": 0.53,
       "status": "Undervalued",
-      "price": 40.3
+      "price": 40.2
     },
     "revenue": {
       "date": "2026-06",
@@ -29263,7 +29267,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 23.6
+      "price": 23.9
     },
     "revenue": {
       "date": "2026-06",
@@ -29332,11 +29336,11 @@
     "stock_name": "晉弘",
     "valuation": {
       "stock_id": "6796",
-      "current_pe": 288.5,
+      "current_pe": 292.5,
       "sector_pe": 20.0,
-      "pe_score": 14.43,
+      "pe_score": 14.62,
       "status": "High Premium",
-      "price": 57.7
+      "price": 58.5
     },
     "revenue": {
       "date": "2026-06",
@@ -29405,11 +29409,11 @@
     "stock_name": "川飛",
     "valuation": {
       "stock_id": "1516",
-      "current_pe": 437.5,
+      "current_pe": 445.0,
       "sector_pe": 20.0,
-      "pe_score": 21.88,
+      "pe_score": 22.25,
       "status": "High Premium",
-      "price": 17.5
+      "price": 17.8
     },
     "revenue": {
       "date": "2026-06",
@@ -29478,7 +29482,7 @@
     "stock_name": "淘帝-KY",
     "valuation": {
       "stock_id": "2929",
-      "current_pe": 0.45,
+      "current_pe": 0.46,
       "sector_pe": 20.0,
       "pe_score": 0.02,
       "status": "Undervalued",
@@ -29506,7 +29510,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 19.6
+      "price": 19.8
     },
     "revenue": {
       "date": "2026-06",
@@ -29575,11 +29579,11 @@
     "stock_name": "新天地",
     "valuation": {
       "stock_id": "8940",
-      "current_pe": 29.55,
+      "current_pe": 29.73,
       "sector_pe": 20.0,
-      "pe_score": 1.48,
+      "pe_score": 1.49,
       "status": "High Premium",
-      "price": 16.2
+      "price": 16.4
     },
     "revenue": {
       "date": "2026-06",
@@ -29648,11 +29652,11 @@
     "stock_name": "政伸",
     "valuation": {
       "stock_id": "8481",
-      "current_pe": 13.09,
+      "current_pe": 13.1,
       "sector_pe": 20.0,
-      "pe_score": 0.65,
+      "pe_score": 0.66,
       "status": "Undervalued",
-      "price": 42.4
+      "price": 42.5
     },
     "revenue": {
       "date": "2026-06",
@@ -29721,11 +29725,11 @@
     "stock_name": "麗清",
     "valuation": {
       "stock_id": "3346",
-      "current_pe": 208.18,
+      "current_pe": 206.82,
       "sector_pe": 20.0,
-      "pe_score": 10.41,
+      "pe_score": 10.34,
       "status": "High Premium",
-      "price": 22.9
+      "price": 22.8
     },
     "revenue": {
       "date": "2026-06",
@@ -29794,11 +29798,11 @@
     "stock_name": "虹冠電",
     "valuation": {
       "stock_id": "3257",
-      "current_pe": 18.39,
+      "current_pe": 18.36,
       "sector_pe": 20.0,
       "pe_score": 0.92,
       "status": "Fair Value",
-      "price": 58.3
+      "price": 58.2
     },
     "revenue": {
       "date": "2026-06",
@@ -29867,11 +29871,11 @@
     "stock_name": "昇陽",
     "valuation": {
       "stock_id": "3266",
-      "current_pe": 23.28,
+      "current_pe": 23.45,
       "sector_pe": 20.0,
-      "pe_score": 1.16,
+      "pe_score": 1.17,
       "status": "Fair Value",
-      "price": 13.5
+      "price": 13.6
     },
     "revenue": {
       "date": "2026-06",
@@ -29940,11 +29944,11 @@
     "stock_name": "嘉彰",
     "valuation": {
       "stock_id": "4942",
-      "current_pe": 12.27,
+      "current_pe": 12.32,
       "sector_pe": 20.0,
-      "pe_score": 0.61,
+      "pe_score": 0.62,
       "status": "Undervalued",
-      "price": 37.3
+      "price": 37.5
     },
     "revenue": {
       "date": "2026-06",
@@ -30232,11 +30236,11 @@
     "stock_name": "勤益控",
     "valuation": {
       "stock_id": "1437",
-      "current_pe": 12.69,
+      "current_pe": 12.71,
       "sector_pe": 20.0,
-      "pe_score": 0.63,
+      "pe_score": 0.64,
       "status": "Undervalued",
-      "price": 30.4
+      "price": 30.5
     },
     "revenue": {
       "date": "2026-06",
@@ -30382,7 +30386,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 11.6
+      "price": 11.7
     },
     "revenue": {
       "date": "2026-06",
@@ -30451,11 +30455,11 @@
     "stock_name": "正瀚-創",
     "valuation": {
       "stock_id": "6534",
-      "current_pe": 20.78,
+      "current_pe": 20.6,
       "sector_pe": 20.0,
-      "pe_score": 1.04,
+      "pe_score": 1.03,
       "status": "Fair Value",
-      "price": 93.5
+      "price": 92.7
     },
     "revenue": {
       "date": "2026-06",
@@ -30597,11 +30601,11 @@
     "stock_name": "拓凱",
     "valuation": {
       "stock_id": "4536",
-      "current_pe": 11.37,
+      "current_pe": 11.53,
       "sector_pe": 20.0,
-      "pe_score": 0.57,
+      "pe_score": 0.58,
       "status": "Undervalued",
-      "price": 168.5
+      "price": 171.0
     },
     "revenue": {
       "date": "2026-06",
@@ -30958,11 +30962,11 @@
     "stock_name": "泰銘",
     "valuation": {
       "stock_id": "9927",
-      "current_pe": 16.28,
+      "current_pe": 16.38,
       "sector_pe": 20.0,
-      "pe_score": 0.81,
+      "pe_score": 0.82,
       "status": "Fair Value",
-      "price": 69.2
+      "price": 69.6
     },
     "revenue": {
       "date": "2026-06",
@@ -31031,11 +31035,11 @@
     "stock_name": "現觀科",
     "valuation": {
       "stock_id": "6906",
-      "current_pe": 39.79,
+      "current_pe": 39.41,
       "sector_pe": 20.0,
-      "pe_score": 1.99,
+      "pe_score": 1.97,
       "status": "High Premium",
-      "price": 74.4
+      "price": 73.7
     },
     "revenue": {
       "date": "2026-06",
@@ -31152,11 +31156,11 @@
     "stock_name": "新紡",
     "valuation": {
       "stock_id": "1419",
-      "current_pe": 16.1,
+      "current_pe": 16.12,
       "sector_pe": 20.0,
-      "pe_score": 0.8,
+      "pe_score": 0.81,
       "status": "Fair Value",
-      "price": 66.0
+      "price": 66.1
     },
     "revenue": {
       "date": "2026-06",
@@ -31225,11 +31229,11 @@
     "stock_name": "江申",
     "valuation": {
       "stock_id": "1525",
-      "current_pe": 20.53,
+      "current_pe": 20.81,
       "sector_pe": 20.0,
-      "pe_score": 1.03,
+      "pe_score": 1.04,
       "status": "Fair Value",
-      "price": 65.9
+      "price": 66.8
     },
     "revenue": {
       "date": "2026-06",
@@ -31298,11 +31302,11 @@
     "stock_name": "三洋電",
     "valuation": {
       "stock_id": "1614",
-      "current_pe": 33.49,
+      "current_pe": 33.54,
       "sector_pe": 20.0,
-      "pe_score": 1.67,
+      "pe_score": 1.68,
       "status": "High Premium",
-      "price": 32.1
+      "price": 32.2
     },
     "revenue": {
       "date": "2026-06",
@@ -31375,7 +31379,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.76,
       "status": "Undervalued",
-      "price": 20.6
+      "price": 20.5
     },
     "revenue": {
       "date": "2026-06",
@@ -31521,7 +31525,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 13.2
+      "price": 13.4
     },
     "revenue": {
       "date": "2026-06",
@@ -31590,11 +31594,11 @@
     "stock_name": "永鴻生技",
     "valuation": {
       "stock_id": "6936",
-      "current_pe": 17.5,
+      "current_pe": 17.72,
       "sector_pe": 20.0,
-      "pe_score": 0.88,
+      "pe_score": 0.89,
       "status": "Fair Value",
-      "price": 31.9
+      "price": 32.2
     },
     "revenue": {
       "date": "2026-06",
@@ -31809,11 +31813,11 @@
     "stock_name": "程泰",
     "valuation": {
       "stock_id": "1583",
-      "current_pe": 12.65,
+      "current_pe": 12.83,
       "sector_pe": 20.0,
-      "pe_score": 0.63,
+      "pe_score": 0.64,
       "status": "Undervalued",
-      "price": 48.7
+      "price": 49.4
     },
     "revenue": {
       "date": "2026-06",
@@ -31983,7 +31987,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 32.1
+      "price": 32.2
     },
     "revenue": {
       "date": "2026-06",
@@ -32125,11 +32129,11 @@
     "stock_name": "錩新",
     "valuation": {
       "stock_id": "2415",
-      "current_pe": 19.67,
+      "current_pe": 19.23,
       "sector_pe": 20.0,
-      "pe_score": 0.98,
+      "pe_score": 0.96,
       "status": "Fair Value",
-      "price": 35.6
+      "price": 34.8
     },
     "revenue": {
       "date": "2026-06",
@@ -32271,11 +32275,11 @@
     "stock_name": "峰源-KY",
     "valuation": {
       "stock_id": "6807",
-      "current_pe": 7.15,
+      "current_pe": 7.08,
       "sector_pe": 20.0,
-      "pe_score": 0.36,
+      "pe_score": 0.35,
       "status": "Undervalued",
-      "price": 33.3
+      "price": 33.0
     },
     "revenue": {
       "date": "N/A",
@@ -32295,11 +32299,11 @@
     "stock_name": "邦睿生技-創",
     "valuation": {
       "stock_id": "6955",
-      "current_pe": 26.82,
+      "current_pe": 26.94,
       "sector_pe": 20.0,
-      "pe_score": 1.34,
+      "pe_score": 1.35,
       "status": "High Premium",
-      "price": 110.5
+      "price": 111.0
     },
     "revenue": {
       "date": "2026-06",
@@ -32368,11 +32372,11 @@
     "stock_name": "大華",
     "valuation": {
       "stock_id": "9905",
-      "current_pe": 15.81,
+      "current_pe": 15.77,
       "sector_pe": 20.0,
       "pe_score": 0.79,
       "status": "Undervalued",
-      "price": 20.6
+      "price": 20.5
     },
     "revenue": {
       "date": "2026-06",
@@ -32514,11 +32518,11 @@
     "stock_name": "高興昌",
     "valuation": {
       "stock_id": "2008",
-      "current_pe": 43.82,
+      "current_pe": 44.12,
       "sector_pe": 20.0,
-      "pe_score": 2.19,
+      "pe_score": 2.21,
       "status": "High Premium",
-      "price": 29.8
+      "price": 30.0
     },
     "revenue": {
       "date": "2026-06",
@@ -32806,11 +32810,11 @@
     "stock_name": "三商家購",
     "valuation": {
       "stock_id": "2945",
-      "current_pe": 19.48,
+      "current_pe": 19.23,
       "sector_pe": 20.0,
-      "pe_score": 0.97,
+      "pe_score": 0.96,
       "status": "Fair Value",
-      "price": 41.5
+      "price": 41.0
     },
     "revenue": {
       "date": "2026-06",
@@ -33000,11 +33004,11 @@
     "stock_name": "AMAX-KY",
     "valuation": {
       "stock_id": "6933",
-      "current_pe": 33.2,
+      "current_pe": 32.99,
       "sector_pe": 20.0,
-      "pe_score": 1.66,
+      "pe_score": 1.65,
       "status": "High Premium",
-      "price": 163.0
+      "price": 162.0
     },
     "revenue": {
       "date": "N/A",
@@ -33024,11 +33028,11 @@
     "stock_name": "寶隆",
     "valuation": {
       "stock_id": "1906",
-      "current_pe": 1095.0,
+      "current_pe": 1120.0,
       "sector_pe": 20.0,
-      "pe_score": 54.75,
+      "pe_score": 56.0,
       "status": "High Premium",
-      "price": 10.9
+      "price": 11.2
     },
     "revenue": {
       "date": "2026-06",
@@ -33097,11 +33101,11 @@
     "stock_name": "伸興",
     "valuation": {
       "stock_id": "1558",
-      "current_pe": 16.78,
+      "current_pe": 16.87,
       "sector_pe": 20.0,
       "pe_score": 0.84,
       "status": "Fair Value",
-      "price": 92.3
+      "price": 92.8
     },
     "revenue": {
       "date": "2026-06",
@@ -33170,11 +33174,11 @@
     "stock_name": "鑫禾",
     "valuation": {
       "stock_id": "4999",
-      "current_pe": 14.59,
+      "current_pe": 14.74,
       "sector_pe": 20.0,
-      "pe_score": 0.73,
+      "pe_score": 0.74,
       "status": "Undervalued",
-      "price": 19.6
+      "price": 19.8
     },
     "revenue": {
       "date": "2026-06",
@@ -33243,11 +33247,11 @@
     "stock_name": "力智",
     "valuation": {
       "stock_id": "6719",
-      "current_pe": 38.18,
+      "current_pe": 38.11,
       "sector_pe": 20.0,
       "pe_score": 1.91,
       "status": "High Premium",
-      "price": 244.0
+      "price": 243.5
     },
     "revenue": {
       "date": "2026-06",
@@ -33462,11 +33466,11 @@
     "stock_name": "中傑-KY",
     "valuation": {
       "stock_id": "6965",
-      "current_pe": 22.43,
+      "current_pe": 22.4,
       "sector_pe": 20.0,
       "pe_score": 1.12,
       "status": "Fair Value",
-      "price": 78.5
+      "price": 78.4
     },
     "revenue": {
       "date": "N/A",
@@ -33486,11 +33490,11 @@
     "stock_name": "欣天然",
     "valuation": {
       "stock_id": "9918",
-      "current_pe": 27.47,
+      "current_pe": 27.38,
       "sector_pe": 20.0,
       "pe_score": 1.37,
       "status": "High Premium",
-      "price": 44.0
+      "price": 43.8
     },
     "revenue": {
       "date": "2026-06",
@@ -33559,11 +33563,11 @@
     "stock_name": "科嘉-KY",
     "valuation": {
       "stock_id": "5215",
-      "current_pe": 20.25,
+      "current_pe": 20.07,
       "sector_pe": 20.0,
-      "pe_score": 1.01,
+      "pe_score": 1.0,
       "status": "Fair Value",
-      "price": 40.9
+      "price": 40.5
     },
     "revenue": {
       "date": "N/A",
@@ -33583,7 +33587,7 @@
     "stock_name": "景岳",
     "valuation": {
       "stock_id": "3164",
-      "current_pe": 25.0,
+      "current_pe": 24.92,
       "sector_pe": 20.0,
       "pe_score": 1.25,
       "status": "High Premium",
@@ -33753,11 +33757,11 @@
     "stock_name": "榮星",
     "valuation": {
       "stock_id": "1617",
-      "current_pe": 34.41,
+      "current_pe": 34.71,
       "sector_pe": 20.0,
-      "pe_score": 1.72,
+      "pe_score": 1.74,
       "status": "High Premium",
-      "price": 23.4
+      "price": 23.6
     },
     "revenue": {
       "date": "2026-06",
@@ -33899,11 +33903,11 @@
     "stock_name": "華經",
     "valuation": {
       "stock_id": "2468",
-      "current_pe": 29.16,
+      "current_pe": 29.56,
       "sector_pe": 20.0,
-      "pe_score": 1.46,
+      "pe_score": 1.48,
       "status": "High Premium",
-      "price": 36.5
+      "price": 37.0
     },
     "revenue": {
       "date": "2026-06",
@@ -34097,7 +34101,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 17.1
+      "price": 17.5
     },
     "revenue": {
       "date": "2026-06",
@@ -34166,11 +34170,11 @@
     "stock_name": "微程式",
     "valuation": {
       "stock_id": "7721",
-      "current_pe": 124.18,
+      "current_pe": 123.45,
       "sector_pe": 20.0,
-      "pe_score": 6.21,
+      "pe_score": 6.17,
       "status": "High Premium",
-      "price": 68.3
+      "price": 67.9
     },
     "revenue": {
       "date": "2026-06",
@@ -34458,11 +34462,11 @@
     "stock_name": "歐格",
     "valuation": {
       "stock_id": "3002",
-      "current_pe": 54.31,
+      "current_pe": 54.03,
       "sector_pe": 20.0,
-      "pe_score": 2.72,
+      "pe_score": 2.7,
       "status": "High Premium",
-      "price": 19.6
+      "price": 19.5
     },
     "revenue": {
       "date": "2026-06",
@@ -34750,11 +34754,11 @@
     "stock_name": "傳奇",
     "valuation": {
       "stock_id": "4994",
-      "current_pe": 45.79,
+      "current_pe": 46.87,
       "sector_pe": 20.0,
-      "pe_score": 2.29,
+      "pe_score": 2.34,
       "status": "High Premium",
-      "price": 89.3
+      "price": 91.4
     },
     "revenue": {
       "date": "2026-06",
@@ -34823,11 +34827,11 @@
     "stock_name": "駐龍",
     "valuation": {
       "stock_id": "4572",
-      "current_pe": 51.01,
+      "current_pe": 51.35,
       "sector_pe": 20.0,
-      "pe_score": 2.55,
+      "pe_score": 2.57,
       "status": "High Premium",
-      "price": 151.0
+      "price": 152.0
     },
     "revenue": {
       "date": "2026-06",
@@ -34896,11 +34900,11 @@
     "stock_name": "佐登-KY",
     "valuation": {
       "stock_id": "4190",
-      "current_pe": 18.7,
+      "current_pe": 18.78,
       "sector_pe": 20.0,
       "pe_score": 0.94,
       "status": "Fair Value",
-      "price": 25.2
+      "price": 25.4
     },
     "revenue": {
       "date": "N/A",
@@ -34993,11 +34997,11 @@
     "stock_name": "強盛新",
     "valuation": {
       "stock_id": "1463",
-      "current_pe": 134.23,
+      "current_pe": 135.38,
       "sector_pe": 20.0,
-      "pe_score": 6.71,
+      "pe_score": 6.77,
       "status": "High Premium",
-      "price": 17.4
+      "price": 17.6
     },
     "revenue": {
       "date": "2026-06",
@@ -35066,11 +35070,11 @@
     "stock_name": "亞崴",
     "valuation": {
       "stock_id": "1530",
-      "current_pe": 48.92,
+      "current_pe": 49.5,
       "sector_pe": 20.0,
-      "pe_score": 2.45,
+      "pe_score": 2.48,
       "status": "High Premium",
-      "price": 29.4
+      "price": 29.7
     },
     "revenue": {
       "date": "2026-06",
@@ -35212,11 +35216,11 @@
     "stock_name": "裕日車",
     "valuation": {
       "stock_id": "2227",
-      "current_pe": 38.35,
+      "current_pe": 37.81,
       "sector_pe": 20.0,
-      "pe_score": 1.92,
+      "pe_score": 1.89,
       "status": "High Premium",
-      "price": 49.9
+      "price": 49.2
     },
     "revenue": {
       "date": "2026-06",
@@ -35358,7 +35362,7 @@
     "stock_name": "互盛電",
     "valuation": {
       "stock_id": "2433",
-      "current_pe": 13.82,
+      "current_pe": 13.83,
       "sector_pe": 20.0,
       "pe_score": 0.69,
       "status": "Undervalued",
@@ -35796,11 +35800,11 @@
     "stock_name": "虎山",
     "valuation": {
       "stock_id": "7736",
-      "current_pe": 14.0,
+      "current_pe": 13.96,
       "sector_pe": 20.0,
       "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 70.4
+      "price": 70.2
     },
     "revenue": {
       "date": "2026-06",
@@ -35873,7 +35877,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 12.5
+      "price": 12.6
     },
     "revenue": {
       "date": "2026-06",
@@ -36015,11 +36019,11 @@
     "stock_name": "冠星-KY",
     "valuation": {
       "stock_id": "4439",
-      "current_pe": 14.91,
+      "current_pe": 14.7,
       "sector_pe": 20.0,
-      "pe_score": 0.75,
+      "pe_score": 0.74,
       "status": "Undervalued",
-      "price": 107.5
+      "price": 106.0
     },
     "revenue": {
       "date": "N/A",
@@ -36039,11 +36043,11 @@
     "stock_name": "氣立",
     "valuation": {
       "stock_id": "4555",
-      "current_pe": 248.16,
+      "current_pe": 251.32,
       "sector_pe": 20.0,
-      "pe_score": 12.41,
+      "pe_score": 12.57,
       "status": "High Premium",
-      "price": 47.1
+      "price": 47.8
     },
     "revenue": {
       "date": "2026-06",
@@ -36112,11 +36116,11 @@
     "stock_name": "眾福科",
     "valuation": {
       "stock_id": "3168",
-      "current_pe": 16.83,
+      "current_pe": 16.99,
       "sector_pe": 20.0,
-      "pe_score": 0.84,
+      "pe_score": 0.85,
       "status": "Fair Value",
-      "price": 43.6
+      "price": 44.0
     },
     "revenue": {
       "date": "2026-06",
@@ -36189,7 +36193,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 13.1
+      "price": 12.9
     },
     "revenue": {
       "date": "2026-06",
@@ -36331,11 +36335,11 @@
     "stock_name": "凱撒衛",
     "valuation": {
       "stock_id": "1817",
-      "current_pe": 10.72,
+      "current_pe": 10.73,
       "sector_pe": 20.0,
       "pe_score": 0.54,
       "status": "Undervalued",
-      "price": 38.5
+      "price": 38.4
     },
     "revenue": {
       "date": "2026-06",
@@ -36404,11 +36408,11 @@
     "stock_name": "味王",
     "valuation": {
       "stock_id": "1203",
-      "current_pe": 24.42,
+      "current_pe": 24.28,
       "sector_pe": 20.0,
-      "pe_score": 1.22,
+      "pe_score": 1.21,
       "status": "High Premium",
-      "price": 44.2
+      "price": 44.0
     },
     "revenue": {
       "date": "2026-06",
@@ -36477,11 +36481,11 @@
     "stock_name": "南染",
     "valuation": {
       "stock_id": "1410",
-      "current_pe": 44.91,
+      "current_pe": 45.69,
       "sector_pe": 20.0,
-      "pe_score": 2.25,
+      "pe_score": 2.28,
       "status": "High Premium",
-      "price": 26.1
+      "price": 26.5
     },
     "revenue": {
       "date": "2026-06",
@@ -36769,11 +36773,11 @@
     "stock_name": "詠業",
     "valuation": {
       "stock_id": "6792",
-      "current_pe": 25.88,
+      "current_pe": 25.84,
       "sector_pe": 20.0,
       "pe_score": 1.29,
       "status": "High Premium",
-      "price": 57.2
+      "price": 57.1
     },
     "revenue": {
       "date": "2026-06",
@@ -36842,11 +36846,11 @@
     "stock_name": "三能-KY",
     "valuation": {
       "stock_id": "6671",
-      "current_pe": 10.3,
+      "current_pe": 10.34,
       "sector_pe": 20.0,
-      "pe_score": 0.51,
+      "pe_score": 0.52,
       "status": "Undervalued",
-      "price": 24.2
+      "price": 24.3
     },
     "revenue": {
       "date": "N/A",
@@ -36939,11 +36943,11 @@
     "stock_name": "全國電",
     "valuation": {
       "stock_id": "6281",
-      "current_pe": 13.9,
+      "current_pe": 13.98,
       "sector_pe": 20.0,
-      "pe_score": 0.69,
+      "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 51.0
+      "price": 51.3
     },
     "revenue": {
       "date": "2026-06",
@@ -37012,11 +37016,11 @@
     "stock_name": "榮惠-KY創",
     "valuation": {
       "stock_id": "6924",
-      "current_pe": 20.53,
+      "current_pe": 20.35,
       "sector_pe": 20.0,
-      "pe_score": 1.03,
+      "pe_score": 1.02,
       "status": "Fair Value",
-      "price": 116.0
+      "price": 115.0
     },
     "revenue": {
       "date": "N/A",
@@ -37040,7 +37044,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 12.7
+      "price": 12.6
     },
     "revenue": {
       "date": "2026-06",
@@ -37109,11 +37113,11 @@
     "stock_name": "中聯資源",
     "valuation": {
       "stock_id": "9930",
-      "current_pe": 12.79,
+      "current_pe": 12.81,
       "sector_pe": 20.0,
       "pe_score": 0.64,
       "status": "Undervalued",
-      "price": 63.2
+      "price": 63.3
     },
     "revenue": {
       "date": "2026-06",
@@ -37186,7 +37190,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 17.8
+      "price": 17.6
     },
     "revenue": {
       "date": "2026-06",
@@ -37401,9 +37405,9 @@
     "stock_name": "正道",
     "valuation": {
       "stock_id": "1506",
-      "current_pe": 180.83,
+      "current_pe": 179.17,
       "sector_pe": 20.0,
-      "pe_score": 9.04,
+      "pe_score": 8.96,
       "status": "High Premium",
       "price": 10.8
     },
@@ -37478,7 +37482,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 12.9
+      "price": 13.1
     },
     "revenue": {
       "date": "2026-06",
@@ -37547,11 +37551,11 @@
     "stock_name": "錩泰",
     "valuation": {
       "stock_id": "1541",
-      "current_pe": 9.35,
+      "current_pe": 9.42,
       "sector_pe": 20.0,
       "pe_score": 0.47,
       "status": "Undervalued",
-      "price": 21.6
+      "price": 21.8
     },
     "revenue": {
       "date": "2026-06",
@@ -37766,11 +37770,11 @@
     "stock_name": "雋揚",
     "valuation": {
       "stock_id": "1439",
-      "current_pe": 7.45,
+      "current_pe": 7.49,
       "sector_pe": 20.0,
       "pe_score": 0.37,
       "status": "Undervalued",
-      "price": 23.9
+      "price": 24.0
     },
     "revenue": {
       "date": "2026-06",
@@ -37912,11 +37916,11 @@
     "stock_name": "永裕",
     "valuation": {
       "stock_id": "1323",
-      "current_pe": 76.73,
+      "current_pe": 76.92,
       "sector_pe": 20.0,
-      "pe_score": 3.84,
+      "pe_score": 3.85,
       "status": "High Premium",
-      "price": 19.9
+      "price": 20.0
     },
     "revenue": {
       "date": "2026-06",
@@ -37985,11 +37989,11 @@
     "stock_name": "達新",
     "valuation": {
       "stock_id": "1315",
-      "current_pe": 41.16,
+      "current_pe": 41.48,
       "sector_pe": 20.0,
-      "pe_score": 2.06,
+      "pe_score": 2.07,
       "status": "High Premium",
-      "price": 63.8
+      "price": 64.3
     },
     "revenue": {
       "date": "2026-06",
@@ -38058,11 +38062,11 @@
     "stock_name": "春雨",
     "valuation": {
       "stock_id": "2012",
-      "current_pe": 86.39,
+      "current_pe": 87.5,
       "sector_pe": 20.0,
-      "pe_score": 4.32,
+      "pe_score": 4.38,
       "status": "High Premium",
-      "price": 15.6
+      "price": 15.8
     },
     "revenue": {
       "date": "2026-06",
@@ -38131,9 +38135,9 @@
     "stock_name": "國賓",
     "valuation": {
       "stock_id": "2704",
-      "current_pe": 79.91,
+      "current_pe": 79.74,
       "sector_pe": 20.0,
-      "pe_score": 4.0,
+      "pe_score": 3.99,
       "status": "High Premium",
       "price": 45.5
     },
@@ -38277,11 +38281,11 @@
     "stock_name": "立萬利",
     "valuation": {
       "stock_id": "3054",
-      "current_pe": 30.41,
+      "current_pe": 29.95,
       "sector_pe": 20.0,
-      "pe_score": 1.52,
+      "pe_score": 1.5,
       "status": "High Premium",
-      "price": 59.0
+      "price": 58.1
     },
     "revenue": {
       "date": "2026-06",
@@ -38350,11 +38354,11 @@
     "stock_name": "鼎固-KY",
     "valuation": {
       "stock_id": "2923",
-      "current_pe": 52.0,
+      "current_pe": 49.75,
       "sector_pe": 20.0,
-      "pe_score": 2.6,
+      "pe_score": 2.49,
       "status": "High Premium",
-      "price": 31.2
+      "price": 29.9
     },
     "revenue": {
       "date": "N/A",
@@ -38374,11 +38378,11 @@
     "stock_name": "光隆精密-KY",
     "valuation": {
       "stock_id": "4581",
-      "current_pe": 13.32,
+      "current_pe": 13.46,
       "sector_pe": 20.0,
       "pe_score": 0.67,
       "status": "Undervalued",
-      "price": 50.5
+      "price": 51.0
     },
     "revenue": {
       "date": "N/A",
@@ -38398,11 +38402,11 @@
     "stock_name": "新至陞",
     "valuation": {
       "stock_id": "3679",
-      "current_pe": 11.04,
+      "current_pe": 11.25,
       "sector_pe": 20.0,
-      "pe_score": 0.55,
+      "pe_score": 0.56,
       "status": "Undervalued",
-      "price": 107.5
+      "price": 109.5
     },
     "revenue": {
       "date": "2026-06",
@@ -38471,11 +38475,11 @@
     "stock_name": "日成-KY",
     "valuation": {
       "stock_id": "4807",
-      "current_pe": 9.75,
+      "current_pe": 9.26,
       "sector_pe": 20.0,
-      "pe_score": 0.49,
+      "pe_score": 0.46,
       "status": "Undervalued",
-      "price": 41.6
+      "price": 39.5
     },
     "revenue": {
       "date": "N/A",
@@ -38495,11 +38499,11 @@
     "stock_name": "關貿",
     "valuation": {
       "stock_id": "6183",
-      "current_pe": 23.21,
+      "current_pe": 23.34,
       "sector_pe": 20.0,
-      "pe_score": 1.16,
+      "pe_score": 1.17,
       "status": "Fair Value",
-      "price": 90.3
+      "price": 90.8
     },
     "revenue": {
       "date": "2026-06",
@@ -38665,11 +38669,11 @@
     "stock_name": "好樂迪",
     "valuation": {
       "stock_id": "9943",
-      "current_pe": 9.93,
+      "current_pe": 9.85,
       "sector_pe": 20.0,
-      "pe_score": 0.5,
+      "pe_score": 0.49,
       "status": "Undervalued",
-      "price": 53.6
+      "price": 53.2
     },
     "revenue": {
       "date": "2026-06",
@@ -38981,11 +38985,11 @@
     "stock_name": "統懋",
     "valuation": {
       "stock_id": "2434",
-      "current_pe": 3755.0,
+      "current_pe": 4120.0,
       "sector_pe": 20.0,
-      "pe_score": 187.75,
+      "pe_score": 206.0,
       "status": "High Premium",
-      "price": 75.1
+      "price": 82.4
     },
     "revenue": {
       "date": "2026-06",
@@ -39054,9 +39058,9 @@
     "stock_name": "展宇",
     "valuation": {
       "stock_id": "1776",
-      "current_pe": 69.07,
+      "current_pe": 68.89,
       "sector_pe": 20.0,
-      "pe_score": 3.45,
+      "pe_score": 3.44,
       "status": "High Premium",
       "price": 18.6
     },
@@ -39127,11 +39131,11 @@
     "stock_name": "永記",
     "valuation": {
       "stock_id": "1726",
-      "current_pe": 14.43,
+      "current_pe": 14.41,
       "sector_pe": 20.0,
       "pe_score": 0.72,
       "status": "Undervalued",
-      "price": 79.2
+      "price": 79.1
     },
     "revenue": {
       "date": "2026-06",
@@ -39204,7 +39208,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 35.6
+      "price": 36.5
     },
     "revenue": {
       "date": "2026-06",
@@ -39613,7 +39617,7 @@
       "sector_pe": 20.0,
       "pe_score": 3.73,
       "status": "High Premium",
-      "price": 15.7
+      "price": 15.6
     },
     "revenue": {
       "date": "2026-06",
@@ -39755,11 +39759,11 @@
     "stock_name": "穎崴",
     "valuation": {
       "stock_id": "6515",
-      "current_pe": 151.53,
+      "current_pe": 155.19,
       "sector_pe": 20.0,
-      "pe_score": 7.58,
+      "pe_score": 7.76,
       "status": "High Premium",
-      "price": 7040.0
+      "price": 7210.0
     },
     "revenue": {
       "date": "2026-06",
@@ -39828,11 +39832,11 @@
     "stock_name": "聚賢研發-創",
     "valuation": {
       "stock_id": "7631",
-      "current_pe": 22.87,
+      "current_pe": 22.26,
       "sector_pe": 20.0,
-      "pe_score": 1.14,
+      "pe_score": 1.11,
       "status": "Fair Value",
-      "price": 148.0
+      "price": 144.0
     },
     "revenue": {
       "date": "2026-06",
@@ -39978,7 +39982,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 35.2
+      "price": 35.4
     },
     "revenue": {
       "date": "2026-06",
@@ -40047,11 +40051,11 @@
     "stock_name": "福貞-KY",
     "valuation": {
       "stock_id": "8411",
-      "current_pe": 22.59,
+      "current_pe": 22.32,
       "sector_pe": 20.0,
-      "pe_score": 1.13,
+      "pe_score": 1.12,
       "status": "Fair Value",
-      "price": 12.7
+      "price": 12.5
     },
     "revenue": {
       "date": "N/A",
@@ -40071,11 +40075,11 @@
     "stock_name": "威宏-KY",
     "valuation": {
       "stock_id": "8442",
-      "current_pe": 11.34,
+      "current_pe": 11.27,
       "sector_pe": 20.0,
-      "pe_score": 0.57,
+      "pe_score": 0.56,
       "status": "Undervalued",
-      "price": 45.6
+      "price": 45.3
     },
     "revenue": {
       "date": "N/A",
@@ -40095,11 +40099,11 @@
     "stock_name": "科定",
     "valuation": {
       "stock_id": "6655",
-      "current_pe": 29.54,
+      "current_pe": 30.1,
       "sector_pe": 20.0,
-      "pe_score": 1.48,
+      "pe_score": 1.51,
       "status": "High Premium",
-      "price": 115.5
+      "price": 118.0
     },
     "revenue": {
       "date": "2026-06",
@@ -40314,7 +40318,7 @@
     "stock_name": "麗嬰房",
     "valuation": {
       "stock_id": "2911",
-      "current_pe": 3.45,
+      "current_pe": 3.47,
       "sector_pe": 20.0,
       "pe_score": 0.17,
       "status": "Undervalued",
@@ -40460,11 +40464,11 @@
     "stock_name": "精聯",
     "valuation": {
       "stock_id": "3652",
-      "current_pe": 23.92,
+      "current_pe": 23.35,
       "sector_pe": 20.0,
-      "pe_score": 1.2,
+      "pe_score": 1.17,
       "status": "Fair Value",
-      "price": 32.0
+      "price": 31.0
     },
     "revenue": {
       "date": "2026-06",
@@ -40829,7 +40833,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 32.1
+      "price": 31.7
     },
     "revenue": {
       "date": "2026-06",
@@ -40898,11 +40902,11 @@
     "stock_name": "威強電",
     "valuation": {
       "stock_id": "3022",
-      "current_pe": 18.76,
+      "current_pe": 18.93,
       "sector_pe": 20.0,
-      "pe_score": 0.94,
+      "pe_score": 0.95,
       "status": "Fair Value",
-      "price": 86.3
+      "price": 87.1
     },
     "revenue": {
       "date": "2026-06",
@@ -40971,11 +40975,11 @@
     "stock_name": "微矽電子-創",
     "valuation": {
       "stock_id": "8162",
-      "current_pe": 44.49,
+      "current_pe": 44.42,
       "sector_pe": 20.0,
       "pe_score": 2.22,
       "status": "High Premium",
-      "price": 69.4
+      "price": 69.3
     },
     "revenue": {
       "date": "2026-06",
@@ -41044,11 +41048,11 @@
     "stock_name": "愛爾達-創",
     "valuation": {
       "stock_id": "8487",
-      "current_pe": 21.5,
+      "current_pe": 21.44,
       "sector_pe": 20.0,
-      "pe_score": 1.08,
+      "pe_score": 1.07,
       "status": "Fair Value",
-      "price": 75.9
+      "price": 75.7
     },
     "revenue": {
       "date": "2026-06",
@@ -41121,7 +41125,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 14.8
+      "price": 14.9
     },
     "revenue": {
       "date": "2026-06",
@@ -41190,11 +41194,11 @@
     "stock_name": "南六",
     "valuation": {
       "stock_id": "6504",
-      "current_pe": 12.82,
+      "current_pe": 12.84,
       "sector_pe": 20.0,
       "pe_score": 0.64,
       "status": "Undervalued",
-      "price": 35.9
+      "price": 36.0
     },
     "revenue": {
       "date": "2026-06",
@@ -41263,11 +41267,11 @@
     "stock_name": "台數科",
     "valuation": {
       "stock_id": "6464",
-      "current_pe": 18.62,
+      "current_pe": 18.85,
       "sector_pe": 20.0,
-      "pe_score": 0.93,
+      "pe_score": 0.94,
       "status": "Fair Value",
-      "price": 78.0
+      "price": 79.0
     },
     "revenue": {
       "date": "2026-06",
@@ -41482,9 +41486,9 @@
     "stock_name": "東明-KY",
     "valuation": {
       "stock_id": "5538",
-      "current_pe": 11.08,
+      "current_pe": 11.11,
       "sector_pe": 20.0,
-      "pe_score": 0.55,
+      "pe_score": 0.56,
       "status": "Undervalued",
       "price": 33.5
     },
@@ -41579,11 +41583,11 @@
     "stock_name": "倉佑",
     "valuation": {
       "stock_id": "1568",
-      "current_pe": 22.87,
+      "current_pe": 23.16,
       "sector_pe": 20.0,
-      "pe_score": 1.14,
+      "pe_score": 1.16,
       "status": "Fair Value",
-      "price": 31.1
+      "price": 31.5
     },
     "revenue": {
       "date": "2026-06",
@@ -41798,11 +41802,11 @@
     "stock_name": "震旦行",
     "valuation": {
       "stock_id": "2373",
-      "current_pe": 13.9,
+      "current_pe": 14.01,
       "sector_pe": 20.0,
       "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 53.8
+      "price": 54.2
     },
     "revenue": {
       "date": "2026-06",
@@ -41871,11 +41875,11 @@
     "stock_name": "順天",
     "valuation": {
       "stock_id": "5525",
-      "current_pe": 15.75,
+      "current_pe": 15.83,
       "sector_pe": 20.0,
       "pe_score": 0.79,
       "status": "Undervalued",
-      "price": 22.1
+      "price": 22.0
     },
     "revenue": {
       "date": "2026-06",
@@ -42017,11 +42021,11 @@
     "stock_name": "訊映",
     "valuation": {
       "stock_id": "4155",
-      "current_pe": 27.37,
+      "current_pe": 27.72,
       "sector_pe": 20.0,
-      "pe_score": 1.37,
+      "pe_score": 1.39,
       "status": "High Premium",
-      "price": 15.6
+      "price": 15.8
     },
     "revenue": {
       "date": "2026-06",
@@ -42090,11 +42094,11 @@
     "stock_name": "聯策",
     "valuation": {
       "stock_id": "6658",
-      "current_pe": 144.63,
+      "current_pe": 142.15,
       "sector_pe": 20.0,
-      "pe_score": 7.23,
+      "pe_score": 7.11,
       "status": "High Premium",
-      "price": 175.0
+      "price": 172.0
     },
     "revenue": {
       "date": "2026-06",
@@ -42163,7 +42167,7 @@
     "stock_name": "大億",
     "valuation": {
       "stock_id": "1521",
-      "current_pe": 29.31,
+      "current_pe": 29.37,
       "sector_pe": 20.0,
       "pe_score": 1.47,
       "status": "High Premium",
@@ -42309,11 +42313,11 @@
     "stock_name": "力山",
     "valuation": {
       "stock_id": "1515",
-      "current_pe": 42.27,
+      "current_pe": 43.3,
       "sector_pe": 20.0,
-      "pe_score": 2.11,
+      "pe_score": 2.16,
       "status": "High Premium",
-      "price": 41.0
+      "price": 42.0
     },
     "revenue": {
       "date": "2026-06",
@@ -42382,11 +42386,11 @@
     "stock_name": "揚博",
     "valuation": {
       "stock_id": "2493",
-      "current_pe": 55.4,
+      "current_pe": 56.8,
       "sector_pe": 20.0,
-      "pe_score": 2.77,
+      "pe_score": 2.84,
       "status": "High Premium",
-      "price": 241.0
+      "price": 246.5
     },
     "revenue": {
       "date": "2026-06",
@@ -42747,7 +42751,7 @@
     "stock_name": "黑松",
     "valuation": {
       "stock_id": "1234",
-      "current_pe": 16.73,
+      "current_pe": 16.77,
       "sector_pe": 20.0,
       "pe_score": 0.84,
       "status": "Fair Value",
@@ -42820,11 +42824,11 @@
     "stock_name": "新保",
     "valuation": {
       "stock_id": "9925",
-      "current_pe": 17.39,
+      "current_pe": 17.48,
       "sector_pe": 20.0,
       "pe_score": 0.87,
       "status": "Fair Value",
-      "price": 41.0
+      "price": 41.2
     },
     "revenue": {
       "date": "2026-06",
@@ -42966,11 +42970,11 @@
     "stock_name": "永豐實",
     "valuation": {
       "stock_id": "6790",
-      "current_pe": 12.7,
+      "current_pe": 12.68,
       "sector_pe": 20.0,
       "pe_score": 0.63,
       "status": "Undervalued",
-      "price": 38.4
+      "price": 38.3
     },
     "revenue": {
       "date": "2026-06",
@@ -43112,9 +43116,9 @@
     "stock_name": "台榮",
     "valuation": {
       "stock_id": "1220",
-      "current_pe": 143.12,
+      "current_pe": 142.5,
       "sector_pe": 20.0,
-      "pe_score": 7.16,
+      "pe_score": 7.12,
       "status": "High Premium",
       "price": 11.4
     },
@@ -43258,11 +43262,11 @@
     "stock_name": "安泰銀",
     "valuation": {
       "stock_id": "2849",
-      "current_pe": 18.48,
+      "current_pe": 18.35,
       "sector_pe": 20.0,
       "pe_score": 0.92,
       "status": "Fair Value",
-      "price": 14.6
+      "price": 14.5
     },
     "revenue": {
       "date": "2026-06",
@@ -43355,9 +43359,9 @@
     "stock_name": "宅配通",
     "valuation": {
       "stock_id": "2642",
-      "current_pe": 28.33,
+      "current_pe": 28.26,
       "sector_pe": 20.0,
-      "pe_score": 1.42,
+      "pe_score": 1.41,
       "status": "High Premium",
       "price": 20.4
     },
@@ -43574,11 +43578,11 @@
     "stock_name": "卜蜂",
     "valuation": {
       "stock_id": "1215",
-      "current_pe": 10.88,
+      "current_pe": 10.79,
       "sector_pe": 20.0,
       "pe_score": 0.54,
       "status": "Undervalued",
-      "price": 113.0
+      "price": 112.0
     },
     "revenue": {
       "date": "2026-06",
@@ -43647,11 +43651,11 @@
     "stock_name": "匯僑設計",
     "valuation": {
       "stock_id": "6754",
-      "current_pe": 12.29,
+      "current_pe": 12.38,
       "sector_pe": 20.0,
-      "pe_score": 0.61,
+      "pe_score": 0.62,
       "status": "Undervalued",
-      "price": 41.8
+      "price": 42.1
     },
     "revenue": {
       "date": "2026-06",
@@ -43720,9 +43724,9 @@
     "stock_name": "金麗-KY",
     "valuation": {
       "stock_id": "8429",
-      "current_pe": 51.58,
+      "current_pe": 52.08,
       "sector_pe": 20.0,
-      "pe_score": 2.58,
+      "pe_score": 2.6,
       "status": "High Premium",
       "price": 6.2
     },
@@ -43817,11 +43821,11 @@
     "stock_name": "豐興",
     "valuation": {
       "stock_id": "2015",
-      "current_pe": 16.39,
+      "current_pe": 16.44,
       "sector_pe": 20.0,
       "pe_score": 0.82,
       "status": "Fair Value",
-      "price": 63.1
+      "price": 63.3
     },
     "revenue": {
       "date": "2026-06",
@@ -43890,11 +43894,11 @@
     "stock_name": "特力",
     "valuation": {
       "stock_id": "2908",
-      "current_pe": 94.78,
+      "current_pe": 94.35,
       "sector_pe": 20.0,
-      "pe_score": 4.74,
+      "pe_score": 4.72,
       "status": "High Premium",
-      "price": 21.8
+      "price": 21.7
     },
     "revenue": {
       "date": "2026-06",
@@ -43963,11 +43967,11 @@
     "stock_name": "全國",
     "valuation": {
       "stock_id": "9937",
-      "current_pe": 24.09,
+      "current_pe": 23.96,
       "sector_pe": 20.0,
       "pe_score": 1.2,
-      "status": "High Premium",
-      "price": 56.6
+      "status": "Fair Value",
+      "price": 56.3
     },
     "revenue": {
       "date": "2026-06",
@@ -44109,7 +44113,7 @@
     "stock_name": "如興",
     "valuation": {
       "stock_id": "4414",
-      "current_pe": 12.64,
+      "current_pe": 12.69,
       "sector_pe": 20.0,
       "pe_score": 0.63,
       "status": "Undervalued",
@@ -44182,11 +44186,11 @@
     "stock_name": "雃博",
     "valuation": {
       "stock_id": "4106",
-      "current_pe": 20.88,
+      "current_pe": 20.97,
       "sector_pe": 20.0,
-      "pe_score": 1.04,
+      "pe_score": 1.05,
       "status": "Fair Value",
-      "price": 24.9
+      "price": 25.0
     },
     "revenue": {
       "date": "2026-06",
@@ -44255,11 +44259,11 @@
     "stock_name": "國揚",
     "valuation": {
       "stock_id": "2505",
-      "current_pe": 7.5,
+      "current_pe": 7.54,
       "sector_pe": 20.0,
       "pe_score": 0.38,
       "status": "Undervalued",
-      "price": 17.7
+      "price": 17.8
     },
     "revenue": {
       "date": "2026-06",
@@ -44401,7 +44405,7 @@
     "stock_name": "利奇",
     "valuation": {
       "stock_id": "1517",
-      "current_pe": 1.63,
+      "current_pe": 1.64,
       "sector_pe": 20.0,
       "pe_score": 0.08,
       "status": "Undervalued",
@@ -44474,11 +44478,11 @@
     "stock_name": "華建",
     "valuation": {
       "stock_id": "2530",
-      "current_pe": 9.6,
+      "current_pe": 9.55,
       "sector_pe": 20.0,
       "pe_score": 0.48,
       "status": "Undervalued",
-      "price": 19.1
+      "price": 19.0
     },
     "revenue": {
       "date": "2026-06",
@@ -44551,7 +44555,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 81.7
+      "price": 83.3
     },
     "revenue": {
       "date": "2026-06",
@@ -44766,11 +44770,11 @@
     "stock_name": "廣越",
     "valuation": {
       "stock_id": "4438",
-      "current_pe": 20.93,
+      "current_pe": 21.17,
       "sector_pe": 20.0,
-      "pe_score": 1.05,
+      "pe_score": 1.06,
       "status": "Fair Value",
-      "price": 60.9
+      "price": 61.6
     },
     "revenue": {
       "date": "2026-06",
@@ -44912,11 +44916,11 @@
     "stock_name": "豐祥-KY",
     "valuation": {
       "stock_id": "5288",
-      "current_pe": 14.94,
+      "current_pe": 15.31,
       "sector_pe": 20.0,
-      "pe_score": 0.75,
+      "pe_score": 0.77,
       "status": "Undervalued",
-      "price": 181.5
+      "price": 186.0
     },
     "revenue": {
       "date": "N/A",
@@ -44940,7 +44944,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 17.4
+      "price": 17.6
     },
     "revenue": {
       "date": "2026-06",
@@ -45009,11 +45013,11 @@
     "stock_name": "鑽全",
     "valuation": {
       "stock_id": "1527",
-      "current_pe": 22.34,
+      "current_pe": 22.47,
       "sector_pe": 20.0,
       "pe_score": 1.12,
       "status": "Fair Value",
-      "price": 34.0
+      "price": 34.2
     },
     "revenue": {
       "date": "2026-06",
@@ -45086,7 +45090,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 78.4
+      "price": 78.3
     },
     "revenue": {
       "date": "2026-06",
@@ -45374,11 +45378,11 @@
     "stock_name": "永新-KY",
     "valuation": {
       "stock_id": "4557",
-      "current_pe": 7.56,
+      "current_pe": 7.67,
       "sector_pe": 20.0,
       "pe_score": 0.38,
       "status": "Undervalued",
-      "price": 49.0
+      "price": 49.7
     },
     "revenue": {
       "date": "N/A",
@@ -45398,11 +45402,11 @@
     "stock_name": "毛寶",
     "valuation": {
       "stock_id": "1732",
-      "current_pe": 37.61,
+      "current_pe": 37.97,
       "sector_pe": 20.0,
-      "pe_score": 1.88,
+      "pe_score": 1.9,
       "status": "High Premium",
-      "price": 25.9
+      "price": 26.2
     },
     "revenue": {
       "date": "2026-06",
@@ -45544,11 +45548,11 @@
     "stock_name": "威致",
     "valuation": {
       "stock_id": "2028",
-      "current_pe": 55.71,
+      "current_pe": 56.25,
       "sector_pe": 20.0,
-      "pe_score": 2.79,
+      "pe_score": 2.81,
       "status": "High Premium",
-      "price": 15.6
+      "price": 15.8
     },
     "revenue": {
       "date": "2026-06",
@@ -45690,11 +45694,11 @@
     "stock_name": "泰博",
     "valuation": {
       "stock_id": "4736",
-      "current_pe": 8.46,
+      "current_pe": 8.42,
       "sector_pe": 20.0,
       "pe_score": 0.42,
       "status": "Undervalued",
-      "price": 127.0
+      "price": 126.5
     },
     "revenue": {
       "date": "2026-06",
@@ -45787,11 +45791,11 @@
     "stock_name": "和康生",
     "valuation": {
       "stock_id": "1783",
-      "current_pe": 13.52,
+      "current_pe": 13.64,
       "sector_pe": 20.0,
       "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 39.8
+      "price": 40.1
     },
     "revenue": {
       "date": "2026-06",
@@ -45860,11 +45864,11 @@
     "stock_name": "希華",
     "valuation": {
       "stock_id": "2484",
-      "current_pe": 123.85,
+      "current_pe": 121.38,
       "sector_pe": 20.0,
-      "pe_score": 6.19,
+      "pe_score": 6.07,
       "status": "High Premium",
-      "price": 80.5
+      "price": 78.9
     },
     "revenue": {
       "date": "2026-06",
@@ -45933,11 +45937,11 @@
     "stock_name": "寶齡富錦",
     "valuation": {
       "stock_id": "1760",
-      "current_pe": 27.51,
+      "current_pe": 28.19,
       "sector_pe": 20.0,
-      "pe_score": 1.38,
+      "pe_score": 1.41,
       "status": "High Premium",
-      "price": 60.8
+      "price": 62.3
     },
     "revenue": {
       "date": "2026-06",
@@ -46322,11 +46326,11 @@
     "stock_name": "健策",
     "valuation": {
       "stock_id": "3653",
-      "current_pe": 85.04,
+      "current_pe": 92.1,
       "sector_pe": 20.0,
-      "pe_score": 4.25,
+      "pe_score": 4.61,
       "status": "High Premium",
-      "price": 3070.0
+      "price": 3195.0
     },
     "revenue": {
       "date": "2026-06",
@@ -46468,11 +46472,11 @@
     "stock_name": "慧友",
     "valuation": {
       "stock_id": "5484",
-      "current_pe": 69.35,
+      "current_pe": 69.2,
       "sector_pe": 20.0,
-      "pe_score": 3.47,
+      "pe_score": 3.46,
       "status": "High Premium",
-      "price": 47.9
+      "price": 47.8
     },
     "revenue": {
       "date": "2026-06",
@@ -46541,11 +46545,11 @@
     "stock_name": "勝德",
     "valuation": {
       "stock_id": "3296",
-      "current_pe": 43.28,
+      "current_pe": 42.62,
       "sector_pe": 20.0,
-      "pe_score": 2.16,
+      "pe_score": 2.13,
       "status": "High Premium",
-      "price": 26.4
+      "price": 26.0
     },
     "revenue": {
       "date": "2026-06",
@@ -46906,11 +46910,11 @@
     "stock_name": "鴻名",
     "valuation": {
       "stock_id": "3021",
-      "current_pe": 73.94,
+      "current_pe": 74.24,
       "sector_pe": 20.0,
-      "pe_score": 3.7,
+      "pe_score": 3.71,
       "status": "High Premium",
-      "price": 24.4
+      "price": 24.5
     },
     "revenue": {
       "date": "2026-06",
@@ -47125,11 +47129,11 @@
     "stock_name": "展達",
     "valuation": {
       "stock_id": "3447",
-      "current_pe": 20.47,
+      "current_pe": 21.07,
       "sector_pe": 20.0,
-      "pe_score": 1.02,
+      "pe_score": 1.05,
       "status": "Fair Value",
-      "price": 32.5
+      "price": 33.5
     },
     "revenue": {
       "date": "2026-06",
@@ -47271,11 +47275,11 @@
     "stock_name": "LINEPAY",
     "valuation": {
       "stock_id": "7722",
-      "current_pe": 41.94,
+      "current_pe": 42.42,
       "sector_pe": 20.0,
-      "pe_score": 2.1,
+      "pe_score": 2.12,
       "status": "High Premium",
-      "price": 302.0
+      "price": 305.0
     },
     "revenue": {
       "date": "2026-06",
@@ -47563,11 +47567,11 @@
     "stock_name": "力鵬",
     "valuation": {
       "stock_id": "1447",
-      "current_pe": 22.42,
+      "current_pe": 24.47,
       "sector_pe": 20.0,
-      "pe_score": 1.12,
-      "status": "Fair Value",
-      "price": 8.1
+      "pe_score": 1.22,
+      "status": "High Premium",
+      "price": 8.8
     },
     "revenue": {
       "date": "2026-06",
@@ -47733,11 +47737,11 @@
     "stock_name": "達麗",
     "valuation": {
       "stock_id": "6177",
-      "current_pe": 12.11,
+      "current_pe": 12.25,
       "sector_pe": 20.0,
       "pe_score": 0.61,
       "status": "Undervalued",
-      "price": 46.0
+      "price": 46.5
     },
     "revenue": {
       "date": "2026-06",
@@ -48094,11 +48098,11 @@
     "stock_name": "和泰車",
     "valuation": {
       "stock_id": "2207",
-      "current_pe": 14.15,
+      "current_pe": 14.13,
       "sector_pe": 20.0,
       "pe_score": 0.71,
       "status": "Undervalued",
-      "price": 480.0
+      "price": 479.0
     },
     "revenue": {
       "date": "2026-06",
@@ -48240,11 +48244,11 @@
     "stock_name": "界霖",
     "valuation": {
       "stock_id": "5285",
-      "current_pe": 58.1,
+      "current_pe": 60.65,
       "sector_pe": 20.0,
-      "pe_score": 2.91,
+      "pe_score": 3.03,
       "status": "High Premium",
-      "price": 88.9
+      "price": 92.8
     },
     "revenue": {
       "date": "2026-06",
@@ -48386,11 +48390,11 @@
     "stock_name": "愛山林",
     "valuation": {
       "stock_id": "2540",
-      "current_pe": 77.83,
+      "current_pe": 77.1,
       "sector_pe": 20.0,
-      "pe_score": 3.89,
+      "pe_score": 3.86,
       "status": "High Premium",
-      "price": 53.7
+      "price": 53.2
     },
     "revenue": {
       "date": "2026-06",
@@ -48605,11 +48609,11 @@
     "stock_name": "信錦",
     "valuation": {
       "stock_id": "1582",
-      "current_pe": 22.22,
+      "current_pe": 22.51,
       "sector_pe": 20.0,
-      "pe_score": 1.11,
+      "pe_score": 1.13,
       "status": "Fair Value",
-      "price": 76.2
+      "price": 77.2
     },
     "revenue": {
       "date": "2026-06",
@@ -48678,11 +48682,11 @@
     "stock_name": "富田-創",
     "valuation": {
       "stock_id": "4590",
-      "current_pe": 34.91,
+      "current_pe": 34.87,
       "sector_pe": 20.0,
-      "pe_score": 1.75,
+      "pe_score": 1.74,
       "status": "High Premium",
-      "price": 94.6
+      "price": 94.5
     },
     "revenue": {
       "date": "2026-06",
@@ -48828,7 +48832,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 24.5
+      "price": 24.2
     },
     "revenue": {
       "date": "2026-06",
@@ -48990,11 +48994,11 @@
     "stock_name": "鼎炫-KY",
     "valuation": {
       "stock_id": "8499",
-      "current_pe": 28.33,
+      "current_pe": 29.81,
       "sector_pe": 20.0,
-      "pe_score": 1.42,
+      "pe_score": 1.49,
       "status": "High Premium",
-      "price": 287.0
+      "price": 302.0
     },
     "revenue": {
       "date": "N/A",
@@ -49306,11 +49310,11 @@
     "stock_name": "松川精密",
     "valuation": {
       "stock_id": "7788",
-      "current_pe": 75.21,
+      "current_pe": 73.83,
       "sector_pe": 20.0,
-      "pe_score": 3.76,
+      "pe_score": 3.69,
       "status": "High Premium",
-      "price": 273.0
+      "price": 268.0
     },
     "revenue": {
       "date": "2026-06",
@@ -49379,11 +49383,11 @@
     "stock_name": "日勝化",
     "valuation": {
       "stock_id": "1735",
-      "current_pe": 26.28,
+      "current_pe": 27.05,
       "sector_pe": 20.0,
-      "pe_score": 1.31,
+      "pe_score": 1.35,
       "status": "High Premium",
-      "price": 20.5
+      "price": 21.1
     },
     "revenue": {
       "date": "2026-06",
@@ -49675,7 +49679,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 33.6
+      "price": 34.2
     },
     "revenue": {
       "date": "2026-06",
@@ -49744,11 +49748,11 @@
     "stock_name": "和桐",
     "valuation": {
       "stock_id": "1714",
-      "current_pe": 34.1,
+      "current_pe": 33.0,
       "sector_pe": 20.0,
-      "pe_score": 1.71,
+      "pe_score": 1.65,
       "status": "High Premium",
-      "price": 17.1
+      "price": 16.5
     },
     "revenue": {
       "date": "2026-06",
@@ -50036,11 +50040,11 @@
     "stock_name": "嘉里大榮",
     "valuation": {
       "stock_id": "2608",
-      "current_pe": 14.77,
+      "current_pe": 14.85,
       "sector_pe": 20.0,
       "pe_score": 0.74,
       "status": "Undervalued",
-      "price": 29.1
+      "price": 29.2
     },
     "revenue": {
       "date": "2026-06",
@@ -50109,11 +50113,11 @@
     "stock_name": "福懋油",
     "valuation": {
       "stock_id": "1225",
-      "current_pe": 16.36,
+      "current_pe": 16.42,
       "sector_pe": 20.0,
       "pe_score": 0.82,
       "status": "Fair Value",
-      "price": 26.5
+      "price": 26.6
     },
     "revenue": {
       "date": "2026-06",
@@ -50182,11 +50186,11 @@
     "stock_name": "遠雄",
     "valuation": {
       "stock_id": "5522",
-      "current_pe": 9.07,
+      "current_pe": 8.86,
       "sector_pe": 20.0,
-      "pe_score": 0.45,
+      "pe_score": 0.44,
       "status": "Undervalued",
-      "price": 67.5
+      "price": 67.3
     },
     "revenue": {
       "date": "2026-06",
@@ -50376,11 +50380,11 @@
     "stock_name": "虹揚-KY",
     "valuation": {
       "stock_id": "6573",
-      "current_pe": 19.47,
+      "current_pe": 18.7,
       "sector_pe": 20.0,
-      "pe_score": 0.97,
+      "pe_score": 0.93,
       "status": "Fair Value",
-      "price": 23.9
+      "price": 23.0
     },
     "revenue": {
       "date": "N/A",
@@ -50546,11 +50550,11 @@
     "stock_name": "捷敏-KY",
     "valuation": {
       "stock_id": "6525",
-      "current_pe": 31.24,
+      "current_pe": 31.76,
       "sector_pe": 20.0,
-      "pe_score": 1.56,
+      "pe_score": 1.59,
       "status": "High Premium",
-      "price": 181.5
+      "price": 184.5
     },
     "revenue": {
       "date": "N/A",
@@ -50862,11 +50866,11 @@
     "stock_name": "新產",
     "valuation": {
       "stock_id": "2850",
-      "current_pe": 11.85,
+      "current_pe": 12.09,
       "sector_pe": 20.0,
-      "pe_score": 0.59,
+      "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 145.5
+      "price": 148.5
     },
     "revenue": {
       "date": "2026-05",
@@ -50931,11 +50935,11 @@
     "stock_name": "聚鼎",
     "valuation": {
       "stock_id": "6224",
-      "current_pe": 98.64,
+      "current_pe": 101.41,
       "sector_pe": 20.0,
-      "pe_score": 4.93,
+      "pe_score": 5.07,
       "status": "High Premium",
-      "price": 65.1
+      "price": 64.9
     },
     "revenue": {
       "date": "2026-06",
@@ -51077,11 +51081,11 @@
     "stock_name": "三集瑞-KY",
     "valuation": {
       "stock_id": "6862",
-      "current_pe": 20.24,
+      "current_pe": 20.67,
       "sector_pe": 20.0,
-      "pe_score": 1.01,
+      "pe_score": 1.03,
       "status": "Fair Value",
-      "price": 167.0
+      "price": 170.5
     },
     "revenue": {
       "date": "N/A",
@@ -51202,7 +51206,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 25.9
+      "price": 26.8
     },
     "revenue": {
       "date": "2026-06",
@@ -51514,11 +51518,11 @@
     "stock_name": "名軒",
     "valuation": {
       "stock_id": "1442",
-      "current_pe": 9.52,
+      "current_pe": 9.5,
       "sector_pe": 20.0,
       "pe_score": 0.48,
       "status": "Undervalued",
-      "price": 28.8
+      "price": 28.7
     },
     "revenue": {
       "date": "2026-06",
@@ -51587,11 +51591,11 @@
     "stock_name": "中華化",
     "valuation": {
       "stock_id": "1727",
-      "current_pe": 2195.0,
+      "current_pe": 2227.5,
       "sector_pe": 20.0,
-      "pe_score": 109.75,
+      "pe_score": 111.38,
       "status": "High Premium",
-      "price": 87.8
+      "price": 89.1
     },
     "revenue": {
       "date": "2026-06",
@@ -51660,11 +51664,11 @@
     "stock_name": "大山",
     "valuation": {
       "stock_id": "1615",
-      "current_pe": 9.85,
+      "current_pe": 9.76,
       "sector_pe": 20.0,
       "pe_score": 0.49,
       "status": "Undervalued",
-      "price": 47.1
+      "price": 46.8
     },
     "revenue": {
       "date": "2026-06",
@@ -51952,11 +51956,11 @@
     "stock_name": "光聖",
     "valuation": {
       "stock_id": "6442",
-      "current_pe": 57.6,
+      "current_pe": 58.13,
       "sector_pe": 20.0,
-      "pe_score": 2.88,
+      "pe_score": 2.91,
       "status": "High Premium",
-      "price": 1315.0
+      "price": 1330.0
     },
     "revenue": {
       "date": "2026-06",
@@ -52025,11 +52029,11 @@
     "stock_name": "豐達科",
     "valuation": {
       "stock_id": "3004",
-      "current_pe": 26.65,
+      "current_pe": 26.08,
       "sector_pe": 20.0,
-      "pe_score": 1.33,
+      "pe_score": 1.3,
       "status": "High Premium",
-      "price": 153.5
+      "price": 150.5
     },
     "revenue": {
       "date": "2026-06",
@@ -52171,11 +52175,11 @@
     "stock_name": "台灣高鐵",
     "valuation": {
       "stock_id": "2633",
-      "current_pe": 21.79,
+      "current_pe": 22.01,
       "sector_pe": 20.0,
-      "pe_score": 1.09,
+      "pe_score": 1.1,
       "status": "Fair Value",
-      "price": 25.5
+      "price": 25.8
     },
     "revenue": {
       "date": "2026-06",
@@ -52244,11 +52248,11 @@
     "stock_name": "勝一",
     "valuation": {
       "stock_id": "1773",
-      "current_pe": 24.17,
+      "current_pe": 24.86,
       "sector_pe": 20.0,
-      "pe_score": 1.21,
+      "pe_score": 1.24,
       "status": "High Premium",
-      "price": 174.0
+      "price": 179.0
     },
     "revenue": {
       "date": "2026-06",
@@ -52317,11 +52321,11 @@
     "stock_name": "志強-KY",
     "valuation": {
       "stock_id": "6768",
-      "current_pe": 10.59,
+      "current_pe": 10.65,
       "sector_pe": 20.0,
       "pe_score": 0.53,
       "status": "Undervalued",
-      "price": 70.2
+      "price": 70.6
     },
     "revenue": {
       "date": "N/A",
@@ -52414,11 +52418,11 @@
     "stock_name": "台境*",
     "valuation": {
       "stock_id": "8476",
-      "current_pe": 42.69,
+      "current_pe": 43.56,
       "sector_pe": 20.0,
-      "pe_score": 2.13,
+      "pe_score": 2.18,
       "status": "High Premium",
-      "price": 22.2
+      "price": 22.6
     },
     "revenue": {
       "date": "2026-06",
@@ -52706,7 +52710,7 @@
     "stock_name": "潤弘",
     "valuation": {
       "stock_id": "2597",
-      "current_pe": 15.24,
+      "current_pe": 15.22,
       "sector_pe": 20.0,
       "pe_score": 0.76,
       "status": "Undervalued",
@@ -53002,7 +53006,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 80.4
+      "price": 81.8
     },
     "revenue": {
       "date": "2026-06",
@@ -53144,11 +53148,11 @@
     "stock_name": "矽創",
     "valuation": {
       "stock_id": "8016",
-      "current_pe": 21.27,
+      "current_pe": 21.0,
       "sector_pe": 20.0,
-      "pe_score": 1.06,
+      "pe_score": 1.05,
       "status": "Fair Value",
-      "price": 309.5
+      "price": 305.5
     },
     "revenue": {
       "date": "2026-06",
@@ -53460,11 +53464,11 @@
     "stock_name": "弘憶股",
     "valuation": {
       "stock_id": "3312",
-      "current_pe": 31.23,
+      "current_pe": 31.35,
       "sector_pe": 20.0,
-      "pe_score": 1.56,
+      "pe_score": 1.57,
       "status": "High Premium",
-      "price": 53.4
+      "price": 53.6
     },
     "revenue": {
       "date": "2026-06",
@@ -53752,11 +53756,11 @@
     "stock_name": "鈺邦",
     "valuation": {
       "stock_id": "6449",
-      "current_pe": 41.18,
+      "current_pe": 40.61,
       "sector_pe": 20.0,
-      "pe_score": 2.06,
+      "pe_score": 2.03,
       "status": "High Premium",
-      "price": 299.0
+      "price": 294.0
     },
     "revenue": {
       "date": "2026-06",
@@ -53902,7 +53906,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 25.2
+      "price": 25.0
     },
     "revenue": {
       "date": "2026-06",
@@ -54044,11 +54048,11 @@
     "stock_name": "禾榮科",
     "valuation": {
       "stock_id": "7799",
-      "current_pe": 41.37,
+      "current_pe": 43.1,
       "sector_pe": 20.0,
-      "pe_score": 2.07,
+      "pe_score": 2.15,
       "status": "High Premium",
-      "price": 396.0
+      "price": 412.5
     },
     "revenue": {
       "date": "2026-06",
@@ -54190,11 +54194,11 @@
     "stock_name": "來億-KY",
     "valuation": {
       "stock_id": "6890",
-      "current_pe": 13.76,
+      "current_pe": 13.49,
       "sector_pe": 20.0,
-      "pe_score": 0.69,
+      "pe_score": 0.67,
       "status": "Undervalued",
-      "price": 178.0
+      "price": 174.5
     },
     "revenue": {
       "date": "N/A",
@@ -54214,11 +54218,11 @@
     "stock_name": "宏致",
     "valuation": {
       "stock_id": "3605",
-      "current_pe": 21.6,
+      "current_pe": 21.68,
       "sector_pe": 20.0,
       "pe_score": 1.08,
       "status": "Fair Value",
-      "price": 86.4
+      "price": 86.7
     },
     "revenue": {
       "date": "2026-06",
@@ -54291,7 +54295,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 33.1
+      "price": 33.5
     },
     "revenue": {
       "date": "2026-06",
@@ -54360,11 +54364,11 @@
     "stock_name": "華擎",
     "valuation": {
       "stock_id": "3515",
-      "current_pe": 13.38,
+      "current_pe": 13.67,
       "sector_pe": 20.0,
-      "pe_score": 0.67,
+      "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 203.0
+      "price": 207.5
     },
     "revenue": {
       "date": "2026-06",
@@ -54652,11 +54656,11 @@
     "stock_name": "聯德",
     "valuation": {
       "stock_id": "3308",
-      "current_pe": 30.88,
+      "current_pe": 30.74,
       "sector_pe": 20.0,
       "pe_score": 1.54,
       "status": "High Premium",
-      "price": 21.0
+      "price": 20.9
     },
     "revenue": {
       "date": "2026-06",
@@ -54725,11 +54729,11 @@
     "stock_name": "億豐",
     "valuation": {
       "stock_id": "8464",
-      "current_pe": 16.19,
+      "current_pe": 15.91,
       "sector_pe": 20.0,
-      "pe_score": 0.81,
-      "status": "Fair Value",
-      "price": 364.0
+      "pe_score": 0.8,
+      "status": "Undervalued",
+      "price": 358.0
     },
     "revenue": {
       "date": "2026-06",
@@ -55114,11 +55118,11 @@
     "stock_name": "新建",
     "valuation": {
       "stock_id": "2516",
-      "current_pe": 11.79,
+      "current_pe": 11.38,
       "sector_pe": 20.0,
-      "pe_score": 0.59,
+      "pe_score": 0.57,
       "status": "Undervalued",
-      "price": 14.5
+      "price": 14.0
     },
     "revenue": {
       "date": "2026-06",
@@ -55187,11 +55191,11 @@
     "stock_name": "映泰",
     "valuation": {
       "stock_id": "2399",
-      "current_pe": 275.33,
+      "current_pe": 274.0,
       "sector_pe": 20.0,
-      "pe_score": 13.77,
+      "pe_score": 13.7,
       "status": "High Premium",
-      "price": 41.3
+      "price": 41.1
     },
     "revenue": {
       "date": "2026-06",
@@ -55406,11 +55410,11 @@
     "stock_name": "崇越",
     "valuation": {
       "stock_id": "5434",
-      "current_pe": 25.69,
+      "current_pe": 25.32,
       "sector_pe": 20.0,
-      "pe_score": 1.28,
+      "pe_score": 1.27,
       "status": "High Premium",
-      "price": 550.0
+      "price": 542.0
     },
     "revenue": {
       "date": "2026-06",
@@ -55552,11 +55556,11 @@
     "stock_name": "鈞寶",
     "valuation": {
       "stock_id": "6155",
-      "current_pe": 91.23,
+      "current_pe": 90.96,
       "sector_pe": 20.0,
-      "pe_score": 4.56,
+      "pe_score": 4.55,
       "status": "High Premium",
-      "price": 66.6
+      "price": 66.4
     },
     "revenue": {
       "date": "2026-06",
@@ -55625,11 +55629,11 @@
     "stock_name": "大毅",
     "valuation": {
       "stock_id": "2478",
-      "current_pe": 46.05,
+      "current_pe": 44.88,
       "sector_pe": 20.0,
-      "pe_score": 2.3,
+      "pe_score": 2.24,
       "status": "High Premium",
-      "price": 157.5
+      "price": 153.5
     },
     "revenue": {
       "date": "2026-06",
@@ -55771,11 +55775,11 @@
     "stock_name": "辛耘",
     "valuation": {
       "stock_id": "3583",
-      "current_pe": 57.08,
+      "current_pe": 62.7,
       "sector_pe": 20.0,
-      "pe_score": 2.85,
+      "pe_score": 3.14,
       "status": "High Premium",
-      "price": 766.0
+      "price": 812.0
     },
     "revenue": {
       "date": "2026-06",
@@ -55917,11 +55921,11 @@
     "stock_name": "華興",
     "valuation": {
       "stock_id": "6164",
-      "current_pe": 195.71,
+      "current_pe": 197.14,
       "sector_pe": 20.0,
-      "pe_score": 9.79,
+      "pe_score": 9.86,
       "status": "High Premium",
-      "price": 13.7
+      "price": 13.8
     },
     "revenue": {
       "date": "2026-06",
@@ -55990,11 +55994,11 @@
     "stock_name": "集盛",
     "valuation": {
       "stock_id": "1455",
-      "current_pe": 12.64,
+      "current_pe": 12.92,
       "sector_pe": 20.0,
-      "pe_score": 0.63,
+      "pe_score": 0.65,
       "status": "Undervalued",
-      "price": 9.1
+      "price": 9.3
     },
     "revenue": {
       "date": "2026-06",
@@ -56063,7 +56067,7 @@
     "stock_name": "美亞",
     "valuation": {
       "stock_id": "2020",
-      "current_pe": 9.98,
+      "current_pe": 9.95,
       "sector_pe": 20.0,
       "pe_score": 0.5,
       "status": "Undervalued",
@@ -56136,11 +56140,11 @@
     "stock_name": "冠西電",
     "valuation": {
       "stock_id": "2466",
-      "current_pe": 420.0,
+      "current_pe": 436.0,
       "sector_pe": 20.0,
-      "pe_score": 21.0,
+      "pe_score": 21.8,
       "status": "High Premium",
-      "price": 105.0
+      "price": 109.0
     },
     "revenue": {
       "date": "2026-06",
@@ -56209,11 +56213,11 @@
     "stock_name": "高力",
     "valuation": {
       "stock_id": "8996",
-      "current_pe": 131.58,
+      "current_pe": 134.38,
       "sector_pe": 20.0,
-      "pe_score": 6.58,
+      "pe_score": 6.72,
       "status": "High Premium",
-      "price": 1175.0
+      "price": 1200.0
     },
     "revenue": {
       "date": "2026-06",
@@ -56355,9 +56359,9 @@
     "stock_name": "和椿",
     "valuation": {
       "stock_id": "6215",
-      "current_pe": 50.97,
+      "current_pe": 53.85,
       "sector_pe": 20.0,
-      "pe_score": 2.55,
+      "pe_score": 2.69,
       "status": "High Premium",
       "price": 105.0
     },
@@ -56428,11 +56432,11 @@
     "stock_name": "固緯",
     "valuation": {
       "stock_id": "2423",
-      "current_pe": 28.08,
+      "current_pe": 28.87,
       "sector_pe": 20.0,
-      "pe_score": 1.4,
+      "pe_score": 1.44,
       "status": "High Premium",
-      "price": 81.7
+      "price": 84.0
     },
     "revenue": {
       "date": "2026-06",
@@ -56501,11 +56505,11 @@
     "stock_name": "大量",
     "valuation": {
       "stock_id": "3167",
-      "current_pe": 108.61,
+      "current_pe": 106.64,
       "sector_pe": 20.0,
-      "pe_score": 5.43,
+      "pe_score": 5.33,
       "status": "High Premium",
-      "price": 870.0
+      "price": 900.0
     },
     "revenue": {
       "date": "2026-06",
@@ -56720,11 +56724,11 @@
     "stock_name": "鈺齊-KY",
     "valuation": {
       "stock_id": "9802",
-      "current_pe": 12.61,
+      "current_pe": 12.59,
       "sector_pe": 20.0,
       "pe_score": 0.63,
       "status": "Undervalued",
-      "price": 74.0
+      "price": 73.9
     },
     "revenue": {
       "date": "N/A",
@@ -56744,11 +56748,11 @@
     "stock_name": "樺漢",
     "valuation": {
       "stock_id": "6414",
-      "current_pe": 18.9,
+      "current_pe": 19.33,
       "sector_pe": 20.0,
-      "pe_score": 0.95,
+      "pe_score": 0.97,
       "status": "Fair Value",
-      "price": 377.5
+      "price": 386.0
     },
     "revenue": {
       "date": "2026-06",
@@ -56817,11 +56821,11 @@
     "stock_name": "鉅祥",
     "valuation": {
       "stock_id": "2476",
-      "current_pe": 29.26,
+      "current_pe": 30.22,
       "sector_pe": 20.0,
-      "pe_score": 1.46,
+      "pe_score": 1.51,
       "status": "High Premium",
-      "price": 122.0
+      "price": 126.0
     },
     "revenue": {
       "date": "2026-06",
@@ -56963,11 +56967,11 @@
     "stock_name": "喬福",
     "valuation": {
       "stock_id": "1540",
-      "current_pe": 20.72,
+      "current_pe": 20.86,
       "sector_pe": 20.0,
       "pe_score": 1.04,
       "status": "Fair Value",
-      "price": 23.0
+      "price": 23.1
     },
     "revenue": {
       "date": "2026-06",
@@ -57036,11 +57040,11 @@
     "stock_name": "直得",
     "valuation": {
       "stock_id": "1597",
-      "current_pe": 146.7,
+      "current_pe": 146.15,
       "sector_pe": 20.0,
-      "pe_score": 7.34,
+      "pe_score": 7.31,
       "status": "High Premium",
-      "price": 133.5
+      "price": 133.0
     },
     "revenue": {
       "date": "2026-06",
@@ -57109,11 +57113,11 @@
     "stock_name": "保瑞",
     "valuation": {
       "stock_id": "6472",
-      "current_pe": 12.31,
+      "current_pe": 12.82,
       "sector_pe": 20.0,
-      "pe_score": 0.62,
+      "pe_score": 0.64,
       "status": "Undervalued",
-      "price": 413.0
+      "price": 430.5
     },
     "revenue": {
       "date": "2026-06",
@@ -57328,11 +57332,11 @@
     "stock_name": "立隆電",
     "valuation": {
       "stock_id": "2472",
-      "current_pe": 36.85,
+      "current_pe": 37.59,
       "sector_pe": 20.0,
-      "pe_score": 1.84,
+      "pe_score": 1.88,
       "status": "High Premium",
-      "price": 321.0
+      "price": 327.0
     },
     "revenue": {
       "date": "2026-06",
@@ -57474,11 +57478,11 @@
     "stock_name": "川湖",
     "valuation": {
       "stock_id": "2059",
-      "current_pe": 79.16,
+      "current_pe": 84.38,
       "sector_pe": 20.0,
-      "pe_score": 3.96,
+      "pe_score": 4.22,
       "status": "High Premium",
-      "price": 7995.0
+      "price": 8500.0
     },
     "revenue": {
       "date": "2026-06",
@@ -57693,11 +57697,11 @@
     "stock_name": "普安",
     "valuation": {
       "stock_id": "2495",
-      "current_pe": 39.96,
+      "current_pe": 40.13,
       "sector_pe": 20.0,
-      "pe_score": 2.0,
+      "pe_score": 2.01,
       "status": "High Premium",
-      "price": 44.8
+      "price": 45.0
     },
     "revenue": {
       "date": "2026-06",
@@ -57839,11 +57843,11 @@
     "stock_name": "晶技",
     "valuation": {
       "stock_id": "3042",
-      "current_pe": 35.44,
+      "current_pe": 37.3,
       "sector_pe": 20.0,
-      "pe_score": 1.77,
+      "pe_score": 1.86,
       "status": "High Premium",
-      "price": 185.0
+      "price": 186.5
     },
     "revenue": {
       "date": "2026-06",
@@ -57912,11 +57916,11 @@
     "stock_name": "jpp-KY",
     "valuation": {
       "stock_id": "5284",
-      "current_pe": 25.25,
+      "current_pe": 25.08,
       "sector_pe": 20.0,
-      "pe_score": 1.26,
+      "pe_score": 1.25,
       "status": "High Premium",
-      "price": 304.5
+      "price": 302.5
     },
     "revenue": {
       "date": "N/A",
@@ -57936,11 +57940,11 @@
     "stock_name": "新光鋼",
     "valuation": {
       "stock_id": "2031",
-      "current_pe": 12.01,
+      "current_pe": 12.07,
       "sector_pe": 20.0,
       "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 39.4
+      "price": 39.6
     },
     "revenue": {
       "date": "2026-06",
@@ -58159,7 +58163,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 19.9
+      "price": 20.0
     },
     "revenue": {
       "date": "2026-06",
@@ -58228,11 +58232,11 @@
     "stock_name": "尖點",
     "valuation": {
       "stock_id": "8021",
-      "current_pe": 181.23,
+      "current_pe": 185.71,
       "sector_pe": 20.0,
-      "pe_score": 9.06,
+      "pe_score": 9.29,
       "status": "High Premium",
-      "price": 487.5
+      "price": 507.0
     },
     "revenue": {
       "date": "2026-06",
@@ -58325,11 +58329,11 @@
     "stock_name": "台汽電",
     "valuation": {
       "stock_id": "8926",
-      "current_pe": 28.4,
+      "current_pe": 28.48,
       "sector_pe": 20.0,
       "pe_score": 1.42,
       "status": "High Premium",
-      "price": 67.3
+      "price": 67.5
     },
     "revenue": {
       "date": "2026-06",
@@ -58471,11 +58475,11 @@
     "stock_name": "全友",
     "valuation": {
       "stock_id": "2305",
-      "current_pe": 184.75,
+      "current_pe": 179.0,
       "sector_pe": 20.0,
-      "pe_score": 9.24,
+      "pe_score": 8.95,
       "status": "High Premium",
-      "price": 37.0
+      "price": 35.8
     },
     "revenue": {
       "date": "2026-06",
@@ -58641,11 +58645,11 @@
     "stock_name": "威盛",
     "valuation": {
       "stock_id": "2388",
-      "current_pe": 601.67,
+      "current_pe": 608.33,
       "sector_pe": 20.0,
-      "pe_score": 30.08,
+      "pe_score": 30.42,
       "status": "High Premium",
-      "price": 72.2
+      "price": 73.0
     },
     "revenue": {
       "date": "2026-06",
@@ -58714,11 +58718,11 @@
     "stock_name": "亞航",
     "valuation": {
       "stock_id": "2630",
-      "current_pe": 62.3,
+      "current_pe": 60.6,
       "sector_pe": 20.0,
-      "pe_score": 3.11,
+      "pe_score": 3.03,
       "status": "High Premium",
-      "price": 62.3
+      "price": 60.7
     },
     "revenue": {
       "date": "2026-06",
@@ -58787,11 +58791,11 @@
     "stock_name": "益登",
     "valuation": {
       "stock_id": "3048",
-      "current_pe": 27.8,
+      "current_pe": 27.85,
       "sector_pe": 20.0,
       "pe_score": 1.39,
       "status": "High Premium",
-      "price": 55.6
+      "price": 55.7
     },
     "revenue": {
       "date": "2026-06",
@@ -59006,11 +59010,11 @@
     "stock_name": "致伸",
     "valuation": {
       "stock_id": "4915",
-      "current_pe": 11.97,
+      "current_pe": 12.01,
       "sector_pe": 20.0,
       "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 67.4
+      "price": 67.6
     },
     "revenue": {
       "date": "2026-06",
@@ -59079,11 +59083,11 @@
     "stock_name": "台表科",
     "valuation": {
       "stock_id": "6278",
-      "current_pe": 18.53,
+      "current_pe": 18.94,
       "sector_pe": 20.0,
-      "pe_score": 0.93,
+      "pe_score": 0.95,
       "status": "Fair Value",
-      "price": 172.5
+      "price": 176.5
     },
     "revenue": {
       "date": "2026-06",
@@ -59225,11 +59229,11 @@
     "stock_name": "華晶科",
     "valuation": {
       "stock_id": "3059",
-      "current_pe": 36.3,
+      "current_pe": 36.71,
       "sector_pe": 20.0,
-      "pe_score": 1.82,
+      "pe_score": 1.84,
       "status": "High Premium",
-      "price": 44.6
+      "price": 45.2
     },
     "revenue": {
       "date": "2026-06",
@@ -59371,11 +59375,11 @@
     "stock_name": "三發地產",
     "valuation": {
       "stock_id": "9946",
-      "current_pe": 12.14,
+      "current_pe": 11.97,
       "sector_pe": 20.0,
-      "pe_score": 0.61,
+      "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 18.4
+      "price": 18.2
     },
     "revenue": {
       "date": "2026-06",
@@ -59444,11 +59448,11 @@
     "stock_name": "大銀微系統",
     "valuation": {
       "stock_id": "4576",
-      "current_pe": 100.75,
+      "current_pe": 103.0,
       "sector_pe": 20.0,
-      "pe_score": 5.04,
+      "pe_score": 5.15,
       "status": "High Premium",
-      "price": 202.5
+      "price": 206.0
     },
     "revenue": {
       "date": "2026-06",
@@ -59517,11 +59521,11 @@
     "stock_name": "三晃",
     "valuation": {
       "stock_id": "1721",
-      "current_pe": -24.22,
+      "current_pe": -24.06,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 23.2
+      "price": 23.1
     },
     "revenue": {
       "date": "2026-06",
@@ -59736,11 +59740,11 @@
     "stock_name": "長虹",
     "valuation": {
       "stock_id": "5534",
-      "current_pe": 13.43,
+      "current_pe": 13.45,
       "sector_pe": 20.0,
       "pe_score": 0.67,
       "status": "Undervalued",
-      "price": 79.4
+      "price": 79.5
     },
     "revenue": {
       "date": "2026-06",
@@ -60393,11 +60397,11 @@
     "stock_name": "鼎元",
     "valuation": {
       "stock_id": "2426",
-      "current_pe": 51.39,
+      "current_pe": 51.31,
       "sector_pe": 20.0,
       "pe_score": 2.57,
       "status": "High Premium",
-      "price": 62.7
+      "price": 62.6
     },
     "revenue": {
       "date": "2026-06",
@@ -60466,11 +60470,11 @@
     "stock_name": "凱美",
     "valuation": {
       "stock_id": "2375",
-      "current_pe": 46.24,
+      "current_pe": 45.56,
       "sector_pe": 20.0,
-      "pe_score": 2.31,
+      "pe_score": 2.28,
       "status": "High Premium",
-      "price": 172.0
+      "price": 169.5
     },
     "revenue": {
       "date": "2026-06",
@@ -60758,11 +60762,11 @@
     "stock_name": "全球傳動",
     "valuation": {
       "stock_id": "4540",
-      "current_pe": 108.43,
+      "current_pe": 108.82,
       "sector_pe": 20.0,
-      "pe_score": 5.42,
+      "pe_score": 5.44,
       "status": "High Premium",
-      "price": 55.3
+      "price": 55.5
     },
     "revenue": {
       "date": "2026-06",
@@ -60831,11 +60835,11 @@
     "stock_name": "彰源",
     "valuation": {
       "stock_id": "2030",
-      "current_pe": 49.71,
+      "current_pe": 50.29,
       "sector_pe": 20.0,
-      "pe_score": 2.49,
+      "pe_score": 2.51,
       "status": "High Premium",
-      "price": 17.4
+      "price": 17.6
     },
     "revenue": {
       "date": "2026-06",
@@ -60904,11 +60908,11 @@
     "stock_name": "華孚",
     "valuation": {
       "stock_id": "6235",
-      "current_pe": 14.48,
+      "current_pe": 14.71,
       "sector_pe": 20.0,
-      "pe_score": 0.72,
+      "pe_score": 0.74,
       "status": "Undervalued",
-      "price": 41.9
+      "price": 42.5
     },
     "revenue": {
       "date": "2026-06",
@@ -61050,11 +61054,11 @@
     "stock_name": "帆宣",
     "valuation": {
       "stock_id": "6196",
-      "current_pe": 36.77,
+      "current_pe": 38.2,
       "sector_pe": 20.0,
-      "pe_score": 1.84,
+      "pe_score": 1.91,
       "status": "High Premium",
-      "price": 539.0
+      "price": 560.0
     },
     "revenue": {
       "date": "2026-06",
@@ -61196,11 +61200,11 @@
     "stock_name": "振樺電",
     "valuation": {
       "stock_id": "8114",
-      "current_pe": 10.87,
+      "current_pe": 10.59,
       "sector_pe": 20.0,
-      "pe_score": 0.54,
+      "pe_score": 0.53,
       "status": "Undervalued",
-      "price": 198.0
+      "price": 193.0
     },
     "revenue": {
       "date": "2026-06",
@@ -61269,11 +61273,11 @@
     "stock_name": "東和鋼鐵",
     "valuation": {
       "stock_id": "2006",
-      "current_pe": 10.9,
+      "current_pe": 11.01,
       "sector_pe": 20.0,
       "pe_score": 0.55,
       "status": "Undervalued",
-      "price": 70.2
+      "price": 70.9
     },
     "revenue": {
       "date": "2026-06",
@@ -61342,11 +61346,11 @@
     "stock_name": "眾達-KY",
     "valuation": {
       "stock_id": "4977",
-      "current_pe": 33.26,
+      "current_pe": 33.37,
       "sector_pe": 20.0,
-      "pe_score": 1.66,
+      "pe_score": 1.67,
       "status": "High Premium",
-      "price": 147.0
+      "price": 147.5
     },
     "revenue": {
       "date": "N/A",
@@ -61439,11 +61443,11 @@
     "stock_name": "日電貿",
     "valuation": {
       "stock_id": "3090",
-      "current_pe": 42.9,
+      "current_pe": 42.07,
       "sector_pe": 20.0,
-      "pe_score": 2.14,
+      "pe_score": 2.1,
       "status": "High Premium",
-      "price": 232.5
+      "price": 228.0
     },
     "revenue": {
       "date": "2026-06",
@@ -61512,11 +61516,11 @@
     "stock_name": "達邁",
     "valuation": {
       "stock_id": "3645",
-      "current_pe": 49.48,
+      "current_pe": 50.65,
       "sector_pe": 20.0,
-      "pe_score": 2.47,
+      "pe_score": 2.53,
       "status": "High Premium",
-      "price": 75.7
+      "price": 77.5
     },
     "revenue": {
       "date": "2026-06",
@@ -61731,11 +61735,11 @@
     "stock_name": "康普",
     "valuation": {
       "stock_id": "4739",
-      "current_pe": 64.75,
+      "current_pe": 65.04,
       "sector_pe": 20.0,
-      "pe_score": 3.24,
+      "pe_score": 3.25,
       "status": "High Premium",
-      "price": 91.3
+      "price": 91.7
     },
     "revenue": {
       "date": "2026-06",
@@ -61804,11 +61808,11 @@
     "stock_name": "矽統",
     "valuation": {
       "stock_id": "2363",
-      "current_pe": 40.59,
+      "current_pe": 42.22,
       "sector_pe": 20.0,
-      "pe_score": 2.03,
+      "pe_score": 2.11,
       "status": "High Premium",
-      "price": 62.1
+      "price": 64.6
     },
     "revenue": {
       "date": "2026-06",
@@ -61877,11 +61881,11 @@
     "stock_name": "喬山",
     "valuation": {
       "stock_id": "1736",
-      "current_pe": 14.18,
+      "current_pe": 14.4,
       "sector_pe": 20.0,
-      "pe_score": 0.71,
+      "pe_score": 0.72,
       "status": "Undervalued",
-      "price": 128.5
+      "price": 130.5
     },
     "revenue": {
       "date": "2026-06",
@@ -62023,11 +62027,11 @@
     "stock_name": "雙鍵",
     "valuation": {
       "stock_id": "4764",
-      "current_pe": 273.97,
+      "current_pe": 291.06,
       "sector_pe": 20.0,
-      "pe_score": 13.7,
+      "pe_score": 14.55,
       "status": "High Premium",
-      "price": 331.5
+      "price": 358.0
     },
     "revenue": {
       "date": "2026-06",
@@ -62096,11 +62100,11 @@
     "stock_name": "愛普*",
     "valuation": {
       "stock_id": "6531",
-      "current_pe": 111.72,
+      "current_pe": 122.15,
       "sector_pe": 20.0,
-      "pe_score": 5.59,
+      "pe_score": 6.11,
       "status": "High Premium",
-      "price": 858.0
+      "price": 943.0
     },
     "revenue": {
       "date": "2026-06",
@@ -62173,7 +62177,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 16.7
+      "price": 16.8
     },
     "revenue": {
       "date": "2026-06",
@@ -62315,11 +62319,11 @@
     "stock_name": "東鹼",
     "valuation": {
       "stock_id": "1708",
-      "current_pe": 17.42,
+      "current_pe": 17.39,
       "sector_pe": 20.0,
       "pe_score": 0.87,
       "status": "Fair Value",
-      "price": 56.6
+      "price": 57.2
     },
     "revenue": {
       "date": "2026-06",
@@ -62607,11 +62611,11 @@
     "stock_name": "晟銘電",
     "valuation": {
       "stock_id": "3013",
-      "current_pe": 24.01,
+      "current_pe": 24.06,
       "sector_pe": 20.0,
       "pe_score": 1.2,
       "status": "High Premium",
-      "price": 96.3
+      "price": 96.5
     },
     "revenue": {
       "date": "2026-06",
@@ -62680,11 +62684,11 @@
     "stock_name": "統一實",
     "valuation": {
       "stock_id": "9907",
-      "current_pe": 11.18,
+      "current_pe": 11.14,
       "sector_pe": 20.0,
       "pe_score": 0.56,
       "status": "Undervalued",
-      "price": 15.2
+      "price": 15.1
     },
     "revenue": {
       "date": "2026-06",
@@ -62753,11 +62757,11 @@
     "stock_name": "京鼎",
     "valuation": {
       "stock_id": "3413",
-      "current_pe": 16.27,
+      "current_pe": 16.76,
       "sector_pe": 20.0,
-      "pe_score": 0.81,
+      "pe_score": 0.84,
       "status": "Fair Value",
-      "price": 337.5
+      "price": 348.0
     },
     "revenue": {
       "date": "2026-06",
@@ -63045,11 +63049,11 @@
     "stock_name": "新興",
     "valuation": {
       "stock_id": "2605",
-      "current_pe": 20.79,
+      "current_pe": 21.45,
       "sector_pe": 20.0,
-      "pe_score": 1.04,
+      "pe_score": 1.07,
       "status": "Fair Value",
-      "price": 30.1
+      "price": 31.1
     },
     "revenue": {
       "date": "2026-06",
@@ -63264,11 +63268,11 @@
     "stock_name": "貿聯-KY",
     "valuation": {
       "stock_id": "3665",
-      "current_pe": 38.38,
+      "current_pe": 40.9,
       "sector_pe": 20.0,
-      "pe_score": 1.92,
+      "pe_score": 2.05,
       "status": "High Premium",
-      "price": 1775.0
+      "price": 1895.0
     },
     "revenue": {
       "date": "N/A",
@@ -63507,11 +63511,11 @@
     "stock_name": "全訊",
     "valuation": {
       "stock_id": "5222",
-      "current_pe": 50.6,
+      "current_pe": 50.0,
       "sector_pe": 20.0,
-      "pe_score": 2.53,
+      "pe_score": 2.5,
       "status": "High Premium",
-      "price": 126.0
+      "price": 124.5
     },
     "revenue": {
       "date": "2026-06",
@@ -63677,11 +63681,11 @@
     "stock_name": "零壹",
     "valuation": {
       "stock_id": "3029",
-      "current_pe": 15.59,
+      "current_pe": 15.9,
       "sector_pe": 20.0,
-      "pe_score": 0.78,
+      "pe_score": 0.79,
       "status": "Undervalued",
-      "price": 101.5
+      "price": 103.5
     },
     "revenue": {
       "date": "2026-06",
@@ -63823,11 +63827,11 @@
     "stock_name": "致茂",
     "valuation": {
       "stock_id": "2360",
-      "current_pe": 57.52,
+      "current_pe": 59.26,
       "sector_pe": 20.0,
-      "pe_score": 2.88,
+      "pe_score": 2.96,
       "status": "High Premium",
-      "price": 1820.0
+      "price": 1875.0
     },
     "revenue": {
       "date": "2026-06",
@@ -64042,11 +64046,11 @@
     "stock_name": "台光電",
     "valuation": {
       "stock_id": "2383",
-      "current_pe": 107.74,
+      "current_pe": 111.96,
       "sector_pe": 20.0,
-      "pe_score": 5.39,
+      "pe_score": 5.6,
       "status": "High Premium",
-      "price": 4970.0
+      "price": 5175.0
     },
     "revenue": {
       "date": "2026-06",
@@ -64188,11 +64192,11 @@
     "stock_name": "華城",
     "valuation": {
       "stock_id": "1519",
-      "current_pe": 49.57,
+      "current_pe": 49.64,
       "sector_pe": 20.0,
       "pe_score": 2.48,
       "status": "High Premium",
-      "price": 692.0
+      "price": 693.0
     },
     "revenue": {
       "date": "2026-06",
@@ -64334,11 +64338,11 @@
     "stock_name": "康霈*",
     "valuation": {
       "stock_id": "6919",
-      "current_pe": 20.02,
+      "current_pe": 20.76,
       "sector_pe": 20.0,
-      "pe_score": 1.0,
+      "pe_score": 1.04,
       "status": "Fair Value",
-      "price": 107.5
+      "price": 111.5
     },
     "revenue": {
       "date": "2026-06",
@@ -64407,11 +64411,11 @@
     "stock_name": "毅嘉",
     "valuation": {
       "stock_id": "2402",
-      "current_pe": 27.41,
+      "current_pe": 27.54,
       "sector_pe": 20.0,
-      "pe_score": 1.37,
+      "pe_score": 1.38,
       "status": "High Premium",
-      "price": 63.6
+      "price": 63.9
     },
     "revenue": {
       "date": "2026-06",
@@ -64480,11 +64484,11 @@
     "stock_name": "乙盛-KY",
     "valuation": {
       "stock_id": "5243",
-      "current_pe": 21.21,
+      "current_pe": 22.56,
       "sector_pe": 20.0,
-      "pe_score": 1.06,
+      "pe_score": 1.13,
       "status": "Fair Value",
-      "price": 92.9
+      "price": 98.8
     },
     "revenue": {
       "date": "N/A",
@@ -64504,11 +64508,11 @@
     "stock_name": "神基",
     "valuation": {
       "stock_id": "3005",
-      "current_pe": 13.78,
+      "current_pe": 13.84,
       "sector_pe": 20.0,
       "pe_score": 0.69,
       "status": "Undervalued",
-      "price": 114.5
+      "price": 115.0
     },
     "revenue": {
       "date": "2026-06",
@@ -64723,11 +64727,11 @@
     "stock_name": "泰鼎-KY",
     "valuation": {
       "stock_id": "4927",
-      "current_pe": 5.01,
+      "current_pe": 5.06,
       "sector_pe": 20.0,
       "pe_score": 0.25,
       "status": "Undervalued",
-      "price": 40.1
+      "price": 40.5
     },
     "revenue": {
       "date": "N/A",
@@ -64747,11 +64751,11 @@
     "stock_name": "蔚華科",
     "valuation": {
       "stock_id": "3055",
-      "current_pe": -105.72,
+      "current_pe": -115.66,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 175.5
+      "price": 192.0
     },
     "revenue": {
       "date": "2026-06",
@@ -64820,11 +64824,11 @@
     "stock_name": "祥碩",
     "valuation": {
       "stock_id": "5269",
-      "current_pe": 21.08,
+      "current_pe": 20.91,
       "sector_pe": 20.0,
       "pe_score": 1.05,
       "status": "Fair Value",
-      "price": 1525.0
+      "price": 1515.0
     },
     "revenue": {
       "date": "2026-06",
@@ -64893,11 +64897,11 @@
     "stock_name": "聯詠",
     "valuation": {
       "stock_id": "3034",
-      "current_pe": 17.44,
+      "current_pe": 17.37,
       "sector_pe": 20.0,
       "pe_score": 0.87,
       "status": "Fair Value",
-      "price": 468.0
+      "price": 466.5
     },
     "revenue": {
       "date": "2026-06",
@@ -64966,11 +64970,11 @@
     "stock_name": "慧洋-KY",
     "valuation": {
       "stock_id": "2637",
-      "current_pe": 15.4,
+      "current_pe": 15.31,
       "sector_pe": 20.0,
       "pe_score": 0.77,
       "status": "Undervalued",
-      "price": 83.8
+      "price": 83.3
     },
     "revenue": {
       "date": "N/A",
@@ -65209,11 +65213,11 @@
     "stock_name": "力成",
     "valuation": {
       "stock_id": "6239",
-      "current_pe": 36.28,
+      "current_pe": 37.86,
       "sector_pe": 20.0,
-      "pe_score": 1.81,
+      "pe_score": 1.89,
       "status": "High Premium",
-      "price": 304.0
+      "price": 316.5
     },
     "revenue": {
       "date": "2026-06",
@@ -65282,11 +65286,11 @@
     "stock_name": "昇貿",
     "valuation": {
       "stock_id": "3305",
-      "current_pe": 39.83,
+      "current_pe": 39.67,
       "sector_pe": 20.0,
-      "pe_score": 1.99,
+      "pe_score": 1.98,
       "status": "High Premium",
-      "price": 119.5
+      "price": 119.0
     },
     "revenue": {
       "date": "2026-06",
@@ -65432,7 +65436,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 21.8
+      "price": 22.0
     },
     "revenue": {
       "date": "2026-06",
@@ -65720,11 +65724,11 @@
     "stock_name": "耀登",
     "valuation": {
       "stock_id": "3138",
-      "current_pe": 71.67,
+      "current_pe": 72.19,
       "sector_pe": 20.0,
-      "pe_score": 3.58,
+      "pe_score": 3.61,
       "status": "High Premium",
-      "price": 107.5
+      "price": 109.0
     },
     "revenue": {
       "date": "2026-06",
@@ -65793,9 +65797,9 @@
     "stock_name": "瑞昱",
     "valuation": {
       "stock_id": "2379",
-      "current_pe": 26.88,
+      "current_pe": 27.7,
       "sector_pe": 20.0,
-      "pe_score": 1.34,
+      "pe_score": 1.39,
       "status": "High Premium",
       "price": 754.0
     },
@@ -65939,11 +65943,11 @@
     "stock_name": "上銀",
     "valuation": {
       "stock_id": "2049",
-      "current_pe": 73.38,
+      "current_pe": 74.42,
       "sector_pe": 20.0,
-      "pe_score": 3.67,
+      "pe_score": 3.72,
       "status": "High Premium",
-      "price": 317.0
+      "price": 321.5
     },
     "revenue": {
       "date": "2026-06",
@@ -66012,11 +66016,11 @@
     "stock_name": "台虹",
     "valuation": {
       "stock_id": "8039",
-      "current_pe": 90.93,
+      "current_pe": 93.87,
       "sector_pe": 20.0,
-      "pe_score": 4.55,
+      "pe_score": 4.69,
       "status": "High Premium",
-      "price": 185.5
+      "price": 191.5
     },
     "revenue": {
       "date": "2026-06",
@@ -66304,11 +66308,11 @@
     "stock_name": "金像電",
     "valuation": {
       "stock_id": "2368",
-      "current_pe": 53.36,
+      "current_pe": 54.27,
       "sector_pe": 20.0,
-      "pe_score": 2.67,
+      "pe_score": 2.71,
       "status": "High Premium",
-      "price": 1015.0
+      "price": 1030.0
     },
     "revenue": {
       "date": "2026-06",
@@ -66965,7 +66969,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 34.2
+      "price": 33.7
     },
     "revenue": {
       "date": "2026-06",
@@ -67253,11 +67257,11 @@
     "stock_name": "華新科",
     "valuation": {
       "stock_id": "2492",
-      "current_pe": 82.45,
+      "current_pe": 81.46,
       "sector_pe": 20.0,
-      "pe_score": 4.12,
+      "pe_score": 4.07,
       "status": "High Premium",
-      "price": 390.0
+      "price": 384.5
     },
     "revenue": {
       "date": "2026-06",
@@ -67326,11 +67330,11 @@
     "stock_name": "定穎投控",
     "valuation": {
       "stock_id": "3715",
-      "current_pe": 52.03,
+      "current_pe": 53.72,
       "sector_pe": 20.0,
-      "pe_score": 2.6,
+      "pe_score": 2.69,
       "status": "High Premium",
-      "price": 141.0
+      "price": 144.5
     },
     "revenue": {
       "date": "2026-06",
@@ -67399,11 +67403,11 @@
     "stock_name": "楠梓電",
     "valuation": {
       "stock_id": "2316",
-      "current_pe": 13.76,
+      "current_pe": 13.94,
       "sector_pe": 20.0,
-      "pe_score": 0.69,
+      "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 184.0
+      "price": 186.5
     },
     "revenue": {
       "date": "2026-06",
@@ -67934,11 +67938,11 @@
     "stock_name": "中磊",
     "valuation": {
       "stock_id": "5388",
-      "current_pe": 21.7,
+      "current_pe": 22.58,
       "sector_pe": 20.0,
-      "pe_score": 1.08,
+      "pe_score": 1.13,
       "status": "Fair Value",
-      "price": 85.7
+      "price": 89.2
     },
     "revenue": {
       "date": "2026-06",
@@ -68372,11 +68376,11 @@
     "stock_name": "正文",
     "valuation": {
       "stock_id": "4906",
-      "current_pe": 20.89,
+      "current_pe": 21.14,
       "sector_pe": 20.0,
-      "pe_score": 1.04,
+      "pe_score": 1.06,
       "status": "Fair Value",
-      "price": 37.6
+      "price": 38.0
     },
     "revenue": {
       "date": "2026-06",
@@ -68518,11 +68522,11 @@
     "stock_name": "聯強",
     "valuation": {
       "stock_id": "2347",
-      "current_pe": 16.36,
+      "current_pe": 16.89,
       "sector_pe": 20.0,
-      "pe_score": 0.82,
+      "pe_score": 0.84,
       "status": "Fair Value",
-      "price": 83.1
+      "price": 85.8
     },
     "revenue": {
       "date": "2026-06",
@@ -68591,9 +68595,9 @@
     "stock_name": "中鴻",
     "valuation": {
       "stock_id": "2014",
-      "current_pe": 49.04,
+      "current_pe": 48.89,
       "sector_pe": 20.0,
-      "pe_score": 2.45,
+      "pe_score": 2.44,
       "status": "High Premium",
       "price": 17.0
     },
@@ -68664,11 +68668,11 @@
     "stock_name": "英業達",
     "valuation": {
       "stock_id": "2356",
-      "current_pe": 26.43,
+      "current_pe": 25.39,
       "sector_pe": 20.0,
-      "pe_score": 1.32,
+      "pe_score": 1.27,
       "status": "High Premium",
-      "price": 63.7
+      "price": 61.2
     },
     "revenue": {
       "date": "2026-06",
@@ -68810,11 +68814,11 @@
     "stock_name": "增你強",
     "valuation": {
       "stock_id": "3028",
-      "current_pe": 22.29,
+      "current_pe": 23.44,
       "sector_pe": 20.0,
-      "pe_score": 1.11,
+      "pe_score": 1.17,
       "status": "Fair Value",
-      "price": 70.0
+      "price": 73.6
     },
     "revenue": {
       "date": "2026-06",
@@ -69394,11 +69398,11 @@
     "stock_name": "大成鋼",
     "valuation": {
       "stock_id": "2027",
-      "current_pe": 13.62,
+      "current_pe": 13.92,
       "sector_pe": 20.0,
-      "pe_score": 0.68,
+      "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 39.1
+      "price": 40.0
     },
     "revenue": {
       "date": "2026-06",
@@ -69471,7 +69475,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 47.3
+      "price": 48.9
     },
     "revenue": {
       "date": "2026-06",
@@ -69686,11 +69690,11 @@
     "stock_name": "景碩",
     "valuation": {
       "stock_id": "3189",
-      "current_pe": 239.58,
+      "current_pe": 253.85,
       "sector_pe": 20.0,
-      "pe_score": 11.98,
+      "pe_score": 12.69,
       "status": "High Premium",
-      "price": 805.0
+      "price": 858.0
     },
     "revenue": {
       "date": "2026-06",
@@ -70002,11 +70006,11 @@
     "stock_name": "台化",
     "valuation": {
       "stock_id": "1326",
-      "current_pe": 45.66,
+      "current_pe": 46.75,
       "sector_pe": 20.0,
-      "pe_score": 2.28,
+      "pe_score": 2.34,
       "status": "High Premium",
-      "price": 67.0
+      "price": 68.6
     },
     "revenue": {
       "date": "2026-06",
@@ -70683,11 +70687,11 @@
     "stock_name": "敬鵬",
     "valuation": {
       "stock_id": "2355",
-      "current_pe": 29.69,
+      "current_pe": 29.94,
       "sector_pe": 20.0,
-      "pe_score": 1.48,
+      "pe_score": 1.5,
       "status": "High Premium",
-      "price": 47.2
+      "price": 47.6
     },
     "revenue": {
       "date": "2026-06",
@@ -70756,11 +70760,11 @@
     "stock_name": "泰金寶-DR",
     "valuation": {
       "stock_id": "9105",
-      "current_pe": 48.72,
+      "current_pe": 49.5,
       "sector_pe": 20.0,
-      "pe_score": 2.44,
+      "pe_score": 2.47,
       "status": "High Premium",
-      "price": 8.8
+      "price": 8.9
     },
     "revenue": {
       "date": "N/A",
@@ -70999,11 +71003,11 @@
     "stock_name": "元晶",
     "valuation": {
       "stock_id": "6443",
-      "current_pe": 13.78,
+      "current_pe": 13.94,
       "sector_pe": 20.0,
-      "pe_score": 0.69,
+      "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 29.9
+      "price": 30.2
     },
     "revenue": {
       "date": "2026-06",
@@ -71218,11 +71222,11 @@
     "stock_name": "啟碁",
     "valuation": {
       "stock_id": "6285",
-      "current_pe": 39.47,
+      "current_pe": 42.01,
       "sector_pe": 20.0,
-      "pe_score": 1.97,
+      "pe_score": 2.1,
       "status": "High Premium",
-      "price": 247.5
+      "price": 263.0
     },
     "revenue": {
       "date": "2026-06",
@@ -71291,11 +71295,11 @@
     "stock_name": "臻鼎-KY",
     "valuation": {
       "stock_id": "4958",
-      "current_pe": 92.77,
+      "current_pe": 95.87,
       "sector_pe": 20.0,
-      "pe_score": 4.64,
+      "pe_score": 4.79,
       "status": "High Premium",
-      "price": 629.0
+      "price": 650.0
     },
     "revenue": {
       "date": "N/A",
@@ -71461,11 +71465,11 @@
     "stock_name": "緯創",
     "valuation": {
       "stock_id": "3231",
-      "current_pe": 16.98,
+      "current_pe": 17.28,
       "sector_pe": 20.0,
-      "pe_score": 0.85,
+      "pe_score": 0.86,
       "status": "Fair Value",
-      "price": 142.5
+      "price": 145.0
     },
     "revenue": {
       "date": "2026-06",
@@ -71607,11 +71611,11 @@
     "stock_name": "南亞科",
     "valuation": {
       "stock_id": "2408",
-      "current_pe": 41.37,
+      "current_pe": 43.24,
       "sector_pe": 20.0,
-      "pe_score": 2.07,
+      "pe_score": 2.16,
       "status": "High Premium",
-      "price": 448.0
+      "price": 467.0
     },
     "revenue": {
       "date": "2026-06",
@@ -71680,11 +71684,11 @@
     "stock_name": "彩晶",
     "valuation": {
       "stock_id": "6116",
-      "current_pe": 58.15,
+      "current_pe": 59.44,
       "sector_pe": 20.0,
-      "pe_score": 2.91,
+      "pe_score": 2.97,
       "status": "High Premium",
-      "price": 15.7
+      "price": 16.0
     },
     "revenue": {
       "date": "2026-06",
@@ -71777,11 +71781,11 @@
     "stock_name": "燿華",
     "valuation": {
       "stock_id": "2367",
-      "current_pe": 71.03,
+      "current_pe": 73.53,
       "sector_pe": 20.0,
-      "pe_score": 3.55,
+      "pe_score": 3.68,
       "status": "High Premium",
-      "price": 48.3
+      "price": 50.0
     },
     "revenue": {
       "date": "2026-06",
@@ -72020,11 +72024,11 @@
     "stock_name": "群創",
     "valuation": {
       "stock_id": "3481",
-      "current_pe": 1906.67,
+      "current_pe": 1950.0,
       "sector_pe": 20.0,
-      "pe_score": 95.33,
+      "pe_score": 97.5,
       "status": "High Premium",
-      "price": 57.2
+      "price": 58.5
     },
     "revenue": {
       "date": "2026-06",
@@ -126499,7 +126503,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 18.3
+      "price": 18.5
     },
     "revenue": {
       "date": "2026-06",
@@ -126641,11 +126645,11 @@
     "stock_name": "金興精密",
     "valuation": {
       "stock_id": "7732",
-      "current_pe": 20.66,
+      "current_pe": 20.64,
       "sector_pe": 20.0,
       "pe_score": 1.03,
       "status": "Fair Value",
-      "price": 35.8
+      "price": 35.7
     },
     "revenue": {
       "date": "2026-06",
@@ -126714,11 +126718,11 @@
     "stock_name": "大統新創",
     "valuation": {
       "stock_id": "1470",
-      "current_pe": 27.56,
+      "current_pe": 29.36,
       "sector_pe": 20.0,
-      "pe_score": 1.38,
+      "pe_score": 1.47,
       "status": "High Premium",
-      "price": 21.5
+      "price": 22.9
     },
     "revenue": {
       "date": "2026-06",
@@ -126787,11 +126791,11 @@
     "stock_name": "康控-KY",
     "valuation": {
       "stock_id": "4943",
-      "current_pe": 0.7,
+      "current_pe": 0.71,
       "sector_pe": 20.0,
       "pe_score": 0.04,
       "status": "Undervalued",
-      "price": 8.5
+      "price": 8.6
     },
     "revenue": {
       "date": "N/A",
@@ -126932,7 +126936,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.66,
       "status": "Undervalued",
-      "price": 29.9
+      "price": 30.0
     },
     "revenue": {
       "date": "N/A",
@@ -126956,7 +126960,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 26.6
+      "price": 26.5
     },
     "revenue": {
       "date": "2026-06",
@@ -127029,7 +127033,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 10.8
+      "price": 10.9
     },
     "revenue": {
       "date": "2026-06",
@@ -127414,7 +127418,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 9.1
+      "price": 9.2
     },
     "revenue": {
       "date": "2026-06",
@@ -127483,11 +127487,11 @@
     "stock_name": "統領",
     "valuation": {
       "stock_id": "2910",
-      "current_pe": 19.96,
+      "current_pe": 21.59,
       "sector_pe": 20.0,
-      "pe_score": 1.0,
+      "pe_score": 1.08,
       "status": "Fair Value",
-      "price": 24.6
+      "price": 26.5
     },
     "revenue": {
       "date": "2026-06",
@@ -127556,11 +127560,11 @@
     "stock_name": "欣高",
     "valuation": {
       "stock_id": "9931",
-      "current_pe": 13.69,
+      "current_pe": 13.67,
       "sector_pe": 20.0,
       "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 33.4
+      "price": 33.3
     },
     "revenue": {
       "date": "2026-06",
@@ -127653,11 +127657,11 @@
     "stock_name": "利華",
     "valuation": {
       "stock_id": "1423",
-      "current_pe": 8.48,
+      "current_pe": 8.3,
       "sector_pe": 20.0,
       "pe_score": 0.42,
       "status": "Undervalued",
-      "price": 36.7
+      "price": 36.0
     },
     "revenue": {
       "date": "2026-06",
@@ -127803,7 +127807,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 10.3
+      "price": 10.4
     },
     "revenue": {
       "date": "2026-06",
@@ -131343,7 +131347,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 24.6
+      "price": 25.9
     },
     "revenue": {
       "date": "2026-06",
@@ -133566,11 +133570,11 @@
     "stock_name": "世紀風電",
     "valuation": {
       "stock_id": "2072",
-      "current_pe": 11.81,
+      "current_pe": 12.06,
       "sector_pe": 20.0,
-      "pe_score": 0.59,
+      "pe_score": 0.6,
       "status": "Undervalued",
-      "price": 141.0
+      "price": 144.0
     },
     "revenue": {
       "date": "2026-06",
@@ -133712,11 +133716,11 @@
     "stock_name": "倍利科",
     "valuation": {
       "stock_id": "7822",
-      "current_pe": 65.27,
+      "current_pe": 68.78,
       "sector_pe": 20.0,
-      "pe_score": 3.26,
+      "pe_score": 3.44,
       "status": "High Premium",
-      "price": 917.0
+      "price": 965.0
     },
     "revenue": {
       "date": "2026-06",
@@ -134198,11 +134202,11 @@
     "stock_name": "泰宗",
     "valuation": {
       "stock_id": "4169",
-      "current_pe": 759.38,
+      "current_pe": 781.25,
       "sector_pe": 20.0,
-      "pe_score": 37.97,
+      "pe_score": 39.06,
       "status": "High Premium",
-      "price": 243.0
+      "price": 250.0
     },
     "revenue": {
       "date": "2026-06",
@@ -134830,11 +134834,11 @@
     "stock_name": "永笙-KY",
     "valuation": {
       "stock_id": "4178",
-      "current_pe": -17.55,
+      "current_pe": -17.6,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 18.2
+      "price": 18.3
     },
     "revenue": {
       "date": "N/A",
@@ -135020,11 +135024,11 @@
     "stock_name": "頌勝科技",
     "valuation": {
       "stock_id": "7768",
-      "current_pe": 113.06,
+      "current_pe": 114.14,
       "sector_pe": 20.0,
-      "pe_score": 5.65,
+      "pe_score": 5.71,
       "status": "High Premium",
-      "price": 329.0
+      "price": 331.0
     },
     "revenue": {
       "date": "2026-06",
@@ -135166,11 +135170,11 @@
     "stock_name": "基米-創",
     "valuation": {
       "stock_id": "4195",
-      "current_pe": -282.5,
+      "current_pe": -286.67,
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 16.9
+      "price": 17.2
     },
     "revenue": {
       "date": "2026-06",
@@ -135381,11 +135385,11 @@
     "stock_name": "溢泰實業",
     "valuation": {
       "stock_id": "7818",
-      "current_pe": 12.41,
+      "current_pe": 12.43,
       "sector_pe": 20.0,
       "pe_score": 0.62,
       "status": "Undervalued",
-      "price": 70.0
+      "price": 70.1
     },
     "revenue": {
       "date": "2026-06",
