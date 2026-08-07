@@ -1,11 +1,11 @@
 {
-    "last_updated": "2026-08-06 11:05",
+    "last_updated": "2026-08-07 02:52",
     "market_status": {
         "taiex_close": 44396.7,
         "change": -214.9,
         "change_percent": -0.48,
-        "high": 44601.24,
-        "low": 44024.32,
+        "high": 44827.13,
+        "low": 44217.75,
         "volume": 9740.54973424
     },
     "history": [
@@ -137,7 +137,7 @@
         },
         {
             "name": "投信",
-            "net": 88.56
+            "net": 94.08
         },
         {
             "name": "自營商",
@@ -150,7 +150,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.21,
+        "usd_twd": 32.5,
         "trend": "Stable"
     },
     "sector_flow": [
