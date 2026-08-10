@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-08-10 09:32",
+    "last_updated": "2026-08-10 17:18",
     "market_status": {
         "taiex_close": 44928.76,
         "change": 702.85,
@@ -133,11 +133,11 @@
     "institutional": [
         {
             "name": "外資",
-            "net": 517.15
+            "net": 517.41
         },
         {
             "name": "投信",
-            "net": 29.84
+            "net": 34.01
         },
         {
             "name": "自營商",
@@ -150,7 +150,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 32.5,
+        "usd_twd": 32.25,
         "trend": "Stable"
     },
     "sector_flow": [
