@@ -738,7 +738,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.4,
       "status": "Undervalued",
-      "price": 44.3
+      "price": 44.4
     },
     "revenue": {
       "date": "2026-07",
@@ -957,7 +957,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.02,
       "status": "Fair Value",
-      "price": 39.3
+      "price": 39.4
     },
     "revenue": {
       "date": "2026-07",
@@ -1760,7 +1760,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.68,
       "status": "Undervalued",
-      "price": 16.5
+      "price": 16.6
     },
     "revenue": {
       "date": "2026-07",
@@ -2003,7 +2003,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.7,
       "status": "Undervalued",
-      "price": 43.7
+      "price": 43.6
     },
     "revenue": {
       "date": "2026-07",
@@ -2295,7 +2295,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.24,
       "status": "High Premium",
-      "price": 15.6
+      "price": 15.7
     },
     "revenue": {
       "date": "2026-07",
@@ -2368,7 +2368,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.26,
       "status": "Undervalued",
-      "price": 25.0
+      "price": 25.1
     },
     "revenue": {
       "date": "2026-07",
@@ -2660,7 +2660,7 @@
       "sector_pe": 20.0,
       "pe_score": 3.24,
       "status": "High Premium",
-      "price": 30.5
+      "price": 30.4
     },
     "revenue": {
       "date": "2026-07",
@@ -4752,7 +4752,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 8.1
+      "price": 8.2
     },
     "revenue": {
       "date": "2026-07",
@@ -5555,7 +5555,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.3,
       "status": "Undervalued",
-      "price": 32.8
+      "price": 32.9
     },
     "revenue": {
       "date": "2026-07",
@@ -6869,7 +6869,7 @@
       "sector_pe": 20.0,
       "pe_score": 5.75,
       "status": "High Premium",
-      "price": 10.4
+      "price": 10.3
     },
     "revenue": {
       "date": "2026-07",
@@ -7039,7 +7039,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 40.2
+      "price": 40.1
     },
     "revenue": {
       "date": "2026-07",
@@ -7108,11 +7108,11 @@
     "stock_name": "台勝科",
     "valuation": {
       "stock_id": "3532",
-      "current_pe": 276.36,
+      "current_pe": 265.62,
       "sector_pe": 20.0,
-      "pe_score": 13.82,
+      "pe_score": 13.28,
       "status": "High Premium",
-      "price": 356.5
+      "price": 340.0
     },
     "revenue": {
       "date": "2026-07",
@@ -7171,8 +7171,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -415,
-      "trust_net": -174,
+      "foreign_net": 9833,
+      "trust_net": 190,
       "analysis": "N/A"
     }
   },
@@ -7696,7 +7696,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.42,
       "status": "High Premium",
-      "price": 11.1
+      "price": 11.2
     },
     "revenue": {
       "date": "2026-07",
@@ -9614,11 +9614,11 @@
     "stock_name": "富世達",
     "valuation": {
       "stock_id": "6805",
-      "current_pe": 38.59,
+      "current_pe": 39.53,
       "sector_pe": 20.0,
-      "pe_score": 1.93,
+      "pe_score": 1.98,
       "status": "High Premium",
-      "price": 1800.0
+      "price": 1850.0
     },
     "revenue": {
       "date": "2026-07",
@@ -9677,8 +9677,8 @@
       ]
     },
     "chips": {
-      "foreign_net": -37,
-      "trust_net": 8,
+      "foreign_net": -292,
+      "trust_net": 623,
       "analysis": "N/A"
     }
   },
@@ -10056,7 +10056,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.08,
       "status": "Fair Value",
-      "price": 30.5
+      "price": 30.4
     },
     "revenue": {
       "date": "2026-07",
@@ -10129,7 +10129,7 @@
       "sector_pe": 20.0,
       "pe_score": 15.13,
       "status": "High Premium",
-      "price": 39.3
+      "price": 39.4
     },
     "revenue": {
       "date": "2026-07",
@@ -10202,7 +10202,7 @@
       "sector_pe": 20.0,
       "pe_score": 4.87,
       "status": "High Premium",
-      "price": 17.5
+      "price": 17.6
     },
     "revenue": {
       "date": "2026-07",
@@ -11710,7 +11710,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.58,
       "status": "Undervalued",
-      "price": 17.0
+      "price": 17.1
     },
     "revenue": {
       "date": "2026-07",
@@ -14264,7 +14264,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.43,
       "status": "High Premium",
-      "price": 20.5
+      "price": 20.4
     },
     "revenue": {
       "date": "2026-07",
@@ -15286,7 +15286,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.82,
       "status": "High Premium",
-      "price": 11.6
+      "price": 11.7
     },
     "revenue": {
       "date": "2026-07",
@@ -17645,7 +17645,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 20.5
+      "price": 20.6
     },
     "revenue": {
       "date": "2026-07",
@@ -18107,7 +18107,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.0,
       "status": "Fair Value",
-      "price": 23.0
+      "price": 22.9
     },
     "revenue": {
       "date": "2026-07",
@@ -19055,7 +19055,7 @@
       "sector_pe": 20.0,
       "pe_score": 13.48,
       "status": "High Premium",
-      "price": 32.3
+      "price": 32.4
     },
     "revenue": {
       "date": "2026-07",
@@ -20831,7 +20831,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.73,
       "status": "Undervalued",
-      "price": 13.6
+      "price": 13.7
     },
     "revenue": {
       "date": "2026-07",
@@ -21658,7 +21658,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 11.1
+      "price": 11.2
     },
     "revenue": {
       "date": "N/A",
@@ -21755,7 +21755,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 25.5
+      "price": 25.6
     },
     "revenue": {
       "date": "2026-07",
@@ -22047,7 +22047,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.92,
       "status": "Fair Value",
-      "price": 22.0
+      "price": 21.9
     },
     "revenue": {
       "date": "2026-07",
@@ -22120,7 +22120,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.64,
       "status": "Undervalued",
-      "price": 24.0
+      "price": 24.1
     },
     "revenue": {
       "date": "2026-07",
@@ -22850,7 +22850,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.65,
       "status": "Undervalued",
-      "price": 44.7
+      "price": 44.6
     },
     "revenue": {
       "date": "2026-07",
@@ -23069,7 +23069,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.21,
       "status": "High Premium",
-      "price": 11.1
+      "price": 11.2
     },
     "revenue": {
       "date": "2026-07",
@@ -23531,7 +23531,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.58,
       "status": "Undervalued",
-      "price": 38.7
+      "price": 38.6
     },
     "revenue": {
       "date": "2026-07",
@@ -23750,7 +23750,7 @@
       "sector_pe": 20.0,
       "pe_score": 24.31,
       "status": "High Premium",
-      "price": 19.5
+      "price": 19.4
     },
     "revenue": {
       "date": "2026-07",
@@ -24540,7 +24540,7 @@
     },
     "chips": {
       "foreign_net": -34,
-      "trust_net": -1,
+      "trust_net": 58,
       "analysis": "N/A"
     }
   },
@@ -24845,7 +24845,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.51,
       "status": "Undervalued",
-      "price": 48.8
+      "price": 48.9
     },
     "revenue": {
       "date": "2026-07",
@@ -26523,7 +26523,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 28.0
+      "price": 27.9
     },
     "revenue": {
       "date": "N/A",
@@ -30852,7 +30852,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.88,
       "status": "Fair Value",
-      "price": 13.6
+      "price": 13.7
     },
     "revenue": {
       "date": "2026-07",
@@ -31995,7 +31995,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.14,
       "status": "Undervalued",
-      "price": 15.9
+      "price": 15.8
     },
     "revenue": {
       "date": "N/A",
@@ -32165,7 +32165,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.97,
       "status": "Fair Value",
-      "price": 30.5
+      "price": 30.6
     },
     "revenue": {
       "date": "2026-07",
@@ -32627,7 +32627,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.17,
       "status": "Fair Value",
-      "price": 6.6
+      "price": 6.5
     },
     "revenue": {
       "date": "2026-07",
@@ -33769,7 +33769,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.93,
       "status": "Fair Value",
-      "price": 23.5
+      "price": 23.6
     },
     "revenue": {
       "date": "N/A",
@@ -33793,7 +33793,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.0,
       "status": "Fair Value",
-      "price": 17.5
+      "price": 17.6
     },
     "revenue": {
       "date": "2026-07",
@@ -34352,7 +34352,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.97,
       "status": "Fair Value",
-      "price": 41.7
+      "price": 41.6
     },
     "revenue": {
       "date": "2026-07",
@@ -35252,7 +35252,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.12,
       "status": "Undervalued",
-      "price": 48.8
+      "price": 48.9
     },
     "revenue": {
       "date": "2026-07",
@@ -35325,7 +35325,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 18.0
+      "price": 18.1
     },
     "revenue": {
       "date": "2026-07",
@@ -35398,7 +35398,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.69,
       "status": "Undervalued",
-      "price": 41.8
+      "price": 41.9
     },
     "revenue": {
       "date": "2026-07",
@@ -36152,7 +36152,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.74,
       "status": "Undervalued",
-      "price": 42.2
+      "price": 42.1
     },
     "revenue": {
       "date": "2026-07",
@@ -36444,7 +36444,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.06,
       "status": "Fair Value",
-      "price": 44.3
+      "price": 44.4
     },
     "revenue": {
       "date": "2026-07",
@@ -38511,7 +38511,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.91,
       "status": "Fair Value",
-      "price": 31.5
+      "price": 31.4
     },
     "revenue": {
       "date": "N/A",
@@ -39240,7 +39240,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 36.2
+      "price": 36.1
     },
     "revenue": {
       "date": "2026-07",
@@ -39507,7 +39507,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.08,
       "status": "Undervalued",
-      "price": 14.6
+      "price": 14.7
     },
     "revenue": {
       "date": "2026-07",
@@ -40018,7 +40018,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.47,
       "status": "High Premium",
-      "price": 37.2
+      "price": 37.1
     },
     "revenue": {
       "date": "2026-07",
@@ -40869,7 +40869,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 32.2
+      "price": 32.1
     },
     "revenue": {
       "date": "2026-07",
@@ -42061,7 +42061,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.44,
       "status": "Undervalued",
-      "price": 14.9
+      "price": 14.8
     },
     "revenue": {
       "date": "2026-07",
@@ -42207,7 +42207,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.8,
       "status": "Fair Value",
-      "price": 25.5
+      "price": 25.6
     },
     "revenue": {
       "date": "2026-07",
@@ -44153,7 +44153,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.22,
       "status": "Undervalued",
-      "price": 8.4
+      "price": 8.3
     },
     "revenue": {
       "date": "2026-07",
@@ -44226,7 +44226,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.67,
       "status": "Undervalued",
-      "price": 24.5
+      "price": 24.4
     },
     "revenue": {
       "date": "2026-07",
@@ -44299,7 +44299,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.44,
       "status": "Undervalued",
-      "price": 17.5
+      "price": 17.4
     },
     "revenue": {
       "date": "2026-07",
@@ -44372,7 +44372,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 10.4
+      "price": 10.3
     },
     "revenue": {
       "date": "2026-07",
@@ -44518,7 +44518,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.55,
       "status": "High Premium",
-      "price": 19.5
+      "price": 19.6
     },
     "revenue": {
       "date": "2026-07",
@@ -45803,11 +45803,11 @@
     "stock_name": "廣華-KY",
     "valuation": {
       "stock_id": "1338",
-      "current_pe": 1.7,
+      "current_pe": 0.0,
       "sector_pe": 20.0,
-      "pe_score": 0.08,
-      "status": "Undervalued",
-      "price": 14.6
+      "pe_score": 0.0,
+      "status": "N/A",
+      "price": 14.7
     },
     "revenue": {
       "date": "N/A",
@@ -47023,7 +47023,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 38.7
+      "price": 38.6
     },
     "revenue": {
       "date": "2026-07",
@@ -47096,7 +47096,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.09,
       "status": "Fair Value",
-      "price": 22.5
+      "price": 22.4
     },
     "revenue": {
       "date": "2026-07",
@@ -49066,7 +49066,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.64,
       "status": "Undervalued",
-      "price": 37.8
+      "price": 37.9
     },
     "revenue": {
       "date": "2026-07",
@@ -49135,9 +49135,9 @@
     "stock_name": "南電",
     "valuation": {
       "stock_id": "8046",
-      "current_pe": 141.09,
+      "current_pe": 140.59,
       "sector_pe": 20.0,
-      "pe_score": 7.05,
+      "pe_score": 7.03,
       "status": "High Premium",
       "price": 1195.0
     },
@@ -49942,7 +49942,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.39,
       "status": "Undervalued",
-      "price": 47.3
+      "price": 47.4
     },
     "revenue": {
       "date": "2026-07",
@@ -51546,7 +51546,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 11.1
+      "price": 11.2
     },
     "revenue": {
       "date": "N/A",
@@ -52981,7 +52981,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.42,
       "status": "High Premium",
-      "price": 10.6
+      "price": 10.7
     },
     "revenue": {
       "date": "2026-07",
@@ -54708,7 +54708,7 @@
       "sector_pe": 20.0,
       "pe_score": 9.07,
       "status": "High Premium",
-      "price": 20.0
+      "price": 19.9
     },
     "revenue": {
       "date": "2026-07",
@@ -55754,7 +55754,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.39,
       "status": "Undervalued",
-      "price": 20.0
+      "price": 20.1
     },
     "revenue": {
       "date": "2026-07",
@@ -56325,7 +56325,7 @@
     },
     "chips": {
       "foreign_net": -292,
-      "trust_net": 334,
+      "trust_net": 423,
       "analysis": "N/A"
     }
   },
@@ -58454,7 +58454,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.26,
       "status": "High Premium",
-      "price": 38.2
+      "price": 38.1
     },
     "revenue": {
       "date": "2026-07",
@@ -59208,7 +59208,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.49,
       "status": "High Premium",
-      "price": 17.0
+      "price": 16.9
     },
     "revenue": {
       "date": "2026-07",
@@ -59427,7 +59427,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.21,
       "status": "Undervalued",
-      "price": 19.0
+      "price": 19.1
     },
     "revenue": {
       "date": "2026-07",
@@ -59938,7 +59938,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 13.9
+      "price": 13.8
     },
     "revenue": {
       "date": "2026-07",
@@ -60011,7 +60011,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.42,
       "status": "Undervalued",
-      "price": 31.0
+      "price": 30.9
     },
     "revenue": {
       "date": "2026-07",
@@ -60960,7 +60960,7 @@
       "sector_pe": 20.0,
       "pe_score": 1.18,
       "status": "Fair Value",
-      "price": 37.8
+      "price": 37.9
     },
     "revenue": {
       "date": "2026-07",
@@ -62882,7 +62882,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.93,
       "status": "Fair Value",
-      "price": 48.2
+      "price": 48.1
     },
     "revenue": {
       "date": "2026-07",
@@ -64158,7 +64158,7 @@
     },
     "chips": {
       "foreign_net": 575,
-      "trust_net": 56,
+      "trust_net": 45,
       "analysis": "N/A"
     }
   },
@@ -64779,7 +64779,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.21,
       "status": "Undervalued",
-      "price": 32.8
+      "price": 32.9
     },
     "revenue": {
       "date": "N/A",
@@ -65922,7 +65922,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.04,
       "status": "High Premium",
-      "price": 20.0
+      "price": 19.9
     },
     "revenue": {
       "date": "2026-07",
@@ -67451,7 +67451,7 @@
     "stock_name": "楠梓電",
     "valuation": {
       "stock_id": "2316",
-      "current_pe": 10.88,
+      "current_pe": 10.87,
       "sector_pe": 20.0,
       "pe_score": 0.54,
       "status": "Undervalued",
@@ -67514,8 +67514,8 @@
       ]
     },
     "chips": {
-      "foreign_net": 1047,
-      "trust_net": -1144,
+      "foreign_net": 2157,
+      "trust_net": -1181,
       "analysis": "N/A"
     }
   },
@@ -69304,7 +69304,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.52,
       "status": "Undervalued",
-      "price": 46.7
+      "price": 46.6
     },
     "revenue": {
       "date": "2026-07",
@@ -69669,7 +69669,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.52,
       "status": "Undervalued",
-      "price": 11.1
+      "price": 11.2
     },
     "revenue": {
       "date": "2026-07",
@@ -70180,7 +70180,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.59,
       "status": "Undervalued",
-      "price": 27.5
+      "price": 27.6
     },
     "revenue": {
       "date": "2026-07",
@@ -71553,7 +71553,7 @@
     },
     "chips": {
       "foreign_net": 8051,
-      "trust_net": 1476,
+      "trust_net": 1950,
       "analysis": "N/A"
     }
   },
@@ -71772,7 +71772,7 @@
     },
     "chips": {
       "foreign_net": 26277,
-      "trust_net": 809,
+      "trust_net": 742,
       "analysis": "N/A"
     }
   },
@@ -128022,7 +128022,7 @@
       "sector_pe": 20.0,
       "pe_score": 2.49,
       "status": "High Premium",
-      "price": 20.0
+      "price": 19.9
     },
     "revenue": {
       "date": "2026-07",
@@ -136442,7 +136442,7 @@
       "sector_pe": 20.0,
       "pe_score": 0.0,
       "status": "N/A",
-      "price": 17.5
+      "price": 17.4
     },
     "revenue": {
       "date": "N/A",
