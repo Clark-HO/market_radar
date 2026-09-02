@@ -1,11 +1,11 @@
 {
-    "last_updated": "2026-09-01 19:24",
+    "last_updated": "2026-09-02 03:41",
     "market_status": {
         "taiex_close": 46948.72,
         "change": 820.25,
         "change_percent": 1.78,
-        "high": 46948.72,
-        "low": 46081.11,
+        "high": 46946.6,
+        "low": 46202.36,
         "volume": 11875.71567117
     },
     "history": [
@@ -150,7 +150,7 @@
         "futures_color": "green"
     },
     "currency": {
-        "usd_twd": 31.7,
+        "usd_twd": 32.5,
         "trend": "Stable"
     },
     "sector_flow": [
