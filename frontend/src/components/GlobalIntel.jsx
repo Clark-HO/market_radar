@@ -1,26 +1,44 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, TrendingUp, AlertTriangle, Zap, Clock, Activity, ArrowRight, TrendingDown, HelpCircle, X } from 'lucide-react';
+import { Calendar, TrendingUp, AlertTriangle, Zap, Clock, Activity, ArrowRight, ArrowDown, HelpCircle, X } from 'lucide-react';
 
 const GlobalIntel = () => {
     const [data, setData] = useState(null);
+    const [error, setError] = useState(null);
     const [selectedEvent, setSelectedEvent] = useState(null);
     const [showLegend, setShowLegend] = useState(false);
 
-    useEffect(() => {
-        // Fetch from local public folder (Vercel Root)
+    const fetchData = () => {
+        setError(null);
         fetch('/global_data.json')
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) throw new Error('Network response was not ok');
+                return res.json();
+            })
             .then(d => {
                 setData(d);
                 if (d.events && d.events.length > 0) {
-                    // Default select the first "Imminent" event
                     const imminent = d.events.find(e => e.status === 'Imminent');
                     setSelectedEvent(imminent || d.events[0]);
                 }
             })
-            .catch(err => console.error("Failed to load global data", err));
+            .catch(err => {
+                console.error("Failed to load global data", err);
+                setError(err.message);
+            });
+    };
+
+    useEffect(() => {
+        fetchData();
     }, []);
 
+
+    if (error) return (
+        <div className="flex flex-col items-center justify-center p-20 text-red-400">
+            <AlertTriangle className="w-10 h-10 mb-4" />
+            <div className="mb-4">資料載入失敗: {error}</div>
+            <button onClick={fetchData} className="px-4 py-2 bg-red-500/20 rounded hover:bg-red-500/30">重試</button>
+        </div>
+    );
 
     if (!data) return (
         <div className="flex flex-col items-center justify-center p-20 text-muted animate-pulse">
@@ -185,7 +203,7 @@ const GlobalIntel = () => {
 
                                 {/* Arrow (Mobile) */}
                                 <div className="lg:hidden flex justify-center -my-2 opacity-30">
-                                    <TrendingDown size={20} />
+                                    <ArrowDown size={20} />
                                 </div>
 
                                 {/* TW Followers */}
@@ -198,17 +216,17 @@ const GlobalIntel = () => {
                                         let signalText = tw.signal;
 
                                         // Translate Signals
-                                        if (tw.signal.includes("Lagging")) { // Buy Opp
+                                        if (tw.signal?.includes("Lagging")) { // Buy Opp
                                             signalBorder = "border-green-500/50";
                                             signalBg = "bg-green-500/10";
                                             signalIcon = <Zap size={14} className="text-green-400 animate-pulse" />;
                                             signalText = "⚡ 補漲機會";
-                                        } else if (tw.signal.includes("Risk")) {
+                                        } else if (tw.signal?.includes("Risk")) {
                                             signalBorder = "border-red-500/50";
                                             signalBg = "bg-red-500/10";
                                             signalIcon = <AlertTriangle size={14} className="text-red-400" />;
                                             signalText = "⚠️ 風險警示";
-                                        } else if (tw.signal.includes("Rally")) {
+                                        } else if (tw.signal?.includes("Rally")) {
                                             signalBorder = "border-orange-500/50";
                                             signalBg = "bg-orange-500/10";
                                             signalIcon = <TrendingUp size={14} className="text-orange-400" />;
@@ -234,7 +252,7 @@ const GlobalIntel = () => {
                                                     <div className="font-mono text-slate-300 text-sm">{tw.price}</div>
                                                 </div>
 
-                                                {tw.signal !== 'Neutral' && (
+                                                {['Lagging', 'Risk', 'Rally'].includes(tw.signal) && (
                                                     <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-slate-900/90 backdrop-blur text-[10px] px-2 py-0.5 rounded-full border border-slate-700 shadow-xl z-20 whitespace-nowrap">
                                                         {signalText}
                                                     </div>

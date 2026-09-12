@@ -1,0 +1,338 @@
+[
+  {
+    "event": "MWC 世界行動通訊大會 2026",
+    "date": "2026-02-09",
+    "end_date": "2026-02-12",
+    "theme": "6G / Wi-Fi 7 / 邊緣 AI",
+    "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
+    "supply_chain": [
+      {
+        "us_symbol": "QCOM",
+        "us_name": "高通",
+        "tw_tickers": [
+          "2454",
+          "2379",
+          "3105"
+        ],
+        "tw_sector": "IC 設計"
+      },
+      {
+        "us_symbol": "AVGO",
+        "us_name": "博通",
+        "tw_tickers": [
+          "5388",
+          "6285"
+        ],
+        "tw_sector": "網通設備"
+      }
+    ]
+  },
+  {
+    "event": "NVIDIA GTC 大會 2026",
+    "date": "2026-03-09",
+    "end_date": "2026-03-12",
+    "theme": "Blackwell Ultra / Rubin GPU / AI 推論",
+    "description": "AI 界的伍茲塔克。黃仁勳揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
+    "supply_chain": [
+      {
+        "us_symbol": "NVDA",
+        "us_name": "輝達",
+        "tw_tickers": [
+          "2330",
+          "2382",
+          "3231",
+          "6669"
+        ],
+        "tw_sector": "AI 伺服器"
+      },
+      {
+        "us_symbol": "SMCI",
+        "us_name": "美超微",
+        "tw_tickers": [
+          "2376",
+          "2324"
+        ],
+        "tw_sector": "伺服器代工"
+      }
+    ]
+  },
+  {
+    "event": "Google I/O 開發者大會 2026",
+    "date": "2026-05-11",
+    "end_date": "2026-05-12",
+    "theme": "Gemini / Android / AI Agent",
+    "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
+    "supply_chain": [
+      {
+        "us_symbol": "GOOGL",
+        "us_name": "Alphabet",
+        "tw_tickers": [
+          "2357",
+          "2498"
+        ],
+        "tw_sector": "安卓生態系"
+      }
+    ]
+  },
+  {
+    "event": "Computex 台北國際電腦展 2026",
+    "date": "2026-06-08",
+    "end_date": "2026-06-12",
+    "theme": "AI PC / Copilot+ / 伺服器",
+    "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長齊聚台北，發布 AI PC 新品。",
+    "supply_chain": [
+      {
+        "us_symbol": "MSFT",
+        "us_name": "微軟",
+        "tw_tickers": [
+          "2353",
+          "2357",
+          "2301"
+        ],
+        "tw_sector": "AI PC 供應鏈"
+      },
+      {
+        "us_symbol": "AMD",
+        "us_name": "超微",
+        "tw_tickers": [
+          "2330",
+          "3711"
+        ],
+        "tw_sector": "HPC 運算"
+      }
+    ]
+  },
+  {
+    "event": "Apple WWDC 開發者大會 2026",
+    "date": "2026-06-08",
+    "end_date": "2026-06-12",
+    "theme": "iOS / macOS / Siri LLM",
+    "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
+    "supply_chain": [
+      {
+        "us_symbol": "AAPL",
+        "us_name": "蘋果",
+        "tw_tickers": [
+          "2317",
+          "3008",
+          "4938"
+        ],
+        "tw_sector": "蘋果供應鏈"
+      }
+    ]
+  },
+  {
+    "event": "IFA 柏林消費電子展 2026",
+    "date": "2026-09-04",
+    "end_date": "2026-09-08",
+    "theme": "家電 / IoT / 穿戴裝置",
+    "description": "歐洲最大消費電子展。聚焦智慧家庭、穿戴裝置與永續科技。",
+    "supply_chain": [
+      {
+        "us_symbol": "GOOGL",
+        "us_name": "Alphabet",
+        "tw_tickers": [
+          "2317",
+          "2357"
+        ],
+        "tw_sector": "消費電子"
+      }
+    ]
+  },
+  {
+    "event": "CES 消費電子展 2026",
+    "date": "2026-10-13",
+    "end_date": "2026-10-16",
+    "theme": "AI 硬體 / 智慧家庭 / 電動車",
+    "description": "全球最大消費電子展。聚焦 AI PC、穿戴裝置與車用電子新品發表。",
+    "supply_chain": [
+      {
+        "us_symbol": "NVDA",
+        "us_name": "輝達",
+        "tw_tickers": [
+          "2330",
+          "2454",
+          "3231"
+        ],
+        "tw_sector": "AI 晶片"
+      },
+      {
+        "us_symbol": "INTC",
+        "us_name": "英特爾",
+        "tw_tickers": [
+          "2357",
+          "2353"
+        ],
+        "tw_sector": "PC 供應鏈"
+      }
+    ]
+  },
+  {
+    "event": "CES 消費電子展 2027",
+    "date": "2027-01-11",
+    "end_date": "2027-01-14",
+    "theme": "AI 硬體 / 智慧家庭 / 電動車",
+    "description": "全球最大消費電子展。聚焦 AI PC、穿戴裝置與車用電子新品發表。",
+    "supply_chain": [
+      {
+        "us_symbol": "NVDA",
+        "us_name": "輝達",
+        "tw_tickers": [
+          "2330",
+          "2454",
+          "3231"
+        ],
+        "tw_sector": "AI 晶片"
+      },
+      {
+        "us_symbol": "INTC",
+        "us_name": "英特爾",
+        "tw_tickers": [
+          "2357",
+          "2353"
+        ],
+        "tw_sector": "PC 供應鏈"
+      }
+    ]
+  },
+  {
+    "event": "MWC 世界行動通訊大會 2027",
+    "date": "2027-02-08",
+    "end_date": "2027-02-11",
+    "theme": "6G / Wi-Fi 7 / 邊緣 AI",
+    "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
+    "supply_chain": [
+      {
+        "us_symbol": "QCOM",
+        "us_name": "高通",
+        "tw_tickers": [
+          "2454",
+          "2379",
+          "3105"
+        ],
+        "tw_sector": "IC 設計"
+      },
+      {
+        "us_symbol": "AVGO",
+        "us_name": "博通",
+        "tw_tickers": [
+          "5388",
+          "6285"
+        ],
+        "tw_sector": "網通設備"
+      }
+    ]
+  },
+  {
+    "event": "NVIDIA GTC 大會 2027",
+    "date": "2027-03-08",
+    "end_date": "2027-03-11",
+    "theme": "Blackwell Ultra / Rubin GPU / AI 推論",
+    "description": "AI 界的伍茲塔克。黃仁勳揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
+    "supply_chain": [
+      {
+        "us_symbol": "NVDA",
+        "us_name": "輝達",
+        "tw_tickers": [
+          "2330",
+          "2382",
+          "3231",
+          "6669"
+        ],
+        "tw_sector": "AI 伺服器"
+      },
+      {
+        "us_symbol": "SMCI",
+        "us_name": "美超微",
+        "tw_tickers": [
+          "2376",
+          "2324"
+        ],
+        "tw_sector": "伺服器代工"
+      }
+    ]
+  },
+  {
+    "event": "Google I/O 開發者大會 2027",
+    "date": "2027-05-10",
+    "end_date": "2027-05-11",
+    "theme": "Gemini / Android / AI Agent",
+    "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
+    "supply_chain": [
+      {
+        "us_symbol": "GOOGL",
+        "us_name": "Alphabet",
+        "tw_tickers": [
+          "2357",
+          "2498"
+        ],
+        "tw_sector": "安卓生態系"
+      }
+    ]
+  },
+  {
+    "event": "Computex 台北國際電腦展 2027",
+    "date": "2027-06-14",
+    "end_date": "2027-06-18",
+    "theme": "AI PC / Copilot+ / 伺服器",
+    "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長齊聚台北，發布 AI PC 新品。",
+    "supply_chain": [
+      {
+        "us_symbol": "MSFT",
+        "us_name": "微軟",
+        "tw_tickers": [
+          "2353",
+          "2357",
+          "2301"
+        ],
+        "tw_sector": "AI PC 供應鏈"
+      },
+      {
+        "us_symbol": "AMD",
+        "us_name": "超微",
+        "tw_tickers": [
+          "2330",
+          "3711"
+        ],
+        "tw_sector": "HPC 運算"
+      }
+    ]
+  },
+  {
+    "event": "Apple WWDC 開發者大會 2027",
+    "date": "2027-06-14",
+    "end_date": "2027-06-18",
+    "theme": "iOS / macOS / Siri LLM",
+    "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
+    "supply_chain": [
+      {
+        "us_symbol": "AAPL",
+        "us_name": "蘋果",
+        "tw_tickers": [
+          "2317",
+          "3008",
+          "4938"
+        ],
+        "tw_sector": "蘋果供應鏈"
+      }
+    ]
+  },
+  {
+    "event": "IFA 柏林消費電子展 2027",
+    "date": "2027-09-13",
+    "end_date": "2027-09-17",
+    "theme": "家電 / IoT / 穿戴裝置",
+    "description": "歐洲最大消費電子展。聚焦智慧家庭、穿戴裝置與永續科技。",
+    "supply_chain": [
+      {
+        "us_symbol": "GOOGL",
+        "us_name": "Alphabet",
+        "tw_tickers": [
+          "2317",
+          "2357"
+        ],
+        "tw_sector": "消費電子"
+      }
+    ]
+  }
+]

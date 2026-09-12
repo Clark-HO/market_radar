@@ -7,14 +7,25 @@ import re
 from datetime import datetime
 
 class handler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        # 1. Setup Headers (CORS)
-        self.send_response(200)
+    def _send_cors_headers(self):
         self.send_header('Content-type', 'application/json')
-        self.send_header('Access-Control-Allow-Origin', '*') 
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+
+    def _send_json(self, data, status=200):
+        self.send_response(status)
+        self._send_cors_headers()
+        self.end_headers()
+        self.wfile.write(json.dumps(data).encode('utf-8'))
+
+    def do_OPTIONS(self):
+        self.send_response(204)
+        self._send_cors_headers()
         self.end_headers()
 
-        # 2. Parse Query Params
+    def do_GET(self):
+        # Parse Query Params
         parsed_path = urlparse(self.path)
         params = parse_qs(parsed_path.query)
         
@@ -23,28 +34,47 @@ class handler(BaseHTTPRequestHandler):
 
         stock_id = get_param("stock_id")
         
-        # 3. Validation & Setup API Key
-        # [CRITICAL FIX] Define api_key BEFORE usage
+        # Validate API Key
         api_key = os.environ.get("GEMINI_API_KEY")
         
         if not api_key:
-            self.wfile.write(json.dumps({
+            self._send_json({
                 "score": 0, "verdict": "Config Error", 
-                "report": "❌ GEMINI_API_KEY is missing."
-            }).encode('utf-8'))
+                "report": "❌ API configuration error."
+            }, 500)
             return
             
         if not stock_id or stock_id == "N/A":
-             self.wfile.write(json.dumps({
+            self._send_json({
                 "score": 0, "verdict": "Ready", 
                 "report": "✅ API Online. Waiting for stock_id."
-            }).encode('utf-8'))
-             return
+            })
+            return
 
-        # 4. Construct Prompt with REAL DATA INJECTION & HEDGE FUND PERSONA
+        # Input validation
+        if not re.match(r'^[0-9A-Za-z]{2,6}$', stock_id):
+            self._send_json({
+                "score": 0, "verdict": "Input Error",
+                "report": "⚠️ Invalid stock_id format."
+            }, 400)
+            return
+
+        # Construct Prompt
         current_price = get_param("price", "未知")
         current_change = get_param("change", "未知")
         pe = get_param("pe", "N/A") 
+        
+        # Sanitize numeric inputs
+        try:
+            if current_price != "未知" and current_price != "N/A":
+                current_price = str(float(current_price))
+        except (ValueError, TypeError):
+            current_price = "未知"
+        try:
+            if pe != "N/A":
+                pe = str(float(pe))
+        except (ValueError, TypeError):
+            pe = "N/A"
         
         today = datetime.now().strftime("%Y-%m-%d")
         
@@ -64,11 +94,11 @@ class handler(BaseHTTPRequestHandler):
             f"### 輸出格式 (Strict JSON ONLY)：\n"
             f"請務必回傳一個標準的 JSON 物件，**嚴禁**使用 Markdown (```json)，也**嚴禁**包含閒聊文字。JSON 格式如下：\n"
             f"{{\n"
-            f"  \"buy_price\": \"[數值區間]\",  // 請根據目前股價 {current_price} 與技術支撐，給出具體買進區間 (例如: '23.5 - 24.0')。\n"
-            f"  \"sell_price\": \"[數值區間]\", // 請根據目前股價 {current_price} 與壓力位，給出具體賣出區間。\n"
-            f"  \"score\": 0-100, // AI 綜合戰力評分\n"
-            f"  \"verdict\": \"[強烈看多 / 謹慎看多 / 中立觀望 / 轉弱看空]\", // 請選一個填入\n" 
-            f"  \"content\": \"[完整分析]\"     // 請在此欄位中，使用 Markdown 格式撰寫『操盤手戰情室』報告。\n"
+            f"  \"buy_price\": \"[數值區間]\",\n"
+            f"  \"sell_price\": \"[數值區間]\",\n"
+            f"  \"score\": 0-100,\n"
+            f"  \"verdict\": \"[強烈看多 / 謹慎看多 / 中立觀望 / 轉弱看空]\",\n" 
+            f"  \"content\": \"[完整分析]\"\n"
             f"}}\n"
             f"\n"
             f"### Content 欄位撰寫指引：\n"
@@ -83,11 +113,12 @@ class handler(BaseHTTPRequestHandler):
         )
 
         try:
-            # 5. Call Gemini via Raw HTTP (No SDK)
-            # [User Request] Use gemini-2.0-flash (Stable, Better Quota)
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
+            url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
             
-            headers = {'Content-Type': 'application/json'}
+            headers = {
+                'Content-Type': 'application/json',
+                'x-goog-api-key': api_key
+            }
             data = {
                 "contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {
@@ -95,15 +126,13 @@ class handler(BaseHTTPRequestHandler):
                 }
             }
             
-            # The lightweight request
-            response = requests.post(url, headers=headers, json=data)
+            response = requests.post(url, headers=headers, json=data, timeout=15)
             
-            # Check non-200 status
             if response.status_code != 200:
-                self.wfile.write(json.dumps({
+                self._send_json({
                     "score": 0, "verdict": "API Error", 
-                    "report": f"⚠️ Google Cloud Error: {response.text}"
-                }).encode('utf-8'))
+                    "report": "⚠️ AI 服務暫時不可用，請稍後再試。"
+                }, 502)
                 return
 
             result = response.json()
@@ -111,26 +140,22 @@ class handler(BaseHTTPRequestHandler):
             try:
                 raw_text = result['candidates'][0]['content']['parts'][0]['text']
             except (KeyError, IndexError):
-                error_detail = result.get('error', {}).get('message', 'Unknown Error')
-                self.wfile.write(json.dumps({"error": str(error_detail)}).encode('utf-8'))
+                self._send_json({
+                    "score": 0, "verdict": "Parse Error",
+                    "report": "⚠️ AI 回應格式異常，請重試。"
+                }, 502)
                 return
 
-            # ✅ Parse JSON from AI Response
-            # Clean up potential Markdown wrappers (```json ... ```)
+            # Parse JSON from AI Response
             clean_text = raw_text.replace("```json", "").replace("```", "").strip()
             
             try:
                 ai_data = json.loads(clean_text)
-                # Map 'content' to 'report' for frontend compatibility if needed, 
-                # but frontend likely uses 'content' or 'report'. 
-                # StockScan.jsx uses 'report'. Let's ensure 'report' exists.
                 if 'report' not in ai_data and 'content' in ai_data:
                     ai_data['report'] = ai_data['content']
                 
-                # Send structured data to frontend
-                self.wfile.write(json.dumps(ai_data).encode('utf-8'))
+                self._send_json(ai_data)
             except json.JSONDecodeError:
-                # Fallback if AI fails to give JSON
                 fallback = {
                     "buy_price": "N/A", 
                     "sell_price": "N/A", 
@@ -138,10 +163,15 @@ class handler(BaseHTTPRequestHandler):
                     "verdict": "AI 分析完成",
                     "report": raw_text
                 }
-                self.wfile.write(json.dumps(fallback).encode('utf-8'))
+                self._send_json(fallback)
 
+        except requests.Timeout:
+            self._send_json({
+                "score": 0, "verdict": "Timeout",
+                "report": "⚠️ AI 分析超時，請稍後再試。"
+            }, 504)
         except Exception as e:
-            self.wfile.write(json.dumps({
+            self._send_json({
                 "score": 0, "verdict": "Runtime Error", 
-                "report": f"⚠️ Backend Exception: {str(e)}"
-            }).encode('utf-8'))
+                "report": "⚠️ 伺服器內部錯誤，請稍後再試。"
+            }, 500)

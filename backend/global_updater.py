@@ -2,97 +2,64 @@ import yfinance as yf
 import json
 import os
 import datetime
+import copy
+import requests
 from dateutil.relativedelta import relativedelta
 import time
 
 # --- Configuration ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# Target: market_radar/frontend/public
 PUBLIC_DIR = os.path.join(BASE_DIR, "frontend", "public")
 if not os.path.exists(PUBLIC_DIR):
     os.makedirs(PUBLIC_DIR)
 
 JSON_PATH = os.path.join(PUBLIC_DIR, "global_data.json")
 
-# --- 1. The Knowledge Graph (2026 Event Calendar) ---
-# This simulates a "Researched Database" of events and supply chains.
-EVENT_CALENDAR = [
-    {
-        "event": "MWC 世界行動通訊大會 2026",
-        "date": "2026-02-26",
-        "end_date": "2026-03-01",
-        "theme": "6G / Wi-Fi 7 / 邊緣 AI",
-        "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
-        "supply_chain": [
-            {"us_symbol": "QCOM", "us_name": "高通", "tw_tickers": ["2454", "2379", "3105"], "tw_sector": "IC 設計"},
-            {"us_symbol": "AVGO", "us_name": "博通", "tw_tickers": ["5388", "6285"], "tw_sector": "網通設備"}
-        ]
-    },
-    {
-        "event": "NVIDIA GTC 大會 2026",
-        "date": "2026-03-18",
-        "end_date": "2026-03-21",
-        "theme": "Blackwell Ultra / Rubin GPU",
-        "description": "AI 界的伍茲塔克。黃仁勳將揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
-        "supply_chain": [
-            {"us_symbol": "NVDA", "us_name": "輝達", "tw_tickers": ["2330", "2382", "3231", "6669"], "tw_sector": "AI 伺服器"},
-            {"us_symbol": "SMCI", "us_name": "美超微", "tw_tickers": ["2376", "2324"], "tw_sector": "伺服器代工"}
-        ]
-    },
-    {
-        "event": "Google I/O 開發者大會",
-        "date": "2026-05-14",
-        "end_date": "2026-05-15",
-        "theme": "Gemini 2.0 / Android 17",
-        "description": "Google 軟體火力展示。關注 Pixel 手機的 AI 整合與各種 Agent 應用。",
-        "supply_chain": [
-            {"us_symbol": "GOOGL", "us_name": "Alphabet", "tw_tickers": ["2357", "2498"], "tw_sector": "安卓生態系"}
-        ]
-    },
-    {
-        "event": "Computex 台北國際電腦展",
-        "date": "2026-06-02",
-        "end_date": "2026-06-06",
-        "theme": "AI PC / Copilot+",
-        "description": "台灣主場優勢。AMD, Intel, Qualcomm 執行長將齊聚台北，發布 AI PC 新品。",
-        "supply_chain": [
-            {"us_symbol": "MSFT", "us_name": "微軟", "tw_tickers": ["2353", "2357", "2301"], "tw_sector": "AI PC 供應鏈"},
-            {"us_symbol": "AMD", "us_name": "超微", "tw_tickers": ["2330", "3711"], "tw_sector": "HPC 運算"}
-        ]
-    },
-    {
-        "event": "Apple WWDC 開發者大會",
-        "date": "2026-06-10",
-        "end_date": "2026-06-14",
-        "theme": "iOS 20 / Siri LLM",
-        "description": "蘋果 AI 戰略關鍵時刻。預期發布裝置端 (On-device) AI 新功能。",
-        "supply_chain": [
-            {"us_symbol": "AAPL", "us_name": "蘋果", "tw_tickers": ["2317", "3008", "4938"], "tw_sector": "蘋果供應鏈"}
-        ]
-    }
-]
 
-def fetch_prices(tickers):
+def load_events():
+    """Load event calendar from external JSON file."""
+    events_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "events.json")
+    if not os.path.exists(events_path):
+        print(f"⚠️ Events file not found: {events_path}")
+        return []
+    with open(events_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+def fetch_otc_tickers():
+    """Fetch all OTC (TPEx) stock codes from the TPEx open data API."""
+    try:
+        url = "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O"
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        data = resp.json()
+        otc_set = {item.get('SecuritiesCompanyCode', '') for item in data if item.get('SecuritiesCompanyCode')}
+        print(f"   ✅ Loaded {len(otc_set)} OTC tickers from TPEx API")
+        return otc_set
+    except Exception as e:
+        print(f"   ⚠️ Failed to fetch OTC tickers: {e}. Defaulting to .TW for all.")
+        return set()
+
+
+def fetch_prices(tickers, otc_tickers=None):
     """
     Batch fetch prices for US and TW stocks.
     Returns: { 'NVDA': {price: 1200, change: 2.5}, '2330': {...} }
     """
+    if otc_tickers is None:
+        otc_tickers = set()
     print(f"   -> Fetching prices for {len(tickers)} assets...")
     
-    # Separate US and TW for better batching if needed, but yf handles mix well usually.
-    # TW tickers need .TW or .TWO suffix. The calendar has raw codes.
-    
     yf_tickers = []
-    mapping = {} # "2330" -> "2330.TW"
+    mapping = {}
     
     for t in tickers:
-        if t.isdigit(): # Taiwan Stock
-            # Simple logic: Try .TW first (Most are TWSE)
-            # For production, we should check existing DB, but let's default to .TW
-            s = f"{t}.TW"
+        if t.isdigit():  # Taiwan Stock
+            suffix = ".TWO" if t in otc_tickers else ".TW"
+            s = f"{t}{suffix}"
             yf_tickers.append(s)
             mapping[s] = t
-        else: # US Stock
+        else:  # US Stock
             yf_tickers.append(t)
             mapping[t] = t
             
@@ -102,22 +69,22 @@ def fetch_prices(tickers):
         
         for yt in yf_tickers:
             try:
-                # yfinance specific handling for Tickers object
                 ticker_obj = data.tickers[yt]
-                
-                # fast_info is often faster/more reliable for current price
                 fast = ticker_obj.fast_info
                 price = fast.last_price
                 prev = fast.previous_close
-                change_pct = ((price - prev) / prev) * 100
+                
+                if prev and prev > 0:
+                    change_pct = ((price - prev) / prev) * 100
+                else:
+                    change_pct = 0
                 
                 clean_ticker = mapping[yt]
                 results[clean_ticker] = {
                     "price": round(price, 2),
                     "change": round(change_pct, 2)
                 }
-            except:
-                # Fallback or error
+            except Exception:
                 clean_ticker = mapping[yt]
                 results[clean_ticker] = {"price": 0, "change": 0}
                 
@@ -126,58 +93,63 @@ def fetch_prices(tickers):
         print(f"   ⚠️ Price fetch failed: {e}")
         return {}
 
+
 def update_global_intelligence():
     print("🚀 [Global Intel] Starting Update...")
     
-    # 1. Filter Events (Show Recent Past 1 Month + Future)
+    # Load events from external JSON
+    event_calendar = load_events()
+    if not event_calendar:
+        print("⚠️ No events loaded. Skipping Global Intel update.")
+        return
+    
+    # Fetch OTC tickers for proper suffix detection
+    otc_tickers = fetch_otc_tickers()
+    
+    # Filter Events
     now = datetime.datetime.now()
-    if now.year == 2026: # Trust 2026 time
-        current_date = now.date()
-    else:
-        # Fallback simulation date
-        current_date = datetime.date(2026, 2, 5)
+    current_date = now.date()
 
     display_events = []
     all_tickers_to_fetch = set()
 
-    for evt in EVENT_CALENDAR:
+    for evt in event_calendar:
         evt_date = datetime.datetime.strptime(evt['date'], "%Y-%m-%d").date()
-        
-        # Logic: Keep if end_date is not older than 30 days ago
-        # And start_date is within next 6 months
         days_diff = (evt_date - current_date).days
         
         if days_diff > -30 and days_diff < 180:
             # Determine Status
             status = "Upcoming"
-            # Parse end_date for logic
-            end_date_obj = datetime.datetime.strptime(evt['end_date'], "%Y-%m-%d").date()
+            end_date_str = evt.get('end_date', evt['date'])
+            end_date_obj = datetime.datetime.strptime(end_date_str, "%Y-%m-%d").date()
             
             if days_diff <= 0 and (current_date <= end_date_obj):
                 status = "Ongoing"
             elif days_diff < 0:
                 status = "Finished"
             elif days_diff <= 14:
-                status = "Imminent" # Within 2 weeks
+                status = "Imminent"
             
-            evt['status'] = status
-            evt['days_to_go'] = days_diff
-            display_events.append(evt)
+            # Use deepcopy to avoid mutating the source data
+            evt_copy = copy.deepcopy(evt)
+            evt_copy['status'] = status
+            evt_copy['days_to_go'] = days_diff
+            display_events.append(evt_copy)
             
             # Collect Tickers
-            for group in evt['supply_chain']:
+            for group in evt.get('supply_chain', []):
                 all_tickers_to_fetch.add(group['us_symbol'])
                 for tw in group['tw_tickers']:
                     all_tickers_to_fetch.add(tw)
 
-    # 2. Fetch Market Data
-    market_data = fetch_prices(list(all_tickers_to_fetch))
+    # Fetch Market Data (with OTC awareness)
+    market_data = fetch_prices(list(all_tickers_to_fetch), otc_tickers)
 
-    # 3. Enrich Data
+    # Enrich Data
     final_output = []
     for evt in display_events:
         enriched_groups = []
-        for group in evt['supply_chain']:
+        for group in evt.get('supply_chain', []):
             us_sym = group['us_symbol']
             us_data = market_data.get(us_sym, {"price": 0, "change": 0})
             
@@ -185,10 +157,9 @@ def update_global_intelligence():
             for tw_sym in group['tw_tickers']:
                 tw_data = market_data.get(tw_sym, {"price": 0, "change": 0})
                 
-                # Signal Logic
                 signal = "Neutral"
                 if us_data['change'] > 2.0 and tw_data['change'] < 1.0:
-                    signal = "Lagging (Buy?)" # US fly, TW sleep
+                    signal = "Lagging (Buy?)"
                 elif us_data['change'] > 2.0 and tw_data['change'] > 2.0:
                     signal = "Sympathy Rally"
                 elif us_data['change'] < -2.0:
@@ -212,22 +183,24 @@ def update_global_intelligence():
                 "tw_stocks": tw_list
             })
         
-        # Create a new dict to avoid modifying the constant if rerun
-        new_evt = evt.copy()
-        new_evt['chains'] = enriched_groups
-        if 'supply_chain' in new_evt: del new_evt['supply_chain'] 
-        final_output.append(new_evt)
+        evt['chains'] = enriched_groups
+        if 'supply_chain' in evt:
+            del evt['supply_chain']
+        final_output.append(evt)
 
-    # 4. Save
+    # Save (atomic write)
     output = {
         "last_updated": now.strftime("%Y-%m-%d %H:%M"),
         "events": final_output
     }
     
-    with open(JSON_PATH, "w", encoding='utf-8') as f:
+    tmp_path = JSON_PATH + '.tmp'
+    with open(tmp_path, "w", encoding='utf-8') as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, JSON_PATH)
     
     print(f"✅ [Global Intel] Saved {len(final_output)} events to {JSON_PATH}")
+
 
 if __name__ == "__main__":
     update_global_intelligence()

@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Legend, Line } from 'recharts';
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
 import { AlertTriangle, TrendingUp, TrendingDown, DollarSign, Activity, Sparkles } from 'lucide-react';
 
-const API_BASE = "http://localhost:8000/api";
 
 function StockScan({ ticker }) {
     const [data, setData] = useState(null);
@@ -38,7 +37,6 @@ function StockScan({ ticker }) {
             setTargets({ buy: "--", sell: "--" });
 
             try {
-                console.log(`Searching for ${debouncedTicker} in serverless DB...`);
 
                 // Serverless: Fetch full database (2.5MB) from local public
                 const response = await axios.get('/stock_data.json');
@@ -48,14 +46,19 @@ function StockScan({ ticker }) {
                 let fullData = response.data;
                 // Safety: Ensure it's an object
                 if (typeof fullData === 'string') {
-                    try { fullData = JSON.parse(fullData); } catch (e) { console.error("JSON Parse Error", e); }
+                    try { fullData = JSON.parse(fullData); } catch (e) { 
+                        setError('資料格式錯誤'); 
+                        return; 
+                    }
                 }
 
-                // Debug Info
-                console.log(`Loaded ${Object.keys(fullData).length} stocks.`);
+                if (!fullData || typeof fullData !== 'object') {
+                    setError('資料格式錯誤');
+                    return;
+                }
 
                 const targetData = fullData[debouncedTicker] ||
-                    Object.values(fullData).find(s => s.stock_name.includes(debouncedTicker) || s.stock_id === debouncedTicker);
+                    Object.values(fullData).find(s => s?.stock_name?.includes(debouncedTicker) || s?.stock_id === debouncedTicker);
 
                 if (targetData) {
                     setData(targetData);
@@ -76,39 +79,34 @@ function StockScan({ ticker }) {
         return () => { isMounted = false; };
     }, [debouncedTicker]);
 
-    // AI on-demand Fetch (Moved to Top)
+    // AI on-demand Fetch
     useEffect(() => {
-        // Only fetch if we have data and ticker (use data.stock_id to catch name searches)
         if (!data || !data.stock_id) return;
-
-        // Prevent re-fetching if we already have report for this session/ticker? 
-        // Logic: If data changed (implies new ticker search), we reset aiReport in the fetch loop above.
-        // So here if aiReport is null, we fetch.
         if (aiReport) return;
 
+        let isMounted = true;
+        const controller = new AbortController();
         setAiLoading(true);
 
         const fetchAI = async () => {
             try {
-                // Pass key metrics
                 const pe = data.valuation?.current_pe || 0;
-                // Use Price Change if available (data.change) or Revenue MoM as fallback? 
-                // User asked for "Change" from local data. 
-                // Since our DB schema might not have Change yet, we send what we have or N/A.
-                // However, user specifically asked to use `targetStock.Change`. 
-                // Our data variable `data` IS the targetStock (or similar structure).
-                // Let's assume data.change exists or send 'N/A' to be safe.
-                // Note: The user's snippet used "Price" and "Change". Our data might use lowercase.
-                // Let's try to find them.
                 const currentPrice = data.valuation?.price || data.Price || "N/A";
-                const currentChange = data.change || data.Change || "N/A"; // Try to find change
+                const currentChange = data.change || data.Change || "N/A";
 
-                // Call Serverless Function (use data.stock_id)
-                // Updated URL with price and change
-                const res = await axios.get(`/api/analyze?stock_id=${data.stock_id}&stock_name=${data.stock_name}&pe=${pe}&price=${currentPrice}&change=${currentChange}`);
+                const res = await axios.get('/api/analyze', {
+                    params: {
+                        stock_id: data.stock_id,
+                        stock_name: data.stock_name,
+                        pe: pe,
+                        price: currentPrice,
+                        change: currentChange
+                    },
+                    signal: controller.signal
+                });
+                if (!isMounted) return;
                 if (res.data) {
                     setAiReport(res.data);
-                    // ✅ Update Targets from API
                     if (res.data.buy_price) {
                         setTargets({
                             buy: res.data.buy_price || "--",
@@ -117,16 +115,20 @@ function StockScan({ ticker }) {
                     }
                 }
             } catch (e) {
-                console.error("AI Fetch Error", e);
-                setAiReport({ report: "⚠️ AI 分析暫時無法使用，請稍後再試。", verdict: "Error" });
-                setTargets({ buy: "--", sell: "--" });
+                if (!isMounted) return;
+                if (e.name !== 'CanceledError') {
+                    setAiReport({ report: "⚠️ AI 分析暫時無法使用，請稍後再試。", verdict: "Error" });
+                    setTargets({ buy: "--", sell: "--" });
+                }
             } finally {
-                setAiLoading(false);
+                if (isMounted) setAiLoading(false);
             }
         };
 
         fetchAI();
-    }, [data]); // Removed debouncedTicker dependency, use data
+
+        return () => { isMounted = false; controller.abort(); };
+    }, [data]);
 
     if (loading) return (
         <div className="flex flex-col items-center justify-center p-20 text-muted opacity-80">
@@ -139,6 +141,14 @@ function StockScan({ ticker }) {
         <div className="flex flex-col items-center justify-center p-20 text-danger">
             <AlertTriangle className="w-10 h-10 mb-2" />
             <span>{error}</span>
+        </div>
+    );
+
+    if (!data && !loading && !error) return (
+        <div className="flex flex-col items-center justify-center p-20 text-slate-500">
+            <Activity className="w-16 h-16 mb-4 opacity-30" />
+            <p className="text-lg font-medium">輸入股票代號開始分析</p>
+            <p className="text-sm mt-2 text-slate-600">例如：2330（台積電）、2317（鴻海）</p>
         </div>
     );
 
@@ -264,8 +274,8 @@ function StockScan({ ticker }) {
                         <h3 className="text-muted text-sm font-medium mb-1">籌碼透視 - 聰明錢</h3>
                         <div className="flex items-end gap-2">
                             {/* Simplified Analysis Text based on Net Buy */}
-                            <span className={`text-3xl font-bold ${(data.chips.foreign_net + data.chips.trust_net) > 0 ? 'text-red-400' : 'text-green-400'}`}>
-                                {(data.chips.foreign_net + data.chips.trust_net) > 0 ? "主力買超" : "主力賣超"}
+                            <span className={`text-3xl font-bold ${((data.chips.foreign_net || 0) + (data.chips.trust_net || 0)) > 0 ? 'text-red-400' : 'text-green-400'}`}>
+                                {((data.chips.foreign_net || 0) + (data.chips.trust_net || 0)) > 0 ? "主力買超" : "主力賣超"}
                             </span>
                         </div>
                         <div className="mt-4 text-xs text-muted">
@@ -289,10 +299,10 @@ function StockScan({ ticker }) {
                 </h3>
                 <div style={{ width: '100%', height: 300 }}>
                     <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={revenue?.history?.length > 0 ? revenue.history : (revenue ? [{ name: revenue.date, value: revenue.revenue }] : [])}>
+                        <BarChart data={revenue?.history?.length > 0 ? revenue.history : (revenue ? [{ date: revenue.date, revenue: revenue.revenue }] : [])}>
                             <XAxis
                                 dataKey="date"
-                                tickFormatter={(val) => val.slice(-2)}
+                                tickFormatter={(val) => typeof val === 'string' ? val.slice(-2) : String(val ?? '')}
                                 stroke="#71717a"
                                 fontSize={12}
                                 tickLine={false}

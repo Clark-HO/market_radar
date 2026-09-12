@@ -7,9 +7,36 @@ import datetime
 import os
 import urllib3
 import math
+import tempfile
 from io import StringIO
 from dateutil.relativedelta import relativedelta
 
+def fetch_sector_pe_map():
+    """Fetch sector P/E ratios from TWSE BWESS API."""
+    try:
+        from backend.scrapers.twse import TWSEScraper
+        scraper = TWSEScraper()
+        df = scraper.fetch_sector_pe()
+        if df is None or df.empty:
+            print("   ⚠️ BWESS data empty, using default P/E = 20.0")
+            return {}
+        
+        pe_map = {}
+        for _, row in df.iterrows():
+            try:
+                sector_name = str(row.iloc[0]).strip()  # First column is sector name
+                pe_val = row.iloc[1]  # Second column is P/E ratio
+                pe_float = float(str(pe_val).replace(',', '').strip())
+                if pe_float > 0:
+                    pe_map[sector_name] = pe_float
+            except (ValueError, TypeError, IndexError):
+                continue
+        
+        print(f"   ✅ Loaded {len(pe_map)} sector P/E ratios from TWSE BWESS")
+        return pe_map
+    except Exception as e:
+        print(f"   ⚠️ Failed to fetch sector P/E: {e}. Using default P/E = 20.0")
+        return {}
 
 # --- 0. 忽略 SSL 警告 ---
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -81,7 +108,7 @@ def fetch_twse_chips_global():
                         f_str = row[4].replace(',', '')
                         t_str = row[10].replace(',', '')
                         
-                        f_net = int(f_str) // 1000 # Convert to Shares (张) ? T86 is shares. 
+                        f_net = int(int(f_str) / 1000) # Convert to Shares (张) ? T86 is shares. 
                         # Wait, T86 unit is shares. User UI expects "张" (Lots = 1000 shares). 
                         # User snippet: `int(foreign_buy)`. 
                         # My UI: shows "张". 
@@ -90,7 +117,7 @@ def fetch_twse_chips_global():
                         # My previous data_updater divided by 1000. 
                         # I will KEEP dividing by 1000 to match UI "Zhang". 
                         
-                        t_net = int(t_str) // 1000
+                        t_net = int(int(t_str) / 1000)
                         
                         chips_map[code] = {
                             "name": name,
@@ -148,11 +175,11 @@ def fetch_tpex_chips_global():
                         def p(v): return int(v.replace(',', '')) if v else 0
                         
                         if len(row) > 13:
-                            foreign_net = p(row[4]) // 1000
-                            trust_net = p(row[13]) // 1000
+                            foreign_net = int(p(row[4]) / 1000)
+                            trust_net = int(p(row[13]) / 1000)
                         else:
-                            foreign_net = p(row[4]) // 1000
-                            trust_net = p(row[7]) // 1000
+                            foreign_net = int(p(row[4]) / 1000)
+                            trust_net = int(p(row[7]) / 1000)
 
                         chips_map[code] = {
                             "name": name,
@@ -212,7 +239,7 @@ def fetch_mops_revenue_history_global():
                     if df.shape[1] > 6:
                         df.columns = [str(col) for col in df.columns]
                         cols_str = "".join(df.columns)
-                        if "代號" in cols_str or "公司" in cols_str or True:
+                        if "代號" in cols_str or "公司" in cols_str:
                              for _, row in df.iterrows():
                                 try:
                                     code = str(row.iloc[0]).strip()
@@ -249,7 +276,7 @@ def fetch_mops_revenue_history_global():
                     latest_stats_map[code] = {"mom": round(mom, 2), "yoy": 0}
     return history_map, latest_stats_map
 
-DATA_FILE = "stock_data.json"
+DATA_FILE = stock_json_path
 
 def main():
     import sys
@@ -278,6 +305,9 @@ def main():
     full_chips.update(tpex_chips)
     
     revenue_history, revenue_stats = fetch_mops_revenue_history_global()
+    
+    # Fetch real sector P/E ratios
+    sector_pe_map = fetch_sector_pe_map()
     
     raw_stocks = list(full_chips.keys())
     target_stocks = [c for c in raw_stocks if len(c) == 4]
@@ -345,7 +375,19 @@ def main():
                                 pe = info.get('forwardPE', 0)
                     except: pass 
                         
-                    sector_pe = 20.0 
+                    # Look up sector P/E from BWESS data, fallback to 20.0
+                    stock_sector = chip_info.get('sector', '')
+                    sector_pe = 20.0  # default fallback
+                    if sector_pe_map:
+                        # Try exact match first, then fuzzy match
+                        if stock_sector in sector_pe_map:
+                            sector_pe = sector_pe_map[stock_sector]
+                        else:
+                            # Try partial match (e.g., stock has "半導體" and BWESS has "半導體業")
+                            for bwess_name, bwess_pe in sector_pe_map.items():
+                                if stock_sector and (stock_sector in bwess_name or bwess_name in stock_sector):
+                                    sector_pe = bwess_pe
+                                    break
                     status = "Fair Value"
                     score = 0
                     if pe and pe > 0:
@@ -359,8 +401,6 @@ def main():
                         if code in final_db:
                            continue
                         
-                        if code == "2330":
-                            raise ValueError("TSMC Fetch Failed")
                         continue
 
                     rev_hist = revenue_history.get(code, [])
@@ -426,8 +466,10 @@ def main():
         exit(1)
 
     print("✅ Integrity Check Passed.")
-    with open(JSON_PATH, "w", encoding='utf-8') as f:
+    tmp_path = stock_json_path + '.tmp'
+    with open(tmp_path, 'w', encoding='utf-8') as f:
         json.dump(final_db, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, stock_json_path)
     print(f"✅ All Done! Saved to {JSON_PATH}")
 
 if __name__ == "__main__":

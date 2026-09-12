@@ -3,11 +3,12 @@ name: 每日股市資料更新 (Daily Stock ETL)
 on:
   schedule:
     # GitHub Actions uses UTC time. Taiwan is UTC+8.
-    # 00:00 UTC = 08:00 Taiwan (Morning - Pre-market check)
-    # 08:00 UTC = 16:00 Taiwan (Afternoon - Market close data)
-    # 16:00 UTC = 00:00 Taiwan (Midnight - Late night check)
-    - cron: '0 0,8,16 * * 1-5'  # Runs Mon-Fri at these times
+    # 08:00 UTC = 16:00 Taiwan (Market close data)
+    - cron: '0 8 * * 1-5'  # Runs Mon-Fri at 16:00 Taiwan time
   workflow_dispatch:
+
+env:
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
 permissions:
   contents: write
@@ -15,6 +16,7 @@ permissions:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout code
@@ -30,15 +32,49 @@ jobs:
         run: |
           pip install -r backend/requirements-data.txt
 
-      - name: Run ETL Script
+      - name: Run Stock ETL
+        id: stock_etl
+        continue-on-error: true
         run: |
           echo "Starting Stock ETL..."
-          # Add --force to ignore timestamp checks
           python backend/data_updater.py --force
+
+      - name: Run Macro ETL
+        id: macro_etl
+        continue-on-error: true
+        run: |
           echo "Starting Macro ETL..."
           python backend/scrapers/macro.py
+
+      - name: Update Event Calendar (Weekly)
+        id: event_scraper
+        continue-on-error: true
+        run: |
+          DAY_OF_WEEK=$(date +%u)
+          if [ "$DAY_OF_WEEK" = "1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "Starting Event Scraper..."
+            python backend/event_scraper.py
+          else
+            echo "Skipping event scraper (only runs on Mondays)."
+          fi
+
+      - name: Run Global Intelligence ETL
+        id: global_etl
+        continue-on-error: true
+        run: |
           echo "Starting Global Intelligence ETL..."
           python backend/global_updater.py
+
+      - name: Check ETL Results
+        run: |
+          echo "Stock ETL: ${{ steps.stock_etl.outcome }}"
+          echo "Macro ETL: ${{ steps.macro_etl.outcome }}"
+          echo "Event Scraper: ${{ steps.event_scraper.outcome }}"
+          echo "Global ETL: ${{ steps.global_etl.outcome }}"
+          if [ "${{ steps.stock_etl.outcome }}" = "failure" ] && [ "${{ steps.macro_etl.outcome }}" = "failure" ] && [ "${{ steps.global_etl.outcome }}" = "failure" ]; then
+            echo "❌ All ETL steps failed!"
+            exit 1
+          fi
 
       - name: Commit and Push Changes
         run: |
@@ -53,11 +89,6 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "📈 Auto-update stock data [$(date +'%Y-%m-%d')]"
-            
-            # ✅ CRITICAL FIX: Pull latest changes (Rebase) before pushing
-            # This prevents the "rejected" error if someone pushed code during the run
-            # -Xtheirs favors the incoming changes (the replayed commits from the bot) in case of conflict
             git pull --rebase -Xtheirs origin main
-            
             git push origin main
           fi

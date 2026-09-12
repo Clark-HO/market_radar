@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import {
-    ComposedChart, LineChart, BarChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell
+    LineChart, BarChart, Line, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
 function MacroView() {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch("/macro_data.json");
+                if (!response.ok) throw new Error('Fetch failed');
                 const jsonData = await response.json();
                 setData(jsonData);
                 setLoading(false);
             } catch (error) {
                 console.error("Failed to fetch macro data", error);
+                setError(error.message);
                 setLoading(false);
             }
         };
@@ -23,6 +26,7 @@ function MacroView() {
     }, []);
 
     if (loading) return <div className="p-10 text-center text-text">Loading Market Data...</div>;
+    if (error) return <div className="p-10 text-center text-red-500">Error: {error}</div>;
     if (!data) return <div className="p-10 text-center text-red-500">Failed to load data.</div>;
 
     const { market_status, history, institutional, sector_flow, chips, currency } = data;
@@ -46,7 +50,7 @@ function MacroView() {
                     <h3 className="text-muted text-xs uppercase font-bold tracking-wider">TAIEX Index</h3>
                     <div className="flex flex-col items-start gap-1 mt-auto mb-1">
                         <span className="text-2xl font-bold text-text tracking-tight group-hover:text-primary transition-colors">
-                            {market_status.taiex_close.toLocaleString()}
+                            {market_status?.taiex_close?.toLocaleString()}
                         </span>
                         <div className="flex items-center gap-2">
                             <span className={`text-sm font-bold px-1.5 py-0.5 rounded ${getBgColor(market_status.change)} ${getChangeColor(market_status.change)}`}>
@@ -58,16 +62,16 @@ function MacroView() {
                 <div className="bg-card p-4 rounded-xl shadow-lg border border-border flex flex-col justify-between h-32">
                     <h3 className="text-muted text-xs uppercase font-bold tracking-wider">Volume (成交金額)</h3>
                     <p className="text-2xl font-bold text-text mt-auto mb-1">
-                        {Math.round(market_status.volume).toLocaleString()} <span className="text-sm text-muted">億</span>
+                        {Math.round(market_status?.volume || 0).toLocaleString()} <span className="text-sm text-muted">億</span>
                     </p>
                 </div>
                 <div className="bg-card p-4 rounded-xl shadow-lg border border-border">
                     <h3 className="text-muted text-xs uppercase font-bold">Intraday High (最高)</h3>
-                    <p className="text-2xl font-bold text-red-400 mt-1">{market_status.high.toLocaleString()}</p>
+                    <p className="text-2xl font-bold text-red-400 mt-1">{market_status?.high?.toLocaleString()}</p>
                 </div>
                 <div className="bg-card p-4 rounded-xl shadow-lg border border-border">
                     <h3 className="text-muted text-xs uppercase font-bold">Intraday Low (最低)</h3>
-                    <p className="text-2xl font-bold text-green-400 mt-1">{market_status.low.toLocaleString()}</p>
+                    <p className="text-2xl font-bold text-green-400 mt-1">{market_status?.low?.toLocaleString()}</p>
                 </div>
             </div>
 
@@ -119,7 +123,7 @@ function MacroView() {
                             <XAxis
                                 dataKey="date"
                                 tick={{ fill: '#888', fontSize: 10 }}
-                                tickFormatter={(val) => val.slice(5)}
+                                tickFormatter={(val) => typeof val === 'string' ? val.slice(5) : String(val ?? '')}
                             />
                             <YAxis
                                 tick={{ fill: '#888', fontSize: 10 }}
@@ -146,7 +150,7 @@ function MacroView() {
                             <span className="px-2 py-0.5 rounded bg-gray-700 text-xs text-text">{chips.futures_status}</span>
                         </div>
                         <p className={`text-3xl font-bold mt-2 ${chips.futures_color === 'red' ? 'text-red-500' : 'text-green-500'}`}>
-                            {chips.futures_net_oi.toLocaleString()} <span className="text-lg text-muted">口</span>
+                            {chips?.futures_net_oi?.toLocaleString()} <span className="text-lg text-muted">口</span>
                         </p>
                     </div>
                     {/* Currency Card */}
@@ -170,7 +174,7 @@ function MacroView() {
                             return (
                                 <div key={idx} className="flex flex-col gap-1">
                                     <div className="flex justify-between items-end">
-                                        <span className="text-sm font-medium text-gray-200">{sector.name}</span>
+                                        <span className="text-sm font-medium text-gray-200">{sector.name?.trim()}</span>
                                         <span className={`text-sm font-bold ${sector.trend === 'Hot' ? 'text-red-400' : 'text-gray-400'}`}>
                                             {sector.ratio}%
                                         </span>

@@ -4,3 +4,4 @@ beautifulsoup4
 lxml
 html5lib
 yfinance
+python-dateutil>=2.9.0

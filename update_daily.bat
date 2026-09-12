@@ -1,33 +1,56 @@
 @echo off
 REM ========================================================
-REM  Market Radar Automation - E: Drive Edition
+REM  Market Radar Automation - Portable Edition
 REM ========================================================
 
-REM 1. Configured Python Path (E: Drive)
-set PY_PATH=E:\antigravity\radar_env\python.exe
+REM Switch to script directory
+cd /d "%~dp0"
 
-echo [1/3] Checking Environment on E: Drive...
-if exist "%PY_PATH%" (
-    echo  Target Python found: %PY_PATH%
+REM Auto-detect Python path
+if exist "%~dp0backend\venv\Scripts\python.exe" (
+    set PY_PATH="%~dp0backend\venv\Scripts\python.exe"
+) else if exist "%~dp0..\radar_env\python.exe" (
+    set PY_PATH="%~dp0..\radar_env\python.exe"
 ) else (
-    echo  [ERROR] Python path not found at %PY_PATH% !
-    echo  Did you create the env on E:?
-    pause
-    exit /b
+    set PY_PATH=python
 )
 
-REM 2. Run ETL (Stocks)
-echo.
-echo [2/3] Running Stock ETL...
-"%PY_PATH%" -m backend.data_updater
+echo [1/5] Using Python: %PY_PATH%
 
-REM 3. Run ETL (Macro)
+REM Run Stock ETL
 echo.
-echo [3/3] Running Macro ETL...
-"%PY_PATH%" -m backend.scrapers.macro
+echo [2/5] Running Stock ETL...
+%PY_PATH% -m backend.data_updater
+if %ERRORLEVEL% neq 0 (
+    echo [WARN] Stock ETL failed with code %ERRORLEVEL%
+)
+
+REM Run Macro ETL
+echo.
+echo [3/5] Running Macro ETL...
+%PY_PATH% -m backend.scrapers.macro
+if %ERRORLEVEL% neq 0 (
+    echo [WARN] Macro ETL failed with code %ERRORLEVEL%
+)
+
+REM Run Event Scraper
+echo.
+echo [4/5] Running Event Scraper...
+%PY_PATH% -m backend.event_scraper
+if %ERRORLEVEL% neq 0 (
+    echo [WARN] Event Scraper failed with code %ERRORLEVEL%
+)
+
+REM Run Global Intelligence ETL
+echo.
+echo [5/5] Running Global Intelligence ETL...
+%PY_PATH% -m backend.global_updater
+if %ERRORLEVEL% neq 0 (
+    echo [WARN] Global ETL failed with code %ERRORLEVEL%
+)
 
 echo.
 echo ===================================================
-echo  [Done] System Updated Successfully!
+echo  [Done] System Update Complete!
 echo ===================================================
 pause

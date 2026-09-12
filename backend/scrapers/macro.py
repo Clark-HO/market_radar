@@ -400,9 +400,15 @@ class MacroScraper:
             fut_status = "N/A"
             fut_color = "gray"
         else:
-            if fut_oi < -10000: fut_status = "Bearish"; fut_color = "green" 
-            if fut_oi > 0: fut_color = "red"; fut_status = "Bullish"
-            else: fut_color = "green"; fut_status = "Bearish"
+            if fut_oi > 0:
+                fut_color = "red"
+                fut_status = "Bullish"
+            elif fut_oi < -10000:
+                fut_color = "green"
+                fut_status = "Bearish"
+            else:
+                fut_color = "yellow"
+                fut_status = "Neutral"
         
         final_data = {
             "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M"),

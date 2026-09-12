@@ -1,6 +1,5 @@
 import os
 # import openai # Removed OpenAI
-import google.generativeai as genai
 from dotenv import load_dotenv
 
 # Load Environment Variables
@@ -74,7 +73,6 @@ def generate_rule_based_report(stock_data):
     
     return { "score": score, "verdict": verdict, "report": summary_md }
 
-import time
 from google import genai
 from google.genai import types
 
@@ -149,8 +147,6 @@ def generate_llm_report(stock_data, api_key):
         # Relaxed pattern for Verdict
         verdict_match = re.search(r'趨勢訊號.*?\*\*([^*]+)\*\*', content)
         verdict = verdict_match.group(1).strip() if verdict_match else "AI 分析"
-        
-        time.sleep(4) # Rate Limit per user request
         
         return { "score": score, "verdict": verdict, "report": content }
         
