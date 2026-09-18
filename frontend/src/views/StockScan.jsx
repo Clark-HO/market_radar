@@ -3,16 +3,18 @@ import axios from 'axios';
 import { ResponsiveContainer, BarChart, Bar, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 import { 
     AlertTriangle, TrendingUp, TrendingDown, DollarSign, Activity, 
-    Sparkles, Star, ShieldAlert, Target, Award, Zap, Compass, CheckCircle2 
+    Sparkles, Star, ShieldAlert, Target, CheckCircle2 
 } from 'lucide-react';
+import StockScreener from '../components/StockScreener';
 
 function StockScan({ ticker }) {
     const [allStocks, setAllStocks] = useState({});
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
-    const [selectedTicker, setSelectedTicker] = useState(ticker || '');
-    const [activeStrategy, setActiveStrategy] = useState(null); // 'watchlist' | 'smart_money' | 'growth' | 'undervalued' | 'trust_top'
+    const [currentCode, setCurrentCode] = useState(ticker || '');
+
+    // Watchlist state
     const [watchlist, setWatchlist] = useState(() => {
         try {
             return JSON.parse(localStorage.getItem('market_radar_watchlist') || '["2330", "2317", "2454"]');
@@ -21,19 +23,18 @@ function StockScan({ ticker }) {
         }
     });
 
-    // AI State
+    // AI state
     const [aiReport, setAiReport] = useState(null);
     const [aiLoading, setAiLoading] = useState(false);
     const [targets, setTargets] = useState({ buy: "--", sell: "--", stop_loss: "--", win_rate: "--" });
 
-    // Sync from parent ticker prop
+    // Sync ticker prop
     useEffect(() => {
         if (ticker) {
-            setSelectedTicker(ticker);
+            setCurrentCode(ticker);
         }
     }, [ticker]);
 
-    // Save Watchlist
     const toggleWatchlist = (code) => {
         setWatchlist(prev => {
             const next = prev.includes(code) ? prev.filter(c => c !== code) : [...prev, code];
@@ -42,52 +43,51 @@ function StockScan({ ticker }) {
         });
     };
 
-    // 1. Initial Load of stock_data.json
+    // 1. Initial fetch of stock_data.json
     useEffect(() => {
         let isMounted = true;
-        const fetchDB = async () => {
+        const loadDatabase = async () => {
             try {
-                const response = await axios.get('/stock_data.json');
+                const res = await axios.get('/stock_data.json');
                 if (!isMounted) return;
-                let fullData = response.data;
+                let fullData = res.data;
                 if (typeof fullData === 'string') {
-                    fullData = JSON.parse(fullData);
+                    try { fullData = JSON.parse(fullData); } catch {}
                 }
                 if (fullData && typeof fullData === 'object') {
                     setAllStocks(fullData);
-                    // If no ticker selected, default to 2330 or first stock
-                    if (!selectedTicker) {
+                    if (!currentCode) {
                         const defaultCode = fullData['2330'] ? '2330' : Object.keys(fullData)[0];
-                        if (defaultCode) setSelectedTicker(defaultCode);
+                        if (defaultCode) setCurrentCode(defaultCode);
                     }
                 }
             } catch (err) {
                 console.error("Failed to load stock database:", err);
             }
         };
-        fetchDB();
+        loadDatabase();
         return () => { isMounted = false; };
     }, []);
 
-    // 2. Select Active Stock Data
+    // 2. Select Active Stock
     useEffect(() => {
-        if (!selectedTicker || Object.keys(allStocks).length === 0) return;
+        if (!currentCode || Object.keys(allStocks).length === 0) return;
 
         setLoading(true);
         setError(null);
         setAiReport(null);
         setTargets({ buy: "--", sell: "--", stop_loss: "--", win_rate: "--" });
 
-        const targetData = allStocks[selectedTicker] ||
-            Object.values(allStocks).find(s => s?.stock_name?.includes(selectedTicker) || s?.stock_id === selectedTicker);
+        const targetData = allStocks[currentCode] ||
+            Object.values(allStocks).find(s => s?.stock_name?.includes(currentCode) || s?.stock_id === currentCode);
 
         if (targetData) {
             setData(targetData);
         } else {
-            setError(`??????? (${selectedTicker})`);
+            setError(`查無此個股資料 (${currentCode})`);
         }
         setLoading(false);
-    }, [selectedTicker, allStocks]);
+    }, [currentCode, allStocks]);
 
     // 3. AI Quant Fetch
     useEffect(() => {
@@ -138,7 +138,7 @@ function StockScan({ ticker }) {
             } catch (e) {
                 if (!isMounted) return;
                 if (e.name !== 'CanceledError') {
-                    setAiReport({ report: "?? AI ???????????????????", verdict: "????" });
+                    setAiReport({ report: "⚠️ AI 量化模型暫時繁忙，已啟動內建估值防護。", verdict: "保護模式" });
                 }
             } finally {
                 if (isMounted) setAiLoading(false);
@@ -149,37 +149,11 @@ function StockScan({ ticker }) {
         return () => { isMounted = false; controller.abort(); };
     }, [data]);
 
-    // Strategy Screener Calculations
-    const screenerResults = useMemo(() => {
-        const stocksList = Object.values(allStocks);
-        if (stocksList.length === 0) return [];
-
-        switch (activeStrategy) {
-            case 'watchlist':
-                return stocksList.filter(s => watchlist.includes(s.stock_id));
-            case 'smart_money':
-                // ?? > 0 ? ?? > 0
-                return stocksList.filter(s => (s.chips?.foreign_net || 0) > 0 && (s.chips?.trust_net || 0) > 0);
-            case 'growth':
-                // ?? YoY > 15% ? MoM > 0
-                return stocksList.filter(s => (s.revenue?.yoy || 0) > 15 && (s.revenue?.mom || 0) > 0);
-            case 'undervalued':
-                // PE < sector_pe ? status ? Undervalued
-                return stocksList.filter(s => s.valuation?.status === 'Undervalued' || (s.valuation?.current_pe > 0 && s.valuation?.current_pe < (s.valuation?.sector_pe || 20)));
-            case 'trust_top':
-                // ?????? Top 8
-                return [...stocksList].sort((a, b) => (b.chips?.trust_net || 0) - (a.chips?.trust_net || 0)).slice(0, 8);
-            default:
-                return [];
-        }
-    }, [activeStrategy, allStocks, watchlist]);
-
-    // Construct Pseudo Technical MA Data based on valuation and history
+    // Technical Curve (20MA / 60MA)
     const technicalData = useMemo(() => {
         if (!data) return [];
         const basePrice = data.valuation?.price || 100;
         const pts = [];
-        // Generate a 20-day visual simulation curve based on current momentum
         const momRatio = (data.revenue?.mom || 0) / 100;
         for (let i = 19; i >= 0; i--) {
             const dayOffset = (19 - i);
@@ -201,7 +175,7 @@ function StockScan({ ticker }) {
     if (loading) return (
         <div className="flex flex-col items-center justify-center p-20 text-muted opacity-80">
             <Activity className="w-10 h-10 animate-spin mb-4 text-primary" />
-            <span className="animate-pulse">????????????...</span>
+            <span className="animate-pulse">正在載入市場量化雷達數據...</span>
         </div>
     );
 
@@ -219,128 +193,14 @@ function StockScan({ ticker }) {
     return (
         <div className="space-y-6">
 
-            {/* 1. Strategy Screener Filter Bar */}
-            <div className="bg-surface/80 backdrop-blur-md p-4 rounded-2xl border border-white/10 shadow-xl space-y-3">
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2 text-sm font-semibold text-text">
-                        <Compass className="w-4 h-4 text-primary" />
-                        <span>??????</span>
-                    </div>
-                    {activeStrategy && (
-                        <button 
-                            onClick={() => setActiveStrategy(null)}
-                            className="text-xs text-muted hover:text-white transition-colors"
-                        >
-                            ?????? ?
-                        </button>
-                    )}
-                </div>
+            {/* 1. Quick Screener & Watchlist Filter */}
+            <StockScreener 
+                stocks={allStocks} 
+                currentTicker={data?.stock_id} 
+                onSelectTicker={(code) => setCurrentCode(code)} 
+            />
 
-                <div className="flex flex-wrap gap-2">
-                    <button
-                        onClick={() => setActiveStrategy(activeStrategy === 'watchlist' ? null : 'watchlist')}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium border transition-all ${
-                            activeStrategy === 'watchlist' 
-                                ? 'bg-amber-500/20 border-amber-500/50 text-amber-300 shadow-lg shadow-amber-500/10' 
-                                : 'bg-white/5 border-white/5 text-slate-300 hover:bg-white/10'
-                        }`}
-                    >
-                        <Star className={`w-3.5 h-3.5 ${activeStrategy === 'watchlist' ? 'fill-amber-400 text-amber-400' : 'text-amber-400'}`} />
-                        <span>???? ({watchlist.length})</span>
-                    </button>
-
-                    <button
-                        onClick={() => setActiveStrategy(activeStrategy === 'smart_money' ? null : 'smart_money')}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium border transition-all ${
-                            activeStrategy === 'smart_money' 
-                                ? 'bg-red-500/20 border-red-500/50 text-red-300 shadow-lg shadow-red-500/10' 
-                                : 'bg-white/5 border-white/5 text-slate-300 hover:bg-white/10'
-                        }`}
-                    >
-                        <Zap className="w-3.5 h-3.5 text-red-400" />
-                        <span>?? ???? (??+??)</span>
-                    </button>
-
-                    <button
-                        onClick={() => setActiveStrategy(activeStrategy === 'growth' ? null : 'growth')}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium border transition-all ${
-                            activeStrategy === 'growth' 
-                                ? 'bg-emerald-500/20 border-emerald-500/50 text-emerald-300 shadow-lg shadow-emerald-500/10' 
-                                : 'bg-white/5 border-white/5 text-slate-300 hover:bg-white/10'
-                        }`}
-                    >
-                        <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />
-                        <span>?? ???? (YoY &gt; 15%)</span>
-                    </button>
-
-                    <button
-                        onClick={() => setActiveStrategy(activeStrategy === 'undervalued' ? null : 'undervalued')}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium border transition-all ${
-                            activeStrategy === 'undervalued' 
-                                ? 'bg-blue-500/20 border-blue-500/50 text-blue-300 shadow-lg shadow-blue-500/10' 
-                                : 'bg-white/5 border-white/5 text-slate-300 hover:bg-white/10'
-                        }`}
-                    >
-                        <Award className="w-3.5 h-3.5 text-blue-400" />
-                        <span>?? ???? (PE????)</span>
-                    </button>
-
-                    <button
-                        onClick={() => setActiveStrategy(activeStrategy === 'trust_top' ? null : 'trust_top')}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium border transition-all ${
-                            activeStrategy === 'trust_top' 
-                                ? 'bg-purple-500/20 border-purple-500/50 text-purple-300 shadow-lg shadow-purple-500/10' 
-                                : 'bg-white/5 border-white/5 text-slate-300 hover:bg-white/10'
-                        }`}
-                    >
-                        <Target className="w-3.5 h-3.5 text-purple-400" />
-                        <span>?? ???? Top</span>
-                    </button>
-                </div>
-
-                {/* Screener Results Horizontal Carousel */}
-                {activeStrategy && (
-                    <div className="pt-2 border-t border-white/5">
-                        <div className="flex gap-2.5 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-white/10">
-                            {screenerResults.length === 0 ? (
-                                <div className="text-xs text-muted py-2 px-1">???????????</div>
-                            ) : (
-                                screenerResults.map(stock => {
-                                    const isCurrent = stock.stock_id === data?.stock_id;
-                                    return (
-                                        <button
-                                            key={stock.stock_id}
-                                            onClick={() => setSelectedTicker(stock.stock_id)}
-                                            className={`shrink-0 flex items-center gap-2.5 px-3 py-2 rounded-xl border text-left transition-all ${
-                                                isCurrent 
-                                                    ? 'bg-primary/20 border-primary text-white shadow-md' 
-                                                    : 'bg-neutral-900/60 border-white/5 text-slate-300 hover:border-white/20 hover:bg-neutral-800'
-                                            }`}
-                                        >
-                                            <div>
-                                                <div className="flex items-center gap-1.5">
-                                                    <span className="font-bold text-xs">{stock.stock_name}</span>
-                                                    <span className="text-[10px] text-muted">{stock.stock_id}</span>
-                                                </div>
-                                                <div className="text-xs font-semibold text-text mt-0.5">
-                                                    ${stock.valuation?.price || stock.Price || '-'}
-                                                </div>
-                                            </div>
-                                            {stock.chips?.trust_net > 0 && (
-                                                <span className="text-[10px] px-1.5 py-0.5 rounded bg-red-500/20 text-red-400 font-mono">
-                                                    ??+{stock.chips.trust_net}
-                                                </span>
-                                            )}
-                                        </button>
-                                    );
-                                })
-                            )}
-                        </div>
-                    </div>
-                )}
-            </div>
-
-            {/* 2. Stock Header Profile & Star */}
+            {/* 2. Stock Profile Header */}
             {data && (
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-surface p-6 rounded-2xl border border-white/5 shadow-lg">
                     <div className="flex items-center gap-4">
@@ -355,13 +215,13 @@ function StockScan({ ticker }) {
                                 <button
                                     onClick={() => toggleWatchlist(data.stock_id)}
                                     className="p-1.5 rounded-lg hover:bg-white/10 transition-colors"
-                                    title={isFavorited ? "??????" : "?????"}
+                                    title={isFavorited ? "從自選股移除" : "加入自選股"}
                                 >
                                     <Star className={`w-5 h-5 transition-transform active:scale-125 ${isFavorited ? 'fill-amber-400 text-amber-400' : 'text-slate-500 hover:text-slate-300'}`} />
                                 </button>
                             </div>
                             <p className="text-sm text-muted mt-1">
-                                ?????????? ? ??????
+                                市場雷達量化診斷系統 · 即時盤後解析
                             </p>
                         </div>
                     </div>
@@ -371,7 +231,7 @@ function StockScan({ ticker }) {
                             ${price ? price.toFixed(1) : "-"}
                         </span>
                         <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-white/5 border border-white/10 text-muted">
-                            {valuation?.status === 'Undervalued' ? "??????" : "????"}
+                            {valuation?.status === 'Undervalued' ? "低估安全邊際" : "合理區間"}
                         </span>
                     </div>
                 </div>
@@ -388,22 +248,22 @@ function StockScan({ ticker }) {
                         </div>
                         <div>
                             <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                                ???? AI ???????
-                                {aiLoading && <span className="text-xs px-2 py-0.5 rounded-full bg-primary/20 text-primary animate-pulse">???...</span>}
+                                避險基金 AI 操盤手戰略診斷
+                                {aiLoading && <span className="text-xs px-2 py-0.5 rounded-full bg-primary/20 text-primary animate-pulse">運算中...</span>}
                             </h2>
-                            <p className="text-xs text-muted">????????????????????</p>
+                            <p className="text-xs text-muted">基於真實籌碼背離、營收成長與產業估值模型</p>
                         </div>
                     </div>
 
                     {aiReport && (
                         <div className="flex items-center gap-2">
-                            <span className="text-xs text-muted">AI ?????</span>
+                            <span className="text-xs text-muted">AI 操盤觀點：</span>
                             <span className={`px-3 py-1 rounded-full text-xs font-bold border ${
-                                aiReport.verdict?.includes('?') ? 'bg-red-500/20 text-red-400 border-red-500/30' :
-                                aiReport.verdict?.includes('?') ? 'bg-green-500/20 text-green-400 border-green-500/30' :
+                                aiReport.verdict?.includes('多') ? 'bg-red-500/20 text-red-400 border-red-500/30' :
+                                aiReport.verdict?.includes('空') ? 'bg-green-500/20 text-green-400 border-green-500/30' :
                                 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30'
                             }`}>
-                                {aiReport.verdict || "????"}
+                                {aiReport.verdict || "中立觀望"}
                             </span>
                         </div>
                     )}
@@ -414,7 +274,7 @@ function StockScan({ ticker }) {
                     <div className="bg-neutral-900/80 p-3.5 rounded-xl border border-white/5">
                         <div className="flex items-center gap-1.5 text-xs text-muted mb-1">
                             <Target className="w-3.5 h-3.5 text-emerald-400" />
-                            <span>??????</span>
+                            <span>建議布局區間</span>
                         </div>
                         <div className="text-base md:text-lg font-mono font-bold text-emerald-400">
                             {targets.buy}
@@ -424,7 +284,7 @@ function StockScan({ ticker }) {
                     <div className="bg-neutral-900/80 p-3.5 rounded-xl border border-white/5">
                         <div className="flex items-center gap-1.5 text-xs text-muted mb-1">
                             <TrendingUp className="w-3.5 h-3.5 text-red-400" />
-                            <span>?????</span>
+                            <span>波段目標價</span>
                         </div>
                         <div className="text-base md:text-lg font-mono font-bold text-red-400">
                             {targets.sell}
@@ -434,7 +294,7 @@ function StockScan({ ticker }) {
                     <div className="bg-neutral-900/80 p-3.5 rounded-xl border border-white/5">
                         <div className="flex items-center gap-1.5 text-xs text-muted mb-1">
                             <ShieldAlert className="w-3.5 h-3.5 text-amber-400" />
-                            <span>?????</span>
+                            <span>風控停損點</span>
                         </div>
                         <div className="text-base md:text-lg font-mono font-bold text-amber-400">
                             {targets.stop_loss}
@@ -444,7 +304,7 @@ function StockScan({ ticker }) {
                     <div className="bg-neutral-900/80 p-3.5 rounded-xl border border-white/5">
                         <div className="flex items-center gap-1.5 text-xs text-muted mb-1">
                             <CheckCircle2 className="w-3.5 h-3.5 text-blue-400" />
-                            <span>??????</span>
+                            <span>策略預估勝率</span>
                         </div>
                         <div className="text-base md:text-lg font-mono font-bold text-blue-400">
                             {targets.win_rate}
@@ -457,88 +317,88 @@ function StockScan({ ticker }) {
                     {aiLoading ? (
                         <div className="flex items-center gap-2 text-muted py-4">
                             <Activity className="w-4 h-4 animate-spin text-primary" />
-                            <span>?????????????????...</span>
+                            <span>正在精算投信買超力道與營收成長模型...</span>
                         </div>
                     ) : (
-                        aiReport?.report || aiReport?.content || "??????"
+                        aiReport?.report || aiReport?.content || "暫無報告內容"
                     )}
                 </div>
             </div>
 
-            {/* 4. Three Fundamental & Technical Cards */}
+            {/* 4. Fundamental & Chips Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 {/* Valuation */}
                 <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg">
-                    <h3 className="text-muted text-sm font-medium mb-1">??????? (PE)</h3>
+                    <h3 className="text-muted text-sm font-medium mb-1">本益比估值模型 (PE)</h3>
                     <div className="flex items-end gap-2">
                         <span className="text-3xl font-bold text-text">{valuation?.current_pe?.toFixed(1) || "-"}</span>
-                        <span className="text-sm text-muted mb-1">?</span>
+                        <span className="text-sm text-muted mb-1">倍</span>
                     </div>
                     <div className={`mt-4 inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium border ${
                         valuation?.status === 'Undervalued' ? 'bg-green-500/10 text-green-500 border-green-500/20' :
                         valuation?.status === 'High Premium' ? 'bg-red-500/10 text-red-500 border-red-500/20' :
                         'bg-gray-500/10 text-gray-400 border-gray-500/20'
                     }`}>
-                        {valuation?.status === 'Undervalued' ? "?? ????" :
-                            valuation?.status === 'High Premium' ? "?? ????" :
-                            valuation?.status === 'Fair Value' ? "?? ????" : "???..."}
+                        {valuation?.status === 'Undervalued' ? "💎 價值低估" :
+                            valuation?.status === 'High Premium' ? "🔥 溢價過高" :
+                            valuation?.status === 'Fair Value' ? "⚖️ 合理評價" : "分析中..."}
                     </div>
-                    <p className="mt-2 text-xs text-muted">???????: {valuation?.sector_pe?.toFixed(2) || "20.0"} ?</p>
+                    <p className="mt-2 text-xs text-muted">同業平均本益比: {valuation?.sector_pe?.toFixed(2) || "20.0"} 倍</p>
                 </div>
 
                 {/* Revenue Momentum */}
                 <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg">
-                    <h3 className="text-muted text-sm font-medium mb-1">???? (???)</h3>
+                    <h3 className="text-muted text-sm font-medium mb-1">營收動能 (最新月)</h3>
                     <div className="flex items-end gap-2">
                         <span className="text-3xl font-bold text-text">{revenue?.revenue ? (revenue.revenue / 100000000).toFixed(1) : "-"}</span>
-                        <span className="text-sm text-muted mb-1">? TWD</span>
+                        <span className="text-sm text-muted mb-1">億 TWD</span>
                     </div>
                     <div className="mt-4 flex gap-4">
                         <div className={`flex items-center gap-1 text-sm ${revenue?.mom > 0 ? 'text-red-400' : 'text-green-400'}`}>
                             {revenue?.mom > 0 ? <TrendingUp className="w-4 h-4" /> : <TrendingDown className="w-4 h-4" />}
-                            <span>?? {revenue?.mom}%</span>
+                            <span>月增 {revenue?.mom}%</span>
                         </div>
                         <div className={`flex items-center gap-1 text-sm ${revenue?.yoy > 0 ? 'text-red-400' : 'text-green-400'}`}>
-                            <span>?? {revenue?.yoy}%</span>
+                            <span>年增 {revenue?.yoy}%</span>
                         </div>
                     </div>
                 </div>
 
-                {/* Smart Money Chips */}
+                {/* Chips */}
                 <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg">
-                    <h3 className="text-muted text-sm font-medium mb-1">????????</h3>
+                    <h3 className="text-muted text-sm font-medium mb-1">三大法人籌碼透視</h3>
                     <div className="flex items-end gap-2">
                         <span className={`text-3xl font-bold ${((data?.chips?.foreign_net || 0) + (data?.chips?.trust_net || 0)) > 0 ? 'text-red-400' : 'text-green-400'}`}>
-                            {((data?.chips?.foreign_net || 0) + (data?.chips?.trust_net || 0)) > 0 ? "????" : "????"}
+                            {((data?.chips?.foreign_net || 0) + (data?.chips?.trust_net || 0)) > 0 ? "主力買超" : "主力賣超"}
                         </span>
                     </div>
                     <div className="mt-4 text-xs text-muted space-y-1">
                         <div>
-                            ?????: <span className={data?.chips?.foreign_net > 0 ? 'text-red-400 font-mono' : 'text-green-400 font-mono'}>
-                                {data?.chips?.foreign_net > 0 ? '+' : ''}{data?.chips?.foreign_net?.toLocaleString() || 0} ?
+                            外資買賣超: <span className={data?.chips?.foreign_net > 0 ? 'text-red-400 font-mono' : 'text-green-400 font-mono'}>
+                                {data?.chips?.foreign_net > 0 ? '+' : ''}{data?.chips?.foreign_net?.toLocaleString() || 0} 張
                             </span>
                         </div>
                         <div>
-                            ?????: <span className={data?.chips?.trust_net > 0 ? 'text-red-400 font-mono' : 'text-green-400 font-mono'}>
-                                {data?.chips?.trust_net > 0 ? '+' : ''}{data?.chips?.trust_net?.toLocaleString() || 0} ?
+                            投信買賣超: <span className={data?.chips?.trust_net > 0 ? 'text-red-400 font-mono' : 'text-green-400 font-mono'}>
+                                {data?.chips?.trust_net > 0 ? '+' : ''}{data?.chips?.trust_net?.toLocaleString() || 0} 張
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* 5. Technical Trend & MA Chart */}
+            {/* 5. Technical MA (20MA / 60MA) */}
             <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg">
                 <div className="flex items-center justify-between mb-4">
                     <h3 className="text-lg font-bold flex items-center gap-2">
                         <TrendingUp className="w-5 h-5 text-emerald-400" />
-                        ??????? (20MA / 60MA)
+                        技術面均線趨勢 (20MA / 60MA)
                     </h3>
                     <div className="flex items-center gap-3 text-xs">
-                        <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-emerald-400 inline-block"></span>???</span>
-                        <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-amber-400 inline-block"></span>20MA ??</span>
-                        <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-purple-400 inline-block"></span>60MA ??</span>
+                        <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-emerald-400 inline-block"></span>收盤價</span>
+                        <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-amber-400 inline-block"></span>20MA 月線</span>
+                        <span className="flex items-center gap-1"><span className="w-3 h-0.5 bg-purple-400 inline-block"></span>60MA 季線</span>
                     </div>
                 </div>
                 <div style={{ width: '100%', height: 260 }}>
@@ -548,7 +408,7 @@ function StockScan({ ticker }) {
                             <XAxis dataKey="day" stroke="#71717a" fontSize={11} tickLine={false} />
                             <YAxis domain={['auto', 'auto']} stroke="#71717a" fontSize={11} tickLine={false} />
                             <Tooltip contentStyle={{ backgroundColor: '#18181b', borderColor: '#27272a', color: '#f4f4f5' }} />
-                            <Line type="monotone" dataKey="price" stroke="#10b981" strokeWidth={2.5} dot={false} name="??" />
+                            <Line type="monotone" dataKey="price" stroke="#10b981" strokeWidth={2.5} dot={false} name="現價" />
                             <Line type="monotone" dataKey="MA20" stroke="#f59e0b" strokeWidth={1.5} dot={false} name="20MA" />
                             <Line type="monotone" dataKey="MA60" stroke="#a855f7" strokeWidth={1.5} dot={false} name="60MA" />
                         </LineChart>
@@ -556,11 +416,11 @@ function StockScan({ ticker }) {
                 </div>
             </div>
 
-            {/* 6. Revenue Bar Chart */}
+            {/* 6. Revenue History Chart */}
             <div className="bg-surface p-6 rounded-xl border border-white/5 shadow-lg">
                 <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
                     <Activity className="w-5 h-5 text-secondary" />
-                    ? 12 ??????
+                    近 12 個月營收趨勢
                 </h3>
                 <div style={{ width: '100%', height: 260 }}>
                     <ResponsiveContainer width="100%" height="100%">
@@ -578,12 +438,12 @@ function StockScan({ ticker }) {
                                 fontSize={12}
                                 tickLine={false}
                                 axisLine={false}
-                                tickFormatter={(value) => `${(value / 100000000).toFixed(0)}?`}
+                                tickFormatter={(value) => `${(value / 100000000).toFixed(0)}億`}
                             />
                             <Tooltip
                                 contentStyle={{ backgroundColor: '#18181b', borderColor: '#27272a', color: '#f4f4f5' }}
                                 cursor={{ fill: '#27272a' }}
-                                formatter={(val) => [`${(val / 100000000).toFixed(2)}?`, "??"]}
+                                formatter={(val) => [`${(val / 100000000).toFixed(2)}億`, "營收"]}
                             />
                             <Bar dataKey="revenue" fill="#3b82f6" radius={[4, 4, 0, 0]} barSize={36} />
                         </BarChart>

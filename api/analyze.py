@@ -26,12 +26,12 @@ class handler(BaseHTTPRequestHandler):
 
     def _generate_rule_based_fallback(self, stock_id, current_price, pe_val, sector_pe, foreign_net, trust_net, yoy, mom, current_change):
         try:
-            pe_num = float(pe_val) if pe_val not in ['N/A', '??', ''] else 20.0
+            pe_num = float(pe_val) if pe_val not in ['N/A', '未知', ''] else 20.0
         except:
             pe_num = 20.0
             
         try:
-            price_num = float(current_price) if current_price not in ['N/A', '??', ''] else 100.0
+            price_num = float(current_price) if current_price not in ['N/A', '未知', ''] else 100.0
         except:
             price_num = 100.0
 
@@ -49,25 +49,25 @@ class handler(BaseHTTPRequestHandler):
         is_trust_buying = t_net > 100
 
         if is_smart_money_buy or (pe_num < 16 and is_trust_buying):
-            verdict = '????'
+            verdict = '強烈看多'
             score = 88
             win_rate = '82%'
-            bias = '???????????????????????????'
+            bias = '三大法人土洋合力吃貨，且評價處於具安全邊際之估值水準。'
         elif pe_num < 18 or is_trust_buying:
-            verdict = '????'
+            verdict = '謹慎看多'
             score = 78
             win_rate = '72%'
-            bias = '????????????????????????'
+            bias = '投信與主力買盤進駐，估值相對同業仍具性價比優勢。'
         elif pe_num > 28:
-            verdict = '????'
+            verdict = '轉弱看空'
             score = 45
             win_rate = '38%'
-            bias = '??????????????????????????'
+            bias = '目前評價嚴重偏離產業平均，且成長動能未達高估值預期。'
         else:
-            verdict = '????'
+            verdict = '中立觀望'
             score = 65
             win_rate = '55%'
-            bias = '???????????????????????'
+            bias = '估值落於同業中位數區間，目前呈現箱型整理格局。'
 
         buy_low = round(price_num * 0.95, 1)
         buy_high = round(price_num * 0.98, 1)
@@ -76,13 +76,13 @@ class handler(BaseHTTPRequestHandler):
         stop_loss = round(price_num * 0.92, 1)
 
         content = (
-            f"#### ?? ??????\n"
-            f"- **???????**: ?????? {current_price} ?????? {pe_val} ? (????? {sector_pe} ?)?????? YoY ? {yoy}%???? MoM ? {mom}%?{bias}\n"
-            f"- **??????**: ????? {current_change}?????? {f_net:+.0f} ??????? {t_net:+.0f} ??"
-            + ("?????????????????????" if is_smart_money_buy else "???????????????????????") +
-            f"\n\n#### ?? ???? & ????\n"
-            f"- **????**: ???????????????????????????????????\n"
-            f"- **????**: ??? {buy_low} ~ {buy_high} ????????????? {sell_low} ~ {sell_high}?????????? {stop_loss} ??"
+            f"#### 🎯 核心邏輯剖析\n"
+            f"- **估值與成長對決**: 目標股價現報 {current_price} 元，本益比約 {pe_val} 倍 (同業平均約 {sector_pe} 倍)。營收年增率 YoY 為 {yoy}%、月增率 MoM 為 {mom}%。{bias}\n"
+            f"- **籌碼博弈解讀**: 今日漲跌為 {current_change}，外資買賣超 {f_net:+.0f} 張、投信買賣超 {t_net:+.0f} 張。"
+            + ("外資與投信呈現同步作多姿態，籌碼集中度高。" if is_smart_money_buy else "內外資步調不一，後續應密切觀察投信買超延續性。") +
+            f"\n\n#### 🔮 實戰預判 & 操作策略\n"
+            f"- **走勢預演**: 預計短期內回測支撐後蓄勢上攻，若量能持續溫和放大，有機會挑戰波段高點。\n"
+            f"- **關鍵操作**: 建議於 {buy_low} ~ {buy_high} 分批布局，波段停利目標看至 {sell_low} ~ {sell_high}。嚴格風控停損點設在 {stop_loss} 元。"
         )
 
         return {
@@ -160,19 +160,19 @@ class handler(BaseHTTPRequestHandler):
         if not stock_id or stock_id == "N/A":
             self._send_json({
                 "score": 0, "verdict": "Ready", 
-                "report": "? API ?????????????"
+                "report": "✅ API 在線中，等待查詢個股代號。"
             })
             return
 
         if not re.match(r'^[0-9A-Za-z]{2,6}$', stock_id):
             self._send_json({
                 "score": 0, "verdict": "Input Error",
-                "report": "?? ???????????? 4 ??????"
+                "report": "⚠️ 股票代號格式錯誤，請輸入 4 碼台股代號。"
             }, 400)
             return
 
-        current_price = get_param("price", "??")
-        current_change = get_param("change", "??")
+        current_price = get_param("price", "未知")
+        current_change = get_param("change", "未知")
         pe = get_param("pe", "N/A")
         sector_pe = get_param("sector_pe", "N/A")
         foreign_net = get_param("foreign_net", "0")
@@ -181,10 +181,10 @@ class handler(BaseHTTPRequestHandler):
         mom = get_param("mom", "N/A")
         
         try:
-            if current_price not in ["??", "N/A"]:
+            if current_price not in ["未知", "N/A"]:
                 current_price = str(float(current_price))
         except:
-            current_price = "??"
+            current_price = "未知"
             
         try:
             if pe != "N/A":
@@ -195,33 +195,33 @@ class handler(BaseHTTPRequestHandler):
         today = datetime.now().strftime("%Y-%m-%d")
         
         prompt = (
-            f"??????????{today}?????????????????????????????????????????????????????????????????????????\n\n"
-            f"### ????????????\n"
-            f"- ?????{stock_id}\n"
-            f"- ???{current_price} ? (?????{current_change})\n"
-            f"- ?????(PE)?{pe} ? (????????{sector_pe} ?)\n"
-            f"- ????????{foreign_net} ?\n"
-            f"- ????????{trust_net} ?\n"
-            f"- ????????(YoY)?{yoy}%\n"
-            f"- ????????(MoM)?{mom}%\n\n"
-            f"### ???? (Strict JSON ONLY)?\n"
-            f"??????? JSON ???**??** Markdown ?????????\n"
+            f"現在是真實世界日期：{today}。請你擔任一位華爾街頂尖量化避險基金的資深操盤手，風格犀利、邏輯嚴謹，擅長從「真實三大法人籌碼」與「財報成長動能」的背離中尋找高勝率波段交易機會。\n\n"
+            f"### 【目標個股即時量化指標】\n"
+            f"- 股票代號：{stock_id}\n"
+            f"- 現價：{current_price} 元 (今日漲跌：{current_change})\n"
+            f"- 個股本益比(PE)：{pe} 倍 (同業平均本益比：{sector_pe} 倍)\n"
+            f"- 外資單日買賣超：{foreign_net} 張\n"
+            f"- 投信單日買賣超：{trust_net} 張\n"
+            f"- 最新月營收年增率(YoY)：{yoy}%\n"
+            f"- 最新月營收月增率(MoM)：{mom}%\n\n"
+            f"### 輸出格式 (Strict JSON ONLY)：\n"
+            f"請務必回傳標準 JSON 物件，**嚴禁** Markdown 代碼塊，格式如下：\n"
             f"{{\n"
-            f'  "buy_price": "[???????? 980 - 1010]",\n'
-            f'  "sell_price": "[??????? 1120 - 1160]",\n'
-            f'  "stop_loss": "[????????? 930]",\n'
+            f'  "buy_price": "[進場布局區間，如 980 - 1010]",\n'
+            f'  "sell_price": "[波段目標價，如 1120 - 1160]",\n'
+            f'  "stop_loss": "[嚴格風控停損價，如 930]",\n'
             f'  "score": 0-100,\n'
-            f'  "win_rate": "[?????? 78%]",\n'
-            f'  "verdict": "[???? / ???? / ???? / ????]",\n'
-            f'  "content": "[??????]"\n'
+            f'  "win_rate": "[預估勝率，如 78%]",\n'
+            f'  "verdict": "[強烈看多 / 謹慎看多 / 中立觀望 / 轉弱看空]",\n'
+            f'  "content": "[完整分析報告]"\n'
             f"}}\n\n"
-            f"### Content ???????\n"
-            f"#### ?? ??????\n"
-            f"- **???????**: (????? {pe} vs ?? {sector_pe}????? YoY {yoy}% ??????)\n"
-            f"- **??????**: (???? {foreign_net} ? ??? {trust_net} ? ??????????)\n\n"
-            f"#### ?? ???? & ????\n"
-            f"- **????**: (???? 1~2 ??????????)\n"
-            f"- **??????**: (??????????????????)\n"
+            f"### Content 欄位內容指引：\n"
+            f"#### 🎯 核心邏輯剖析\n"
+            f"- **估值與成長對決**: (解讀本益比 {pe} vs 同業 {sector_pe}，搭配營收 YoY {yoy}% 評估安全邊際)\n"
+            f"- **籌碼博弈解讀**: (分析外資 {foreign_net} 張 與投信 {trust_net} 張 之主力意圖與合力方向)\n\n"
+            f"#### 🔮 實戰預判 & 操作策略\n"
+            f"- **走勢預演**: (預測未來 1~2 週關鍵轉折與阻力支撐)\n"
+            f"- **進出場與風控**: (明確進場區間、停利點位、嚴格停損價位)\n"
         )
 
         ai_data = None
