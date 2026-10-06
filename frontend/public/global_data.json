@@ -1,40 +1,6 @@
 {
-  "last_updated": "2026-10-02 14:39",
+  "last_updated": "2026-10-06 14:52",
   "events": [
-    {
-      "event": "IFA 柏林消費電子展 2026",
-      "date": "2026-09-04",
-      "end_date": "2026-09-08",
-      "theme": "家電 / IoT / 穿戴裝置",
-      "description": "歐洲最大消費電子展。聚焦智慧家庭、穿戴裝置與永續科技。",
-      "status": "Finished",
-      "days_to_go": -28,
-      "chains": [
-        {
-          "us_stock": {
-            "symbol": "GOOGL",
-            "name": "Alphabet",
-            "price": 0,
-            "change": 0
-          },
-          "tw_sector": "消費電子",
-          "tw_stocks": [
-            {
-              "ticker": "2317",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
-            },
-            {
-              "ticker": "2357",
-              "price": 0,
-              "change": 0,
-              "signal": "Neutral"
-            }
-          ]
-        }
-      ]
-    },
     {
       "event": "CES 消費電子展 2026",
       "date": "2026-10-13",
@@ -42,7 +8,7 @@
       "theme": "AI 硬體 / 智慧家庭 / 電動車",
       "description": "全球最大消費電子展。聚焦 AI PC、穿戴裝置與車用電子新品發表。",
       "status": "Imminent",
-      "days_to_go": 11,
+      "days_to_go": 7,
       "chains": [
         {
           "us_stock": {
@@ -105,7 +71,7 @@
       "theme": "AI 硬體 / 智慧家庭 / 電動車",
       "description": "全球最大消費電子展。聚焦 AI PC、穿戴裝置與車用電子新品發表。",
       "status": "Upcoming",
-      "days_to_go": 101,
+      "days_to_go": 97,
       "chains": [
         {
           "us_stock": {
@@ -168,7 +134,7 @@
       "theme": "6G / Wi-Fi 7 / 邊緣 AI",
       "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
       "status": "Upcoming",
-      "days_to_go": 129,
+      "days_to_go": 125,
       "chains": [
         {
           "us_stock": {
@@ -231,7 +197,7 @@
       "theme": "Blackwell Ultra / Rubin GPU / AI 推論",
       "description": "AI 界的伍茲塔克。黃仁勳揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
       "status": "Upcoming",
-      "days_to_go": 157,
+      "days_to_go": 153,
       "chains": [
         {
           "us_stock": {
