@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06 15:57",
+  "last_updated": "2026-11-10 16:13",
   "events": [
     {
       "event": "CES 消費電子展 2026",
@@ -8,34 +8,34 @@
       "theme": "AI 硬體 / 智慧家庭 / 電動車",
       "description": "全球最大消費電子展。聚焦 AI PC、穿戴裝置與車用電子新品發表。",
       "status": "Finished",
-      "days_to_go": -24,
+      "days_to_go": -28,
       "chains": [
         {
           "us_stock": {
             "symbol": "NVDA",
             "name": "輝達",
-            "price": 189.83,
-            "change": 5.08
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "AI 晶片",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 2135.0,
-              "change": -4.47,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2454",
-              "price": 3390.0,
-              "change": -1.88,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "3231",
-              "price": 160.0,
-              "change": -5.04,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         },
@@ -43,22 +43,22 @@
           "us_stock": {
             "symbol": "INTC",
             "name": "英特爾",
-            "price": 55.99,
-            "change": 9.07
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2357",
-              "price": 859.0,
-              "change": -1.26,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2353",
-              "price": 29.0,
-              "change": -0.68,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         }
@@ -71,34 +71,34 @@
       "theme": "AI 硬體 / 智慧家庭 / 電動車",
       "description": "全球最大消費電子展。聚焦 AI PC、穿戴裝置與車用電子新品發表。",
       "status": "Upcoming",
-      "days_to_go": 66,
+      "days_to_go": 62,
       "chains": [
         {
           "us_stock": {
             "symbol": "NVDA",
             "name": "輝達",
-            "price": 189.83,
-            "change": 5.08
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "AI 晶片",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 2135.0,
-              "change": -4.47,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2454",
-              "price": 3390.0,
-              "change": -1.88,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "3231",
-              "price": 160.0,
-              "change": -5.04,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         },
@@ -106,22 +106,22 @@
           "us_stock": {
             "symbol": "INTC",
             "name": "英特爾",
-            "price": 55.99,
-            "change": 9.07
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "PC 供應鏈",
           "tw_stocks": [
             {
               "ticker": "2357",
-              "price": 859.0,
-              "change": -1.26,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2353",
-              "price": 29.0,
-              "change": -0.68,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         }
@@ -134,34 +134,34 @@
       "theme": "6G / Wi-Fi 7 / 邊緣 AI",
       "description": "全球最大通訊展。聚焦非地面網路 (NTN) 與終端 AI 應用。觀察網通設備升級潮。",
       "status": "Upcoming",
-      "days_to_go": 94,
+      "days_to_go": 90,
       "chains": [
         {
           "us_stock": {
             "symbol": "QCOM",
             "name": "高通",
-            "price": 164.98,
-            "change": 5.95
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "IC 設計",
           "tw_stocks": [
             {
               "ticker": "2454",
-              "price": 3390.0,
-              "change": -1.88,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2379",
-              "price": 708.0,
-              "change": -0.98,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "3105",
-              "price": 406.0,
-              "change": -9.98,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         },
@@ -169,22 +169,22 @@
           "us_stock": {
             "symbol": "AVGO",
             "name": "博通",
-            "price": 298.2,
-            "change": 2.3
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "網通設備",
           "tw_stocks": [
             {
               "ticker": "5388",
-              "price": 64.5,
-              "change": -2.42,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "6285",
-              "price": 164.5,
-              "change": -10.35,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         }
@@ -197,40 +197,40 @@
       "theme": "Blackwell Ultra / Rubin GPU / AI 推論",
       "description": "AI 界的伍茲塔克。黃仁勳揭曉下一代 AI 推論晶片與 Sovereign AI 戰略。",
       "status": "Upcoming",
-      "days_to_go": 122,
+      "days_to_go": 118,
       "chains": [
         {
           "us_stock": {
             "symbol": "NVDA",
             "name": "輝達",
-            "price": 189.83,
-            "change": 5.08
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "AI 伺服器",
           "tw_stocks": [
             {
               "ticker": "2330",
-              "price": 2135.0,
-              "change": -4.47,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2382",
-              "price": 290.5,
-              "change": -3.17,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "3231",
-              "price": 160.0,
-              "change": -5.04,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "6669",
-              "price": 1555.0,
-              "change": -5.47,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         },
@@ -238,22 +238,22 @@
           "us_stock": {
             "symbol": "SMCI",
             "name": "美超微",
-            "price": 28.89,
-            "change": 8.29
+            "price": 0,
+            "change": 0
           },
           "tw_sector": "伺服器代工",
           "tw_stocks": [
             {
               "ticker": "2376",
-              "price": 298.0,
-              "change": -5.1,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             },
             {
               "ticker": "2324",
-              "price": 31.5,
-              "change": -2.93,
-              "signal": "Lagging (Buy?)"
+              "price": 0,
+              "change": 0,
+              "signal": "Neutral"
             }
           ]
         }
